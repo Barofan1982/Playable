@@ -1,0 +1,123 @@
+{
+  "id": "arrow-escape",
+  "updated": "2026-10-04",
+  "revision": "hell-200-arrows-20261004",
+  "automaticSuccess": true,
+  "successSeconds": 47.217,
+  "twoLevels": true,
+  "levelOneWin": true,
+  "manualNextLevel": true,
+  "autoResumesInHell": true,
+  "hellExactly200": true,
+  "hellUniqueCells": 3264,
+  "enterHellMs": 23,
+  "realFailure": true,
+  "manualRetry": true,
+  "retryStaysInHell": true,
+  "terminalFrameHeld": true,
+  "endingSeconds": 0.7,
+  "specificChecks": [
+    "firstLevelTouchCollision",
+    "firstClearUnlocksHellButton",
+    "200DenseInterwovenArrows",
+    "realZoomButtons",
+    "realTouchDragDoesNotSelect",
+    "realTwoFingerPinchDoesNotSelect",
+    "realWheelZoom",
+    "realTouchSelectionWhenZoomed",
+    "threeHellCollisionsFail",
+    "continuousFixedLengthHellExit",
+    "hellAutoWin",
+    "600SecondIdleFailure",
+    "fourScreenLayouts"
+  ],
+  "layouts": [
+    {
+      "width": 390,
+      "height": 844,
+      "stage": {
+        "x": 0,
+        "y": 75.328125,
+        "w": 390,
+        "h": 693.328125
+      },
+      "hudBottom": 187.875,
+      "boardTop": 209.66044921875,
+      "boardBottom": 658.157080078125,
+      "zoomTop": 664.109375,
+      "zoomBottom": 693.359375,
+      "bottomTop": 697.171875,
+      "scroll": false
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "stage": {
+        "x": 0.25,
+        "y": 0,
+        "w": 319.5,
+        "h": 568
+      },
+      "hudBottom": 91.90625,
+      "boardTop": 110.05,
+      "boardBottom": 477.475,
+      "zoomTop": 482.34375,
+      "zoomBottom": 506.296875,
+      "bottomTop": 509.4375,
+      "scroll": false
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "stage": {
+        "x": 437.5,
+        "y": 0,
+        "w": 405,
+        "h": 720
+      },
+      "hudBottom": 117.359375,
+      "boardTop": 139.5,
+      "boardBottom": 605.25,
+      "zoomTop": 611.4375,
+      "zoomBottom": 641.8125,
+      "bottomTop": 645.75,
+      "scroll": false
+    },
+    {
+      "width": 667,
+      "height": 375,
+      "stage": {
+        "x": 228.03125,
+        "y": 0,
+        "w": 210.9375,
+        "h": 375
+      },
+      "hudBottom": 61.734375,
+      "boardTop": 72.65625,
+      "boardBottom": 315.234375,
+      "zoomTop": 318.453125,
+      "zoomBottom": 334.265625,
+      "bottomTop": 336.359375,
+      "scroll": false
+    }
+  ],
+  "offline": true,
+  "musicActuallyPlaying": {
+    "enabled": true,
+    "visible": true,
+    "playing": true,
+    "activePlayers": 1,
+    "loop": true,
+    "position": 0.010666666666666666,
+    "duration": 30,
+    "starts": 1,
+    "contextState": "running",
+    "effects": [
+      "running"
+    ],
+    "rms": 0.0000025336423946825997,
+    "error": "",
+    "volume": 0.22
+  },
+  "errors": []
+}
