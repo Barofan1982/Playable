@@ -4,7 +4,7 @@
 
 仓库：[Barofan1982/Playable](https://github.com/Barofan1982/Playable)。
 
-根目录的 [index.html](index.html) 是合集首页。可筛选、搜索和打开试玩，页面不提供文件下载选项。
+根目录的 [index.html](index.html) 是合集首页。卡片只显示预览图、标题和分类，点击整张卡片直接进入试玩。手机端固定一屏，通过左右滑动切换卡片；也可使用分类或左右切换按钮。桌面端使用多列画廊。页面不提供文件下载选项。
 
 ## 25 个试玩
 
