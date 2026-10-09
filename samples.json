@@ -883,11 +883,12 @@
       "type": "解谜",
       "subtitle": "Snake Puzzle",
       "image": "preview-mobile.png",
-      "desc": "吃苹果长身体，绕砖块转身，用身体搭桥；失去支撑时整条蛇一起下落。前七个短关卡，第八关还原双弯平台、尖刺和 121 苹果城堡，已验算 167 步完整路线。",
+      "desc": "吃苹果长身体，绕砖块转身，用身体搭桥；失去支撑时整条蛇一起下落。前七个短关卡，第八关为 121 苹果城堡，167 步完整路线；手机默认放大跟随，支持小地图查看远处。",
       "features": [
         "7 个短关卡 + 1 个高难关",
         "121 苹果城堡",
-        "放大与跟随镜头",
+        "手机默认放大跟随",
+        "可拖动小地图",
         "吃苹果增长",
         "整条蛇重力",
         "身体搭桥",
@@ -896,7 +897,7 @@
         "独立操作音效",
         "循环配乐"
       ],
-      "operation": "滑动、方向按钮或方向键移动；吃完所有苹果进入旋涡，利用身体留在平台上方保持支撑。第八关支持放大、缩小和全景。",
+      "operation": "滑动、方向按钮或方向键移动；吃完所有苹果进入旋涡，利用身体留在平台上方保持支撑。第八关手机默认放大，MAP 查看全景、PLAY 返回；拖动小地图查看远处。",
       "ending": "吃完苹果进入出口成功；坠落出界或触碰尖刺失败。支持撤销重试；自动试玩连续完成八关，最后画面保持。",
       "reference": "Snake Puzzle_ Slither to Eat · 360 × 640 与 480 × 360",
       "entry": "snake-puzzle/index.html",
@@ -915,10 +916,10 @@
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-09",
-      "revision": "snake-puzzle-apple-citadel-20261009",
-      "htmlBytes": 781436,
-      "htmlSha256": "04256d2a2b225d7acd8e37b2fffea697c6680e91c78c54fbbfd611a46812014c",
-      "zipBytes": 580756
+      "revision": "snake-puzzle-mobile-camera-20261009",
+      "htmlBytes": 787936,
+      "htmlSha256": "82ff4b62bf674aa43cedca884aaa3acaadb69cd3fca2c73212f9731b49eae70c",
+      "zipBytes": 586270
     }
   ],
   "archive": {
