@@ -1,6 +1,7 @@
 # 素材记录
 
 - 参考：用户提供的 Snake Puzzle_ Slither to Eat · 360 × 640 视频，仅用于分析玩法与口播。
+- 第八关参考：用户提供的 Snake Puzzle_ Slither to Eat · 480 × 360 视频，用于还原平台、尖刺和苹果阵；参考帧和原音未作为运行素材发布。
 - 天空、蛇、苹果、砖块、旋涡、尖刺、按钮与特效：本样本用 Canvas / CSS 绘制，没有截取视频中的角色或游戏美术作为成品素材。
 - Juicy Journey 商标：沿用用户现有合集中的压缩商标，内嵌 HTML。
 - 配乐：用户提供的 Ever So Blue - Onthou MP3，沿用合集 30 秒 / 128 kbps 循环片段。

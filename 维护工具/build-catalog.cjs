@@ -1,6 +1,9 @@
 const fs=require('node:fs'),path=require('node:path');
 const root=path.resolve(__dirname,'..');
 const manifest=JSON.parse(fs.readFileSync(root+"/samples.json","utf8")),samples=manifest.samples;
+// Classify by the result of the interaction, not the sample name.
+const categoryOverrides={'drink-merge':'合成','merge-cook':'消除','arrow-escape':'解谜'};
+for(const sample of samples)if(categoryOverrides[sample.id])sample.type=categoryOverrides[sample.id];
 const updated=manifest.updated||'2026-10-02';
 const musicCount=samples.filter(s=>!['interactive-math-demo','interactive-audio-demo','interactive-physics-demo','static-astronomy-poster'].includes(s.kind)).length;
 const displayDate=updated.split('-').map(Number).join(' ').replace(/^(\d+) (\d+) (\d+)$/, '$1 年 $2 月 $3 日');
@@ -12,7 +15,8 @@ const cards=samples.map((s,i)=>`<article class="card" data-type="${esc(s.type)}"
   <div class="poster"><img src="${s.id}/${s.image}" alt="${esc(s.name)}预览" loading="${i<6?'eager':'lazy'}" decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
   <div class="card-body"><h2>${esc(s.name)}</h2><span class="category">${esc(s.type)}</span></div>
  </a></article>`).join('\n');
-const categories=['全部',...new Set(samples.map(s=>s.type))];
+const types=[...new Set(samples.map(s=>s.type))];
+const categories=['全部',...['合成','消除'].filter(t=>types.includes(t)),...types.filter(t=>!['合成','消除'].includes(t))];
 const filters=categories.map((t,i)=>`<button class="filter" type="button" data-filter="${esc(t)}" aria-pressed="${i===0}">${esc(t)}</button>`).join('');
 const template=fs.readFileSync(path.join(__dirname,'gallery-template.html'),'utf8');
 fs.writeFileSync(path.join(root,'index.html'),template.replaceAll('__COUNT__',String(samples.length)).replace('__FILTERS__',filters).replace('__CARDS__',cards));
@@ -24,6 +28,12 @@ fs.writeFileSync(path.join(root,'README.md'),`# Juicy Journey · 可玩广告合
 仓库：[Barofan1982/Playable](https://github.com/Barofan1982/Playable)。
 
 根目录的 [index.html](index.html) 是合集首页。卡片只显示预览图、标题和分类，点击整张卡片直接进入试玩。预览统一使用 9:16 竖图，截图上下左右居中裁切，铺满卡片。手机端固定一屏，预览按屏幕可用空间尽量放大，标题叠在图片底部，通过左右滑动切换卡片。分类按钮高度为 48 像素，可同时选中多个类型，再次点击取消；多个类型合并显示，全部取消或点击“全部”恢复全部试玩。桌面端使用多列画廊。页面不提供文件下载选项。
+
+## 分类口径
+
+- 合成：两个同级道具合并成一个更高等级的新道具，具有进化关系。
+- 消除：匹配后道具从盘面消失，包括三消和配对消除；不生成升级道具。
+- 解谜：解开线路、脱困或寻找重力路线。箭头脱困归入此类。
 
 ## ${samples.length} 个试玩
 

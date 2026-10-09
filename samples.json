@@ -231,7 +231,7 @@
     {
       "id": "drink-merge",
       "name": "饮品发射合并",
-      "type": "消除",
+      "type": "合成",
       "subtitle": "Beach Juice Merge",
       "image": "preview-mobile.png",
       "desc": "左右选位、松手发射，杯子紧凑错列，同级磁吸范围恢复并扩大 30%，相互传力，合成后继承惯性继续滑行，最终水果壶交付订单。",
@@ -755,7 +755,7 @@
     {
       "id": "arrow-escape",
       "name": "彩色箭头脱困",
-      "type": "消除",
+      "type": "解谜",
       "subtitle": "Arrows Away",
       "image": "preview-mobile.png",
       "desc": "两关缠绕解谜：第一关保持 28 条不规则路线，通关后解锁 200 箭头地狱关。密集线路相互嵌套，可放大到 4 倍并拖动、双指缩放；三次碰撞或超时失败。",
@@ -883,9 +883,11 @@
       "type": "解谜",
       "subtitle": "Snake Puzzle",
       "image": "preview-mobile.png",
-      "desc": "吃苹果长身体，绕砖块转身，用身体搭桥；失去支撑时整条蛇一起下落。8 个短关卡，真实路线自动试玩，成功与失败、撤销和重试。",
+      "desc": "吃苹果长身体，绕砖块转身，用身体搭桥；失去支撑时整条蛇一起下落。前七个短关卡，第八关还原双弯平台、尖刺和 121 苹果城堡，已验算 167 步完整路线。",
       "features": [
-        "8 个短关卡",
+        "7 个短关卡 + 1 个高难关",
+        "121 苹果城堡",
+        "放大与跟随镜头",
         "吃苹果增长",
         "整条蛇重力",
         "身体搭桥",
@@ -894,9 +896,9 @@
         "独立操作音效",
         "循环配乐"
       ],
-      "operation": "滑动、方向按钮或方向键移动；吃完所有苹果进入旋涡，利用身体留在砖块上方保持支撑。",
+      "operation": "滑动、方向按钮或方向键移动；吃完所有苹果进入旋涡，利用身体留在平台上方保持支撑。第八关支持放大、缩小和全景。",
       "ending": "吃完苹果进入出口成功；坠落出界或触碰尖刺失败。支持撤销重试；自动试玩连续完成八关，最后画面保持。",
-      "reference": "Snake Puzzle_ Slither to Eat · 360 × 640",
+      "reference": "Snake Puzzle_ Slither to Eat · 360 × 640 与 480 × 360",
       "entry": "snake-puzzle/index.html",
       "zip": "下载包/snake-puzzle.zip",
       "readme": "snake-puzzle/README.md",
@@ -913,10 +915,10 @@
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-09",
-      "revision": "snake-puzzle-eight-levels-20261009",
-      "htmlBytes": 775294,
-      "htmlSha256": "ca338ab033c2d408f5a0ef6e3d18c314399790e8cd40141a4458ecdd80c8ba96",
-      "zipBytes": 585796
+      "revision": "snake-puzzle-apple-citadel-20261009",
+      "htmlBytes": 781436,
+      "htmlSha256": "04256d2a2b225d7acd8e37b2fffea697c6680e91c78c54fbbfd611a46812014c",
+      "zipBytes": 580756
     }
   ],
   "archive": {
