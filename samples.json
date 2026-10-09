@@ -8,21 +8,22 @@
       "type": "消除",
       "subtitle": "Ring & Pop",
       "image": "preview-mobile.png",
-      "desc": "逐行转动玉米圆环，对齐颜色，再沿同色连线拖动消除，变成爆米花。",
+      "desc": "逐行转动玉米圆环，对齐颜色，再沿同色连线拖动消除，变成爆米花。 支持 AUTO PLAY 自动操作、暂停继续及手动重试。",
       "features": [
         "单行旋转",
         "拖曳消除",
         "横竖屏",
-        "循环配乐"
+        "循环配乐",
+        "AUTO PLAY"
       ],
-      "operation": "左右拖动一个圆环；沿对齐的同色连线拖动。",
+      "operation": "左右拖动一个圆环；沿对齐的同色连线拖动；AUTO PLAY 自动演示，可暂停、继续或重试。",
       "ending": "Good Job!；可重玩或继续消除。",
       "reference": "Tasty Travels_ Merge Game · 720 × 1280",
       "entry": "corn/index.html",
       "zip": "下载包/corn.zip",
       "readme": "corn/README.md",
-      "htmlBytes": 784963,
-      "zipBytes": 583699,
+      "htmlBytes": 790537,
+      "zipBytes": 586437,
       "audio": {
         "title": "Ever So Blue - Onthou",
         "format": "MP3",
@@ -34,9 +35,10 @@
         "source": "用户提供的 MP3"
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "1562ed35382bfcc82e279138de7a1d021dc6e8137f38cb57fe8c2d7a487d74da",
-      "zipSha256": "4cc43802a92a6d5dbdef59bfb727a4eaf1ab10bd1700e4bf56f17d2f03177d22",
-      "updated": "2026-10-08"
+      "htmlSha256": "4962267d0c71e88caecde8b282a20b1a6c638d66b0632f7c64b9df2a9787a019",
+      "zipSha256": "9b1d0428d12fa53bb177ea9f29f27795a63a40d300fa706a1f2468d262807ee2",
+      "updated": "2026-10-09",
+      "revision": "autoplay-complete-20261009"
     },
     {
       "id": "market",
@@ -44,7 +46,7 @@
       "type": "经营",
       "subtitle": "Juice Bar Rush",
       "image": "preview-mobile.png",
-      "desc": "控制角色取饮料、搬运、服务顾客、收款，再升级机器和扩建第二个柜台。 主角使用 Sera 造型，货物和现金随身搬运，抵达购买点后逐叠付款。 Sera 采用交替抬脚、弯膝和反向摆臂，背货时继续走路，停下后回到站姿。",
+      "desc": "控制角色取饮料、搬运、服务顾客、收款，再升级机器和扩建第二个柜台。 主角使用 Sera 造型，货物和现金随身搬运，抵达购买点后逐叠付款。 Sera 采用交替抬脚、弯膝和反向摆臂，背货时继续走路，停下后回到站姿。 支持 AUTO PLAY 自动操作、暂停继续及手动重试。",
       "features": [
         "自由移动",
         "连续交付",
@@ -52,16 +54,17 @@
         "循环配乐",
         "Sera 主角",
         "背钱付款",
-        "步行动作"
+        "步行动作",
+        "AUTO PLAY"
       ],
-      "operation": "按住画面拖动控制移动；电脑也可用方向键或 WASD。",
+      "operation": "按住画面拖动控制移动；电脑也可用方向键或 WASD；AUTO PLAY 自动演示，可暂停、继续或重试。",
       "ending": "达成目标后可继续经营或重新开始。",
       "reference": "Tasty Travels_ Merge Game · 360 × 640",
       "entry": "market/index.html",
       "zip": "下载包/market.zip",
       "readme": "market/README.md",
-      "htmlBytes": 800491,
-      "zipBytes": 592058,
+      "htmlBytes": 806469,
+      "zipBytes": 595060,
       "audio": {
         "title": "Ever So Blue - Onthou",
         "format": "MP3",
@@ -73,9 +76,10 @@
         "source": "用户提供的 MP3"
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "a9f70de8d240fd0dfcb6942854e298e4d39f86e640b8268b7ab4c01a4a0cea2b",
-      "zipSha256": "2d293ef50b68f084aa76e93fb89f37ed4867a481ff6a6a74afda38bd90a3fb0c",
-      "updated": "2026-10-08"
+      "htmlSha256": "069e9ff505a84338b35ad39050ad98dad55c19f876341842ba6b129590e64fef",
+      "zipSha256": "e12bc8776f61d5c2af4d87446474884b6912b5446763ff09bb55b2773b07daa1",
+      "updated": "2026-10-09",
+      "revision": "autoplay-complete-20261009"
     },
     {
       "id": "block",
@@ -83,21 +87,22 @@
       "type": "方块",
       "subtitle": "Rainbow Block Rush",
       "image": "preview.png",
-      "desc": "随机出块，旋转和选择落点。只有整排填满才消除，持续清理初始彩虹墙。",
+      "desc": "随机出块，旋转和选择落点。只有整排填满才消除，持续清理初始彩虹墙。 支持 AUTO PLAY 自动操作、暂停继续及手动重试。",
       "features": [
         "随机出块",
         "满排消除",
         "失败重试",
-        "循环配乐"
+        "循环配乐",
+        "AUTO PLAY"
       ],
-      "operation": "左右拖动选择落点，松手下落；ROTATE 旋转，DROP 落下。",
+      "operation": "左右拖动选择落点，松手下落；ROTATE 旋转，DROP 落下；AUTO PLAY 自动演示，可暂停、继续或重试。",
       "ending": "清空初始墙面后可进入下一面；堆到顶部会提示失败重试。",
       "reference": "甜甜-45920-俄罗斯方块-20250410.mp4",
       "entry": "block/index.html",
       "zip": "下载包/block.zip",
       "readme": "block/README.md",
-      "htmlBytes": 864558,
-      "zipBytes": 651886,
+      "htmlBytes": 870459,
+      "zipBytes": 654692,
       "audio": {
         "title": "Ever So Blue - Onthou",
         "format": "MP3",
@@ -109,9 +114,10 @@
         "source": "用户提供的 MP3"
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "655133b13262b9e1697517d2d45ab3694bf2a2d6587077221cce114b39c54506",
-      "zipSha256": "32cd1c859cb3b8c41b03698e0932fb5c52fbd24ce3a850d50cacf18b8244b0d4",
-      "updated": "2026-10-08"
+      "htmlSha256": "5c56916099b820e015095decc13a15bfed3376f46097d710344c7e4afa584b89",
+      "zipSha256": "4e13974e5e70a946c568175b2cb21201d446dc6369d5c6ccc8f548737b4341df",
+      "updated": "2026-10-09",
+      "revision": "autoplay-complete-20261009"
     },
     {
       "id": "jigsaw",

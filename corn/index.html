@@ -69,7 +69,10 @@
     }
     @keyframes breathe { 50% { transform: scale(1.05); } }
     @media (prefers-reduced-motion: reduce) { .hint { animation: none; } }
-  </style>
+  .hint{bottom:calc(1.5% + 64px)}.auto-tools{position:absolute;bottom:1.5%;left:12%;right:12%;display:flex;gap:8px}.auto-tools button,.wide-auto-tools button{min-height:40px;padding:8px 12px;border:2px solid #fff7d8;border-radius:15px;background:#fff0b1;color:#704b24;font-size:12px;font-weight:900;box-shadow:0 3px 0 #b47532}.auto-tools #auto,.wide-auto-tools #wideAuto{flex:1;background:#d9f6a1}.auto-tools button:disabled,.wide-auto-tools button:disabled{opacity:.7}.wide-auto-tools{display:flex;gap:8px;margin:12px 0}.wide-cta{display:none}
+ @media(orientation:landscape) and (min-width:560px){#stage .auto-tools{display:none}}
+ @media(max-height:470px) and (orientation:landscape){.wide-auto-tools{margin:7px 0}.wide-auto-tools button{min-height:36px;padding:5px 8px}.landscape-panel .steps{display:none}}
+ </style>
 </head>
 <body>
   <div class="shell" id="shell">
@@ -81,7 +84,7 @@
     <div class="meter"><div id="fill"></div></div>
     <div class="counter" id="counter">0 / 3 LINES</div>
     <div class="hint" id="hint">SWIPE DOWN THE BLUE LINE ↓</div>
-    <div class="swipe">↔ SPIN ONE ROW · ↓ SWIPE A MATCH</div>
+    <nav class="auto-tools" aria-label="Demo controls"><button id="auto" type="button" aria-pressed="false">▶ AUTO PLAY</button><button id="retry" type="button">↻ RETRY</button></nav>
     <div class="end" id="end" role="dialog" aria-label="Level complete" aria-hidden="true">
       <div class="card"><div class="burst">🍿</div><h1>Good Job!</h1><p>The popcorn is ready!</p><button class="cta" id="cta" type="button">PLAY AGAIN</button><button class="continue" id="continue" type="button">KEEP POPPING</button><small>Juicy Journey</small></div>
     </div>
@@ -93,7 +96,7 @@
     <div class="wide-counter" id="wideCounter">0 / 3 LINES</div>
     <div class="wide-hint" id="wideHint">SWIPE DOWN THE BLUE LINE ↓</div>
     <div class="wide-steps"><div>↔ Drag one ring to line up colors</div><div>↓ Swipe a matching column</div></div>
-    <button class="wide-cta" id="wideCta" type="button">PLAY AGAIN</button>
+    <nav class="wide-auto-tools" aria-label="Demo controls"><button id="wideAuto" type="button" aria-pressed="false">▶ AUTO PLAY</button><button id="wideRetry" type="button">↻ RETRY</button></nav><button class="wide-cta" id="wideCta" type="button">PLAY AGAIN</button>
   </aside>
   </div>
   
@@ -377,6 +380,7 @@ function createCornRenderer(canvas) {
   return {draw,project,surfaceAngle,model,syncView,meshes:{kernels,popcorns,band,cap,socket,cube,sphere},eye,gl,gpu};
 }
 
+
 (() => {
   'use strict';
   const W=720,H=1280,ROWS=13,COLS=18,GOAL=3,STEP=Math.PI*2/COLS,RADIUS=2.46,TOP=8.02,PITCH=.62;
@@ -391,6 +395,12 @@ function createCornRenderer(canvas) {
   const rand=(a,b)=>a+Math.random()*(b-a);
   let candies=[],angles=[],snaps=[],pops=[],particles=[],bursts=[],hitCache=[],pointer=null,lines=0,goalReached=false;
   let tutorial=null,lastTime=performance.now(),soundOn=false,audioContext=null,session=0,lastInteraction=0,frames=0,sceneDirty=true;
+  let autoRunning=false,autoSession=false,autoAction=null,autoWait=0;
+  const autoButtons=['auto','wideAuto'].map(id=>document.getElementById(id));
+  function syncAuto(){for(const button of autoButtons){button.textContent=goalReached?'COMPLETE':autoRunning?'Ⅱ PAUSE':autoSession?'▶ RESUME':'▶ AUTO PLAY';button.disabled=goalReached;button.setAttribute('aria-pressed',String(autoRunning));}}
+  function releaseAutoTrace(time){if(pointer?.auto&&pointer.batch){let index=0;for(const item of pointer.order)queuePop(item,time+65*index++,pointer.batch);}if(pointer?.auto)pointer=null;}
+  function stopAuto(){releaseAutoTrace(performance.now());if(autoAction?.kind==='rotate'){const row=autoAction.row,from=angles[row];snaps[row]={from,to:Math.round(from/STEP)*STEP,time:performance.now()};}autoRunning=autoSession=false;autoAction=null;syncAuto();}
+  function toggleAuto(){if(goalReached)return;if(pointer&&!pointer.auto)return;autoRunning=!autoRunning;autoSession=true;syncAuto();}
   const plans=[{color:4,cells:[[3,0],[4,0],[5,0],[6,0]],row:3},
     {color:2,cells:[[0,1],[1,2],[2,2],[3,2]],row:0,target:STEP},
     {color:1,cells:[[7,16],[8,16],[9,16],[10,15]],row:10,target:STEP}];
@@ -423,6 +433,7 @@ function createCornRenderer(canvas) {
     else {tutorial={type:'free'};setHint('SPIN A RING TO LINE UP COLORS ↔');}
   }
   function reset(){session++;pointer=null;pops=[];particles=[];bursts=[];lines=0;goalReached=false;angles=Array(ROWS).fill(0);snaps=Array(ROWS).fill(null);sceneDirty=true;
+    autoRunning=autoSession=false;autoAction=null;autoWait=0;syncAuto();
     candies=Array.from({length:ROWS},(_,row)=>Array.from({length:COLS},(_,col)=>({row,col,color:(col*3+Math.floor(row/3)*2+Math.floor(col/4))%7,alive:true,reserved:false,popAt:null,variant:(row*7+col*11)%4,variation:Math.sin(row*27+col*53)})));
     for(let r=3;r<=6;r++)candies[r][0].color=4;candies[2][0].color=5;candies[7][0].color=3;
     for(let r=1;r<=3;r++)candies[r][2].color=2;candies[0][1].color=2;candies[4][2].color=6;
@@ -442,7 +453,7 @@ function createCornRenderer(canvas) {
   }
   function reserve(group,time){for(const item of group)item.reserved=true;return {group,started:time,count:0,done:false};}
   function queuePop(item,time,batch){if(item.popAt!==null||pops.some(p=>p.item===item))return;pops.push({item,time,batch});}
-  function completeBatch(batch){if(batch.done)return;batch.done=true;lines++;if(lines>=GOAL&&!goalReached){goalReached=true;shell.classList.add('won');document.getElementById('wideTitle').textContent='Good Job!';
+  function completeBatch(batch){if(batch.done)return;batch.done=true;lines++;if(lines>=GOAL&&!goalReached){goalReached=true;releaseAutoTrace(performance.now());autoRunning=false;autoAction=null;syncAuto();shell.classList.add('won');document.getElementById('wideTitle').textContent='Good Job!';
       const currentSession=session;setTimeout(()=>{if(session!==currentSession)return;const show=()=>{if(session!==currentSession)return;if(pointer){setTimeout(show,150);return;}end.classList.add('show');end.setAttribute('aria-hidden','false');};show();},1900);}
     setProgress();updateHint();}
   function updatePhysics(dt,time){
@@ -508,8 +519,10 @@ function createCornRenderer(canvas) {
     }
     ctx.globalAlpha=1;
   }
-  function render(time){const dt=clamp((time-lastTime)/1000,0,.10);lastTime=time;if(renderer.syncView())sceneDirty=true;const moving=sceneDirty||snaps.some(Boolean)||pointer?.mode==='rotate'||pops.length>0||particles.some(p=>!p.sleep)||bursts.some(b=>time-b.time<180);
-    updatePhysics(dt,time);if(moving){renderer.draw(buildScene(time));sceneDirty=false;}drawOverlay(time);frames++;requestAnimationFrame(render);}
+  function render(time){const dt=clamp((time-lastTime)/1000,0,.10);lastTime=time;if(renderer.syncView())sceneDirty=true;
+    const paused=autoSession&&!autoRunning&&!goalReached;if(paused){for(const p of pops)p.time+=dt*1000;for(const s of snaps)if(s)s.time+=dt*1000;for(const b of bursts)b.time+=dt*1000;for(const c of candies.flat())if(c.popAt!==null)c.popAt+=dt*1000;}else {updateAuto(dt,time);updatePhysics(dt,time);}
+    const moving=sceneDirty||!paused&&(snaps.some(Boolean)||pointer?.mode==='rotate'||pops.length>0||particles.some(p=>!p.sleep)||bursts.some(b=>time-b.time<180));
+    if(moving){renderer.draw(buildScene(time));sceneDirty=false;}drawOverlay(time);frames++;requestAnimationFrame(render);}
   function hitAt(x,y){let best=null,distance=Infinity;for(const p of hitCache){const d=((x-p.x)/p.rx)**2+((y-p.y)/p.ry)**2;
       if(d<1.35&&(p.depth<distance)){best=p;distance=p.depth;}}return best;}
   function point(e){const r=canvas.getBoundingClientRect();return {x:(e.clientX-r.left)*W/r.width,y:(e.clientY-r.top)*H/r.height};}
@@ -520,12 +533,31 @@ function createCornRenderer(canvas) {
     for(const item of g.order){if(item.popAt!==null||pops.some(p=>p.item===item))continue;const p=screen(item),t=length?clamp(((p.x-from.x)*dx+(p.y-from.y)*dy)/length,0,1):0;
       const x=from.x+dx*t,y=from.y+dy*t;if(Math.hypot((x-p.x)/.9,y-p.y)<35*p.scale){queuePop(item,time+delay,g.batch);delay+=45;}}
   }
+  // Align one ring at a time, then trace the same matching run as a real drag.
+  function nextAutoAction(){
+    updateHint();if(tutorial?.type==='trace')return {kind:'trace',items:tutorial.items.slice().sort((a,b)=>a.row-b.row),elapsed:0};
+    if(tutorial?.type==='rotate'){const plan=plans.find(p=>p.row===tutorial.row&&p.target!==undefined),row=tutorial.row;if(plan&&Math.abs(wrap(plan.target-angles[row]))>.015)return {kind:'rotate',row,from:angles[row],to:angles[row]+wrap(plan.target-angles[row]),elapsed:0};}
+    // After manual play, find a surviving color that can form a legal four-row line.
+    let best=null;for(let first=0;first<=ROWS-4;first++)for(let color=0;color<colors.length;color++){
+      const items=[];let cost=0;for(let row=first;row<first+4;row++){const choices=candies[row].filter(c=>c.alive&&!c.reserved&&c.color===color).sort((a,b)=>Math.abs(world(a).a)-Math.abs(world(b).a));if(!choices.length)break;items.push(choices[0]);cost+=Math.abs(world(choices[0]).a);}
+      if(items.length===4&&(!best||cost<best.cost))best={items,cost};
+    }
+    if(!best)return null;const item=best.items.find(c=>Math.abs(world(c).a)>.015);if(item){const row=item.row;return {kind:'rotate',row,from:angles[row],to:angles[row]-world(item).a,elapsed:0};}return {kind:'trace',items:matchingRun(best.items[0]),elapsed:0};
+  }
+  function updateAuto(dt,time){if(!autoRunning||goalReached)return;if(autoWait>0){autoWait-=dt;return;}if(!autoAction){if(pops.length||snaps.some(Boolean))return;autoAction=nextAutoAction();if(!autoAction){stopAuto();setHint('TRY ANOTHER LINE OR RETRY');return;}}
+    const action=autoAction;action.elapsed+=dt;
+    if(action.kind==='rotate'){const t=clamp(action.elapsed/.62,0,1),ease=t*t*(3-2*t);angles[action.row]=action.from+(action.to-action.from)*ease;sceneDirty=true;if(t===1){angles[action.row]=action.to;autoAction=null;autoWait=.24;updateHint();}}
+    else {if(!pointer){const first=screen(action.items[0]);pointer={id:-1,auto:true,anchor:action.items[0],row:action.items[0].row,startX:first.x,startY:first.y,lastX:first.x,lastY:first.y,trail:[]};startTrace(pointer,{x:first.x,y:first.y+1},time);if(!pointer.batch){pointer=null;autoAction=null;return;}}
+      const t=clamp(action.elapsed/.92,0,1),position=t*(action.items.length-1),index=Math.floor(position),a=screen(action.items[index]),b=screen(action.items[Math.min(index+1,action.items.length-1)]),blend=position-index,p={x:a.x+(b.x-a.x)*blend,y:a.y+(b.y-a.y)*blend};
+      traceSegment(pointer,{x:pointer.lastX,y:pointer.lastY},p,time);pointer.trail.push(p);pointer.lastX=p.x;pointer.lastY=p.y;if(pointer.trail.length>48)pointer.trail.shift();if(t===1){releaseAutoTrace(time);autoAction=null;autoWait=.35;updateHint();}
+    }
+  }
   function finish(e,cancelled=false){if(!pointer||e.pointerId!==pointer.id)return;const g=pointer,p=point(e),time=performance.now();
     if(g.mode==='rotate'){const from=angles[g.row],to=Math.round(from/STEP)*STEP;snaps[g.row]={from,to,time};}
     else if(g.mode==='trace'&&g.batch){traceSegment(g,{x:g.lastX,y:g.lastY},p,time);let index=0;for(const item of g.order){if(item.popAt!==null||pops.some(p=>p.item===item))continue;queuePop(item,time+65*(++index),g.batch);}}
     pointer=null;lastInteraction=time;updateHint();if(canvas.hasPointerCapture(e.pointerId))canvas.releasePointerCapture(e.pointerId);
   }
-  canvas.addEventListener('pointerdown',e=>{if(pointer||end.classList.contains('show'))return;const p=point(e),hit=hitAt(p.x,p.y);if(!hit)return;
+  canvas.addEventListener('pointerdown',e=>{if(end.classList.contains('show'))return;stopAuto();if(pointer)return;const p=point(e),hit=hitAt(p.x,p.y);if(!hit)return;
     e.preventDefault();canvas.setPointerCapture(e.pointerId);snaps[hit.item.row]=null;pointer={id:e.pointerId,anchor:hit.item,row:hit.item.row,startX:p.x,startY:p.y,lastX:p.x,lastY:p.y,startAngle:angles[hit.item.row],mode:'pending',surface:renderer.surfaceAngle(p.x,p.y),trail:[]};
     lastInteraction=performance.now();sceneDirty=true;if(soundOn&&audioContext?.state==='suspended')audioContext.resume();});
   canvas.addEventListener('pointermove',e=>{if(!pointer||e.pointerId!==pointer.id)return;e.preventDefault();const p=point(e),g=pointer,time=performance.now(),dx=p.x-g.lastX;
@@ -536,13 +568,15 @@ function createCornRenderer(canvas) {
   canvas.addEventListener('pointerup',e=>finish(e));canvas.addEventListener('pointercancel',e=>finish(e,true));
   canvas.addEventListener('lostpointercapture',e=>{if(pointer?.id===e.pointerId)finish(e,true);});
   sound.addEventListener('click',()=>{soundOn=!soundOn;window.__journeyAudio.setEnabled(soundOn);sound.textContent=soundOn?'♫':'♪';sound.setAttribute('aria-label',soundOn?'Turn sound off':'Turn sound on');if(soundOn)audioPop();});
+  for(const button of autoButtons)button.addEventListener('click',toggleAuto);
+  for(const id of ['retry','wideRetry'])document.getElementById(id).addEventListener('click',reset);
   const clickTag=window.clickTag||window.clickTAG||new URLSearchParams(location.search).get('clickTag');if(clickTag){cta.textContent='PLAY NOW';wideCta.textContent='PLAY NOW';}
   const onCta=()=>{if(clickTag)window.open(clickTag,'_blank');else reset();};cta.addEventListener('click',onCta);wideCta.addEventListener('click',onCta);
   document.getElementById('continue').addEventListener('click',()=>{end.classList.remove('show');end.setAttribute('aria-hidden','true');updateHint();});
   window.addEventListener('blur',()=>{if(pointer)finish({pointerId:pointer.id,clientX:0,clientY:0},true);});
   window.addEventListener('resize',()=>{sceneDirty=true;});
   canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();setHint('PLEASE RELOAD TO KEEP PLAYING');});
-  if(new URLSearchParams(location.search).has('qa'))Object.defineProperty(window,'__playable',{value:{state:()=>({lines,goalReached,angles:angles.slice(),snapping:snaps.map(Boolean),hint:hint.textContent,mode:pointer?.mode||null,alive:candies.flat().filter(c=>c.alive).length,pops:pops.length,frames,particles:particles.map(p=>({x:p.x,y:p.y,z:p.z,r:p.r,bounces:p.bounces,sleep:p.sleep})),renderer:'WebGL',gpu:renderer.gpu}),point:(r,c)=>screen(candies[r][c]),reset}});
+  if(new URLSearchParams(location.search).has('qa'))Object.defineProperty(window,'__playable',{value:{state:()=>({lines,goalReached,autoRunning,autoSession,autoAction:autoAction?.kind||null,autoRow:autoAction?.row??null,angles:angles.slice(),snapping:snaps.map(Boolean),hint:hint.textContent,mode:pointer?.mode||null,alive:candies.flat().filter(c=>c.alive).length,pops:pops.length,frames,particles:particles.map(p=>({x:p.x,y:p.y,z:p.z,r:p.r,bounces:p.bounces,sleep:p.sleep})),renderer:'WebGL',gpu:renderer.gpu}),point:(r,c)=>screen(candies[r][c]),reset}});
   reset();requestAnimationFrame(render);
 })();
 
