@@ -26,10 +26,10 @@ main{max-width:1320px;margin:auto;padding:0 24px 24px}.toolbar{position:sticky;t
 </style>
 </head>
 <body>
-<header class="topbar"><div class="header-inner"><img class="brand" src="corn/juicy-journey-logo.png" alt="Juicy Journey"><h1>试玩</h1><span class="count" aria-label="25 个试玩">25</span></div></header>
+<header class="topbar"><div class="header-inner"><img class="brand" src="corn/juicy-journey-logo.png" alt="Juicy Journey"><h1>试玩</h1><span class="count" aria-label="26 个试玩">26</span></div></header>
 <main>
- <div class="toolbar"><nav class="filters" aria-label="按玩法筛选，可多选，再次点击取消"><button class="filter" type="button" data-filter="全部" aria-pressed="true">全部</button><button class="filter" type="button" data-filter="消除" aria-pressed="false">消除</button><button class="filter" type="button" data-filter="经营" aria-pressed="false">经营</button><button class="filter" type="button" data-filter="方块" aria-pressed="false">方块</button><button class="filter" type="button" data-filter="拼图" aria-pressed="false">拼图</button><button class="filter" type="button" data-filter="寻物" aria-pressed="false">寻物</button><button class="filter" type="button" data-filter="装饰" aria-pressed="false">装饰</button><button class="filter" type="button" data-filter="连线" aria-pressed="false">连线</button></nav></div>
- <div class="sr-only" id="results" aria-live="polite">全部 25 个试玩</div>
+ <div class="toolbar"><nav class="filters" aria-label="按玩法筛选，可多选，再次点击取消"><button class="filter" type="button" data-filter="全部" aria-pressed="true">全部</button><button class="filter" type="button" data-filter="消除" aria-pressed="false">消除</button><button class="filter" type="button" data-filter="经营" aria-pressed="false">经营</button><button class="filter" type="button" data-filter="方块" aria-pressed="false">方块</button><button class="filter" type="button" data-filter="拼图" aria-pressed="false">拼图</button><button class="filter" type="button" data-filter="寻物" aria-pressed="false">寻物</button><button class="filter" type="button" data-filter="装饰" aria-pressed="false">装饰</button><button class="filter" type="button" data-filter="连线" aria-pressed="false">连线</button><button class="filter" type="button" data-filter="解谜" aria-pressed="false">解谜</button></nav></div>
+ <div class="sr-only" id="results" aria-live="polite">全部 26 个试玩</div>
  <section class="grid" id="gallery" aria-label="试玩样本"><article class="card" data-type="消除">
  <a class="playable" href="corn/index.html?v=autoplay-complete-20261009" aria-label="试玩：玉米旋转消除">
   <div class="poster"><img src="corn/preview-mobile.png" alt="玉米旋转消除预览" loading="eager" decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
@@ -154,9 +154,14 @@ main{max-width:1320px;margin:auto;padding:0 24px 24px}.toolbar{position:sticky;t
  <a class="playable" href="dot-link/index.html?v=dot-link-straight-auto-wide-margin-20261009" aria-label="试玩：同色双点连线">
   <div class="poster"><img src="dot-link/preview-mobile.png" alt="同色双点连线预览" loading="lazy" decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
   <div class="card-body"><h2>同色双点连线</h2><span class="category">连线</span></div>
+ </a></article>
+<article class="card" data-type="解谜">
+ <a class="playable" href="snake-puzzle/index.html?v=snake-puzzle-eight-levels-20261009" aria-label="试玩：贪吃蛇重力解谜">
+  <div class="poster"><img src="snake-puzzle/preview-mobile.png" alt="贪吃蛇重力解谜预览" loading="lazy" decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
+  <div class="card-body"><h2>贪吃蛇重力解谜</h2><span class="category">解谜</span></div>
  </a></article></section>
  <p class="empty" id="empty" hidden>没有找到试玩</p>
- <nav class="gallery-controls" aria-label="切换试玩"><button id="previous" type="button" aria-label="上一个试玩" disabled>‹</button><span class="page-counter" id="page-counter" aria-live="polite">1 / 25</span><button id="next" type="button" aria-label="下一个试玩">›</button></nav>
+ <nav class="gallery-controls" aria-label="切换试玩"><button id="previous" type="button" aria-label="上一个试玩" disabled>‹</button><span class="page-counter" id="page-counter" aria-live="polite">1 / 26</span><button id="next" type="button" aria-label="下一个试玩">›</button></nav>
 </main>
 <script>
 const filters=Array.from(document.querySelectorAll('[data-filter]')),cards=Array.from(document.querySelectorAll('.card')),gallery=document.getElementById('gallery'),previous=document.getElementById('previous'),next=document.getElementById('next'),counter=document.getElementById('page-counter');

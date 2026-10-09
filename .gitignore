@@ -44,6 +44,8 @@
 /rain-jigsaw/*
 !/seaside-cafe/
 /seaside-cafe/*
+!/snake-puzzle/
+/snake-puzzle/*
 !/sticker-shop/
 /sticker-shop/*
 !/sushi-belt/
@@ -141,6 +143,11 @@
 !/seaside-cafe/README.md
 !/seaside-cafe/index.html
 !/seaside-cafe/preview-mobile.png
+!/snake-puzzle/ASSET-NOTES.md
+!/snake-puzzle/README.md
+!/snake-puzzle/index.html
+!/snake-puzzle/preview-mobile.png
+!/snake-puzzle/口播翻译.md
 !/sticker-shop/ASSET-NOTES.md
 !/sticker-shop/README.md
 !/sticker-shop/index.html

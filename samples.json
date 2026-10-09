@@ -876,6 +876,47 @@
       "zipBytes": 612097,
       "htmlSha256": "7eef9d054e533152ecab8157e5c217754682c6958e3ed885ef7cc3ac6f90d123",
       "zipSha256": "1fd96d198745cfa207a5663263d18d46c24a2b2c2547976b993a2807046f7205"
+    },
+    {
+      "id": "snake-puzzle",
+      "name": "贪吃蛇重力解谜",
+      "type": "解谜",
+      "subtitle": "Snake Puzzle",
+      "image": "preview-mobile.png",
+      "desc": "吃苹果长身体，绕砖块转身，用身体搭桥；失去支撑时整条蛇一起下落。8 个短关卡，真实路线自动试玩，成功与失败、撤销和重试。",
+      "features": [
+        "8 个短关卡",
+        "吃苹果增长",
+        "整条蛇重力",
+        "身体搭桥",
+        "AUTO PLAY",
+        "暂停继续",
+        "独立操作音效",
+        "循环配乐"
+      ],
+      "operation": "滑动、方向按钮或方向键移动；吃完所有苹果进入旋涡，利用身体留在砖块上方保持支撑。",
+      "ending": "吃完苹果进入出口成功；坠落出界或触碰尖刺失败。支持撤销重试；自动试玩连续完成八关，最后画面保持。",
+      "reference": "Snake Puzzle_ Slither to Eat · 360 × 640",
+      "entry": "snake-puzzle/index.html",
+      "zip": "下载包/snake-puzzle.zip",
+      "readme": "snake-puzzle/README.md",
+      "audio": {
+        "title": "Ever So Blue - Onthou",
+        "format": "MP3",
+        "excerptSeconds": 30,
+        "bitrateKbps": 128,
+        "embedded": true,
+        "defaultEnabled": false,
+        "loop": true,
+        "source": "用户提供的 MP3",
+        "independentEffects": true
+      },
+      "sizeLimitBytes": 5000000,
+      "updated": "2026-10-09",
+      "revision": "snake-puzzle-eight-levels-20261009",
+      "htmlBytes": 775294,
+      "htmlSha256": "ca338ab033c2d408f5a0ef6e3d18c314399790e8cd40141a4458ecdd80c8ba96",
+      "zipBytes": 585796
     }
   ],
   "archive": {
