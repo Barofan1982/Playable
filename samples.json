@@ -837,10 +837,11 @@
       "type": "连线",
       "subtitle": "Dot Link",
       "image": "preview-mobile.png",
-      "desc": "自由画线连接同色双点，绕开其他点和已经连好的线。六个关卡逐步增加至六组点；画布与字母圆点放大，页签和控件精简，划线使用轻短清脆提示音。",
+      "desc": "自由画线连接同色双点，绕开其他点和已经连好的线。六关外围保留完整绕行空间，第一关自动示范使用笔直连线和清晰折线；大画布与字母圆点，划线使用轻短清脆提示音。",
       "features": [
         "6 个关卡",
         "自由画线",
+        "宽松外圈",
         "大画布圆点",
         "撤销重试",
         "AUTO PLAY",
@@ -864,11 +865,11 @@
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-09",
-      "revision": "dot-link-large-board-dots-clean-sfx-20261009",
-      "htmlBytes": 1031342,
-      "zipBytes": 624889,
-      "htmlSha256": "6a259e3e57af5bdee7b3880ec7fbc94f81f590190b27d69d31b8d1bf3d43e113",
-      "zipSha256": "6fe713a936ec9619d8dd687371b3ea10f43fbb38ef7dda0d632aa2e45b84fa74"
+      "revision": "dot-link-straight-auto-wide-margin-20261009",
+      "htmlBytes": 954306,
+      "zipBytes": 612097,
+      "htmlSha256": "7eef9d054e533152ecab8157e5c217754682c6958e3ed885ef7cc3ac6f90d123",
+      "zipSha256": "1fd96d198745cfa207a5663263d18d46c24a2b2c2547976b993a2807046f7205"
     }
   ],
   "archive": {
