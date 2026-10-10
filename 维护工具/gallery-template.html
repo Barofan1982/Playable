@@ -26,7 +26,7 @@ main{max-width:1320px;margin:auto;padding:0 24px 24px}.toolbar{position:sticky;t
 </style>
 </head>
 <body>
-<header class="topbar"><div class="header-inner"><img class="brand" src="corn/juicy-journey-logo.png" alt="Juicy Journey"><h1>试玩</h1><span class="count" aria-label="__COUNT__ 个试玩">__COUNT__</span></div></header>
+<header class="topbar"><div class="header-inner"><img class="brand" src="corn/juicy-journey-logo.webp" alt="Juicy Journey" width="200" height="106"><h1>试玩</h1><span class="count" aria-label="__COUNT__ 个试玩">__COUNT__</span></div></header>
 <main>
  <div class="toolbar"><nav class="filters" aria-label="按玩法筛选，可多选，再次点击取消">__FILTERS__</nav></div>
  <div class="sr-only" id="results" aria-live="polite">全部 __COUNT__ 个试玩</div>
@@ -37,10 +37,18 @@ main{max-width:1320px;margin:auto;padding:0 24px 24px}.toolbar{position:sticky;t
 <script>
 const filters=Array.from(document.querySelectorAll('[data-filter]')),cards=Array.from(document.querySelectorAll('.card')),gallery=document.getElementById('gallery'),previous=document.getElementById('previous'),next=document.getElementById('next'),counter=document.getElementById('page-counter');
 let visible=cards.slice(),active=0,pendingFrame=0,snapTimer=0;const selectedTypes=new Set();
+let imageObserver;
+function loadPreview(img){if(!img.dataset.src)return;img.src=img.dataset.src;delete img.dataset.src;imageObserver?.unobserve(img);}
+function observePreviews(){
+ imageObserver?.disconnect();const horizontal=getComputedStyle(gallery).display==='flex';
+ if(typeof IntersectionObserver==='undefined'){for(const card of visible)loadPreview(card.querySelector('img'));return;}
+ imageObserver=new IntersectionObserver(entries=>{for(const entry of entries)if(entry.isIntersecting)loadPreview(entry.target);},{root:horizontal?gallery:null,rootMargin:horizontal?'0px 160px':'160px 0px'});
+ for(const img of gallery.querySelectorAll('img[data-src]'))imageObserver.observe(img);
+}
 function updatePager(){counter.textContent=visible.length?(active+1)+' / '+visible.length:'0 / 0';previous.disabled=active===0;next.disabled=active>=visible.length-1;}
 function findActive(){pendingFrame=0;if(!visible.length)return;const bounds=gallery.getBoundingClientRect(),center=bounds.left+bounds.width/2;let distance=Infinity;for(let i=0;i<visible.length;i++){const r=visible[i].getBoundingClientRect(),d=Math.abs(r.left+r.width/2-center);if(d<distance){distance=d;active=i;}}updatePager();}
 function alignCard(index,behavior){if(!visible[index]||getComputedStyle(gallery).display!=='flex')return;const r=visible[index].getBoundingClientRect(),g=gallery.getBoundingClientRect(),left=gallery.scrollLeft+r.left-g.left-(g.width-r.width)/2;if(Math.abs(gallery.scrollLeft-left)>1)gallery.scrollTo({left,behavior:behavior||(matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth')});}
-function layoutGallery(){const style=getComputedStyle(gallery);if(style.display!=='flex'){active=0;updatePager();return;}const height=gallery.clientHeight-parseFloat(style.paddingTop)-parseFloat(style.paddingBottom),width=Math.max(1,Math.min(gallery.clientWidth-24,height*9/16));gallery.style.setProperty('--card-width',width+'px');gallery.style.setProperty('--gallery-inset',Math.max(12,(gallery.clientWidth-width)/2)+'px');clearTimeout(snapTimer);alignCard(active,'instant');updatePager();}
+function layoutGallery(){const style=getComputedStyle(gallery);if(style.display!=='flex'){active=0;updatePager();observePreviews();return;}const height=gallery.clientHeight-parseFloat(style.paddingTop)-parseFloat(style.paddingBottom),width=Math.max(1,Math.min(gallery.clientWidth-24,height*9/16));gallery.style.setProperty('--card-width',width+'px');gallery.style.setProperty('--gallery-inset',Math.max(12,(gallery.clientWidth-width)/2)+'px');clearTimeout(snapTimer);alignCard(active,'instant');updatePager();observePreviews();}
 function go(delta){clearTimeout(snapTimer);const destination=Math.max(0,Math.min(visible.length-1,active+delta));alignCard(destination);}
 for(const filter of filters)filter.addEventListener('click',()=>{const selected=filter.dataset.filter;if(selected==='全部')selectedTypes.clear();else if(selectedTypes.has(selected))selectedTypes.delete(selected);else selectedTypes.add(selected);clearTimeout(snapTimer);if(pendingFrame)cancelAnimationFrame(pendingFrame);pendingFrame=0;gallery.scrollTo({left:0,behavior:'instant'});for(const button of filters)button.setAttribute('aria-pressed',String(button.dataset.filter==='全部'?selectedTypes.size===0:selectedTypes.has(button.dataset.filter)));for(const card of cards)card.hidden=selectedTypes.size>0&&!selectedTypes.has(card.dataset.type);visible=cards.filter(card=>!card.hidden);active=0;gallery.scrollTo({left:0,behavior:'instant'});document.getElementById('results').textContent=(selectedTypes.size?[...selectedTypes].join('、'):'全部')+'，'+visible.length+' 个试玩';document.getElementById('empty').hidden=visible.length!==0;layoutGallery();updatePager();});
 gallery.addEventListener('scroll',()=>{if(!pendingFrame)pendingFrame=requestAnimationFrame(findActive);clearTimeout(snapTimer);if(getComputedStyle(gallery).display==='flex')snapTimer=setTimeout(()=>{findActive();alignCard(active);},150);},{passive:true});previous.addEventListener('click',()=>go(-1));next.addEventListener('click',()=>go(1));window.addEventListener('resize',()=>requestAnimationFrame(layoutGallery));if(typeof ResizeObserver!=='undefined')new ResizeObserver(layoutGallery).observe(gallery);layoutGallery();updatePager();

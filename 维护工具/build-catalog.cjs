@@ -11,8 +11,8 @@ const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'
 for(const s of samples){s.entry=s.id+'/index.html';s.zip='下载包/'+s.id+'.zip';s.readme=s.id+'/README.md';s.htmlBytes=fs.statSync(path.join(root,s.entry)).size;if(fs.existsSync(path.join(root,s.zip)))s.zipBytes=fs.statSync(path.join(root,s.zip)).size;}
 fs.writeFileSync(path.join(root,'samples.json'),JSON.stringify({...manifest,brand:'Juicy Journey',updated,samples,archive:{earlyZip:'历史版本/旧下载包/corn-早期包.zip'}},null,2));
 const cards=samples.map((s,i)=>`<article class="card" data-type="${esc(s.type)}">
- <a class="playable" href="${s.entry}${s.revision?'?v='+esc(s.revision):''}" aria-label="试玩：${esc(s.name)}">
-  <div class="poster"><img src="${s.id}/${s.image}" alt="${esc(s.name)}预览" loading="${i<6?'eager':'lazy'}" decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
+ <a class="playable" href="${s.entry}${s.revision?'?v='+esc(s.revision):''}" target="_blank" rel="noopener" aria-label="试玩：${esc(s.name)}">
+  <div class="poster"><img ${i===0?'src':'data-src'}="${s.id}/${s.image}" alt="${esc(s.name)}预览" ${i===0?'fetchpriority="high"':''} decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
   <div class="card-body"><h2>${esc(s.name)}</h2><span class="category">${esc(s.type)}</span></div>
  </a></article>`).join('\n');
 const types=[...new Set(samples.map(s=>s.type))];
@@ -27,7 +27,7 @@ fs.writeFileSync(path.join(root,'README.md'),`# Juicy Journey · 可玩广告合
 
 仓库：[Barofan1982/Playable](https://github.com/Barofan1982/Playable)。
 
-根目录的 [index.html](index.html) 是合集首页。卡片只显示预览图、标题和分类，点击整张卡片直接进入试玩。预览统一使用 9:16 竖图，截图上下左右居中裁切，铺满卡片。手机端固定一屏，预览按屏幕可用空间尽量放大，标题叠在图片底部，通过左右滑动切换卡片。分类按钮高度为 48 像素，可同时选中多个类型，再次点击取消；多个类型合并显示，全部取消或点击“全部”恢复全部试玩。桌面端使用多列画廊。页面不提供文件下载选项。
+根目录的 [index.html](index.html) 是合集首页。卡片只显示预览图、标题和分类，点击整张卡片在新窗口打开独立试玩。预览统一使用 9:16 竖图，截图上下左右居中裁切，铺满卡片。手机端固定一屏，预览按屏幕可用空间尽量放大，标题叠在图片底部，通过左右滑动切换卡片。分类按钮高度为 48 像素，可同时选中多个类型，再次点击取消；多个类型合并显示，全部取消或点击“全部”恢复全部试玩。桌面端使用多列画廊。页面不提供文件下载选项。
 
 ## 分类口径
 
@@ -55,7 +55,7 @@ GitHub 中保存首页、${samples.length} 个独立试玩、预览图、必要�
 
 ## 配乐与体积
 
-${musicCount} 个试玩使用用户提供的 Ever So Blue - Onthou，前 30 秒、MP3 128 kbps 循环。配乐默认关闭；贴纸杂货店、同色双点连线、贪吃蛇重力解谜与堆叠合成接单的操作音效独立于音乐按钮，其余样本沿用原有声音开关逻辑。
+${musicCount} 个试玩使用用户提供的 Ever So Blue - Onthou，前 30 秒、MP3 128 kbps 循环。配乐默认关闭，按音乐按钮后才解码并循环播放。全部样本的操作音效独立于音乐开关；后台隐藏时暂停声音。大图采用 WebP，列表按可见位置加载预览图。独立试玩中不设置返回列表按钮。
 
 各 HTML 均低于 5,000,000 字节。[体积记录](体积与音乐检查.md)。
 

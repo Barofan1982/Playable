@@ -18,7 +18,7 @@ Blast each column to crack its stone plate · drain the tank
 ## 文件与体积
 
 - index.html：可离线运行的独立 HTML，图片、绘制逻辑和 30 秒 MP3 全部内嵌。
-- HTML：796,486 字节（0.796 MB）
+- HTML：769,829 字节（0.770 MB）
 - 上限：5,000,000 字节。
 - source/：本样本的独立源文件，修改后执行 build.cjs。
 - ZIP：合集 下载包/water-tower.zip。
@@ -28,3 +28,7 @@ Blast each column to crack its stone plate · drain the tank
 C:\Users\barof\Downloads\Royal Kingdom-720 X 900-2026-10-03-edbbaa9cdae25993d7d67c125173e781.mp4
 
 按参考视频的玩法和主要机关重建；商品、场景、麻将、线路及 Sera 均为本地绘制图形，未复制原片截图或品牌素材。
+
+## 2026-10-10 载入与独立试玩更新
+
+图片使用压缩后的内嵌 WebP。音乐数据放在玩法代码后，点击音乐按钮才解码；手动操作音效独立于音乐开关。HTML 无需外部图片、脚本或音乐文件即可运行。试玩界面没有返回列表按钮；合集卡片在新窗口打开本样本。

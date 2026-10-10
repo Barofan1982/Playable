@@ -7,7 +7,7 @@
       "name": "玉米旋转消除",
       "type": "消除",
       "subtitle": "Ring & Pop",
-      "image": "preview-mobile.png",
+      "image": "preview.webp",
       "desc": "逐行转动玉米圆环，对齐颜色，再沿同色连线拖动消除，变成爆米花。 支持 AUTO PLAY 自动操作、暂停继续及手动重试。",
       "features": [
         "单行旋转",
@@ -22,8 +22,8 @@
       "entry": "corn/index.html",
       "zip": "下载包/corn.zip",
       "readme": "corn/README.md",
-      "htmlBytes": 790537,
-      "zipBytes": 586437,
+      "htmlBytes": 763879,
+      "zipBytes": 566586,
       "audio": {
         "title": "Ever So Blue - Onthou",
         "format": "MP3",
@@ -32,20 +32,22 @@
         "embedded": true,
         "defaultEnabled": false,
         "loop": true,
-        "source": "用户提供的 MP3"
+        "source": "用户提供的 MP3",
+        "independentEffects": true,
+        "deferredDecoding": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "4962267d0c71e88caecde8b282a20b1a6c638d66b0632f7c64b9df2a9787a019",
-      "zipSha256": "9b1d0428d12fa53bb177ea9f29f27795a63a40d300fa706a1f2468d262807ee2",
-      "updated": "2026-10-09",
-      "revision": "autoplay-complete-20261009"
+      "htmlSha256": "bc62ecf0963157d0b04050be4a793c36a8f7905dd828a145a0fec642d33ceb54",
+      "zipSha256": "0de26ddf28bb87cd86b7991adb20de383326c2e1be501bf75288c971eb34b11a",
+      "updated": "2026-10-10",
+      "revision": "startup-optimized-20261010"
     },
     {
       "id": "market",
       "name": "饮料摊经营",
       "type": "经营",
       "subtitle": "Juice Bar Rush",
-      "image": "preview-mobile.png",
+      "image": "preview.webp",
       "desc": "控制角色取饮料、搬运、服务顾客、收款，再升级机器和扩建第二个柜台。 主角使用 Sera 造型，货物和现金随身搬运，抵达购买点后逐叠付款。 Sera 采用交替抬脚、弯膝和反向摆臂，背货时继续走路，停下后回到站姿。 支持 AUTO PLAY 自动操作、暂停继续及手动重试。",
       "features": [
         "自由移动",
@@ -63,8 +65,8 @@
       "entry": "market/index.html",
       "zip": "下载包/market.zip",
       "readme": "market/README.md",
-      "htmlBytes": 806469,
-      "zipBytes": 595060,
+      "htmlBytes": 779471,
+      "zipBytes": 575161,
       "audio": {
         "title": "Ever So Blue - Onthou",
         "format": "MP3",
@@ -73,20 +75,22 @@
         "embedded": true,
         "defaultEnabled": false,
         "loop": true,
-        "source": "用户提供的 MP3"
+        "source": "用户提供的 MP3",
+        "independentEffects": true,
+        "deferredDecoding": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "069e9ff505a84338b35ad39050ad98dad55c19f876341842ba6b129590e64fef",
-      "zipSha256": "e12bc8776f61d5c2af4d87446474884b6912b5446763ff09bb55b2773b07daa1",
-      "updated": "2026-10-09",
-      "revision": "autoplay-complete-20261009"
+      "htmlSha256": "c2f95e5d2ad9899c8019eb22d04f5f47f1cd5197fe4b300bf8db756eea129297",
+      "zipSha256": "b7cdb30c664d76874b1a416d72257f75510c7a9d268006e6d857a58575b0d511",
+      "updated": "2026-10-10",
+      "revision": "startup-optimized-20261010"
     },
     {
       "id": "block",
       "name": "俄罗斯方块",
       "type": "方块",
       "subtitle": "Rainbow Block Rush",
-      "image": "preview.png",
+      "image": "preview.webp",
       "desc": "随机出块，旋转和选择落点。只有整排填满才消除，持续清理初始彩虹墙。 支持 AUTO PLAY 自动操作、暂停继续及手动重试。",
       "features": [
         "随机出块",
@@ -101,8 +105,8 @@
       "entry": "block/index.html",
       "zip": "下载包/block.zip",
       "readme": "block/README.md",
-      "htmlBytes": 870459,
-      "zipBytes": 654692,
+      "htmlBytes": 816214,
+      "zipBytes": 613172,
       "audio": {
         "title": "Ever So Blue - Onthou",
         "format": "MP3",
@@ -111,20 +115,22 @@
         "embedded": true,
         "defaultEnabled": false,
         "loop": true,
-        "source": "用户提供的 MP3"
+        "source": "用户提供的 MP3",
+        "independentEffects": true,
+        "deferredDecoding": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "5c56916099b820e015095decc13a15bfed3376f46097d710344c7e4afa584b89",
-      "zipSha256": "4e13974e5e70a946c568175b2cb21201d446dc6369d5c6ccc8f548737b4341df",
-      "updated": "2026-10-09",
-      "revision": "autoplay-complete-20261009"
+      "htmlSha256": "3548e1adf593742ee665696bc28fb4f256be3ed768d7c097f4cfdc6a45e4301e",
+      "zipSha256": "0271782a948ea586dabff8687bab7b8fb5b0cf5298f2669b2b4d7eff31d5f3a3",
+      "updated": "2026-10-10",
+      "revision": "startup-optimized-20261010"
     },
     {
       "id": "jigsaw",
       "name": "公主蝴蝶拼图",
       "type": "拼图",
       "subtitle": "Princess & Butterflies",
-      "image": "preview-completed.png",
+      "image": "preview.webp",
       "desc": "两阶段补齐 24 块拼图，底部左右滑动选择全部待拼块，完成后播放蝴蝶动画。",
       "features": [
         "全部拼块可选",
@@ -138,8 +144,8 @@
       "entry": "jigsaw/index.html",
       "zip": "下载包/jigsaw.zip",
       "readme": "jigsaw/README.md",
-      "htmlBytes": 1690977,
-      "zipBytes": 1289087,
+      "htmlBytes": 1636734,
+      "zipBytes": 1247051,
       "audio": {
         "title": "Ever So Blue - Onthou",
         "format": "MP3",
@@ -148,19 +154,22 @@
         "embedded": true,
         "defaultEnabled": false,
         "loop": true,
-        "source": "用户提供的 MP3"
+        "source": "用户提供的 MP3",
+        "independentEffects": true,
+        "deferredDecoding": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "d7e16f8076394c101ff838c8cf654c4ab2e54fa4a147f2bd2d748f9b2b966a2c",
-      "zipSha256": "e3f5a3db1b915ad4e4a77f451333aa8240fe65d80d74029cf28a6c13818038b7",
-      "updated": "2026-10-08"
+      "htmlSha256": "ff7c66ce620b223a286cf03248fa70754779800bd00bb8326638b3bf266f5168",
+      "zipSha256": "4c15569fef01e6d21dfda801adec7e272cfe518bba04e8b7458fa38585423cab",
+      "updated": "2026-10-10",
+      "revision": "startup-optimized-20261010"
     },
     {
       "id": "rain-jigsaw",
       "name": "雨夜撑伞拼图",
       "type": "拼图",
       "subtitle": "Rainy Night Jigsaw",
-      "image": "preview-completed.png",
+      "image": "preview.webp",
       "desc": "使用撑伞人物图片完成两阶段拼图，结尾呈现雨线、伞面水花、滴水和地面涟漪。",
       "features": [
         "撑伞人物图",
@@ -174,8 +183,8 @@
       "entry": "rain-jigsaw/index.html",
       "zip": "下载包/rain-jigsaw.zip",
       "readme": "rain-jigsaw/README.md",
-      "htmlBytes": 1416154,
-      "zipBytes": 1079278,
+      "htmlBytes": 1361911,
+      "zipBytes": 1037339,
       "audio": {
         "title": "Ever So Blue - Onthou",
         "format": "MP3",
@@ -184,19 +193,22 @@
         "embedded": true,
         "defaultEnabled": false,
         "loop": true,
-        "source": "用户提供的 MP3"
+        "source": "用户提供的 MP3",
+        "independentEffects": true,
+        "deferredDecoding": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "fd6f2d1220be897a920e710c55b17f22ed5f40c9e2d95c66d5a47cf71e645f0e",
-      "zipSha256": "bf83f7f71e6193430a0983d25438dc83668e945f5e60325b699f71dc5d595a81",
-      "updated": "2026-10-08"
+      "htmlSha256": "22072ae01d52656d4bc49cc69a8799872eb0ddbb19d7b7418bedf7c111c340fc",
+      "zipSha256": "dcab56828bdbb8807c12f9fa80451bee0284dbaa6d894d39e71f09de0b4cce4a",
+      "updated": "2026-10-10",
+      "revision": "startup-optimized-20261010"
     },
     {
       "id": "merge-cook",
       "name": "海岛合并烹饪",
       "type": "消除",
       "subtitle": "Island Merge & Cook",
-      "image": "preview-completed-mobile.png",
+      "image": "preview.webp",
       "desc": "将相同食材拖到一起消除，获得烤箱、食材篮和烤架奖励，清空 91 格露出海岛人物图。",
       "features": [
         "拖拽配对",
@@ -210,8 +222,8 @@
       "entry": "merge-cook/index.html",
       "zip": "下载包/merge-cook.zip",
       "readme": "merge-cook/README.md",
-      "htmlBytes": 2096685,
-      "zipBytes": 1610029,
+      "htmlBytes": 1896951,
+      "zipBytes": 1456661,
       "audio": {
         "title": "Ever So Blue - Onthou",
         "format": "MP3",
@@ -220,20 +232,22 @@
         "embedded": true,
         "defaultEnabled": false,
         "loop": true,
-        "source": "用户提供的 MP3"
+        "source": "用户提供的 MP3",
+        "independentEffects": true,
+        "deferredDecoding": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "907c2e62d790081ceeea841dc936bd73ca5c73ae241974f55bc189de8a721740",
-      "zipSha256": "54b6e97db1f8d857c24669c233dd8e12f98600efbbd24ecbcc5937ccc011b95d",
-      "revision": "merge-cook-targeted-blasts-20261008",
-      "updated": "2026-10-08"
+      "htmlSha256": "f8ab1fd981f3f04d1e0b456492c7ad268e11e1d62a03824265e8fac0aa0cffd9",
+      "zipSha256": "2bdda86934a49096d0a4b9c5ff0a1a937753df5aaf092eb0d70378737ddb7c7d",
+      "revision": "startup-optimized-20261010",
+      "updated": "2026-10-10"
     },
     {
       "id": "drink-merge",
       "name": "饮品发射合并",
       "type": "合成",
       "subtitle": "Beach Juice Merge",
-      "image": "preview-mobile.png",
+      "image": "preview.webp",
       "desc": "左右选位、松手发射，杯子紧凑错列，同级磁吸范围恢复并扩大 30%，相互传力，合成后继承惯性继续滑行，最终水果壶交付订单。",
       "features": [
         "紧凑错列盘面",
@@ -247,8 +261,8 @@
       "entry": "drink-merge/index.html",
       "zip": "下载包/drink-merge.zip",
       "readme": "drink-merge/README.md",
-      "htmlBytes": 1568409,
-      "zipBytes": 1197523,
+      "htmlBytes": 1356140,
+      "zipBytes": 1034467,
       "audio": {
         "title": "Ever So Blue - Onthou",
         "format": "MP3",
@@ -257,19 +271,22 @@
         "embedded": true,
         "defaultEnabled": false,
         "loop": true,
-        "source": "用户提供的 MP3"
+        "source": "用户提供的 MP3",
+        "independentEffects": true,
+        "deferredDecoding": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "746b918d474af02cbd681fd5d8679c39f39b048ee45e8b04132ce3c79f892934",
-      "zipSha256": "b980278bdabfea088e337dc8ee90195855282a74feb0e272449de88227cc8f1a",
-      "updated": "2026-10-08"
+      "htmlSha256": "fc173bd67bc2c0d7f745f26cb3a2073c6c6e8409ec103d6e85370d0e5021ec45",
+      "zipSha256": "be22866fc78ef39864ba5549d70ccc325f0959a57c62c6173aca48f210a6644d",
+      "updated": "2026-10-10",
+      "revision": "startup-optimized-20261010"
     },
     {
       "id": "sushi-belt",
       "name": "寿司传送带",
       "type": "经营",
       "subtitle": "Sushi Belt Kitchen",
-      "image": "preview-mobile.png",
+      "image": "preview.webp",
       "desc": "五列随机食材按前端同类组出料，厨师加工后逐份交付；8 位顾客随机入座，完成 52 单，顶部头像、订单和进度分开显示。 中央主厨固定使用用户提供的 Sera 立绘，开局、加工和重试均保持同一角色。",
       "features": [
         "8 位顾客随机入座",
@@ -284,8 +301,8 @@
       "entry": "sushi-belt/index.html",
       "zip": "下载包/sushi-belt.zip",
       "readme": "sushi-belt/README.md",
-      "htmlBytes": 4321925,
-      "zipBytes": 3328126,
+      "htmlBytes": 3340119,
+      "zipBytes": 2569763,
       "audio": {
         "title": "Ever So Blue - Onthou",
         "format": "MP3",
@@ -294,20 +311,22 @@
         "embedded": true,
         "defaultEnabled": false,
         "loop": true,
-        "source": "用户提供的 MP3"
+        "source": "用户提供的 MP3",
+        "independentEffects": true,
+        "deferredDecoding": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "5ac8c25eeef47469c511a0f30128ae04a512a4ec0ffb9f5efa1c218e115df5dc",
-      "zipSha256": "5d430d957631e36b09735585e20572943dcc77c5e75bbdb63b3cf463d70defc7",
-      "updated": "2026-10-08",
-      "revision": "sushi-clean-portrait-20261008"
+      "htmlSha256": "9e66451745eefc9f0d50681f083a397c496e59dfeb79afdffca885718d2f317d",
+      "zipSha256": "2018d13737a5c5787f0a69dc8aad84d34c8cca56df87147934ef21700aa2d295",
+      "updated": "2026-10-10",
+      "revision": "startup-optimized-20261010"
     },
     {
       "id": "hidden-laundry",
       "name": "洗衣房寻物",
       "type": "寻物",
       "subtitle": "Sera’s Laundry Day",
-      "image": "preview-mobile.png",
+      "image": "preview.webp",
       "desc": "十件物品统一使用同一视角，按架板、台面和篮沿摆放，保留前景遮挡。找齐后显示 Good Job! 并保持最后画面。",
       "features": [
         "统一道具视角",
@@ -321,8 +340,8 @@
       "entry": "hidden-laundry/index.html",
       "zip": "下载包/hidden-laundry.zip",
       "readme": "hidden-laundry/README.md",
-      "htmlBytes": 3059981,
-      "zipBytes": 2357787,
+      "htmlBytes": 2666496,
+      "zipBytes": 2054636,
       "audio": {
         "title": "Ever So Blue - Onthou",
         "format": "MP3",
@@ -331,19 +350,22 @@
         "embedded": true,
         "defaultEnabled": false,
         "loop": true,
-        "source": "用户提供的 MP3"
+        "source": "用户提供的 MP3",
+        "independentEffects": true,
+        "deferredDecoding": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "d481c1be566ee16af04b0316f1f675159c9def1da0075e919dbdcbac020a2bd5",
-      "zipSha256": "02dd05a77eadcc671ae14316c591df8e1e79bf92c73a6525dffe1853ea1c2b75",
-      "updated": "2026-10-08"
+      "htmlSha256": "6527eac0913b3b756583063a144dec191e223fc8d349e6631f3fe667f33e9be2",
+      "zipSha256": "754276c87b9a7910f15e9a8a2c3b034cc55156bf673dbc07a83dc25a2534d838",
+      "updated": "2026-10-10",
+      "revision": "startup-optimized-20261010"
     },
     {
       "id": "cup-shooter",
       "name": "杯子泡泡射击",
       "type": "消除",
       "subtitle": "Cup Pop Bridge",
-      "image": "preview-mobile.png",
+      "image": "preview.webp",
       "desc": "在海上木桥瞄准发射彩色杯子，切换三杯备选；同色成组消除，失去连接的杯子弹起滚落，逐段清空心形与菱形盘面。",
       "features": [
         "拖动瞄准",
@@ -366,21 +388,24 @@
         "embedded": true,
         "defaultEnabled": false,
         "loop": true,
-        "source": "用户提供的 MP3"
+        "source": "用户提供的 MP3",
+        "independentEffects": true,
+        "deferredDecoding": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlBytes": 763948,
-      "zipBytes": 580145,
-      "htmlSha256": "0c02f7e773655adefcf497844b8c13887d5bb814706782fbfa5552e347b282c9",
-      "updated": "2026-10-08",
-      "zipSha256": "86662fa4e8b8a2e9307373737eeb423c8e9713e1e84927ee04c3b78370f314c7"
+      "htmlBytes": 737293,
+      "zipBytes": 559951,
+      "htmlSha256": "a3d74687615d7b51fed7b9d116606ea4c979c9e806ed71613139c7388f149a06",
+      "updated": "2026-10-10",
+      "zipSha256": "69b7f8b8a09dd3d300ae625f486ac90f432a507d3aae75692c582e75fdaadd2e",
+      "revision": "startup-optimized-20261010"
     },
     {
       "id": "hotel-tycoon",
       "name": "海岛酒店经营",
       "type": "经营",
       "subtitle": "Island Hotel Tycoon",
-      "image": "preview-mobile.png",
+      "image": "preview.webp",
       "desc": "首桌 60、两趟搬钱开局；经历 10 项建设，付费雇佣四类收款员与清洁员。泳池入口有实体开门动画，开张资金为 3000，人数与资金进度集中在顶部，开张按钮融入任务栏。 主角使用 Sera 造型，货物和现金随身搬运，抵达购买点后逐叠付款。 Sera 采用交替抬脚、弯膝和反向摆臂，背货时继续走路，停下后回到站姿。",
       "features": [
         "俯视 2.5D",
@@ -408,21 +433,24 @@
         "embedded": true,
         "defaultEnabled": false,
         "loop": true,
-        "source": "用户提供的 MP3"
+        "source": "用户提供的 MP3",
+        "independentEffects": true,
+        "deferredDecoding": true
       },
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-08",
-      "htmlBytes": 842482,
-      "zipBytes": 611214,
-      "htmlSha256": "d51c745bfadd9c0372287a856ab68303403f3f7921476e1bff3ac28165e28960",
-      "zipSha256": "c7857f8b655489d9057132f60de33ac03e39da8e11cf05373938ca30d0a26403"
+      "updated": "2026-10-10",
+      "htmlBytes": 815825,
+      "zipBytes": 591087,
+      "htmlSha256": "869d8cd0570e6dca1d443f4ddfab0ed888a8528c6c3549251501284baf4c0022",
+      "zipSha256": "a19fe7c1969ab453bc78ad6f20b1ca31d34615eecf088e43f49b780adf5b93c2",
+      "revision": "startup-optimized-20261010"
     },
     {
       "id": "flower-shop",
       "name": "花店收割经营",
       "type": "经营",
       "subtitle": "Bloom & Sell",
-      "image": "preview-mobile.png",
+      "image": "preview.webp",
       "desc": "收割、打包、搬运、出售，逐步雇用八位员工；扩建四块花田和两个柜台，最多六路同时售卖，减少库存堆积，开张花卉节。 主角使用 Sera 造型，货物和现金随身搬运，抵达购买点后逐叠付款。 Sera 采用交替抬脚、弯膝和反向摆臂，背货时继续走路，停下后回到站姿。",
       "features": [
         "斜向 2.5D",
@@ -451,21 +479,24 @@
         "embedded": true,
         "defaultEnabled": false,
         "loop": true,
-        "source": "用户提供的 MP3"
+        "source": "用户提供的 MP3",
+        "independentEffects": true,
+        "deferredDecoding": true
       },
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-08",
-      "htmlBytes": 824815,
-      "zipBytes": 622330,
-      "htmlSha256": "37f176cc1075a46daa393e818e8515c5849a55fd37d2d2251b4221d517836069",
-      "zipSha256": "8a92ddee455fa919d575f48ac2fd589c3a77c4c27566ad0152b2676a75e85e27"
+      "updated": "2026-10-10",
+      "htmlBytes": 798158,
+      "zipBytes": 602523,
+      "htmlSha256": "6b7957ebd422cd2c9560f44a3013fb533410a7fec3866aaf40769a0992f9574e",
+      "zipSha256": "1689c791395dfae976360a883d5e23d5a48e3e2e3b454831a73709abec384832",
+      "revision": "startup-optimized-20261010"
     },
     {
       "id": "seaside-cafe",
       "name": "海滨双层果汁餐厅",
       "type": "经营",
       "subtitle": "Seaside Juice Café",
-      "image": "preview-mobile.png",
+      "image": "preview.webp",
       "desc": "上下楼经营海滨餐厅：榨汁、搬运、送餐、收钱、清桌，逐步开启三张餐桌和员工。",
       "features": [
         "真实上下楼动线",
@@ -481,19 +512,19 @@
       "readme": "seaside-cafe/README.md",
       "audio": "MP3 128 kbps · 30秒 · 默认关闭",
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-08",
-      "htmlBytes": 837008,
-      "zipBytes": 604588,
-      "htmlSha256": "4781d6d12b068f50ba9290a0449db1210fe8ea554e1c6ce7b118add40d0418b5",
-      "zipSha256": "22e29c6e1662b07a55eab9f1e3dd79ba9ab16b12305b33e442df72816e18d267",
-      "revision": "pace-continuous-20261004"
+      "updated": "2026-10-10",
+      "htmlBytes": 810351,
+      "zipBytes": 584802,
+      "htmlSha256": "bfeb0da348e33219da4a4d9948f4b26a257f78c8b9f6a137f1be28104a2e2d90",
+      "zipSha256": "a278a89de4e160739e7371b459484af1dee400d9c13de5662fcdc941d4e4c8bd",
+      "revision": "startup-optimized-20261010"
     },
     {
       "id": "juice-factory",
       "name": "橙汁工厂与人潮",
       "type": "经营",
       "subtitle": "Orange Rush Factory",
-      "image": "preview-mobile.png",
+      "image": "preview.webp",
       "desc": "经营橙汁工厂，搬运玻璃杯到柜台，解锁果实传送带、四条独立队列和多名员工。",
       "features": [
         "多条独立顾客队列",
@@ -509,19 +540,19 @@
       "readme": "juice-factory/README.md",
       "audio": "MP3 128 kbps · 30秒 · 默认关闭",
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-08",
-      "htmlBytes": 836960,
-      "zipBytes": 605354,
-      "htmlSha256": "35997623f229fd45a429af1d01cb7c8e66eb0331d060359cf38843c428c5132d",
-      "zipSha256": "9ad1a6716522ccf902f3e6d1ee8d3b45b1ac0d4afd65752ed406db3e963f43fc",
-      "revision": "pace-continuous-20261004"
+      "updated": "2026-10-10",
+      "htmlBytes": 810303,
+      "zipBytes": 585562,
+      "htmlSha256": "60d7a111fb11054ee397f245c1882316e7e76e14a96f6854182748c9a93f5855",
+      "zipSha256": "45e3a814f93cc6d61a2cbaaa93937d4966b7eec8af722ef48c300a3ceb82187b",
+      "revision": "startup-optimized-20261010"
     },
     {
       "id": "burger-diner",
       "name": "汉堡工厂与汽车取餐",
       "type": "经营",
       "subtitle": "Burger Diner Rush",
-      "image": "preview-mobile.png",
+      "image": "preview.webp",
       "desc": "收集奶酪、番茄、肉饼，三种原料齐备才能制作汉堡；解锁三条点餐队列和汽车取餐窗口。",
       "features": [
         "多条独立顾客队列",
@@ -537,19 +568,19 @@
       "readme": "burger-diner/README.md",
       "audio": "MP3 128 kbps · 30秒 · 默认关闭",
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-08",
-      "htmlBytes": 837362,
-      "zipBytes": 605145,
-      "htmlSha256": "22fdae2778520163ed539ae010047d85944def2fbe240eb58f24513f3f05e087",
-      "zipSha256": "165b8a7636b11a063b1b583ac9356d5230fd221df84ee7ced4133ccc17bfdf87",
-      "revision": "pace-continuous-20261004"
+      "updated": "2026-10-10",
+      "htmlBytes": 810705,
+      "zipBytes": 585369,
+      "htmlSha256": "ad6ab9bb185efeee389cd1baff74df426051525126813af617a97e1ae88ee668",
+      "zipSha256": "8b610677541c7f0014864d49474f48c9e83820d60a6d603a5d293c1970c2955f",
+      "revision": "startup-optimized-20261010"
     },
     {
       "id": "greenhouse-florist",
       "name": "双层温室花店",
       "type": "经营",
       "subtitle": "Sweetheart Flower Market",
-      "image": "preview-mobile.png",
+      "image": "preview.webp",
       "desc": "快速批量采花与包装，一趟可搬 24 盆、升级后 48 盆；开局两路自动售卖，逐步扩充四路柜台和三片花田。",
       "features": [
         "72 朵采花 / 24 盆搬运",
@@ -565,19 +596,19 @@
       "readme": "greenhouse-florist/README.md",
       "audio": "MP3 128 kbps · 30秒 · 默认关闭",
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-08",
-      "htmlBytes": 837975,
-      "zipBytes": 606056,
-      "htmlSha256": "316c089e905f5b77c54e37ce3bfd11518eb9e9364fe166c51ca520d9d3cd83d9",
-      "zipSha256": "d3e066fabe112782719a6741b7c589a31416921c3eedf991998de10224157486",
-      "revision": "flower-popup-round-20261004"
+      "updated": "2026-10-10",
+      "htmlBytes": 811318,
+      "zipBytes": 586256,
+      "htmlSha256": "aa60a72455d9eb75837ab5469c13964c56adc03333a7c06f81fda303ec6f2cd0",
+      "zipSha256": "3341da5427cc8b61a1e8c4bf0ef8a31b928a96e5da44e34ae8a532da0d9cac88",
+      "revision": "startup-optimized-20261010"
     },
     {
       "id": "goods-sort",
       "name": "货架三件归类",
       "type": "消除",
       "subtitle": "Fresh Goods Sort",
-      "image": "preview-mobile.png",
+      "image": "preview.webp",
       "desc": "拖动货架上的商品，每格放齐三个相同商品即可清空。整理全部 16 组，在时间和步数耗尽前完成。",
       "features": [
         "真实拖动归类",
@@ -595,19 +626,19 @@
       "readme": "goods-sort/README.md",
       "audio": "MP3 128 kbps · 30秒 · 默认关闭",
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-08",
-      "revision": "seven-puzzles-20261004",
-      "htmlBytes": 796421,
-      "zipBytes": 590636,
-      "htmlSha256": "23541e58978b78b44d2d0001562d444b013476cdecd9c61bfb4f19122873860c",
-      "zipSha256": "c6dd0bd10922e83cc433b3211fe252d451c130542c8b512b197c7dec542c4fe0"
+      "updated": "2026-10-10",
+      "revision": "startup-optimized-20261010",
+      "htmlBytes": 769764,
+      "zipBytes": 571060,
+      "htmlSha256": "a821f298c2f97449c02702fbca1130cb6fd316c63d993d31c946d9755060444f",
+      "zipSha256": "8389c7769ff24152d8ba4644c257b3f61e841b8459c16e34c195663547661eb0"
     },
     {
       "id": "avalanche-rescue",
       "name": "落石通道救援",
       "type": "消除",
       "subtitle": "Avalanche Escape",
-      "image": "preview-mobile.png",
+      "image": "preview.webp",
       "desc": "落石持续从上方逼近。消除相邻同色图块，让 Sera 沿楼梯前进并清除出口的 70 块障碍；落石碰到人物会立即失败。",
       "features": [
         "真实落石逼近与碰撞",
@@ -625,19 +656,19 @@
       "readme": "avalanche-rescue/README.md",
       "audio": "MP3 128 kbps · 30秒 · 默认关闭",
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-08",
-      "revision": "rescue-arrows-polish-20261004",
-      "htmlBytes": 801752,
-      "zipBytes": 592924,
-      "htmlSha256": "6ac9e9ab1a9b646c3c0888f905d192076eaf3e3586b260f63c065b9603739794",
-      "zipSha256": "ca1316301ff7f89720da97e2e286462fd93370791adfb601264b8a5ded738ff9"
+      "updated": "2026-10-10",
+      "revision": "startup-optimized-20261010",
+      "htmlBytes": 775095,
+      "zipBytes": 573401,
+      "htmlSha256": "93b9e3f92c948a9605b5119679e7a1fa9b0e802ed866132b954f7001d220c388",
+      "zipSha256": "cbaf05852db860e044bfceb07fa4a373e312bb28580b295e9c8d950400146621"
     },
     {
       "id": "water-tower",
       "name": "水塔排水救援",
       "type": "消除",
       "subtitle": "Water Tower Rescue",
-      "image": "preview-mobile.png",
+      "image": "preview.webp",
       "desc": "消除各列图块来击碎水塔底部八块石板，形成排水口。水位降下后 Sera 脱困；水满或步数耗尽则失败。",
       "features": [
         "八块独立石板",
@@ -655,19 +686,19 @@
       "readme": "water-tower/README.md",
       "audio": "MP3 128 kbps · 30秒 · 默认关闭",
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-08",
-      "revision": "seven-puzzles-20261004",
-      "htmlBytes": 796486,
-      "zipBytes": 590752,
-      "htmlSha256": "471fcdf3323aa83b971d2e9df8195b6b94780696bf47d5d1811b426242a6ee05",
-      "zipSha256": "2509b8733146ff5df7a7a06a77ae8bf12f2b7811a44ec7a911fd9e02816324d7"
+      "updated": "2026-10-10",
+      "revision": "startup-optimized-20261010",
+      "htmlBytes": 769829,
+      "zipBytes": 571174,
+      "htmlSha256": "cd98da8624537111191effcb5c299316bca91ff780ee88ad3982f573299cbe92",
+      "zipSha256": "962deb5e6634e1150bbd4d71e8d6f532f06642cbe1353a0ea5af6c2ea3b780ec"
     },
     {
       "id": "ball-fire-rescue",
       "name": "彩球机关灭火",
       "type": "消除",
       "subtitle": "Cool Ball Rescue",
-      "image": "preview-mobile.png",
+      "image": "preview.webp",
       "desc": "消除绿色叶片积攒水球，充满后点击横杆释放一批水球。完成三轮降温救出 Sera；红色图块会助长火势。",
       "features": [
         "消除加点击横杆",
@@ -685,19 +716,19 @@
       "readme": "ball-fire-rescue/README.md",
       "audio": "MP3 128 kbps · 30秒 · 默认关闭",
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-08",
-      "revision": "seven-puzzles-20261004",
-      "htmlBytes": 796463,
-      "zipBytes": 590757,
-      "htmlSha256": "c11fb70398b03fdc88eb6cbd730f46af53553e154a69148c43a11d75b366a982",
-      "zipSha256": "6454d43bd77d996839b6dbeca97dffc5993ce421f8b47c0c13f9ae96d51438de"
+      "updated": "2026-10-10",
+      "revision": "startup-optimized-20261010",
+      "htmlBytes": 769806,
+      "zipBytes": 571187,
+      "htmlSha256": "d3231cce3e601ee87543f25c2642ce8531fa0c3462bca816c86a228d1399ed90",
+      "zipSha256": "76066f49d34808de15116e67596dc9d35b549460a35886e96c1ba493e87493f3"
     },
     {
       "id": "water-valve-rescue",
       "name": "双水阀与熔岩救援",
       "type": "消除",
       "subtitle": "Water Valve Escape",
-      "image": "preview-mobile.png",
+      "image": "preview.webp",
       "desc": "两间连续机关房：先用黄色图块打开清水闸灭火，再放水冷却熔岩形成出路。消除过多红色图块会打开危险闸。",
       "features": [
         "两间不同机关房",
@@ -715,19 +746,19 @@
       "readme": "water-valve-rescue/README.md",
       "audio": "MP3 128 kbps · 30秒 · 默认关闭",
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-08",
-      "revision": "rescue-arrows-polish-20261004",
-      "htmlBytes": 801743,
-      "zipBytes": 592789,
-      "htmlSha256": "7089eecf98c41cb72f3862ed6da9c243157aa35cf143edfb7270b53246594eaa",
-      "zipSha256": "48762601d8ede4b1861c1a001f9073332e8f7a58fa357704bdadd289be0cedad"
+      "updated": "2026-10-10",
+      "revision": "startup-optimized-20261010",
+      "htmlBytes": 775086,
+      "zipBytes": 573271,
+      "htmlSha256": "2dae592460779318e80ec9c6b1d6265947a85323d7f0938e5fd54dfd3cd2104d",
+      "zipSha256": "139e3776aa87b9c72f18d5cc29e13830d24e0c2da2932dc7d9243a58e2fc58ee"
     },
     {
       "id": "mahjong-pairs",
       "name": "层叠麻将配对",
       "type": "消除",
       "subtitle": "Mahjong Garden",
-      "image": "preview-mobile.png",
+      "image": "preview.webp",
       "desc": "按麻将接龙规则配对 68 张牌：上方无遮挡且至少一侧空着才能选择。五次错配、无法配对或时间耗尽会失败。",
       "features": [
         "真实遮挡与侧边规则",
@@ -745,19 +776,19 @@
       "readme": "mahjong-pairs/README.md",
       "audio": "MP3 128 kbps · 30秒 · 默认关闭",
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-08",
-      "revision": "seven-puzzles-20261004",
-      "htmlBytes": 796460,
-      "zipBytes": 590664,
-      "htmlSha256": "3ff6fea467b097cc7b19e494fb3bdf84abeca833a82fc3bfe81de2ceb129b1fa",
-      "zipSha256": "bc7d592845b9510133e8275427d44dcd20057cb5d1e85de07141937f55aefade"
+      "updated": "2026-10-10",
+      "revision": "startup-optimized-20261010",
+      "htmlBytes": 769803,
+      "zipBytes": 571085,
+      "htmlSha256": "1266acc029b31908ee0036d3af4206532c83c1ee759b505f90477ba0a9875bcf",
+      "zipSha256": "27e93acaae7c86981a6a12e469a65d57539d29c1f10ede9103d052edb3d6b271"
     },
     {
       "id": "arrow-escape",
       "name": "彩色箭头脱困",
       "type": "解谜",
       "subtitle": "Arrows Away",
-      "image": "preview-mobile.png",
+      "image": "preview.webp",
       "desc": "两关缠绕解谜：第一关保持 28 条不规则路线，通关后解锁 200 箭头地狱关。密集线路相互嵌套，可放大到 4 倍并拖动、双指缩放；三次碰撞或超时失败。",
       "features": [
         "28 → 200 箭头两关",
@@ -775,12 +806,12 @@
       "readme": "arrow-escape/README.md",
       "audio": "MP3 128 kbps · 30秒 · 默认关闭",
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-08",
-      "revision": "hell-200-arrows-20261004",
-      "htmlBytes": 916709,
-      "zipBytes": 644443,
-      "htmlSha256": "da00d1daa230bc13cff4198caad6e99da544f83fae825ee8343f30d96f0055c9",
-      "zipSha256": "b1f5ab35600de992be5b75ad758ec6199337433c8ebf1dc422c4619c039e6be6",
+      "updated": "2026-10-10",
+      "revision": "startup-optimized-20261010",
+      "htmlBytes": 890052,
+      "zipBytes": 625818,
+      "htmlSha256": "59c81865a7fc7305a7a7e6e7665e369b9687f00cbb5c743a57a1e420ae3fa650",
+      "zipSha256": "2b0eb791c9ab1290fdfe2c8c18c76b059ed7455528902e02f4237581d284d9f5",
       "hellPreview": "arrow-escape/preview-hell.png",
       "levels": [
         {
@@ -803,7 +834,7 @@
       "name": "贴纸杂货店",
       "type": "装饰",
       "subtitle": "Sticker Shop",
-      "image": "preview-completed-mobile.png",
+      "image": "preview.webp",
       "desc": "把空调、窗户、家具、商品和 Sera 朋友们的 36 张贴纸放进等距杂货店；五个柜子采用已确认设计，瓶罐按层板高度和深度摆入柜内。",
       "features": [
         "36 张可选贴纸",
@@ -827,22 +858,24 @@
         "embedded": true,
         "defaultEnabled": false,
         "loop": true,
-        "source": "用户提供的 MP3"
+        "source": "用户提供的 MP3",
+        "independentEffects": true,
+        "deferredDecoding": true
       },
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-08",
-      "revision": "sticker-approved-cabinets-20261008",
-      "htmlBytes": 2495799,
-      "zipBytes": 1904645,
-      "htmlSha256": "8d78718f99771ba72ee21063563b1a2d72560ec1ffd1d84bd2b5a2c20953fa02",
-      "zipSha256": "ebad528748567e70571a31662142fb33f15569606b0fe58401fe4090c269d0b1"
+      "updated": "2026-10-10",
+      "revision": "startup-optimized-20261010",
+      "htmlBytes": 1443561,
+      "zipBytes": 1091688,
+      "htmlSha256": "bcd0bab4523547644048a65f237c1d93880586d2936f9a22494c619588a2bdec",
+      "zipSha256": "2ae95b2e7080b767d87f4c5e68aa2f547b7b4da514c0130e69fadedaef2ac438"
     },
     {
       "id": "dot-link",
       "name": "同色双点连线",
       "type": "连线",
       "subtitle": "Dot Link",
-      "image": "preview-mobile.png",
+      "image": "preview.webp",
       "desc": "自由画线连接同色双点，绕开其他点和已经连好的线。六关外围保留完整绕行空间，第一关自动示范使用笔直连线和清晰折线；大画布与字母圆点，划线使用轻短清脆提示音。",
       "features": [
         "6 个关卡",
@@ -867,22 +900,24 @@
         "embedded": true,
         "defaultEnabled": false,
         "loop": true,
-        "source": "用户提供的 MP3"
+        "source": "用户提供的 MP3",
+        "independentEffects": true,
+        "deferredDecoding": true
       },
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-09",
-      "revision": "dot-link-straight-auto-wide-margin-20261009",
-      "htmlBytes": 954306,
-      "zipBytes": 612097,
-      "htmlSha256": "7eef9d054e533152ecab8157e5c217754682c6958e3ed885ef7cc3ac6f90d123",
-      "zipSha256": "1fd96d198745cfa207a5663263d18d46c24a2b2c2547976b993a2807046f7205"
+      "updated": "2026-10-10",
+      "revision": "startup-optimized-20261010",
+      "htmlBytes": 927277,
+      "zipBytes": 592267,
+      "htmlSha256": "975db43ac0a8184e923f5ebcebb00d201012f729b55a4bd28bbb64fcb0dbee0a",
+      "zipSha256": "de8daaffdbf291489dedb1a8265d2f299e46de5e714a58a6883fa19adbc3a7fb"
     },
     {
       "id": "snake-puzzle",
       "name": "贪吃蛇重力解谜",
       "type": "解谜",
       "subtitle": "Snake Puzzle",
-      "image": "preview-mobile.png",
+      "image": "preview.webp",
       "desc": "吃苹果长身体，绕砖块转身，用身体搭桥；失去支撑时整条蛇一起下落。前七个短关卡，第八关为 121 苹果城堡，167 步完整路线；手机默认放大跟随，支持小地图查看远处。",
       "features": [
         "7 个短关卡 + 1 个高难关",
@@ -912,22 +947,24 @@
         "defaultEnabled": false,
         "loop": true,
         "source": "用户提供的 MP3",
-        "independentEffects": true
+        "independentEffects": true,
+        "deferredDecoding": true
       },
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-09",
-      "revision": "snake-puzzle-mobile-camera-20261009",
-      "htmlBytes": 787936,
-      "htmlSha256": "82ff4b62bf674aa43cedca884aaa3acaadb69cd3fca2c73212f9731b49eae70c",
-      "zipBytes": 586270
+      "updated": "2026-10-10",
+      "revision": "startup-optimized-20261010",
+      "htmlBytes": 760833,
+      "htmlSha256": "3664f2223f898dc3ea6809fb450f25a7904e95fafd202caf622129d92b9d78e7",
+      "zipBytes": 573501,
+      "zipSha256": "61dbc79f77ea020fe0074aea9f4e6922f41b737e87d83dedb6ebb25059802060"
     },
     {
       "id": "stack-merge",
       "name": "堆叠合成接单",
       "type": "合成",
       "subtitle": "Stack & Cook",
-      "image": "preview-mobile.png",
-      "desc": "立体食材堆中拖动两个同级食品合成升级料理，凑齐配餐与主菜后烹饪，再交给海鸥、Zuri、Oli 和 Chloe；Sera 只在提交后的半身反馈弹框出现。",
+      "image": "preview.webp",
+      "desc": "立体食材堆中拖动两个同级食品合成升级原料，凑齐两种不同原料后烹饪成新料理，再交给海鸥、Zuri、Oli 和 Chloe；Sera 只在提交后的半身反馈弹框出现。",
       "features": [
         "36 个双层堆位",
         "两件合成一件升级",
@@ -956,14 +993,16 @@
         "defaultEnabled": false,
         "loop": true,
         "source": "用户提供的 MP3",
-        "independentEffects": true
+        "independentEffects": true,
+        "deferredDecoding": true
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-10",
-      "revision": "stack-merge-orders-20261010",
-      "htmlBytes": 1579605,
-      "htmlSha256": "c816f1b0d4717b3f71ccea11c225258e0425909e6f068d96441c94c0078315ba",
-      "zipBytes": 1176680
+      "revision": "startup-optimized-20261010",
+      "htmlBytes": 1410553,
+      "htmlSha256": "40d4daf02d1566ce8cbe38d93654d3152af6cc236f3c3c3b3e89f1d389cb7069",
+      "zipBytes": 1075479,
+      "zipSha256": "7299a319f10e3909653aa184a85ca9e6b1a9eccfbd987d2ab62d23eb87580c33"
     }
   ],
   "archive": {

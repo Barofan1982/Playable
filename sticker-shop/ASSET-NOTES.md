@@ -20,6 +20,8 @@ Use case: stylized-concept. Asset type: four independent transparent character s
 
 ## 配乐
 
+2026-10-10：人物提取、白色外沿和绿色提示蒙版改为构建前生成，结果保存在 `source/prepared/`。上线页面读取内嵌的无损 WebP 成品，不在首次载入时做连通域扫描；柜子与商品的组合仍按原有深度规则绘制。操作音效始终独立于背景音乐按钮。
+
 用户提供的 Ever So Blue - Onthou，使用合集已有的 30 秒 MP3 128 kbps 循环片段。声音默认关闭，首次用户操作后才能播放；页面隐藏时暂停。没有新增外部音乐来源。
 
 ## 轮廓、透视与新增音效（2026-10-08）
