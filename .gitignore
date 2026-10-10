@@ -46,6 +46,8 @@
 /seaside-cafe/*
 !/snake-puzzle/
 /snake-puzzle/*
+!/stack-merge/
+/stack-merge/*
 !/sticker-shop/
 /sticker-shop/*
 !/sushi-belt/
@@ -148,6 +150,10 @@
 !/snake-puzzle/index.html
 !/snake-puzzle/preview-mobile.png
 !/snake-puzzle/口播翻译.md
+!/stack-merge/ASSET-NOTES.md
+!/stack-merge/README.md
+!/stack-merge/index.html
+!/stack-merge/preview-mobile.png
 !/sticker-shop/ASSET-NOTES.md
 !/sticker-shop/README.md
 !/sticker-shop/index.html

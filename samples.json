@@ -1,6 +1,6 @@
 {
   "brand": "Juicy Journey",
-  "updated": "2026-10-09",
+  "updated": "2026-10-10",
   "samples": [
     {
       "id": "corn",
@@ -920,6 +920,50 @@
       "htmlBytes": 787936,
       "htmlSha256": "82ff4b62bf674aa43cedca884aaa3acaadb69cd3fca2c73212f9731b49eae70c",
       "zipBytes": 586270
+    },
+    {
+      "id": "stack-merge",
+      "name": "堆叠合成接单",
+      "type": "合成",
+      "subtitle": "Stack & Cook",
+      "image": "preview-mobile.png",
+      "desc": "立体食材堆中拖动两个同级食品合成升级料理，凑齐配餐与主菜后烹饪，再交给海鸥、Zuri、Oli 和 Chloe；Sera 只在提交后的半身反馈弹框出现。",
+      "features": [
+        "36 个双层堆位",
+        "两件合成一件升级",
+        "四位游戏内半身顾客",
+        "按顺序烹饪交付",
+        "Sera 反馈弹框",
+        "金币飞向钱包",
+        "AUTO PLAY",
+        "手动接管",
+        "撤销重试",
+        "成功与失败",
+        "独立操作音效"
+      ],
+      "operation": "拖动相同食品合成，凑齐当前订单后点击烹饪，再提交订单；支持点击选中、撤销与自动试玩。",
+      "ending": "完成四单进入 Juicy Journey PLAY NOW 落版并保持；时间或步数用尽失败，可手动重试。",
+      "reference": "Yumtopia · Merge & Cook · 360 × 640",
+      "entry": "stack-merge/index.html",
+      "zip": "下载包/stack-merge.zip",
+      "readme": "stack-merge/README.md",
+      "audio": {
+        "title": "Ever So Blue - Onthou",
+        "format": "MP3",
+        "excerptSeconds": 30,
+        "bitrateKbps": 128,
+        "embedded": true,
+        "defaultEnabled": false,
+        "loop": true,
+        "source": "用户提供的 MP3",
+        "independentEffects": true
+      },
+      "sizeLimitBytes": 5000000,
+      "updated": "2026-10-10",
+      "revision": "stack-merge-orders-20261010",
+      "htmlBytes": 1579605,
+      "htmlSha256": "c816f1b0d4717b3f71ccea11c225258e0425909e6f068d96441c94c0078315ba",
+      "zipBytes": 1176680
     }
   ],
   "archive": {
