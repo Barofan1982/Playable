@@ -983,7 +983,7 @@
       "type": "竞速",
       "subtitle": "Roll & Build",
       "image": "preview.webp",
-      "desc": "操控 Sera 滚动收集积雪，消耗雪球铺设 84 级雪阶，与三名对手争夺终点。移动及雪球转动速度降低到原来的三分之一。",
+      "desc": "操控 Sera 滚动收集积雪，消耗雪球铺设 84 级雪阶，与三名对手争夺终点。人物保持原有移动速度，雪球积累和自转单独放慢。",
       "features": [
         "雪球收集",
         "消耗铺设雪阶",
@@ -999,7 +999,7 @@
       "entry": "bridge-race/index.html",
       "zip": "下载包/bridge-race.zip",
       "readme": "bridge-race/README.md",
-      "htmlBytes": 61595,
+      "htmlBytes": 61935,
       "audio": {
         "backgroundMusic": false,
         "independentEffects": true,
@@ -1007,11 +1007,11 @@
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-11",
-      "revision": "bridge-snow-slow-20261011",
+      "revision": "bridge-snow-roll-independent-20261011",
       "displayMode": "portrait-contained",
-      "zipBytes": 30418,
-      "htmlSha256": "c28f9ab5c296583df7c01531b1a45a2e5d036ae4a1e6021f6c0e4b365bf11a8a",
-      "zipSha256": "f6d8a3b763dfa2c6db60e0bce752003cbb5531c4d85dff46ef42026c89c229e6"
+      "zipBytes": 30434,
+      "htmlSha256": "d7b3514118097c32a3b3a098015f063c45c3a98f20c14e096e0a4cda401f8099",
+      "zipSha256": "17944c42ca9939c8d74bc1713bedc21b33d2fd237562fbc556bbafba82b4eb22"
     }
   ],
   "archive": {
