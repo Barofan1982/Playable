@@ -983,23 +983,25 @@
       "type": "竞速",
       "subtitle": "Roll & Build",
       "image": "preview.webp",
-      "desc": "操控 Sera 滚动收集积雪，消耗雪球铺设 84 级雪阶，与三名对手争夺终点。人物保持原有移动速度，雪球积累和自转单独放慢。",
+      "desc": "双人雪球搭桥竞速。Sera 与一名对手从零积雪起步，每次拾取增加一份，消耗雪球铺设 84 级雪阶。全屏游戏画面，无信息栏和说明文字。",
       "features": [
-        "雪球收集",
+        "双人竞速",
+        "零起步逐个收集",
         "消耗铺设雪阶",
         "三段雪地赛道",
         "Sera 主角",
+        "沉浸式画面",
         "成功与失败",
         "AUTO PLAY",
         "操作音效"
       ],
-      "operation": "在盘面按住拖动控制方向，走过雪地收集积雪，走上对应通道自动消耗雪球铺设雪阶；电脑支持方向键/WASD。AUTO PLAY 可暂停继续，RETRY 手动重玩。",
-      "ending": "先到终点成功；对手先到、失足或倒计时结束失败。结果保持，手动重试。",
+      "operation": "在盘面按住拖动控制方向，拾取一个雪球增加一份积雪，走上通道消耗雪球铺设雪阶；电脑支持方向键/WASD。角落播放图标可自动操作并暂停继续，圆箭头手动重玩。",
+      "ending": "先到终点成功；对手先到或失足失败。无倒计时。结果保持，手动重试。",
       "reference": "Bridge Race · 360 × 640 · 2026-10-08",
       "entry": "bridge-race/index.html",
       "zip": "下载包/bridge-race.zip",
       "readme": "bridge-race/README.md",
-      "htmlBytes": 61935,
+      "htmlBytes": 46339,
       "audio": {
         "backgroundMusic": false,
         "independentEffects": true,
@@ -1007,11 +1009,11 @@
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-11",
-      "revision": "bridge-snow-roll-independent-20261011",
-      "displayMode": "portrait-contained",
-      "zipBytes": 30434,
-      "htmlSha256": "d7b3514118097c32a3b3a098015f063c45c3a98f20c14e096e0a4cda401f8099",
-      "zipSha256": "17944c42ca9939c8d74bc1713bedc21b33d2fd237562fbc556bbafba82b4eb22"
+      "revision": "bridge-duel-clean-20261011",
+      "displayMode": "portrait-fullscreen",
+      "zipBytes": 19588,
+      "htmlSha256": "0b0f033c6e4790ea212725b6b79374b51faee3b7639b8c9b5393dabe1dc8441c",
+      "zipSha256": "c78235a1977ac3b679b22acec943f46367ff2e78a4f9c50be724f507233cc149"
     }
   ],
   "archive": {
