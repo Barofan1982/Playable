@@ -34,30 +34,8 @@
     .cta { width: 100%; border: 3px solid #fff; border-radius: 100px; padding: 5% 2%; color: #754222; background: linear-gradient(#fff8c7, #ffdf6d); box-shadow: 0 7px 0 #b66b22, 0 12px 16px #803b4166; font-size: clamp(15px, 5cqw, 36px); font-weight: 1000; cursor: pointer; }
     .end small { display: block; margin-top: 7%; font-size: clamp(9px, 2.8cqw, 19px); font-weight: 700; opacity: .9; }
     .landscape-panel { display: none; }
-    @media (orientation: landscape) and (min-width: 560px) {
-      body { background: radial-gradient(circle at 63% 42%, #293640, #11141d 70%); }
-      .shell { gap: clamp(15px, 3vw, 48px); padding: 10px; }
-      #stage { width: min(calc(56.25dvh - 11.25px), 45vw, 720px); }
-      #stage .goal, #stage .meter, #stage .counter, #stage .hint, #stage .swipe { display: none; }
-      .landscape-panel { display: flex; flex-direction: column; justify-content: center; width: min(42vw, 490px); max-height: 94dvh; padding: clamp(15px, 3vw, 34px); border: 2px solid #ffe7a571; border-radius: 30px; background: linear-gradient(155deg, #27373b 0%, #1c262c 60%, #23242e 100%); box-shadow: 0 22px 50px #0008, inset 0 1px 0 #fff4; color: #fff7dd; }
-      .wide-kicker { color: #fcd671; font-size: clamp(10px, 1.5vw, 16px); font-weight: 900; letter-spacing: .18em; }
-      .wide-title { margin: .2em 0 .35em; font-size: clamp(25px, 3.8vw, 49px); line-height: .97; font-weight: 1000; letter-spacing: -.04em; text-shadow: 0 4px 0 #7c3b42; }
-      .wide-meter { height: clamp(12px, 1.9vw, 22px); border: 2px solid #fff1b4; border-radius: 50px; background: #312a34; overflow: hidden; }
-      .wide-meter > div { width: 0%; height: 100%; background: linear-gradient(#fffca4, #ffdc40 50%, #ffa018); transition: width .45s cubic-bezier(.2,.9,.3,1); }
-      .wide-counter { margin-top: 7px; font-size: clamp(13px, 1.8vw, 21px); font-weight: 900; color: #ffdf79; }
-      .wide-hint { margin: 1.2em 0 .8em; padding: .65em .8em; border: 2px solid #fff6da; border-radius: 18px; background: linear-gradient(#fff5c3, #ffd56e); color: #723e21; font-size: clamp(14px, 2.1vw, 24px); font-weight: 1000; text-align: center; box-shadow: 0 6px 0 #b36d2e; }
-      .wide-steps { display: grid; gap: .6em; font-size: clamp(12px, 1.7vw, 19px); font-weight: 800; line-height: 1.25; }
-      .wide-steps div { padding-left: .7em; border-left: 4px solid #ffcb4d; }
-      .wide-cta { display: none; margin-top: 1.3em; width: 100%; border: 2px solid white; border-radius: 100px; padding: .5em; color: #763f20; background: linear-gradient(#fff7b7,#ffcc4c); box-shadow: 0 6px 0 #ad6429; font: inherit; font-size: clamp(17px, 2.3vw, 27px); font-weight: 1000; cursor: pointer; }
-      .shell.won .wide-steps { display: none; }
-      .shell.won .wide-cta { display: block; }
-    }
-    @media (orientation: landscape) and (min-width: 560px) and (max-height: 430px) {
-      .landscape-panel { padding: 14px 18px; }
-      .wide-title { margin: .12em 0 .2em; }
-      .wide-hint { margin: .65em 0 .5em; }
-      .wide-steps { gap: .3em; }
-    }
+
+
     @media (orientation: portrait) and (max-width: 600px) and (max-aspect-ratio: 9/16) {
       #stage { width: 100vw; height: 100dvh; aspect-ratio: auto; }
       canvas { position: absolute; left: 50%; width: auto; height: 100%; transform: translateX(-50%); }
@@ -70,15 +48,17 @@
     @keyframes breathe { 50% { transform: scale(1.05); } }
     @media (prefers-reduced-motion: reduce) { .hint { animation: none; } }
   .hint{bottom:calc(1.5% + 64px)}.auto-tools{position:absolute;bottom:1.5%;left:12%;right:12%;display:flex;gap:8px}.auto-tools button,.wide-auto-tools button{min-height:40px;padding:8px 12px;border:2px solid #fff7d8;border-radius:15px;background:#fff0b1;color:#704b24;font-size:12px;font-weight:900;box-shadow:0 3px 0 #b47532}.auto-tools #auto,.wide-auto-tools #wideAuto{flex:1;background:#d9f6a1}.auto-tools button:disabled,.wide-auto-tools button:disabled{opacity:.7}.wide-auto-tools{display:flex;gap:8px;margin:12px 0}.wide-cta{display:none}
- @media(orientation:landscape) and (min-width:560px){#stage .auto-tools{display:none}}
- @media(max-height:470px) and (orientation:landscape){.wide-auto-tools{margin:7px 0}.wide-auto-tools button{min-height:36px;padding:5px 8px}.landscape-panel .steps{display:none}}
+
+
  </style>
 <style id="jj-touch-20261010">
 button{min-width:44px!important;min-height:44px!important;touch-action:manipulation}button:focus-visible{outline:3px solid #fbc65c;outline-offset:3px}
 button[hidden]{display:none!important}.tools,.controls{gap:8px!important}.tools button,.controls button,.tool{font-size:12px!important;line-height:1.15!important}#sound,.sound,.reset{font-size:20px!important;pointer-events:auto}
 @media(max-width:600px){aside{display:none!important}.tools{bottom:10px!important;left:10px!important;right:10px!important;min-height:44px}.footer{height:44px!important;bottom:8px!important;gap:5px!important}.footer p{display:none}.footer .tool{min-width:44px!important;font-size:12px!important}#bottom{left:12px!important;right:12px!important;bottom:10px!important}.controls #auto{flex:1.4}.controls #sound{width:44px!important}.controls button{padding:0 8px!important}.reset{right:10px!important;top:10px!important}#hint,.hint,.status{font-size:max(12px,2.3cqw)}.tabs button{min-width:44px!important}.end-card button,.card button{min-height:44px!important}}
-@media(orientation:landscape) and (min-width:600px){aside{display:none!important}#layout{gap:0!important;padding:0!important}#layout>#stage{max-height:100dvh}.tools{gap:8px!important}}
-</style><style id="jj-corn-landscape">@media(orientation:landscape) and (min-width:600px){.shell{padding:0;gap:0;width:100vw;height:100dvh}#stage{height:100dvh;width:calc(100vw - 180px);aspect-ratio:auto}.landscape-panel{display:flex!important;width:180px;height:100dvh;max-height:none;border:0;border-radius:0;padding:12px!important}.wide-title,.wide-steps,.wide-kicker{display:none}.wide-hint{font-size:13px!important}.wide-auto-tools{display:grid;gap:8px}.wide-auto-tools button{height:44px;font-size:12px}.brand-logo{width:90px}.sound{width:44px;height:44px}#stage canvas{width:100%;height:100%}}</style><style id="jj-results-layout">@media(orientation:landscape) and (min-width:600px){.overlay .card,.end .card{max-width:440px;padding:20px;font-size:14px;margin:auto}.overlay h1,.card h1{font-size:28px!important;margin:8px!important}.overlay p,.card p{font-size:14px!important;margin:12px 0!important}.card button{font-size:14px!important;padding:10px!important}#result{left:calc(50% - 210px)!important;right:auto!important;top:12%!important;width:420px!important;padding:18px!important}#result h2{font-size:26px!important}#result p{font-size:14px!important}#result button{font-size:14px!important;padding:10px!important}}</style></head>
+
+</style><style id="jj-corn-landscape"></style><style id="jj-results-layout"></style><style id="jj-portrait-only-20261011">html,body{height:100%;height:100dvh;overflow:hidden}body{display:grid;place-items:center;padding:0!important}.layout,.shell,#layout{width:100%;height:100dvh;padding:0!important;gap:0!important;display:flex;align-items:center;justify-content:center}aside,.landscape-panel,.panel,.wide-tools,.wide-auto-tools{display:none!important}.stage,#stage{width:min(100vw,56.25dvh,720px)!important;height:min(100dvh,177.777778vw,1280px)!important;max-height:100dvh!important;aspect-ratio:9/16!important;flex:none;container-type:inline-size}#game{left:0!important;right:0!important;width:100%!important}#toast{left:50%!important;right:auto!important;width:max-content;max-width:92%;white-space:normal!important;overflow-wrap:break-word;text-align:center;font-size:clamp(10px,2.8cqw,18px)!important;line-height:1.35;transform:translateX(-50%) translateY(6px)}#toast.show{transform:translateX(-50%)}.recipe{max-width:92%;white-space:normal;text-align:center}.end,.overlay,#result{max-width:100%;box-sizing:border-box}.end .card,.overlay .card{max-height:95%;overflow:auto}.card h1{font-size:clamp(20px,8cqw,46px)}.card p{overflow-wrap:break-word}button{max-width:100%}#trayPrev,#trayNext{display:none!important}
+ @container(max-width:270px){button{min-width:26px!important;min-height:26px!important;font-size:9px!important}.tools,.controls,.toolbar,.footer{gap:4px!important}.controls,.toolbar,.tools,.footer{height:28px!important;min-height:28px!important;bottom:5px!important}.footer .tool{font-size:9px!important}.reset,.sound{width:28px!important;height:28px!important;font-size:15px!important}.reset{right:7px!important;top:7px!important}.tools button,.controls button{font-size:9px!important;padding:0 3px!important}#bottom{left:7px!important;right:7px!important;bottom:5px!important}.status{font-size:9px!important}.header .sound{margin-left:0!important}#instruction{font-size:9px!important;min-height:0!important;padding:4px!important;margin-bottom:5px!important}.card{padding:6%!important}.card p{font-size:11px!important}.card button{font-size:10px!important}}
+ .auto-tools{display:flex!important} .hint{max-width:84%;left:8%;right:8%}@container(max-width:270px){.auto-tools{gap:4px;bottom:5px;height:28px}.auto-tools button{height:28px!important}.sound{min-height:26px}.goal{font-size:10px}.counter{font-size:9px}}</style><script id="jj-rounded-text">function jjRoundedStrokeText(context,...args){context.save();context.lineJoin='round';context.miterLimit=2;context.strokeText(...args);context.restore();}</script><style id="jj-display-polish-20261011">[role="status"],#toast,.recipe,.message,#guide,#guidance{overflow-wrap:break-word}#toast{max-width:92%;white-space:normal;text-align:center}.panel-title{flex:none;line-height:1.25}.panel-title span{min-width:0;overflow-wrap:break-word}.panel-title button{flex:none}.popup-card,#success,.card{overflow-wrap:break-word}.overlay .card{max-height:calc(100% - 24px);overflow:auto}</style></head>
 <body>
   <div class="shell" id="shell">
   <main id="stage" aria-label="Juicy Journey candy popping playable game">

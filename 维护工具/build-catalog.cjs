@@ -12,7 +12,7 @@ for(const s of samples){s.entry=s.id+'/index.html';s.zip='下载包/'+s.id+'.zip
 fs.writeFileSync(path.join(root,'samples.json'),JSON.stringify({...manifest,brand:'Juicy Journey',updated,samples,archive:{earlyZip:'历史版本/旧下载包/corn-早期包.zip'}},null,2));
 const cards=samples.map((s,i)=>`<article class="card" data-type="${esc(s.type)}">
  <a class="playable" href="${s.entry}${s.revision?'?v='+esc(s.revision):''}" target="_blank" rel="noopener" aria-label="试玩：${esc(s.name)}">
-  <div class="poster"><img ${i===0?'src':'data-src'}="${s.id}/${s.image}" alt="${esc(s.name)}预览" ${i===0?'fetchpriority="high"':''} decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
+  <div class="poster"><img ${i===0?'src':'data-src'}="${s.id}/${s.image}${s.revision?'?v='+esc(s.revision):''}" alt="${esc(s.name)}预览" ${i===0?'fetchpriority="high"':''} decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
   <div class="card-body"><h2>${esc(s.name)}</h2><span class="category">${esc(s.type)}</span></div>
  </a></article>`).join('\n');
 const types=[...new Set(samples.map(s=>s.type))];

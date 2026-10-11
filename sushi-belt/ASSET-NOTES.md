@@ -62,3 +62,7 @@ Use case: stylized-concept. Asset type: transparent character sprite atlas for J
 ## 蓝衣顾客头部裁切修复（2026-10-08）
 
 原人物图集第二排顶部含有上一排厨师衣服的两个残片。载入蓝衣男生时，保留最大连通人物轮廓和透明柔边，再计算独立裁切范围。原始素材不变；头发、脸和衣服的 79,530 个实心像素全部保留。横竖屏检查无异常，详见 portrait-checks.json。
+
+## 2026-10-11 顾客素材修正
+
+中央 Sera 厨师保留。顾客图集索引 1 原为另一张 Sera，现替换为用户提供的 Chloe 立绘半身，复用堆叠接单的透明半身素材，备份为 `assets/chloe-guest.webp`。顾客索引 1–8 保留八位不同角色；厨师索引 0 不进入顾客池。所有角色运行时使用独立预裁切 WebP，已内嵌于 HTML，无外部请求。旧 `assets/cast.png` 是历史参考，不用于当前角色载入。
