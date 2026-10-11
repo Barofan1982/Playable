@@ -13,8 +13,8 @@
         "单行旋转",
         "拖曳消除",
         "完整竖屏",
-        "循环配乐",
-        "AUTO PLAY"
+        "AUTO PLAY",
+        "操作音效"
       ],
       "operation": "左右拖动一个圆环；沿对齐的同色连线拖动；AUTO PLAY 自动演示，可暂停、继续或重试。",
       "ending": "Good Job!；可重玩或继续消除。",
@@ -22,25 +22,18 @@
       "entry": "corn/index.html",
       "zip": "下载包/corn.zip",
       "readme": "corn/README.md",
-      "htmlBytes": 765321,
-      "zipBytes": 567425,
+      "htmlBytes": 119184,
+      "zipBytes": 73422,
       "audio": {
-        "title": "Ever So Blue - Onthou",
-        "format": "MP3",
-        "excerptSeconds": 30,
-        "bitrateKbps": 128,
-        "embedded": true,
-        "defaultEnabled": false,
-        "loop": true,
-        "source": "用户提供的 MP3",
+        "backgroundMusic": false,
         "independentEffects": true,
-        "deferredDecoding": true
+        "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "2dbc96b65573e8681ed9b779dc0a8fb3a6927e24cc7f8e00765c9c99e5d98c07",
-      "zipSha256": "8d5a3916ba106f4cc2ff1b3f3885c8c868f4fe86d8b2ff0f546aa64643831c20",
+      "htmlSha256": "6ad08dcc13dcd5a834eae66515590f0047c9942af6880de9269e0787500b38ea",
+      "zipSha256": "70ef5efb90b12e9a50d0f107e2995817a95149b89d277f55c7db4ddfcd48baf6",
       "updated": "2026-10-11",
-      "revision": "display-polish-20261011",
+      "revision": "no-bgm-20261011",
       "displayMode": "portrait-contained"
     },
     {
@@ -54,11 +47,11 @@
         "自由移动",
         "连续交付",
         "经营升级",
-        "循环配乐",
         "Sera 主角",
         "背钱付款",
         "步行动作",
-        "AUTO PLAY"
+        "AUTO PLAY",
+        "操作音效"
       ],
       "operation": "按住画面拖动控制移动；电脑也可用方向键或 WASD；AUTO PLAY 自动演示，可暂停、继续或重试。",
       "ending": "达成目标后可继续经营或重新开始。",
@@ -66,25 +59,18 @@
       "entry": "market/index.html",
       "zip": "下载包/market.zip",
       "readme": "market/README.md",
-      "htmlBytes": 783396,
-      "zipBytes": 576592,
+      "htmlBytes": 137253,
+      "zipBytes": 82287,
       "audio": {
-        "title": "Ever So Blue - Onthou",
-        "format": "MP3",
-        "excerptSeconds": 30,
-        "bitrateKbps": 128,
-        "embedded": true,
-        "defaultEnabled": false,
-        "loop": true,
-        "source": "用户提供的 MP3",
+        "backgroundMusic": false,
         "independentEffects": true,
-        "deferredDecoding": true
+        "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "bd76b33f20ec54f53c3b5e3182b7afd1a4720183b209dae11eb8589320e44aaa",
-      "zipSha256": "d6eed90dd5fbcf7508b617377c8a30e283383f59fbc188198f954d81a3db5909",
+      "htmlSha256": "216be3fd22f520c811ec4ee9433c05cf1fb0f319e316b40ebee4a5036d6c7cb8",
+      "zipSha256": "901dfaf98d0702053dddd6ff95b1f6b55be1f6b3a9750a80687d0d3c03c3db46",
       "updated": "2026-10-11",
-      "revision": "display-polish-20261011",
+      "revision": "no-bgm-20261011",
       "displayMode": "responsive-landscape"
     },
     {
@@ -98,8 +84,8 @@
         "随机出块",
         "满排消除",
         "失败重试",
-        "循环配乐",
-        "AUTO PLAY"
+        "AUTO PLAY",
+        "操作音效"
       ],
       "operation": "左右拖动选择落点，松手下落；ROTATE 旋转，DROP 落下；AUTO PLAY 自动演示，可暂停、继续或重试。",
       "ending": "清空初始墙面后可进入下一面；堆到顶部会提示失败重试。",
@@ -107,25 +93,18 @@
       "entry": "block/index.html",
       "zip": "下载包/block.zip",
       "readme": "block/README.md",
-      "htmlBytes": 821118,
-      "zipBytes": 615266,
+      "htmlBytes": 174978,
+      "zipBytes": 121227,
       "audio": {
-        "title": "Ever So Blue - Onthou",
-        "format": "MP3",
-        "excerptSeconds": 30,
-        "bitrateKbps": 128,
-        "embedded": true,
-        "defaultEnabled": false,
-        "loop": true,
-        "source": "用户提供的 MP3",
+        "backgroundMusic": false,
         "independentEffects": true,
-        "deferredDecoding": true
+        "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "f00e2a214c5a756aeed7adc629896c9acb5327ac8f330e73af94acd4318b213c",
-      "zipSha256": "b9d1b15d2780e7018def6f6f23e1f88c45d32e2e4a7118533164e7e6d0a944dc",
+      "htmlSha256": "e118cee6827852c87e9058c3e22fdae7cf48add4e94cadf7067c581ad9ed64e1",
+      "zipSha256": "4b4645bec478f4f8761278f0748de6e54b3322a6fcfee65d65ab67643d3d9144",
       "updated": "2026-10-11",
-      "revision": "display-polish-20261011",
+      "revision": "no-bgm-20261011",
       "displayMode": "portrait-contained"
     },
     {
@@ -139,7 +118,7 @@
         "全部拼块可选",
         "每秒自动拼一块",
         "完成后定格",
-        "循环配乐"
+        "操作音效"
       ],
       "operation": "左右浏览全部拼片，向上或斜向拖曳提片；AUTO SOLVE 支持暂停、继续；完成后保持最后一帧。",
       "ending": "蝴蝶动画播放完后保持最后一帧，手动 RETRY 才重开。",
@@ -147,25 +126,18 @@
       "entry": "jigsaw/index.html",
       "zip": "下载包/jigsaw.zip",
       "readme": "jigsaw/README.md",
-      "htmlBytes": 1644793,
-      "zipBytes": 1249689,
+      "htmlBytes": 998446,
+      "zipBytes": 755571,
       "audio": {
-        "title": "Ever So Blue - Onthou",
-        "format": "MP3",
-        "excerptSeconds": 30,
-        "bitrateKbps": 128,
-        "embedded": true,
-        "defaultEnabled": false,
-        "loop": true,
-        "source": "用户提供的 MP3",
+        "backgroundMusic": false,
         "independentEffects": true,
-        "deferredDecoding": true
+        "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "a9a33dd1ff30f199e8901127a403d492412c07f0cde4f5d7058af88259cd46b9",
-      "zipSha256": "df7d3bd28323a9ddae7adf0bded54b15e3efa6168a17aef48fdf98a1dc4e2ff0",
+      "htmlSha256": "d38a558dc373e35245b36db691e6d99c214c1a6bae7449acd1647da59002fe9f",
+      "zipSha256": "3fa0998fc727e34bb94a3ef2677d2817bd534ce5365098b47389aa52d137444b",
       "updated": "2026-10-11",
-      "revision": "display-polish-20261011",
+      "revision": "no-bgm-20261011",
       "displayMode": "portrait-contained"
     },
     {
@@ -179,7 +151,7 @@
         "撑伞人物图",
         "每秒自动拼一块",
         "雨景后定格",
-        "循环配乐"
+        "操作音效"
       ],
       "operation": "左右浏览全部拼片，向上或斜向拖曳提片；AUTO SOLVE 支持暂停、继续；完成后保持最后一帧。",
       "ending": "约 6 秒雨景动画后定格，手动 RETRY 才重开。",
@@ -187,25 +159,18 @@
       "entry": "rain-jigsaw/index.html",
       "zip": "下载包/rain-jigsaw.zip",
       "readme": "rain-jigsaw/README.md",
-      "htmlBytes": 1370065,
-      "zipBytes": 1040108,
+      "htmlBytes": 723718,
+      "zipBytes": 545746,
       "audio": {
-        "title": "Ever So Blue - Onthou",
-        "format": "MP3",
-        "excerptSeconds": 30,
-        "bitrateKbps": 128,
-        "embedded": true,
-        "defaultEnabled": false,
-        "loop": true,
-        "source": "用户提供的 MP3",
+        "backgroundMusic": false,
         "independentEffects": true,
-        "deferredDecoding": true
+        "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "ead1d3b28162382710a057ce872e3189053ad84419adebe81f19841d9d486ae3",
-      "zipSha256": "0825ace9388df9750c7cccb4bedafd82c7bb8b205fe4c39b6c686385d0253ce3",
+      "htmlSha256": "7550dc791cb92d4bf4835754f54874150be54f3de40c907685ea96bd0997f201",
+      "zipSha256": "dc74751dc580c92dde938e7d86c06dd8075994c34978dde20bbf619ea017fd9a",
       "updated": "2026-10-11",
-      "revision": "display-polish-20261011",
+      "revision": "no-bgm-20261011",
       "displayMode": "portrait-contained"
     },
     {
@@ -219,7 +184,7 @@
         "拖拽配对",
         "烹饪奖励",
         "一键自动完成",
-        "循环配乐"
+        "操作音效"
       ],
       "operation": "把一个食材拖到另一个相同食材上；AUTO PLAY 自动完成整盘。",
       "ending": "完成后保留新的海岛聚餐背景，手动 RETRY 才重开。",
@@ -227,24 +192,17 @@
       "entry": "merge-cook/index.html",
       "zip": "下载包/merge-cook.zip",
       "readme": "merge-cook/README.md",
-      "htmlBytes": 1902637,
-      "zipBytes": 1458790,
+      "htmlBytes": 1256276,
+      "zipBytes": 964141,
       "audio": {
-        "title": "Ever So Blue - Onthou",
-        "format": "MP3",
-        "excerptSeconds": 30,
-        "bitrateKbps": 128,
-        "embedded": true,
-        "defaultEnabled": false,
-        "loop": true,
-        "source": "用户提供的 MP3",
+        "backgroundMusic": false,
         "independentEffects": true,
-        "deferredDecoding": true
+        "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "9ef086b144f02625718123010f73d5188a236e3a71bf1e45e77cf7f5af0b994b",
-      "zipSha256": "efc20345a07dcf7a42fabfba7d43e0bdf1f9346d7cf662a22aa6ef614bdcef7a",
-      "revision": "display-polish-20261011",
+      "htmlSha256": "877c13efa06d38fe8eb478d2935171161e96efe057e022a7308cf9d634a1d856",
+      "zipSha256": "32747c623d8dd868ad61215d09a88fb505f68ec617be6d89f45c8b2523b5ebb8",
+      "revision": "no-bgm-20261011",
       "updated": "2026-10-11",
       "displayMode": "portrait-contained"
     },
@@ -259,7 +217,7 @@
         "紧凑错列盘面",
         "磁吸 +30% · 惯性传递",
         "高级合成金币",
-        "循环配乐"
+        "操作音效"
       ],
       "operation": "左右拖动选择位置，松手发射；同级进入范围后磁吸合成并继续滑行，NEXT 预览下一杯。",
       "ending": "完成一个订单后保持 Good Job!；可继续合并或手动重试，越线有失败提示。",
@@ -267,25 +225,18 @@
       "entry": "drink-merge/index.html",
       "zip": "下载包/drink-merge.zip",
       "readme": "drink-merge/README.md",
-      "htmlBytes": 1361824,
-      "zipBytes": 1036553,
+      "htmlBytes": 715751,
+      "zipBytes": 541981,
       "audio": {
-        "title": "Ever So Blue - Onthou",
-        "format": "MP3",
-        "excerptSeconds": 30,
-        "bitrateKbps": 128,
-        "embedded": true,
-        "defaultEnabled": false,
-        "loop": true,
-        "source": "用户提供的 MP3",
+        "backgroundMusic": false,
         "independentEffects": true,
-        "deferredDecoding": true
+        "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "ad75cae4510536bfebf7132d602ab55be10a152af2c927981ce27c0b938aec11",
-      "zipSha256": "986e27bfad703bb8504b8a1b21358977be3944582ceedadd53b07e52ebf224ad",
+      "htmlSha256": "ba55b2772f3905e1bd7f551e52a237635bcbc024dc667d61c6d09952273e8d5e",
+      "zipSha256": "57235b7bf6e450ee6c7a69cd74edd50aa6a8beafb787efa34d7c64e4ee87e477",
       "updated": "2026-10-11",
-      "revision": "display-polish-20261011",
+      "revision": "no-bgm-20261011",
       "displayMode": "portrait-contained"
     },
     {
@@ -299,8 +250,8 @@
         "8 位顾客随机入座",
         "每局食材随机排列",
         "52 单完整试玩",
-        "循环配乐",
-        "Sera 主角"
+        "Sera 主角",
+        "操作音效"
       ],
       "operation": "点击一列前端连续同类食材；AUTO PLAY 自动经营，HINT 提示。",
       "ending": "完成 52 单后 Good Job! 定格，手动 RETRY 重开；50 格满且无法供餐有失败重试。",
@@ -308,25 +259,18 @@
       "entry": "sushi-belt/index.html",
       "zip": "下载包/sushi-belt.zip",
       "readme": "sushi-belt/README.md",
-      "htmlBytes": 3196681,
-      "zipBytes": 2456950,
+      "htmlBytes": 2550608,
+      "zipBytes": 1962427,
       "audio": {
-        "title": "Ever So Blue - Onthou",
-        "format": "MP3",
-        "excerptSeconds": 30,
-        "bitrateKbps": 128,
-        "embedded": true,
-        "defaultEnabled": false,
-        "loop": true,
-        "source": "用户提供的 MP3",
+        "backgroundMusic": false,
         "independentEffects": true,
-        "deferredDecoding": true
+        "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "28fe010be8de69eb817433ea0c4c17bd85039167b20907c579234040794ed472",
-      "zipSha256": "f342c90f9b10a54c935e3a30035f13c5d24b93c273f82db22dd92f137921d42c",
+      "htmlSha256": "8249ffa0f5a044fc53243c712cb7516b1be5e446aff76bbbba5d81ec510e8370",
+      "zipSha256": "c9a90832ada012c56653812e9c6d9c536cac341b2bfbf978e56982dc17104da7",
       "updated": "2026-10-11",
-      "revision": "display-polish-20261011",
+      "revision": "no-bgm-20261011",
       "displayMode": "responsive-landscape"
     },
     {
@@ -340,7 +284,7 @@
         "统一道具视角",
         "10 件独立收集",
         "一键自动寻找",
-        "循环配乐"
+        "操作音效"
       ],
       "operation": "点击找齐五类各两件；HINT 提示位置，AUTO PLAY 每秒收集一件。",
       "ending": "找齐 10 件后 Good Job! 定格；只有手动点击 RETRY 才重新开始。",
@@ -348,25 +292,18 @@
       "entry": "hidden-laundry/index.html",
       "zip": "下载包/hidden-laundry.zip",
       "readme": "hidden-laundry/README.md",
-      "htmlBytes": 2671812,
-      "zipBytes": 2056663,
+      "htmlBytes": 2025742,
+      "zipBytes": 1562443,
       "audio": {
-        "title": "Ever So Blue - Onthou",
-        "format": "MP3",
-        "excerptSeconds": 30,
-        "bitrateKbps": 128,
-        "embedded": true,
-        "defaultEnabled": false,
-        "loop": true,
-        "source": "用户提供的 MP3",
+        "backgroundMusic": false,
         "independentEffects": true,
-        "deferredDecoding": true
+        "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "b1345af52187f817397d58b095ff3e7ba644edfd9de50131eb9efc1ac829224d",
-      "zipSha256": "8b78c63de78a73a1b8397e7107b786c374bc4e267925db9a90761b5e4855ff24",
+      "htmlSha256": "fbcdfb17938dfee2e7ec6faf57d13dbc55be7a722f459e08996be0bd268d7102",
+      "zipSha256": "9af9bd804bc9532c6a22450b9539ed45b8c9450d5e45cbba3a72217f84c5ae34",
       "updated": "2026-10-11",
-      "revision": "display-polish-20261011",
+      "revision": "no-bgm-20261011",
       "displayMode": "portrait-contained"
     },
     {
@@ -381,7 +318,7 @@
         "三杯切换",
         "悬空掉落",
         "完整盘面",
-        "循环配乐"
+        "操作音效"
       ],
       "operation": "按住拖动瞄准，松开发射；点击发射圈或 SWAP 切换杯子。 已消失颜色自动舍弃并补杯。 自动演示遇到遮挡会继续落杯，不因缺少同色落点停止。",
       "ending": "全部清空后 Good Job! 保持最后画面；手动 RETRY 重开，满桥提示失败。",
@@ -390,24 +327,17 @@
       "zip": "下载包/cup-shooter.zip",
       "readme": "cup-shooter/README.md",
       "audio": {
-        "title": "Ever So Blue - Onthou",
-        "format": "MP3",
-        "excerptSeconds": 30,
-        "bitrateKbps": 128,
-        "embedded": true,
-        "defaultEnabled": false,
-        "loop": true,
-        "source": "用户提供的 MP3",
+        "backgroundMusic": false,
         "independentEffects": true,
-        "deferredDecoding": true
+        "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlBytes": 742768,
-      "zipBytes": 562021,
-      "htmlSha256": "ef44f933655a4f768e0e977d4ec8ca4990b537308f8365e623b715c6e1ba6426",
+      "htmlBytes": 96697,
+      "zipBytes": 68765,
+      "htmlSha256": "83441b029d1bd8d4445c2a402cd06879c4f07cdb01f1f1e61780592950de373c",
       "updated": "2026-10-11",
-      "zipSha256": "8738a8c5db5b3a97a3c73ce49a1c856a9bf2f836cf5bdf4733c3d5fda4636444",
-      "revision": "display-polish-20261011",
+      "zipSha256": "48197b23a957bfa7807dc9a607ba802f5660300276497323e8d16430198cd5ad",
+      "revision": "no-bgm-20261011",
       "displayMode": "portrait-contained"
     },
     {
@@ -424,10 +354,10 @@
         "自动收款与清洁",
         "可视开张条件",
         "约 3 分半经营",
-        "循环配乐",
         "Sera 主角",
         "背钱付款",
-        "步行动作"
+        "步行动作",
+        "操作音效"
       ],
       "operation": "拖动、点地或 WASD 移动建设与补货；STAFF 付费雇佣收款员和清洁员。AUTO 完整经营，满足开张条件后可点 OPEN HOTEL。",
       "ending": "完成前九项建设，筹足 3000、满意人数 110、服务人数 110、住宿 5 次后开张；顶部显示进度，可点 OPEN HOTEL。Good Job! 显示实际满意人数，酒店全景定格，手动 RETRY 重开。",
@@ -436,24 +366,17 @@
       "zip": "下载包/hotel-tycoon.zip",
       "readme": "hotel-tycoon/README.md",
       "audio": {
-        "title": "Ever So Blue - Onthou",
-        "format": "MP3",
-        "excerptSeconds": 30,
-        "bitrateKbps": 128,
-        "embedded": true,
-        "defaultEnabled": false,
-        "loop": true,
-        "source": "用户提供的 MP3",
+        "backgroundMusic": false,
         "independentEffects": true,
-        "deferredDecoding": true
+        "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-11",
-      "htmlBytes": 820154,
-      "zipBytes": 592464,
-      "htmlSha256": "5aa5f75444d9f79b275ca7046ce06c37a98c05bda85576c8a823504d5609d3da",
-      "zipSha256": "b6109e385eec8b54e46d8b00f2f805a690b9c4b1e03bd3638a375ed5002a9c26",
-      "revision": "display-polish-20261011",
+      "htmlBytes": 173900,
+      "zipBytes": 98510,
+      "htmlSha256": "254ddd8472ec82659d97ec80a2b311f0d48618b9d8e56e70da0c99bc469ddd46",
+      "zipSha256": "a471dff24c8841ed223395472b0699fdbcd775fbe3ba6b361ad21aa3343e7657",
+      "revision": "no-bgm-20261011",
       "displayMode": "responsive-landscape"
     },
     {
@@ -471,10 +394,10 @@
         "双柜台六路销售",
         "收银员 2 倍速",
         "约 2 分钟经营",
-        "循环配乐",
         "Sera 主角",
         "背钱付款",
-        "步行动作"
+        "步行动作",
+        "操作音效"
       ],
       "operation": "拖动、点地或 WASD 移动，收割并搬花束出售。TEAM 菜单雇工、扩容至六路并行售卖；AUTO 完整经营。",
       "ending": "完成 17 项建设，满意顾客达到 300 人、金色和蓝色花束各售出 100 束，支付 5,000 现金开张花卉节；Good Job! 最后一帧保持到手动 RETRY。",
@@ -483,24 +406,17 @@
       "zip": "下载包/flower-shop.zip",
       "readme": "flower-shop/README.md",
       "audio": {
-        "title": "Ever So Blue - Onthou",
-        "format": "MP3",
-        "excerptSeconds": 30,
-        "bitrateKbps": 128,
-        "embedded": true,
-        "defaultEnabled": false,
-        "loop": true,
-        "source": "用户提供的 MP3",
+        "backgroundMusic": false,
         "independentEffects": true,
-        "deferredDecoding": true
+        "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-11",
-      "htmlBytes": 802494,
-      "zipBytes": 603955,
-      "htmlSha256": "8be1d7d61fa62191500de9f03cbfe8aa4348cecd7c8735176c20b49465b783b4",
-      "zipSha256": "3ee509dd4677774df6b787777829292f64f72bcf33469f18e83b0363803dfc47",
-      "revision": "display-polish-20261011",
+      "htmlBytes": 156530,
+      "zipBytes": 109791,
+      "htmlSha256": "f76794a6e370f6249109cdb91bbe135b386786edc4587575db2c58aae123ce61",
+      "zipSha256": "608a26da95604b3e33a583b6e6bbfd53934747da6d4fb1b48be2bbc8598d53a5",
+      "revision": "no-bgm-20261011",
       "displayMode": "responsive-landscape"
     },
     {
@@ -514,7 +430,8 @@
         "真实上下楼动线",
         "搬货与背钱可见",
         "4 名付费员工",
-        "完整流程自动试玩"
+        "完整流程自动试玩",
+        "操作音效"
       ],
       "operation": "拖动、点地面或 WASD 移动；站在标识处拿货、卖货、收钱和建造。可开启自动试玩。",
       "ending": "完成扩建后持续经营，顾客和员工继续工作；手动点击重试。",
@@ -522,14 +439,18 @@
       "entry": "seaside-cafe/index.html",
       "zip": "下载包/seaside-cafe.zip",
       "readme": "seaside-cafe/README.md",
-      "audio": "MP3 128 kbps · 30秒 · 默认关闭",
+      "audio": {
+        "backgroundMusic": false,
+        "independentEffects": true,
+        "pauseWhenHidden": true
+      },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-11",
-      "htmlBytes": 814906,
-      "zipBytes": 586315,
-      "htmlSha256": "5a314e77e2e54b9a50db8995e6c89ebe9efa772db2ac4920b8a18685ad6502d2",
-      "zipSha256": "66ec49b814c9ee7a6f6d345f4caf665533b873ca9a0e15fb413576f41d104615",
-      "revision": "display-polish-20261011",
+      "htmlBytes": 168685,
+      "zipBytes": 92386,
+      "htmlSha256": "1e39dbd2317a02f2ef3e054d1fa3ab26d5eb49bb5e12067976e6bf756a2b63fd",
+      "zipSha256": "330f45c3eb30d02f97c79ea3ff74d91a4a2e94be608499c353690e66b59270f0",
+      "revision": "no-bgm-20261011",
       "displayMode": "responsive-landscape"
     },
     {
@@ -543,7 +464,8 @@
         "多条独立顾客队列",
         "搬货与背钱可见",
         "5 名付费员工",
-        "完整流程自动试玩"
+        "完整流程自动试玩",
+        "操作音效"
       ],
       "operation": "拖动、点地面或 WASD 移动；站在标识处拿货、卖货、收钱和建造。可开启自动试玩。",
       "ending": "完成扩建后持续经营，顾客和员工继续工作；手动点击重试。",
@@ -551,14 +473,18 @@
       "entry": "juice-factory/index.html",
       "zip": "下载包/juice-factory.zip",
       "readme": "juice-factory/README.md",
-      "audio": "MP3 128 kbps · 30秒 · 默认关闭",
+      "audio": {
+        "backgroundMusic": false,
+        "independentEffects": true,
+        "pauseWhenHidden": true
+      },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-11",
-      "htmlBytes": 814858,
-      "zipBytes": 587073,
-      "htmlSha256": "19e9c7e09617ad12f9e439bab962a69f4e046f3f21ffb95461908dc223b42cf4",
-      "zipSha256": "29a91ccb66d07040cf4cbf48738501593c8638b1e3857a0ed6dfcf96dfe4b46b",
-      "revision": "display-polish-20261011",
+      "htmlBytes": 168637,
+      "zipBytes": 93137,
+      "htmlSha256": "47b1723d050ea5eb40a17728551cf56d0c4676fc43d2fca4ac0595d1cf950cc3",
+      "zipSha256": "4d737b3e6dbcd09aaed474f0fa483692b6bb77772d9878e9dc62736e59a56fcf",
+      "revision": "no-bgm-20261011",
       "displayMode": "responsive-landscape"
     },
     {
@@ -572,7 +498,8 @@
         "多条独立顾客队列",
         "搬货与背钱可见",
         "5 名付费员工",
-        "完整流程自动试玩"
+        "完整流程自动试玩",
+        "操作音效"
       ],
       "operation": "拖动、点地面或 WASD 移动；站在标识处拿货、卖货、收钱和建造。可开启自动试玩。",
       "ending": "完成扩建后持续经营，顾客和员工继续工作；手动点击重试。",
@@ -580,14 +507,18 @@
       "entry": "burger-diner/index.html",
       "zip": "下载包/burger-diner.zip",
       "readme": "burger-diner/README.md",
-      "audio": "MP3 128 kbps · 30秒 · 默认关闭",
+      "audio": {
+        "backgroundMusic": false,
+        "independentEffects": true,
+        "pauseWhenHidden": true
+      },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-11",
-      "htmlBytes": 815260,
-      "zipBytes": 586873,
-      "htmlSha256": "b0270116a5befff051551d17b07da788489aef0c7403c61a7231937f4033a0f9",
-      "zipSha256": "ecfbdb22042432b3297cff22c37a963c6f3fd43adb2884f31d2e533d91768bda",
-      "revision": "display-polish-20261011",
+      "htmlBytes": 169039,
+      "zipBytes": 92938,
+      "htmlSha256": "26b4876c2b231ea2fc12c9d3d9950e46122a9a785f3fe43eb911f8f23a4e578c",
+      "zipSha256": "63940dd94e6126f73386da75ec266ebcbf633d9e801a462b9940885bf888f96a",
+      "revision": "no-bgm-20261011",
       "displayMode": "responsive-landscape"
     },
     {
@@ -601,7 +532,8 @@
         "72 朵采花 / 24 盆搬运",
         "开局两路自动接待",
         "四路售卖与大订单",
-        "持续经营与员工协作"
+        "持续经营与员工协作",
+        "操作音效"
       ],
       "operation": "拖动、点地面或 WASD 移动；站在标识处拿货、卖货、收钱和建造。可开启自动试玩。",
       "ending": "完成扩建后持续经营，顾客和员工继续工作；手动点击重试。",
@@ -609,14 +541,18 @@
       "entry": "greenhouse-florist/index.html",
       "zip": "下载包/greenhouse-florist.zip",
       "readme": "greenhouse-florist/README.md",
-      "audio": "MP3 128 kbps · 30秒 · 默认关闭",
+      "audio": {
+        "backgroundMusic": false,
+        "independentEffects": true,
+        "pauseWhenHidden": true
+      },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-11",
-      "htmlBytes": 815863,
-      "zipBytes": 587748,
-      "htmlSha256": "f353cd62ccec1cfa8213083f1586f8b95bb1fbf4294b4c786e858bbf915d68be",
-      "zipSha256": "5d8cd6d0bbab9e42d5b37d36a5bbd6d3e26b3f4dc4717e80fbdd96bcb4c0514c",
-      "revision": "display-polish-20261011",
+      "htmlBytes": 169642,
+      "zipBytes": 93833,
+      "htmlSha256": "724dd80c3f854a15adf1edfb5e052277464994d7926aa66b03951b6e8a656d83",
+      "zipSha256": "46b66dcf3ccf9370c0a8ed33687abc1df08efdb7cd4093f9504c6b82587dcf9e",
+      "revision": "no-bgm-20261011",
       "displayMode": "responsive-landscape"
     },
     {
@@ -630,7 +566,8 @@
         "真实拖动归类",
         "16 组三件消除",
         "时间与步数失败",
-        "自动 PLAY"
+        "自动 PLAY",
+        "操作音效"
       ],
       "operation": "拖动商品到货架，三个相同商品清空一格。",
       "ending": "成功或失败后直接显示简短提示，最长 0.7 秒结尾动画，保持画面到手动重试。",
@@ -640,14 +577,18 @@
       "entry": "goods-sort/index.html",
       "zip": "下载包/goods-sort.zip",
       "readme": "goods-sort/README.md",
-      "audio": "MP3 128 kbps · 30秒 · 默认关闭",
+      "audio": {
+        "backgroundMusic": false,
+        "independentEffects": true,
+        "pauseWhenHidden": true
+      },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-11",
-      "revision": "display-polish-20261011",
-      "htmlBytes": 780104,
-      "zipBytes": 574821,
-      "htmlSha256": "cfb861940ab064d29f8ffdbf11a493d6685b3f0096de41410fe49a15ba037827",
-      "zipSha256": "17de3e4e5993697181648fbc7d98977590cf496d127a0efd83e7c2dfe48d0c8b",
+      "revision": "no-bgm-20261011",
+      "htmlBytes": 134028,
+      "zipBytes": 80672,
+      "htmlSha256": "7dd30257cb52129fb029d535764c2e271b2033991c7b598c904a9b560ad28cbb",
+      "zipSha256": "c3e4779dad2a10d27458bada6c5edca58db4a5d10855ff941a5b181902fdfe7d",
       "displayMode": "responsive-landscape"
     },
     {
@@ -661,7 +602,8 @@
         "真实落石逼近与碰撞",
         "消除打开出口",
         "动态危险倒计时",
-        "自动 PLAY"
+        "自动 PLAY",
+        "操作音效"
       ],
       "operation": "点击相邻同色图块操作机关；彩球样本还要点击充满后的横杆。",
       "ending": "成功或失败后直接显示简短提示，最长 0.7 秒结尾动画，保持画面到手动重试。",
@@ -671,14 +613,18 @@
       "entry": "avalanche-rescue/index.html",
       "zip": "下载包/avalanche-rescue.zip",
       "readme": "avalanche-rescue/README.md",
-      "audio": "MP3 128 kbps · 30秒 · 默认关闭",
+      "audio": {
+        "backgroundMusic": false,
+        "independentEffects": true,
+        "pauseWhenHidden": true
+      },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-11",
-      "revision": "display-polish-20261011",
-      "htmlBytes": 781758,
-      "zipBytes": 576078,
-      "htmlSha256": "c9e9e2aaa2b36bffe6633de38d89c537a58426da1a00a1e8e797fd410fa12f4a",
-      "zipSha256": "80702cbbb1dcfa0ec9003752903dacd4ef6afd70d0df0660405cd854afb980f4",
+      "revision": "no-bgm-20261011",
+      "htmlBytes": 135689,
+      "zipBytes": 81886,
+      "htmlSha256": "8ceb916165643a7ae08bac73fc1bad79f8bf90f3e10df638b0037e3e4c166ede",
+      "zipSha256": "ad7c334da292d47051e5c94e9de6464be912e88f90d0fc39f16b1c15175298b4",
       "displayMode": "portrait-contained"
     },
     {
@@ -692,7 +638,8 @@
         "八块独立石板",
         "水位与排水反馈",
         "溺水危险",
-        "自动 PLAY"
+        "自动 PLAY",
+        "操作音效"
       ],
       "operation": "点击相邻同色图块操作机关；彩球样本还要点击充满后的横杆。",
       "ending": "成功或失败后直接显示简短提示，最长 0.7 秒结尾动画，保持画面到手动重试。",
@@ -702,14 +649,18 @@
       "entry": "water-tower/index.html",
       "zip": "下载包/water-tower.zip",
       "readme": "water-tower/README.md",
-      "audio": "MP3 128 kbps · 30秒 · 默认关闭",
+      "audio": {
+        "backgroundMusic": false,
+        "independentEffects": true,
+        "pauseWhenHidden": true
+      },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-11",
-      "revision": "display-polish-20261011",
-      "htmlBytes": 776392,
-      "zipBytes": 573917,
-      "htmlSha256": "4204e92c9d104c46c321cfe2e854d3f9ec990572209c212e0c1cb4fdb53cc3ce",
-      "zipSha256": "a2ca1c0c19287154ce407836af272b9c6282eee54a4194626b1053a949a9dc9b",
+      "revision": "no-bgm-20261011",
+      "htmlBytes": 130323,
+      "zipBytes": 79826,
+      "htmlSha256": "3e9164ebcd8ad25fbe555032606744aac92a95992d9cb3a798f2a608d678bea3",
+      "zipSha256": "0de2345801431638bb88e371bc074d4a193c79f590758820e0678534a1117d77",
       "displayMode": "portrait-contained"
     },
     {
@@ -723,7 +674,8 @@
         "消除加点击横杆",
         "三轮水球落下",
         "红色助长火势",
-        "自动 PLAY"
+        "自动 PLAY",
+        "操作音效"
       ],
       "operation": "点击相邻同色图块操作机关；彩球样本还要点击充满后的横杆。",
       "ending": "成功或失败后直接显示简短提示，最长 0.7 秒结尾动画，保持画面到手动重试。",
@@ -733,14 +685,18 @@
       "entry": "ball-fire-rescue/index.html",
       "zip": "下载包/ball-fire-rescue.zip",
       "readme": "ball-fire-rescue/README.md",
-      "audio": "MP3 128 kbps · 30秒 · 默认关闭",
+      "audio": {
+        "backgroundMusic": false,
+        "independentEffects": true,
+        "pauseWhenHidden": true
+      },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-11",
-      "revision": "display-polish-20261011",
-      "htmlBytes": 776369,
-      "zipBytes": 573936,
-      "htmlSha256": "73e6c339c89dd069dc124d14dee4861453fabd3aac00c0434242ca54651675bf",
-      "zipSha256": "1f03dd2a6457a1c29440ab60734dfda485a16b5f9a7d97ed5e7c233a558c1aab",
+      "revision": "no-bgm-20261011",
+      "htmlBytes": 130300,
+      "zipBytes": 79844,
+      "htmlSha256": "cdf1b010f02d6af3612ad6afde14e035222a916da18a0b63b3d3ee0fdafbfcf2",
+      "zipSha256": "51adaf2efcc4133da7cf2c72673b2fce0f2758417d9341c32465b5db4dfb1111",
       "displayMode": "portrait-contained"
     },
     {
@@ -754,7 +710,8 @@
         "两间不同机关房",
         "清水与熔岩闸门",
         "选错闸门失败",
-        "自动 PLAY"
+        "自动 PLAY",
+        "操作音效"
       ],
       "operation": "点击相邻同色图块操作机关；彩球样本还要点击充满后的横杆。",
       "ending": "成功或失败后直接显示简短提示，最长 0.7 秒结尾动画，保持画面到手动重试。",
@@ -764,14 +721,18 @@
       "entry": "water-valve-rescue/index.html",
       "zip": "下载包/water-valve-rescue.zip",
       "readme": "water-valve-rescue/README.md",
-      "audio": "MP3 128 kbps · 30秒 · 默认关闭",
+      "audio": {
+        "backgroundMusic": false,
+        "independentEffects": true,
+        "pauseWhenHidden": true
+      },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-11",
-      "revision": "display-polish-20261011",
-      "htmlBytes": 781749,
-      "zipBytes": 575938,
-      "htmlSha256": "89a0e99a4f61d3e3d129be7809a9b283b3eb1432e97c673eb5fe4317f1cf6b40",
-      "zipSha256": "0b6fc829833db93bb68b80f970964b095c6c511343c68da7e58858a102342384",
+      "revision": "no-bgm-20261011",
+      "htmlBytes": 135680,
+      "zipBytes": 81752,
+      "htmlSha256": "bd464973f9487945ad85f48ca19b01021917ef06e8992f9e86171fd24056b078",
+      "zipSha256": "ff7b2757c48acb76999f9d7b5acfcd69dc74e4c373e4b02af7d2ecdce6ae0687",
       "displayMode": "portrait-contained"
     },
     {
@@ -785,7 +746,8 @@
         "真实遮挡与侧边规则",
         "68 张牌 / 34 对",
         "两次重新洗牌",
-        "自动 PLAY"
+        "自动 PLAY",
+        "操作音效"
       ],
       "operation": "点击两张相同自由牌；上方无遮挡、至少一侧开放。",
       "ending": "成功或失败后直接显示简短提示，最长 0.7 秒结尾动画，保持画面到手动重试。",
@@ -795,14 +757,18 @@
       "entry": "mahjong-pairs/index.html",
       "zip": "下载包/mahjong-pairs.zip",
       "readme": "mahjong-pairs/README.md",
-      "audio": "MP3 128 kbps · 30秒 · 默认关闭",
+      "audio": {
+        "backgroundMusic": false,
+        "independentEffects": true,
+        "pauseWhenHidden": true
+      },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-11",
-      "revision": "display-polish-20261011",
-      "htmlBytes": 780143,
-      "zipBytes": 574855,
-      "htmlSha256": "17e9ba47f1b166ea77c566424b14721562df18078228606f1c79a2221c374437",
-      "zipSha256": "55614555cf928f5c5835ad3044e5f149ff7e07b303e96b704642c9ea992202f6",
+      "revision": "no-bgm-20261011",
+      "htmlBytes": 134067,
+      "zipBytes": 80708,
+      "htmlSha256": "10f196c107399c2fba28e250930e28d63cc172c426abc76ea0fc27992142c8c4",
+      "zipSha256": "3a9db8b371dc8ff3214829ed1326e9d69b1676ee4a4013eedb83e556730e93fb",
       "displayMode": "responsive-landscape"
     },
     {
@@ -816,7 +782,8 @@
         "28 → 200 箭头两关",
         "地狱级多层阻挡",
         "缩放与拖动盘面",
-        "自动 PLAY"
+        "自动 PLAY",
+        "操作音效"
       ],
       "operation": "先解开 28 箭头，再挑战 200 箭头；放大、拖动、双指缩放查看路径，三次碰撞失败。",
       "ending": "第一关完成后点击 HELL MODE 进入 200 箭头第二关；最终胜负保留到手动重试当前关，结尾动画 0.7 秒。",
@@ -826,14 +793,18 @@
       "entry": "arrow-escape/index.html",
       "zip": "下载包/arrow-escape.zip",
       "readme": "arrow-escape/README.md",
-      "audio": "MP3 128 kbps · 30秒 · 默认关闭",
+      "audio": {
+        "backgroundMusic": false,
+        "independentEffects": true,
+        "pauseWhenHidden": true
+      },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-11",
-      "revision": "display-polish-20261011",
-      "htmlBytes": 1006402,
-      "zipBytes": 641857,
-      "htmlSha256": "9d0e862485d16ff362ec5b95d8437aa2d9703854c52b2efebc10f3730349e157",
-      "zipSha256": "27b45ae7b01e010345a8a8f929240c1d458a541820512c7994a2ff61fd2cd27b",
+      "revision": "no-bgm-20261011",
+      "htmlBytes": 360326,
+      "zipBytes": 148054,
+      "htmlSha256": "e13c404b72770d0250f3b9491357ddb8037f87b149ecc650697d9a430b68c8cc",
+      "zipSha256": "232c46ba3558eeaff1b719fdf54653efa8c44dbb1c897d416c96c05e8a5c353e",
       "hellPreview": "arrow-escape/preview-hell.png",
       "levels": [
         {
@@ -865,7 +836,8 @@
         "形状轮廓提示",
         "弯头镊子",
         "独立撕贴音效",
-        "AUTO PLAY"
+        "AUTO PLAY",
+        "操作音效"
       ],
       "operation": "左右滑动选贴纸，用弯头镊子从下方拖进对应位置；先放货架再摆商品。音乐按钮只控制配乐，操作音效默认有效。",
       "ending": "36 张全部到位后显示 Good Job!，保留完整商店，手动 RETRY 才重开。",
@@ -874,24 +846,17 @@
       "zip": "下载包/sticker-shop.zip",
       "readme": "sticker-shop/README.md",
       "audio": {
-        "title": "Ever So Blue - Onthou",
-        "format": "MP3",
-        "excerptSeconds": 30,
-        "bitrateKbps": 128,
-        "embedded": true,
-        "defaultEnabled": false,
-        "loop": true,
-        "source": "用户提供的 MP3",
+        "backgroundMusic": false,
         "independentEffects": true,
-        "deferredDecoding": true
+        "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-11",
-      "revision": "display-polish-20261011",
-      "htmlBytes": 1448547,
-      "zipBytes": 1093423,
-      "htmlSha256": "48a49e73b1adc11611791d55328b940616b21b5012b1fa52fac2873987e1896b",
-      "zipSha256": "aa4fe72a987d677c610e585f2706fa1926de0bf1a16621cb5ae448fb436a658e",
+      "revision": "no-bgm-20261011",
+      "htmlBytes": 802526,
+      "zipBytes": 599831,
+      "htmlSha256": "619ddf95e04a1ce4e9d40f66beb009c0ae786fb70f847ef3e7135f887863de47",
+      "zipSha256": "3c4f51e8e2f9abf91706f6312f6a9960e80afdbae8db1e4f582bd663253de722",
       "displayMode": "responsive-landscape"
     },
     {
@@ -908,7 +873,8 @@
         "大画布圆点",
         "撤销重试",
         "AUTO PLAY",
-        "独立操作音效"
+        "独立操作音效",
+        "操作音效"
       ],
       "operation": "按住一个点自由画线到同色点；不能碰到不同颜色的点或交叉已有连线。",
       "ending": "全部点对连好即成功；三次碰撞后失败。手动切下一关，最后一关保留画面；自动试玩可连续完成六关。",
@@ -917,24 +883,17 @@
       "zip": "下载包/dot-link.zip",
       "readme": "dot-link/README.md",
       "audio": {
-        "title": "Ever So Blue - Onthou",
-        "format": "MP3",
-        "excerptSeconds": 30,
-        "bitrateKbps": 128,
-        "embedded": true,
-        "defaultEnabled": false,
-        "loop": true,
-        "source": "用户提供的 MP3",
+        "backgroundMusic": false,
         "independentEffects": true,
-        "deferredDecoding": true
+        "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-11",
-      "revision": "display-polish-20261011",
-      "htmlBytes": 928726,
-      "zipBytes": 592948,
-      "htmlSha256": "b57ccbdef8332c2c6f4926cc71e3aad212a101a83e13d6c7f582fba5c32cdfbb",
-      "zipSha256": "748a7f513ce96c93753b21d63315821798bff81c78b200eaeaec27731ca5843f",
+      "revision": "no-bgm-20261011",
+      "htmlBytes": 282635,
+      "zipBytes": 99062,
+      "htmlSha256": "4a55421b52f2215a16bd9f37d0bc2fc66cd4376fab7699f99d1ede716b2949af",
+      "zipSha256": "615ccf9ba0e4704fb86d11da2c0c0af7cc62baa4b323ac282916130019092583",
       "displayMode": "portrait-contained"
     },
     {
@@ -955,7 +914,7 @@
         "AUTO PLAY",
         "暂停继续",
         "独立操作音效",
-        "循环配乐"
+        "操作音效"
       ],
       "operation": "滑动、方向按钮或方向键移动；吃完所有苹果进入旋涡，利用身体留在平台上方保持支撑。第八关手机默认放大，MAP 查看全景、PLAY 返回；拖动小地图查看远处。",
       "ending": "吃完苹果进入出口成功；坠落出界或触碰尖刺失败。支持撤销重试；自动试玩连续完成八关，最后画面保持。",
@@ -964,24 +923,17 @@
       "zip": "下载包/snake-puzzle.zip",
       "readme": "snake-puzzle/README.md",
       "audio": {
-        "title": "Ever So Blue - Onthou",
-        "format": "MP3",
-        "excerptSeconds": 30,
-        "bitrateKbps": 128,
-        "embedded": true,
-        "defaultEnabled": false,
-        "loop": true,
-        "source": "用户提供的 MP3",
+        "backgroundMusic": false,
         "independentEffects": true,
-        "deferredDecoding": true
+        "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-11",
-      "revision": "display-polish-20261011",
-      "htmlBytes": 764873,
-      "htmlSha256": "2a808d4c021d179429b6c184637335662a902dc473488f97f5b96b8a66b5f0ac",
-      "zipBytes": 574974,
-      "zipSha256": "4ed9e5f2709561df88105f810cc3db26af3203d1ddd67eaa85f9aaebb9d06fc0",
+      "revision": "no-bgm-20261011",
+      "htmlBytes": 118918,
+      "htmlSha256": "d3543c956db58bc632541d1fcfb23bd79c90255e379bf8c577c8b1194f084c57",
+      "zipBytes": 81484,
+      "zipSha256": "802f9478fdcb4b9cbd77e902ae041936f084accc2c77ad9b91789c1fad770667",
       "displayMode": "responsive-landscape"
     },
     {
@@ -1002,7 +954,8 @@
         "手动接管",
         "撤销重试",
         "成功与失败",
-        "独立操作音效"
+        "独立操作音效",
+        "操作音效"
       ],
       "operation": "拖动同类原料合并为备料，集齐两种备料后烹饪并提交四份订单；AUTO PLAY 可暂停继续。",
       "ending": "完成四单进入 Juicy Journey PLAY NOW 落版并保持；时间或步数用尽失败，可手动重试。",
@@ -1011,24 +964,17 @@
       "zip": "下载包/stack-merge.zip",
       "readme": "stack-merge/README.md",
       "audio": {
-        "title": "Ever So Blue - Onthou",
-        "format": "MP3",
-        "excerptSeconds": 30,
-        "bitrateKbps": 128,
-        "embedded": true,
-        "defaultEnabled": false,
-        "loop": true,
-        "source": "用户提供的 MP3",
+        "backgroundMusic": false,
         "independentEffects": true,
-        "deferredDecoding": true
+        "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-11",
-      "revision": "display-polish-20261011",
-      "htmlBytes": 1513852,
-      "htmlSha256": "9656dd0259f6fececa62db5799affe7fa3a9da44315bb316cb53cf757df84ca7",
-      "zipBytes": 1152075,
-      "zipSha256": "825db1fb0f85ac46240b5c39a6466adbd19b864355860d6a81bfbad81952fe44",
+      "revision": "no-bgm-20261011",
+      "htmlBytes": 867904,
+      "htmlSha256": "5ed8abbaa50300a7a86b680f8978cfcccfad4b1b18873f68ef7a085eb84cbfd5",
+      "zipBytes": 658618,
+      "zipSha256": "d841b8e1cd95c5fab0d222aa389cca6fb71d47ca19002c624a125b1255b225da",
       "displayMode": "responsive-landscape"
     }
   ],
@@ -1036,17 +982,9 @@
     "earlyZip": "历史版本/旧下载包/corn-早期包.zip"
   },
   "audioRelease": {
-    "date": "2026-10-02",
-    "audio": {
-      "title": "Ever So Blue - Onthou",
-      "format": "MP3",
-      "excerptSeconds": 30,
-      "bitrateKbps": 128,
-      "embedded": true,
-      "defaultEnabled": false,
-      "loop": true,
-      "source": "用户提供的 MP3"
-    },
+    "date": "2026-10-11",
+    "backgroundMusic": false,
+    "independentEffects": true,
     "limitBytes": 5000000,
     "report": "体积与音乐检查.md",
     "allHtmlBelowLimit": true,

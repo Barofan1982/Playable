@@ -31,3 +31,8 @@ Use case: stylized-concept. Asset type: transparent power-up sprite sheet for a 
 ## 实现源文件
 
 `D:/Test/_codex_scratch/juicy-journey-flambe-reference/` 中保存页面模板、玩法代码、构建脚本、浏览器检查脚本、参考帧和完整生成图片。
+
+
+## 音频更新（2026-10-11）
+
+已删除背景音乐数据、播放器和音乐按钮。保留操作音效，首次用户操作后有效；页面隐藏或广告不可见时暂停。

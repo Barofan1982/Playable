@@ -66,3 +66,8 @@ Use case: stylized-concept. Asset type: transparent character sprite atlas for J
 ## 2026-10-11 顾客素材修正
 
 中央 Sera 厨师保留。顾客图集索引 1 原为另一张 Sera，现替换为用户提供的 Chloe 立绘半身，复用堆叠接单的透明半身素材，备份为 `assets/chloe-guest.webp`。顾客索引 1–8 保留八位不同角色；厨师索引 0 不进入顾客池。所有角色运行时使用独立预裁切 WebP，已内嵌于 HTML，无外部请求。旧 `assets/cast.png` 是历史参考，不用于当前角色载入。
+
+
+## 音频更新（2026-10-11）
+
+已删除背景音乐数据、播放器和音乐按钮。保留操作音效，首次用户操作后有效；页面隐藏或广告不可见时暂停。

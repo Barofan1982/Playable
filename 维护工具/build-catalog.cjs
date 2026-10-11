@@ -5,7 +5,6 @@ const manifest=JSON.parse(fs.readFileSync(root+"/samples.json","utf8")),samples=
 const categoryOverrides={'drink-merge':'合成','merge-cook':'消除','arrow-escape':'解谜'};
 for(const sample of samples)if(categoryOverrides[sample.id])sample.type=categoryOverrides[sample.id];
 const updated=manifest.updated||'2026-10-02';
-const musicCount=samples.filter(s=>!['interactive-math-demo','interactive-audio-demo','interactive-physics-demo','static-astronomy-poster'].includes(s.kind)).length;
 const displayDate=updated.split('-').map(Number).join(' ').replace(/^(\d+) (\d+) (\d+)$/, '$1 年 $2 月 $3 日');
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 for(const s of samples){s.entry=s.id+'/index.html';s.zip='下载包/'+s.id+'.zip';s.readme=s.id+'/README.md';s.htmlBytes=fs.statSync(path.join(root,s.entry)).size;if(fs.existsSync(path.join(root,s.zip)))s.zipBytes=fs.statSync(path.join(root,s.zip)).size;}
@@ -45,7 +44,7 @@ ${table}
 
 这些文件可直接作为静态网站托管，首页入口为根目录 index.html。现有成品无需编译，网站根目录即为部署内容根目录。
 
-各样本的 index.html 内嵌运行所需的图片、音乐和代码，单文件离线可玩；合集首页的预览图和商标是额外的网站展示文件，需要与首页一起托管。
+各样本的 index.html 内嵌运行所需的图片、操作音效和代码，单文件离线可玩；合集首页的预览图和商标是额外的网站展示文件，需要与首页一起托管。
 
 GitHub 中保存首页、${samples.length} 个独立试玩、预览图、必要商标及说明。ZIP 为本地归档，继续保存在本地下载包目录。参考视频、测试浏览器缓存和原始素材由本地工作目录维护。
 
@@ -53,9 +52,9 @@ GitHub 中保存首页、${samples.length} 个独立试玩、预览图、必要�
 
 [washface.mp4](washface.mp4) 放在仓库根目录，与合集一起保存。
 
-## 配乐与体积
+## 操作音效与体积
 
-${musicCount} 个试玩使用用户提供的 Ever So Blue - Onthou，前 30 秒、MP3 128 kbps 循环。配乐默认关闭，按音乐按钮后才解码并循环播放。全部样本的操作音效独立于音乐开关；后台隐藏时暂停声音。大图采用 WebP，列表按可见位置加载预览图。独立试玩中不设置返回列表按钮。
+全部 ${samples.length} 个试玩已移除背景音乐数据、播放器和音乐开关，仅保留操作音效；用户操作后可以播放音效，后台隐藏或广告不可见时暂停声音。大图采用 WebP，列表按可见位置加载预览图。独立试玩中不设置返回列表按钮。
 
 各 HTML 均低于 5,000,000 字节。[体积记录](体积与音乐检查.md)。
 
@@ -64,3 +63,5 @@ ${musicCount} 个试玩使用用户提供的 Ever So Blue - Onthou，前 30 秒�
 ${samples.map(s=>`### ${s.name}\n\n${s.desc}\n\n- 操作：${s.operation}\n- 结尾：${s.ending}\n- [详细说明](${s.readme})\n`).join('\n')}
 `);
 console.log(JSON.stringify({root,samples:samples.length,catalogBytes:fs.statSync(path.join(root,'index.html')).size}));
+
+fs.writeFileSync(path.join(root,'README.md'),fs.readFileSync(path.join(root,'README.md'),'utf8').trimEnd()+'\n');
