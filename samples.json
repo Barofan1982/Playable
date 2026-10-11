@@ -976,6 +976,42 @@
       "zipBytes": 658618,
       "zipSha256": "d841b8e1cd95c5fab0d222aa389cca6fb71d47ca19002c624a125b1255b225da",
       "displayMode": "responsive-landscape"
+    },
+    {
+      "id": "bridge-race",
+      "name": "雪球搭桥竞速",
+      "type": "竞速",
+      "subtitle": "Roll & Build",
+      "image": "preview.webp",
+      "desc": "操控 Sera 滚动收集积雪，消耗雪球铺设 84 级雪阶，与三名对手争夺终点。移动及雪球转动速度降低到原来的三分之一。",
+      "features": [
+        "雪球收集",
+        "消耗铺设雪阶",
+        "三段雪地赛道",
+        "Sera 主角",
+        "成功与失败",
+        "AUTO PLAY",
+        "操作音效"
+      ],
+      "operation": "在盘面按住拖动控制方向，走过雪地收集积雪，走上对应通道自动消耗雪球铺设雪阶；电脑支持方向键/WASD。AUTO PLAY 可暂停继续，RETRY 手动重玩。",
+      "ending": "先到终点成功；对手先到、失足或倒计时结束失败。结果保持，手动重试。",
+      "reference": "Bridge Race · 360 × 640 · 2026-10-08",
+      "entry": "bridge-race/index.html",
+      "zip": "下载包/bridge-race.zip",
+      "readme": "bridge-race/README.md",
+      "htmlBytes": 61595,
+      "audio": {
+        "backgroundMusic": false,
+        "independentEffects": true,
+        "pauseWhenHidden": true
+      },
+      "sizeLimitBytes": 5000000,
+      "updated": "2026-10-11",
+      "revision": "bridge-snow-slow-20261011",
+      "displayMode": "portrait-contained",
+      "zipBytes": 30418,
+      "htmlSha256": "c28f9ab5c296583df7c01531b1a45a2e5d036ae4a1e6021f6c0e4b365bf11a8a",
+      "zipSha256": "f6d8a3b763dfa2c6db60e0bce752003cbb5531c4d85dff46ef42026c89c229e6"
     }
   ],
   "archive": {

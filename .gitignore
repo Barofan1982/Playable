@@ -10,6 +10,8 @@
 /ball-fire-rescue/*
 !/block/
 /block/*
+!/bridge-race/
+/bridge-race/*
 !/burger-diner/
 /burger-diner/*
 !/corn/
@@ -78,6 +80,10 @@
 !/block/README.md
 !/block/index.html
 !/block/preview.webp
+!/bridge-race/ASSET-NOTES.md
+!/bridge-race/README.md
+!/bridge-race/index.html
+!/bridge-race/preview.webp
 !/burger-diner/ASSET-NOTES.md
 !/burger-diner/README.md
 !/burger-diner/index.html
