@@ -9,7 +9,7 @@
 :root{--header-height:64px;--page:#f5f4ec;--ink:#193e3b;--green:#164c48}
 *{box-sizing:border-box}body{margin:0;background:var(--page);color:var(--ink);font-family:"Microsoft YaHei",Arial,sans-serif}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}a,button{touch-action:manipulation}a:focus-visible,button:focus-visible{outline:3px solid #dc793d;outline-offset:3px}
 .topbar{position:sticky;top:0;z-index:20;background:var(--green);color:#fff8e5;padding-top:env(safe-area-inset-top,0px)}.header-inner{height:var(--header-height);max-width:1320px;padding:0 24px;margin:auto;display:flex;align-items:center;gap:16px}.brand{width:92px;height:55px;object-fit:contain}h1{font-size:18px;font-weight:600;margin:0;letter-spacing:.04em}.count{margin-left:auto;color:#d0e3d7;font-size:12px}
-main{max-width:1320px;margin:auto;padding:0 24px 24px}.toolbar{position:sticky;top:calc(var(--header-height) + env(safe-area-inset-top,0px));z-index:10;padding:8px 0;background:var(--page);margin-bottom:4px}.filters{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;overscroll-behavior-x:contain;touch-action:pan-x;padding:4px}.filters::-webkit-scrollbar,.grid::-webkit-scrollbar{display:none}.filter{flex:none;display:flex;align-items:center;justify-content:center;gap:6px;border:1px solid #d9ded0;border-radius:16px;padding:10px 16px;min-width:82px;min-height:48px;background:#fffefa;color:#536964;font-size:14px;font-weight:600;white-space:nowrap}.filter::before{content:'✓';width:14px;font-size:14px;opacity:0}.filter[aria-pressed=true]{background:var(--green);color:#fff7df;border-color:var(--green)}.filter[aria-pressed=true]::before{opacity:1}
+main{max-width:1320px;margin:auto;padding:0 24px 24px}.toolbar{position:sticky;top:calc(var(--header-height) + env(safe-area-inset-top,0px));z-index:10;padding:8px 0;background:var(--page);margin-bottom:4px}.toolbar:after{content:"›";position:absolute;right:0;top:8px;bottom:8px;width:24px;display:grid;place-items:center;background:linear-gradient(90deg,transparent,var(--page) 35%);color:#638b7a;font-size:24px;pointer-events:none}.filters{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;overscroll-behavior-x:contain;touch-action:pan-x;padding:4px 24px 4px 4px}.filters::-webkit-scrollbar,.grid::-webkit-scrollbar{display:none}.filter{flex:none;display:flex;align-items:center;justify-content:center;gap:6px;border:1px solid #d9ded0;border-radius:16px;padding:10px 16px;min-width:82px;min-height:48px;background:#fffefa;color:#536964;font-size:14px;font-weight:600;white-space:nowrap}.filter::before{content:'✓';width:14px;font-size:14px;opacity:0}.filter[aria-pressed=true]{background:var(--green);color:#fff7df;border-color:var(--green)}.filter[aria-pressed=true]::before{opacity:1}
 .grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}.card{min-width:0;background:#fffefa;border:1px solid #e1e3d7;border-radius:15px;overflow:hidden;box-shadow:0 3px 12px #213f360b}.card[hidden]{display:none}.playable{display:flex;flex-direction:column;height:100%;border-radius:inherit;outline-offset:-4px}.poster{position:relative;aspect-ratio:9/16;overflow:hidden;background:#e9e8dc}.poster img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 50%}.play-mark{position:absolute;right:10px;bottom:10px;display:grid;place-items:center;width:29px;height:29px;padding-left:2px;border-radius:50%;background:#164c48d9;color:#fff8e5;font-size:11px;box-shadow:0 2px 8px #0002}.card-body{padding:11px 12px 12px}h2{font-size:14px;line-height:1.4;margin:0 0 5px;overflow-wrap:anywhere}.category{font-size:11px;line-height:1.4;color:#75867b}.empty{color:#75867b;text-align:center;padding:40px 12px;margin:0}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.gallery-controls{display:none}
 @media(hover:hover){.card{transition:transform .15s,box-shadow .15s}.card:hover{transform:translateY(-3px);box-shadow:0 7px 20px #213f3618}}
 @media(max-width:1100px){.grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
@@ -31,137 +31,137 @@ main{max-width:1320px;margin:auto;padding:0 24px 24px}.toolbar{position:sticky;t
  <div class="toolbar"><nav class="filters" aria-label="按玩法筛选，可多选，再次点击取消"><button class="filter" type="button" data-filter="全部" aria-pressed="true">全部</button><button class="filter" type="button" data-filter="合成" aria-pressed="false">合成</button><button class="filter" type="button" data-filter="消除" aria-pressed="false">消除</button><button class="filter" type="button" data-filter="经营" aria-pressed="false">经营</button><button class="filter" type="button" data-filter="方块" aria-pressed="false">方块</button><button class="filter" type="button" data-filter="拼图" aria-pressed="false">拼图</button><button class="filter" type="button" data-filter="寻物" aria-pressed="false">寻物</button><button class="filter" type="button" data-filter="解谜" aria-pressed="false">解谜</button><button class="filter" type="button" data-filter="装饰" aria-pressed="false">装饰</button><button class="filter" type="button" data-filter="连线" aria-pressed="false">连线</button></nav></div>
  <div class="sr-only" id="results" aria-live="polite">全部 27 个试玩</div>
  <section class="grid" id="gallery" aria-label="试玩样本"><article class="card" data-type="消除">
- <a class="playable" href="corn/index.html?v=startup-optimized-20261010" target="_blank" rel="noopener" aria-label="试玩：玉米旋转消除">
+ <a class="playable" href="corn/index.html?v=ux-pass-20261011" target="_blank" rel="noopener" aria-label="试玩：玉米旋转消除">
   <div class="poster"><img src="corn/preview.webp" alt="玉米旋转消除预览" fetchpriority="high" decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
   <div class="card-body"><h2>玉米旋转消除</h2><span class="category">消除</span></div>
  </a></article>
 <article class="card" data-type="经营">
- <a class="playable" href="market/index.html?v=startup-optimized-20261010" target="_blank" rel="noopener" aria-label="试玩：饮料摊经营">
+ <a class="playable" href="market/index.html?v=ux-pass-20261011" target="_blank" rel="noopener" aria-label="试玩：饮料摊经营">
   <div class="poster"><img data-src="market/preview.webp" alt="饮料摊经营预览"  decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
   <div class="card-body"><h2>饮料摊经营</h2><span class="category">经营</span></div>
  </a></article>
 <article class="card" data-type="方块">
- <a class="playable" href="block/index.html?v=startup-optimized-20261010" target="_blank" rel="noopener" aria-label="试玩：俄罗斯方块">
+ <a class="playable" href="block/index.html?v=ux-pass-20261011" target="_blank" rel="noopener" aria-label="试玩：俄罗斯方块">
   <div class="poster"><img data-src="block/preview.webp" alt="俄罗斯方块预览"  decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
   <div class="card-body"><h2>俄罗斯方块</h2><span class="category">方块</span></div>
  </a></article>
 <article class="card" data-type="拼图">
- <a class="playable" href="jigsaw/index.html?v=startup-optimized-20261010" target="_blank" rel="noopener" aria-label="试玩：公主蝴蝶拼图">
+ <a class="playable" href="jigsaw/index.html?v=ux-pass-20261011" target="_blank" rel="noopener" aria-label="试玩：公主蝴蝶拼图">
   <div class="poster"><img data-src="jigsaw/preview.webp" alt="公主蝴蝶拼图预览"  decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
   <div class="card-body"><h2>公主蝴蝶拼图</h2><span class="category">拼图</span></div>
  </a></article>
 <article class="card" data-type="拼图">
- <a class="playable" href="rain-jigsaw/index.html?v=startup-optimized-20261010" target="_blank" rel="noopener" aria-label="试玩：雨夜撑伞拼图">
+ <a class="playable" href="rain-jigsaw/index.html?v=ux-pass-20261011" target="_blank" rel="noopener" aria-label="试玩：雨夜撑伞拼图">
   <div class="poster"><img data-src="rain-jigsaw/preview.webp" alt="雨夜撑伞拼图预览"  decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
   <div class="card-body"><h2>雨夜撑伞拼图</h2><span class="category">拼图</span></div>
  </a></article>
 <article class="card" data-type="消除">
- <a class="playable" href="merge-cook/index.html?v=startup-optimized-20261010" target="_blank" rel="noopener" aria-label="试玩：海岛合并烹饪">
-  <div class="poster"><img data-src="merge-cook/preview.webp" alt="海岛合并烹饪预览"  decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
-  <div class="card-body"><h2>海岛合并烹饪</h2><span class="category">消除</span></div>
+ <a class="playable" href="merge-cook/index.html?v=ux-pass-20261011" target="_blank" rel="noopener" aria-label="试玩：海岛配对烹饪">
+  <div class="poster"><img data-src="merge-cook/preview.webp" alt="海岛配对烹饪预览"  decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
+  <div class="card-body"><h2>海岛配对烹饪</h2><span class="category">消除</span></div>
  </a></article>
 <article class="card" data-type="合成">
- <a class="playable" href="drink-merge/index.html?v=startup-optimized-20261010" target="_blank" rel="noopener" aria-label="试玩：饮品发射合并">
+ <a class="playable" href="drink-merge/index.html?v=ux-pass-20261011" target="_blank" rel="noopener" aria-label="试玩：饮品发射合并">
   <div class="poster"><img data-src="drink-merge/preview.webp" alt="饮品发射合并预览"  decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
   <div class="card-body"><h2>饮品发射合并</h2><span class="category">合成</span></div>
  </a></article>
 <article class="card" data-type="经营">
- <a class="playable" href="sushi-belt/index.html?v=startup-optimized-20261010" target="_blank" rel="noopener" aria-label="试玩：寿司传送带">
+ <a class="playable" href="sushi-belt/index.html?v=ux-pass-20261011" target="_blank" rel="noopener" aria-label="试玩：寿司传送带">
   <div class="poster"><img data-src="sushi-belt/preview.webp" alt="寿司传送带预览"  decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
   <div class="card-body"><h2>寿司传送带</h2><span class="category">经营</span></div>
  </a></article>
 <article class="card" data-type="寻物">
- <a class="playable" href="hidden-laundry/index.html?v=startup-optimized-20261010" target="_blank" rel="noopener" aria-label="试玩：洗衣房寻物">
+ <a class="playable" href="hidden-laundry/index.html?v=ux-pass-20261011" target="_blank" rel="noopener" aria-label="试玩：洗衣房寻物">
   <div class="poster"><img data-src="hidden-laundry/preview.webp" alt="洗衣房寻物预览"  decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
   <div class="card-body"><h2>洗衣房寻物</h2><span class="category">寻物</span></div>
  </a></article>
 <article class="card" data-type="消除">
- <a class="playable" href="cup-shooter/index.html?v=startup-optimized-20261010" target="_blank" rel="noopener" aria-label="试玩：杯子泡泡射击">
+ <a class="playable" href="cup-shooter/index.html?v=ux-pass-20261011" target="_blank" rel="noopener" aria-label="试玩：杯子泡泡射击">
   <div class="poster"><img data-src="cup-shooter/preview.webp" alt="杯子泡泡射击预览"  decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
   <div class="card-body"><h2>杯子泡泡射击</h2><span class="category">消除</span></div>
  </a></article>
 <article class="card" data-type="经营">
- <a class="playable" href="hotel-tycoon/index.html?v=startup-optimized-20261010" target="_blank" rel="noopener" aria-label="试玩：海岛酒店经营">
+ <a class="playable" href="hotel-tycoon/index.html?v=ux-pass-20261011" target="_blank" rel="noopener" aria-label="试玩：海岛酒店经营">
   <div class="poster"><img data-src="hotel-tycoon/preview.webp" alt="海岛酒店经营预览"  decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
   <div class="card-body"><h2>海岛酒店经营</h2><span class="category">经营</span></div>
  </a></article>
 <article class="card" data-type="经营">
- <a class="playable" href="flower-shop/index.html?v=startup-optimized-20261010" target="_blank" rel="noopener" aria-label="试玩：花店收割经营">
+ <a class="playable" href="flower-shop/index.html?v=ux-pass-20261011" target="_blank" rel="noopener" aria-label="试玩：花店收割经营">
   <div class="poster"><img data-src="flower-shop/preview.webp" alt="花店收割经营预览"  decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
   <div class="card-body"><h2>花店收割经营</h2><span class="category">经营</span></div>
  </a></article>
 <article class="card" data-type="经营">
- <a class="playable" href="seaside-cafe/index.html?v=startup-optimized-20261010" target="_blank" rel="noopener" aria-label="试玩：海滨双层果汁餐厅">
+ <a class="playable" href="seaside-cafe/index.html?v=ux-pass-20261011" target="_blank" rel="noopener" aria-label="试玩：海滨双层果汁餐厅">
   <div class="poster"><img data-src="seaside-cafe/preview.webp" alt="海滨双层果汁餐厅预览"  decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
   <div class="card-body"><h2>海滨双层果汁餐厅</h2><span class="category">经营</span></div>
  </a></article>
 <article class="card" data-type="经营">
- <a class="playable" href="juice-factory/index.html?v=startup-optimized-20261010" target="_blank" rel="noopener" aria-label="试玩：橙汁工厂与人潮">
+ <a class="playable" href="juice-factory/index.html?v=ux-pass-20261011" target="_blank" rel="noopener" aria-label="试玩：橙汁工厂与人潮">
   <div class="poster"><img data-src="juice-factory/preview.webp" alt="橙汁工厂与人潮预览"  decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
   <div class="card-body"><h2>橙汁工厂与人潮</h2><span class="category">经营</span></div>
  </a></article>
 <article class="card" data-type="经营">
- <a class="playable" href="burger-diner/index.html?v=startup-optimized-20261010" target="_blank" rel="noopener" aria-label="试玩：汉堡工厂与汽车取餐">
+ <a class="playable" href="burger-diner/index.html?v=ux-pass-20261011" target="_blank" rel="noopener" aria-label="试玩：汉堡工厂与汽车取餐">
   <div class="poster"><img data-src="burger-diner/preview.webp" alt="汉堡工厂与汽车取餐预览"  decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
   <div class="card-body"><h2>汉堡工厂与汽车取餐</h2><span class="category">经营</span></div>
  </a></article>
 <article class="card" data-type="经营">
- <a class="playable" href="greenhouse-florist/index.html?v=startup-optimized-20261010" target="_blank" rel="noopener" aria-label="试玩：双层温室花店">
+ <a class="playable" href="greenhouse-florist/index.html?v=ux-pass-20261011" target="_blank" rel="noopener" aria-label="试玩：双层温室花店">
   <div class="poster"><img data-src="greenhouse-florist/preview.webp" alt="双层温室花店预览"  decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
   <div class="card-body"><h2>双层温室花店</h2><span class="category">经营</span></div>
  </a></article>
 <article class="card" data-type="消除">
- <a class="playable" href="goods-sort/index.html?v=startup-optimized-20261010" target="_blank" rel="noopener" aria-label="试玩：货架三件归类">
+ <a class="playable" href="goods-sort/index.html?v=ux-pass-20261011" target="_blank" rel="noopener" aria-label="试玩：货架三件归类">
   <div class="poster"><img data-src="goods-sort/preview.webp" alt="货架三件归类预览"  decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
   <div class="card-body"><h2>货架三件归类</h2><span class="category">消除</span></div>
  </a></article>
 <article class="card" data-type="消除">
- <a class="playable" href="avalanche-rescue/index.html?v=startup-optimized-20261010" target="_blank" rel="noopener" aria-label="试玩：落石通道救援">
+ <a class="playable" href="avalanche-rescue/index.html?v=ux-pass-20261011" target="_blank" rel="noopener" aria-label="试玩：落石通道救援">
   <div class="poster"><img data-src="avalanche-rescue/preview.webp" alt="落石通道救援预览"  decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
   <div class="card-body"><h2>落石通道救援</h2><span class="category">消除</span></div>
  </a></article>
 <article class="card" data-type="消除">
- <a class="playable" href="water-tower/index.html?v=startup-optimized-20261010" target="_blank" rel="noopener" aria-label="试玩：水塔排水救援">
+ <a class="playable" href="water-tower/index.html?v=ux-pass-20261011" target="_blank" rel="noopener" aria-label="试玩：水塔排水救援">
   <div class="poster"><img data-src="water-tower/preview.webp" alt="水塔排水救援预览"  decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
   <div class="card-body"><h2>水塔排水救援</h2><span class="category">消除</span></div>
  </a></article>
 <article class="card" data-type="消除">
- <a class="playable" href="ball-fire-rescue/index.html?v=startup-optimized-20261010" target="_blank" rel="noopener" aria-label="试玩：彩球机关灭火">
+ <a class="playable" href="ball-fire-rescue/index.html?v=ux-pass-20261011" target="_blank" rel="noopener" aria-label="试玩：彩球机关灭火">
   <div class="poster"><img data-src="ball-fire-rescue/preview.webp" alt="彩球机关灭火预览"  decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
   <div class="card-body"><h2>彩球机关灭火</h2><span class="category">消除</span></div>
  </a></article>
 <article class="card" data-type="消除">
- <a class="playable" href="water-valve-rescue/index.html?v=startup-optimized-20261010" target="_blank" rel="noopener" aria-label="试玩：双水阀与熔岩救援">
+ <a class="playable" href="water-valve-rescue/index.html?v=ux-pass-20261011" target="_blank" rel="noopener" aria-label="试玩：双水阀与熔岩救援">
   <div class="poster"><img data-src="water-valve-rescue/preview.webp" alt="双水阀与熔岩救援预览"  decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
   <div class="card-body"><h2>双水阀与熔岩救援</h2><span class="category">消除</span></div>
  </a></article>
 <article class="card" data-type="消除">
- <a class="playable" href="mahjong-pairs/index.html?v=startup-optimized-20261010" target="_blank" rel="noopener" aria-label="试玩：层叠麻将配对">
+ <a class="playable" href="mahjong-pairs/index.html?v=ux-pass-20261011" target="_blank" rel="noopener" aria-label="试玩：层叠麻将配对">
   <div class="poster"><img data-src="mahjong-pairs/preview.webp" alt="层叠麻将配对预览"  decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
   <div class="card-body"><h2>层叠麻将配对</h2><span class="category">消除</span></div>
  </a></article>
 <article class="card" data-type="解谜">
- <a class="playable" href="arrow-escape/index.html?v=startup-optimized-20261010" target="_blank" rel="noopener" aria-label="试玩：彩色箭头脱困">
+ <a class="playable" href="arrow-escape/index.html?v=ux-pass-20261011" target="_blank" rel="noopener" aria-label="试玩：彩色箭头脱困">
   <div class="poster"><img data-src="arrow-escape/preview.webp" alt="彩色箭头脱困预览"  decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
   <div class="card-body"><h2>彩色箭头脱困</h2><span class="category">解谜</span></div>
  </a></article>
 <article class="card" data-type="装饰">
- <a class="playable" href="sticker-shop/index.html?v=startup-optimized-20261010" target="_blank" rel="noopener" aria-label="试玩：贴纸杂货店">
+ <a class="playable" href="sticker-shop/index.html?v=ux-pass-20261011" target="_blank" rel="noopener" aria-label="试玩：贴纸杂货店">
   <div class="poster"><img data-src="sticker-shop/preview.webp" alt="贴纸杂货店预览"  decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
   <div class="card-body"><h2>贴纸杂货店</h2><span class="category">装饰</span></div>
  </a></article>
 <article class="card" data-type="连线">
- <a class="playable" href="dot-link/index.html?v=startup-optimized-20261010" target="_blank" rel="noopener" aria-label="试玩：同色双点连线">
+ <a class="playable" href="dot-link/index.html?v=ux-pass-20261011" target="_blank" rel="noopener" aria-label="试玩：同色双点连线">
   <div class="poster"><img data-src="dot-link/preview.webp" alt="同色双点连线预览"  decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
   <div class="card-body"><h2>同色双点连线</h2><span class="category">连线</span></div>
  </a></article>
 <article class="card" data-type="解谜">
- <a class="playable" href="snake-puzzle/index.html?v=startup-optimized-20261010" target="_blank" rel="noopener" aria-label="试玩：贪吃蛇重力解谜">
+ <a class="playable" href="snake-puzzle/index.html?v=ux-pass-20261011" target="_blank" rel="noopener" aria-label="试玩：贪吃蛇重力解谜">
   <div class="poster"><img data-src="snake-puzzle/preview.webp" alt="贪吃蛇重力解谜预览"  decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
   <div class="card-body"><h2>贪吃蛇重力解谜</h2><span class="category">解谜</span></div>
  </a></article>
 <article class="card" data-type="合成">
- <a class="playable" href="stack-merge/index.html?v=startup-optimized-20261010" target="_blank" rel="noopener" aria-label="试玩：堆叠合成接单">
+ <a class="playable" href="stack-merge/index.html?v=ux-pass-20261011" target="_blank" rel="noopener" aria-label="试玩：堆叠合成接单">
   <div class="poster"><img data-src="stack-merge/preview.webp" alt="堆叠合成接单预览"  decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
   <div class="card-body"><h2>堆叠合成接单</h2><span class="category">合成</span></div>
  </a></article></section>

@@ -1,6 +1,6 @@
 # Juicy Journey · 可玩广告合集
 
-更新：2026 年 10 月 10 日。
+更新：2026 年 10 月 11 日。
 
 仓库：[Barofan1982/Playable](https://github.com/Barofan1982/Playable)。
 
@@ -19,9 +19,9 @@
 | [玉米旋转消除](corn/index.html) | 消除 | 左右拖动一个圆环；沿对齐的同色连线拖动；AUTO PLAY 自动演示，可暂停、继续或重试。 | [说明](corn/README.md) |
 | [饮料摊经营](market/index.html) | 经营 | 按住画面拖动控制移动；电脑也可用方向键或 WASD；AUTO PLAY 自动演示，可暂停、继续或重试。 | [说明](market/README.md) |
 | [俄罗斯方块](block/index.html) | 方块 | 左右拖动选择落点，松手下落；ROTATE 旋转，DROP 落下；AUTO PLAY 自动演示，可暂停、继续或重试。 | [说明](block/README.md) |
-| [公主蝴蝶拼图](jigsaw/index.html) | 拼图 | 从底部向上拖出拼块放进缺口；AUTO SOLVE 一键自动拼。 | [说明](jigsaw/README.md) |
-| [雨夜撑伞拼图](rain-jigsaw/index.html) | 拼图 | 左右滑动备选栏，向上拖出拼块；AUTO SOLVE 自动完成。 | [说明](rain-jigsaw/README.md) |
-| [海岛合并烹饪](merge-cook/index.html) | 消除 | 把一个食材拖到另一个相同食材上；AUTO PLAY 自动完成整盘。 | [说明](merge-cook/README.md) |
+| [公主蝴蝶拼图](jigsaw/index.html) | 拼图 | 左右浏览全部拼片，向上或斜向拖曳提片；AUTO SOLVE 支持暂停、继续；完成后保持最后一帧。 | [说明](jigsaw/README.md) |
+| [雨夜撑伞拼图](rain-jigsaw/index.html) | 拼图 | 左右浏览全部拼片，向上或斜向拖曳提片；AUTO SOLVE 支持暂停、继续；完成后保持最后一帧。 | [说明](rain-jigsaw/README.md) |
+| [海岛配对烹饪](merge-cook/index.html) | 消除 | 把一个食材拖到另一个相同食材上；AUTO PLAY 自动完成整盘。 | [说明](merge-cook/README.md) |
 | [饮品发射合并](drink-merge/index.html) | 合成 | 左右拖动选择位置，松手发射；同级进入范围后磁吸合成并继续滑行，NEXT 预览下一杯。 | [说明](drink-merge/README.md) |
 | [寿司传送带](sushi-belt/index.html) | 经营 | 点击一列前端连续同类食材；AUTO PLAY 自动经营，HINT 提示。 | [说明](sushi-belt/README.md) |
 | [洗衣房寻物](hidden-laundry/index.html) | 寻物 | 点击找齐五类各两件；HINT 提示位置，AUTO PLAY 每秒收集一件。 | [说明](hidden-laundry/README.md) |
@@ -42,7 +42,7 @@
 | [贴纸杂货店](sticker-shop/index.html) | 装饰 | 左右滑动选贴纸，用弯头镊子从下方拖进对应位置；先放货架再摆商品。音乐按钮只控制配乐，操作音效默认有效。 | [说明](sticker-shop/README.md) |
 | [同色双点连线](dot-link/index.html) | 连线 | 按住一个点自由画线到同色点；不能碰到不同颜色的点或交叉已有连线。 | [说明](dot-link/README.md) |
 | [贪吃蛇重力解谜](snake-puzzle/index.html) | 解谜 | 滑动、方向按钮或方向键移动；吃完所有苹果进入旋涡，利用身体留在平台上方保持支撑。第八关手机默认放大，MAP 查看全景、PLAY 返回；拖动小地图查看远处。 | [说明](snake-puzzle/README.md) |
-| [堆叠合成接单](stack-merge/index.html) | 合成 | 拖动相同食品合成，凑齐当前订单后点击烹饪，再提交订单；支持点击选中、撤销与自动试玩。 | [说明](stack-merge/README.md) |
+| [堆叠合成接单](stack-merge/index.html) | 合成 | 拖动同类原料合并为备料，集齐两种备料后烹饪并提交四份订单；AUTO PLAY 可暂停继续。 | [说明](stack-merge/README.md) |
 
 ## 静态网站
 
@@ -92,7 +92,7 @@ GitHub 中保存首页、27 个独立试玩、预览图、必要商标及说明�
 
 两阶段补齐 24 块拼图，底部左右滑动选择全部待拼块，完成后播放蝴蝶动画。
 
-- 操作：从底部向上拖出拼块放进缺口；AUTO SOLVE 一键自动拼。
+- 操作：左右浏览全部拼片，向上或斜向拖曳提片；AUTO SOLVE 支持暂停、继续；完成后保持最后一帧。
 - 结尾：蝴蝶动画播放完后保持最后一帧，手动 RETRY 才重开。
 - [详细说明](jigsaw/README.md)
 
@@ -100,11 +100,11 @@ GitHub 中保存首页、27 个独立试玩、预览图、必要商标及说明�
 
 使用撑伞人物图片完成两阶段拼图，结尾呈现雨线、伞面水花、滴水和地面涟漪。
 
-- 操作：左右滑动备选栏，向上拖出拼块；AUTO SOLVE 自动完成。
+- 操作：左右浏览全部拼片，向上或斜向拖曳提片；AUTO SOLVE 支持暂停、继续；完成后保持最后一帧。
 - 结尾：约 6 秒雨景动画后定格，手动 RETRY 才重开。
 - [详细说明](rain-jigsaw/README.md)
 
-### 海岛合并烹饪
+### 海岛配对烹饪
 
 将相同食材拖到一起消除，获得烤箱、食材篮和烤架奖励，清空 91 格露出海岛人物图。
 
@@ -274,9 +274,15 @@ GitHub 中保存首页、27 个独立试玩、预览图、必要商标及说明�
 
 ### 堆叠合成接单
 
-立体食材堆中拖动两个同级食品合成升级原料，凑齐两种不同原料后烹饪成新料理，再交给海鸥、Zuri、Oli 和 Chloe；Sera 只在提交后的半身反馈弹框出现。
+两层堆叠原料，可信双原料配方；海鸥、Zuri、Oli、Chloe 依序接单，Sera 仅出现在提交提示层。
 
-- 操作：拖动相同食品合成，凑齐当前订单后点击烹饪，再提交订单；支持点击选中、撤销与自动试玩。
+- 操作：拖动同类原料合并为备料，集齐两种备料后烹饪并提交四份订单；AUTO PLAY 可暂停继续。
 - 结尾：完成四单进入 Juicy Journey PLAY NOW 落版并保持；时间或步数用尽失败，可手动重试。
 - [详细说明](stack-merge/README.md)
 
+
+## 2026-10-11 体验优化
+
+已优化堆叠接单配方与布局、公共触控区域、横屏分栏、密集盘面观察、首次操作计时和拼图手势、箭头与寿司载入。27 张预览统一更新为未操作首帧。
+
+本次优化与验证结果保存在本地 `评审/20261010/优化结果.html`。27 个 HTML 与归档均低于 5 MB，归档中的 HTML 与当前源文件一致。四种尺寸共 108 个布局组合检查未发现运行异常。浏览器模拟与规则加速已通过核心流程；手机实机及渠道验收另行进行。

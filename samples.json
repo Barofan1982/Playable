@@ -1,6 +1,6 @@
 {
   "brand": "Juicy Journey",
-  "updated": "2026-10-10",
+  "updated": "2026-10-11",
   "samples": [
     {
       "id": "corn",
@@ -22,8 +22,8 @@
       "entry": "corn/index.html",
       "zip": "下载包/corn.zip",
       "readme": "corn/README.md",
-      "htmlBytes": 763879,
-      "zipBytes": 566586,
+      "htmlBytes": 766538,
+      "zipBytes": 567613,
       "audio": {
         "title": "Ever So Blue - Onthou",
         "format": "MP3",
@@ -37,10 +37,10 @@
         "deferredDecoding": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "bc62ecf0963157d0b04050be4a793c36a8f7905dd828a145a0fec642d33ceb54",
-      "zipSha256": "0de26ddf28bb87cd86b7991adb20de383326c2e1be501bf75288c971eb34b11a",
-      "updated": "2026-10-10",
-      "revision": "startup-optimized-20261010"
+      "htmlSha256": "bd775708594385cfab3e7866520ef79577e2a32133e825788e855443483d8266",
+      "zipSha256": "bbd93e92aa628dbf52d14eee44ebf1c46d0cf469752650dd37cb6a0f7372b8c3",
+      "updated": "2026-10-11",
+      "revision": "ux-pass-20261011"
     },
     {
       "id": "market",
@@ -65,8 +65,8 @@
       "entry": "market/index.html",
       "zip": "下载包/market.zip",
       "readme": "market/README.md",
-      "htmlBytes": 779471,
-      "zipBytes": 575161,
+      "htmlBytes": 781473,
+      "zipBytes": 575961,
       "audio": {
         "title": "Ever So Blue - Onthou",
         "format": "MP3",
@@ -80,10 +80,10 @@
         "deferredDecoding": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "c2f95e5d2ad9899c8019eb22d04f5f47f1cd5197fe4b300bf8db756eea129297",
-      "zipSha256": "b7cdb30c664d76874b1a416d72257f75510c7a9d268006e6d857a58575b0d511",
-      "updated": "2026-10-10",
-      "revision": "startup-optimized-20261010"
+      "htmlSha256": "75d6b0b298ed9ed0e85975634f60482ee26b242987876a07c0db311fac0b48c0",
+      "zipSha256": "86dce2ff0031446fcf12956f3b7ab0e3ad7b29a9e1874d1626a5ffe473bc6224",
+      "updated": "2026-10-11",
+      "revision": "ux-pass-20261011"
     },
     {
       "id": "block",
@@ -105,8 +105,8 @@
       "entry": "block/index.html",
       "zip": "下载包/block.zip",
       "readme": "block/README.md",
-      "htmlBytes": 816214,
-      "zipBytes": 613172,
+      "htmlBytes": 823856,
+      "zipBytes": 616171,
       "audio": {
         "title": "Ever So Blue - Onthou",
         "format": "MP3",
@@ -120,10 +120,10 @@
         "deferredDecoding": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "3548e1adf593742ee665696bc28fb4f256be3ed768d7c097f4cfdc6a45e4301e",
-      "zipSha256": "0271782a948ea586dabff8687bab7b8fb5b0cf5298f2669b2b4d7eff31d5f3a3",
-      "updated": "2026-10-10",
-      "revision": "startup-optimized-20261010"
+      "htmlSha256": "344bff0dabdbd1d4aba02ee1ecafcf7a9e66fb981f7901b3bfaadc121bd88682",
+      "zipSha256": "754883818e8fdeae2d6b47bd3f542c0fac6dcbea29de7f62c731e123472a0d95",
+      "updated": "2026-10-11",
+      "revision": "ux-pass-20261011"
     },
     {
       "id": "jigsaw",
@@ -138,14 +138,14 @@
         "完成后定格",
         "循环配乐"
       ],
-      "operation": "从底部向上拖出拼块放进缺口；AUTO SOLVE 一键自动拼。",
+      "operation": "左右浏览全部拼片，向上或斜向拖曳提片；AUTO SOLVE 支持暂停、继续；完成后保持最后一帧。",
       "ending": "蝴蝶动画播放完后保持最后一帧，手动 RETRY 才重开。",
       "reference": "Puzzle Games_ Jigsaw Puzzles · 720 × 1280",
       "entry": "jigsaw/index.html",
       "zip": "下载包/jigsaw.zip",
       "readme": "jigsaw/README.md",
-      "htmlBytes": 1636734,
-      "zipBytes": 1247051,
+      "htmlBytes": 1645165,
+      "zipBytes": 1249840,
       "audio": {
         "title": "Ever So Blue - Onthou",
         "format": "MP3",
@@ -159,10 +159,10 @@
         "deferredDecoding": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "ff7c66ce620b223a286cf03248fa70754779800bd00bb8326638b3bf266f5168",
-      "zipSha256": "4c15569fef01e6d21dfda801adec7e272cfe518bba04e8b7458fa38585423cab",
-      "updated": "2026-10-10",
-      "revision": "startup-optimized-20261010"
+      "htmlSha256": "393f50252b12679a93baabf0e7d4cf4277b6bd41ef260cb1dd41b332f13b0e45",
+      "zipSha256": "cba1feb03ac1b1ec0436a13cd9ac42863e1ebbcdbbb221425c81b4ad336078f9",
+      "updated": "2026-10-11",
+      "revision": "ux-pass-20261011"
     },
     {
       "id": "rain-jigsaw",
@@ -177,14 +177,14 @@
         "雨景后定格",
         "循环配乐"
       ],
-      "operation": "左右滑动备选栏，向上拖出拼块；AUTO SOLVE 自动完成。",
+      "operation": "左右浏览全部拼片，向上或斜向拖曳提片；AUTO SOLVE 支持暂停、继续；完成后保持最后一帧。",
       "ending": "约 6 秒雨景动画后定格，手动 RETRY 才重开。",
       "reference": "沿用拼图参考视频玩法；图片由用户提供",
       "entry": "rain-jigsaw/index.html",
       "zip": "下载包/rain-jigsaw.zip",
       "readme": "rain-jigsaw/README.md",
-      "htmlBytes": 1361911,
-      "zipBytes": 1037339,
+      "htmlBytes": 1370437,
+      "zipBytes": 1040267,
       "audio": {
         "title": "Ever So Blue - Onthou",
         "format": "MP3",
@@ -198,16 +198,16 @@
         "deferredDecoding": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "22072ae01d52656d4bc49cc69a8799872eb0ddbb19d7b7418bedf7c111c340fc",
-      "zipSha256": "dcab56828bdbb8807c12f9fa80451bee0284dbaa6d894d39e71f09de0b4cce4a",
-      "updated": "2026-10-10",
-      "revision": "startup-optimized-20261010"
+      "htmlSha256": "77ecbbdfb66d14a3409db1109f572a056d4d5b3f1a6fcf00bfc48e0e7fcbc6be",
+      "zipSha256": "33a768e7d4e05cabf18de4fb403264f2e3fdbc54ae34b7aed05336a0f0f825c2",
+      "updated": "2026-10-11",
+      "revision": "ux-pass-20261011"
     },
     {
       "id": "merge-cook",
-      "name": "海岛合并烹饪",
+      "name": "海岛配对烹饪",
       "type": "消除",
-      "subtitle": "Island Merge & Cook",
+      "subtitle": "Match & Cook",
       "image": "preview.webp",
       "desc": "将相同食材拖到一起消除，获得烤箱、食材篮和烤架奖励，清空 91 格露出海岛人物图。",
       "features": [
@@ -222,8 +222,8 @@
       "entry": "merge-cook/index.html",
       "zip": "下载包/merge-cook.zip",
       "readme": "merge-cook/README.md",
-      "htmlBytes": 1896951,
-      "zipBytes": 1456661,
+      "htmlBytes": 1904419,
+      "zipBytes": 1459162,
       "audio": {
         "title": "Ever So Blue - Onthou",
         "format": "MP3",
@@ -237,10 +237,10 @@
         "deferredDecoding": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "f8ab1fd981f3f04d1e0b456492c7ad268e11e1d62a03824265e8fac0aa0cffd9",
-      "zipSha256": "2bdda86934a49096d0a4b9c5ff0a1a937753df5aaf092eb0d70378737ddb7c7d",
-      "revision": "startup-optimized-20261010",
-      "updated": "2026-10-10"
+      "htmlSha256": "33c309ddab4349305ef2def85ab0399a5023dd419a117eaadddc162ef55ad624",
+      "zipSha256": "da5905e3b75492919e187910361f914a94ada9daeefe5a93267d64ad8fd9d9b2",
+      "revision": "ux-pass-20261011",
+      "updated": "2026-10-11"
     },
     {
       "id": "drink-merge",
@@ -261,8 +261,8 @@
       "entry": "drink-merge/index.html",
       "zip": "下载包/drink-merge.zip",
       "readme": "drink-merge/README.md",
-      "htmlBytes": 1356140,
-      "zipBytes": 1034467,
+      "htmlBytes": 1362843,
+      "zipBytes": 1036846,
       "audio": {
         "title": "Ever So Blue - Onthou",
         "format": "MP3",
@@ -276,10 +276,10 @@
         "deferredDecoding": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "fc173bd67bc2c0d7f745f26cb3a2073c6c6e8409ec103d6e85370d0e5021ec45",
-      "zipSha256": "be22866fc78ef39864ba5549d70ccc325f0959a57c62c6173aca48f210a6644d",
-      "updated": "2026-10-10",
-      "revision": "startup-optimized-20261010"
+      "htmlSha256": "f6f9f63e46bdc5e38cbbfd2f7426bb8b654aa87a2a8e8ffc0e1e5a2d3e7adfd6",
+      "zipSha256": "4944f350dd9809aa3c3a04827efeeb916987a162a26c63d7831aca5a0113a936",
+      "updated": "2026-10-11",
+      "revision": "ux-pass-20261011"
     },
     {
       "id": "sushi-belt",
@@ -301,8 +301,8 @@
       "entry": "sushi-belt/index.html",
       "zip": "下载包/sushi-belt.zip",
       "readme": "sushi-belt/README.md",
-      "htmlBytes": 3340119,
-      "zipBytes": 2569763,
+      "htmlBytes": 3148853,
+      "zipBytes": 2421051,
       "audio": {
         "title": "Ever So Blue - Onthou",
         "format": "MP3",
@@ -316,10 +316,10 @@
         "deferredDecoding": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "9e66451745eefc9f0d50681f083a397c496e59dfeb79afdffca885718d2f317d",
-      "zipSha256": "2018d13737a5c5787f0a69dc8aad84d34c8cca56df87147934ef21700aa2d295",
-      "updated": "2026-10-10",
-      "revision": "startup-optimized-20261010"
+      "htmlSha256": "82d283cea526a9582dd6ff416b1e40d4128171eaadb157245bc003436a0144e7",
+      "zipSha256": "42acb49625086551fe8535d3e474d9733ddc714b99851c7bb87760c2dc900318",
+      "updated": "2026-10-11",
+      "revision": "ux-pass-20261011"
     },
     {
       "id": "hidden-laundry",
@@ -340,8 +340,8 @@
       "entry": "hidden-laundry/index.html",
       "zip": "下载包/hidden-laundry.zip",
       "readme": "hidden-laundry/README.md",
-      "htmlBytes": 2666496,
-      "zipBytes": 2054636,
+      "htmlBytes": 2672467,
+      "zipBytes": 2056946,
       "audio": {
         "title": "Ever So Blue - Onthou",
         "format": "MP3",
@@ -355,10 +355,10 @@
         "deferredDecoding": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "6527eac0913b3b756583063a144dec191e223fc8d349e6631f3fe667f33e9be2",
-      "zipSha256": "754276c87b9a7910f15e9a8a2c3b034cc55156bf673dbc07a83dc25a2534d838",
-      "updated": "2026-10-10",
-      "revision": "startup-optimized-20261010"
+      "htmlSha256": "3d09d065b8f9765325de656287e88d7a8da4df7789bd8baee4ced75f34395423",
+      "zipSha256": "1c6d5db5eeed359fc91940b97eb0c85875a5106b4ab84f02688195477cbc4073",
+      "updated": "2026-10-11",
+      "revision": "ux-pass-20261011"
     },
     {
       "id": "cup-shooter",
@@ -393,12 +393,12 @@
         "deferredDecoding": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlBytes": 737293,
-      "zipBytes": 559951,
-      "htmlSha256": "a3d74687615d7b51fed7b9d116606ea4c979c9e806ed71613139c7388f149a06",
-      "updated": "2026-10-10",
-      "zipSha256": "69b7f8b8a09dd3d300ae625f486ac90f432a507d3aae75692c582e75fdaadd2e",
-      "revision": "startup-optimized-20261010"
+      "htmlBytes": 744364,
+      "zipBytes": 562528,
+      "htmlSha256": "9a58a9acc6002074a5f15d980da4fc0bb71959e07f3ee2039c942499b1231055",
+      "updated": "2026-10-11",
+      "zipSha256": "e37f4835f4b77a47abd3a8d041ffeeed1f0ad92cdb3c6c2b9281a86038df3901",
+      "revision": "ux-pass-20261011"
     },
     {
       "id": "hotel-tycoon",
@@ -438,12 +438,12 @@
         "deferredDecoding": true
       },
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-10",
-      "htmlBytes": 815825,
-      "zipBytes": 591087,
-      "htmlSha256": "869d8cd0570e6dca1d443f4ddfab0ed888a8528c6c3549251501284baf4c0022",
-      "zipSha256": "a19fe7c1969ab453bc78ad6f20b1ca31d34615eecf088e43f49b780adf5b93c2",
-      "revision": "startup-optimized-20261010"
+      "updated": "2026-10-11",
+      "htmlBytes": 818231,
+      "zipBytes": 591905,
+      "htmlSha256": "fc532f8619db3b2040288ebc3dba7289a0b93faa839086916206c2b57da4d2ca",
+      "zipSha256": "ac65badad2b3ff917e8879bc85b8b7bc42abd58478bf18963940c866e6a7709e",
+      "revision": "ux-pass-20261011"
     },
     {
       "id": "flower-shop",
@@ -484,12 +484,12 @@
         "deferredDecoding": true
       },
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-10",
-      "htmlBytes": 798158,
-      "zipBytes": 602523,
-      "htmlSha256": "6b7957ebd422cd2c9560f44a3013fb533410a7fec3866aaf40769a0992f9574e",
-      "zipSha256": "1689c791395dfae976360a883d5e23d5a48e3e2e3b454831a73709abec384832",
-      "revision": "startup-optimized-20261010"
+      "updated": "2026-10-11",
+      "htmlBytes": 800571,
+      "zipBytes": 603364,
+      "htmlSha256": "1898772109ccab27f495818bc5378fd277ceabacac2c40db7b1e0b53511aee49",
+      "zipSha256": "16150d60c9ab88093748e88a3d38545c6ec06703b93c7a4069f8cc79a51070d9",
+      "revision": "ux-pass-20261011"
     },
     {
       "id": "seaside-cafe",
@@ -512,12 +512,12 @@
       "readme": "seaside-cafe/README.md",
       "audio": "MP3 128 kbps · 30秒 · 默认关闭",
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-10",
-      "htmlBytes": 810351,
-      "zipBytes": 584802,
-      "htmlSha256": "bfeb0da348e33219da4a4d9948f4b26a257f78c8b9f6a137f1be28104a2e2d90",
-      "zipSha256": "a278a89de4e160739e7371b459484af1dee400d9c13de5662fcdc941d4e4c8bd",
-      "revision": "startup-optimized-20261010"
+      "updated": "2026-10-11",
+      "htmlBytes": 812992,
+      "zipBytes": 585747,
+      "htmlSha256": "ff90bb52c09d62bfabc35cd83796f85fb851ee3323e4a3688cb8030ca88b6310",
+      "zipSha256": "41c4ad2c40b66cb1c0a77b087ce3cb64102fc5c0b4f946698665b3bef2ae4f33",
+      "revision": "ux-pass-20261011"
     },
     {
       "id": "juice-factory",
@@ -540,12 +540,12 @@
       "readme": "juice-factory/README.md",
       "audio": "MP3 128 kbps · 30秒 · 默认关闭",
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-10",
-      "htmlBytes": 810303,
-      "zipBytes": 585562,
-      "htmlSha256": "60d7a111fb11054ee397f245c1882316e7e76e14a96f6854182748c9a93f5855",
-      "zipSha256": "45e3a814f93cc6d61a2cbaaa93937d4966b7eec8af722ef48c300a3ceb82187b",
-      "revision": "startup-optimized-20261010"
+      "updated": "2026-10-11",
+      "htmlBytes": 812944,
+      "zipBytes": 586500,
+      "htmlSha256": "8f2afb47677f181be368ef67a45d7ac1314128d152ecd46006aa205d7e239c24",
+      "zipSha256": "222f834756df50c4a6663a93d842a750bb9506a21eb093ec233422fab492043a",
+      "revision": "ux-pass-20261011"
     },
     {
       "id": "burger-diner",
@@ -568,12 +568,12 @@
       "readme": "burger-diner/README.md",
       "audio": "MP3 128 kbps · 30秒 · 默认关闭",
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-10",
-      "htmlBytes": 810705,
-      "zipBytes": 585369,
-      "htmlSha256": "ad6ab9bb185efeee389cd1baff74df426051525126813af617a97e1ae88ee668",
-      "zipSha256": "8b610677541c7f0014864d49474f48c9e83820d60a6d603a5d293c1970c2955f",
-      "revision": "startup-optimized-20261010"
+      "updated": "2026-10-11",
+      "htmlBytes": 813346,
+      "zipBytes": 586295,
+      "htmlSha256": "570a5465fe573646c13381849e2208d75e6e1b3c48594bfac741cb2cb78589ec",
+      "zipSha256": "cf75ff95dd319de9f2f6a8699c298ee7ec88dd77a3d3065f67040e01de52c30e",
+      "revision": "ux-pass-20261011"
     },
     {
       "id": "greenhouse-florist",
@@ -596,12 +596,12 @@
       "readme": "greenhouse-florist/README.md",
       "audio": "MP3 128 kbps · 30秒 · 默认关闭",
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-10",
-      "htmlBytes": 811318,
-      "zipBytes": 586256,
-      "htmlSha256": "aa60a72455d9eb75837ab5469c13964c56adc03333a7c06f81fda303ec6f2cd0",
-      "zipSha256": "3341da5427cc8b61a1e8c4bf0ef8a31b928a96e5da44e34ae8a532da0d9cac88",
-      "revision": "startup-optimized-20261010"
+      "updated": "2026-10-11",
+      "htmlBytes": 813949,
+      "zipBytes": 587181,
+      "htmlSha256": "aab3bf8121b44342d132bd7abab890ec3c6e1648eec61dc4753a50af76b62360",
+      "zipSha256": "d105fb23bd8b2f3f81a315ca3e46b016213bb1d4a4e4937a0a977f1fa24c3f2e",
+      "revision": "ux-pass-20261011"
     },
     {
       "id": "goods-sort",
@@ -626,12 +626,12 @@
       "readme": "goods-sort/README.md",
       "audio": "MP3 128 kbps · 30秒 · 默认关闭",
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-10",
-      "revision": "startup-optimized-20261010",
-      "htmlBytes": 769764,
-      "zipBytes": 571060,
-      "htmlSha256": "a821f298c2f97449c02702fbca1130cb6fd316c63d993d31c946d9755060444f",
-      "zipSha256": "8389c7769ff24152d8ba4644c257b3f61e841b8459c16e34c195663547661eb0"
+      "updated": "2026-10-11",
+      "revision": "ux-pass-20261011",
+      "htmlBytes": 778199,
+      "zipBytes": 574122,
+      "htmlSha256": "741196d93ddc3846bd55c36b56f742e03725ef598ad487c1bb935b3757f71c76",
+      "zipSha256": "0b435b5a1dbd40cbd96fc583f41fcab6c2d7dc6120b02530a7b00f56487cdde8"
     },
     {
       "id": "avalanche-rescue",
@@ -656,12 +656,12 @@
       "readme": "avalanche-rescue/README.md",
       "audio": "MP3 128 kbps · 30秒 · 默认关闭",
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-10",
-      "revision": "startup-optimized-20261010",
-      "htmlBytes": 775095,
-      "zipBytes": 573401,
-      "htmlSha256": "93b9e3f92c948a9605b5119679e7a1fa9b0e802ed866132b954f7001d220c388",
-      "zipSha256": "cbaf05852db860e044bfceb07fa4a373e312bb28580b295e9c8d950400146621"
+      "updated": "2026-10-11",
+      "revision": "ux-pass-20261011",
+      "htmlBytes": 783629,
+      "zipBytes": 576387,
+      "htmlSha256": "6ed7eae768e66dd7dc16be40accf6fca2e64aeea411dfe1f2f03f72a9f2cbaf9",
+      "zipSha256": "f84780221dab911f53109ae1e850bb4d23df771848bbf7139c125bc84e327eda"
     },
     {
       "id": "water-tower",
@@ -686,12 +686,12 @@
       "readme": "water-tower/README.md",
       "audio": "MP3 128 kbps · 30秒 · 默认关闭",
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-10",
-      "revision": "startup-optimized-20261010",
-      "htmlBytes": 769829,
-      "zipBytes": 571174,
-      "htmlSha256": "cd98da8624537111191effcb5c299316bca91ff780ee88ad3982f573299cbe92",
-      "zipSha256": "962deb5e6634e1150bbd4d71e8d6f532f06642cbe1353a0ea5af6c2ea3b780ec"
+      "updated": "2026-10-11",
+      "revision": "ux-pass-20261011",
+      "htmlBytes": 778263,
+      "zipBytes": 574233,
+      "htmlSha256": "1bd97a1f1ee01766a5e3673e7e829c0b6df8665f49281d2fc7a4966e51d1fae0",
+      "zipSha256": "17e028947bd5537351186e9b53a04f64c155f8a2d9018277608ddf10bddab262"
     },
     {
       "id": "ball-fire-rescue",
@@ -716,12 +716,12 @@
       "readme": "ball-fire-rescue/README.md",
       "audio": "MP3 128 kbps · 30秒 · 默认关闭",
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-10",
-      "revision": "startup-optimized-20261010",
-      "htmlBytes": 769806,
-      "zipBytes": 571187,
-      "htmlSha256": "d3231cce3e601ee87543f25c2642ce8531fa0c3462bca816c86a228d1399ed90",
-      "zipSha256": "76066f49d34808de15116e67596dc9d35b549460a35886e96c1ba493e87493f3"
+      "updated": "2026-10-11",
+      "revision": "ux-pass-20261011",
+      "htmlBytes": 778240,
+      "zipBytes": 574253,
+      "htmlSha256": "685622fa7333ea31a111d9010ded542e0438eb5be71c08cc8e02c34f608cd621",
+      "zipSha256": "23aa07bb706e263564a7dbb082cea0b0c90aad0fa647362afea17cd4d5f51fc3"
     },
     {
       "id": "water-valve-rescue",
@@ -746,12 +746,12 @@
       "readme": "water-valve-rescue/README.md",
       "audio": "MP3 128 kbps · 30秒 · 默认关闭",
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-10",
-      "revision": "startup-optimized-20261010",
-      "htmlBytes": 775086,
-      "zipBytes": 573271,
-      "htmlSha256": "2dae592460779318e80ec9c6b1d6265947a85323d7f0938e5fd54dfd3cd2104d",
-      "zipSha256": "139e3776aa87b9c72f18d5cc29e13830d24e0c2da2932dc7d9243a58e2fc58ee"
+      "updated": "2026-10-11",
+      "revision": "ux-pass-20261011",
+      "htmlBytes": 783620,
+      "zipBytes": 576252,
+      "htmlSha256": "b9c060ffe650aa5bc874dc6e2303a26fb7d8b3783d3c3697550da23db4abe821",
+      "zipSha256": "baa46309b5f65f45b932a7ff70d81765ea5fdb65c54cdd83230ca9ac25c1bf3f"
     },
     {
       "id": "mahjong-pairs",
@@ -776,12 +776,12 @@
       "readme": "mahjong-pairs/README.md",
       "audio": "MP3 128 kbps · 30秒 · 默认关闭",
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-10",
-      "revision": "startup-optimized-20261010",
-      "htmlBytes": 769803,
-      "zipBytes": 571085,
-      "htmlSha256": "1266acc029b31908ee0036d3af4206532c83c1ee759b505f90477ba0a9875bcf",
-      "zipSha256": "27e93acaae7c86981a6a12e469a65d57539d29c1f10ede9103d052edb3d6b271"
+      "updated": "2026-10-11",
+      "revision": "ux-pass-20261011",
+      "htmlBytes": 778238,
+      "zipBytes": 574155,
+      "htmlSha256": "5d7e8168e3d8685e0edc5c708d4cc7cfdd70350c7b9e28876b8c03e35a9a435d",
+      "zipSha256": "92b8feccdabebb982d68d4be804e04db1ae9b001e7af1762beb2fa8934c902bb"
     },
     {
       "id": "arrow-escape",
@@ -806,12 +806,12 @@
       "readme": "arrow-escape/README.md",
       "audio": "MP3 128 kbps · 30秒 · 默认关闭",
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-10",
-      "revision": "startup-optimized-20261010",
-      "htmlBytes": 890052,
-      "zipBytes": 625818,
-      "htmlSha256": "59c81865a7fc7305a7a7e6e7665e369b9687f00cbb5c743a57a1e420ae3fa650",
-      "zipSha256": "2b0eb791c9ab1290fdfe2c8c18c76b059ed7455528902e02f4237581d284d9f5",
+      "updated": "2026-10-11",
+      "revision": "ux-pass-20261011",
+      "htmlBytes": 1004497,
+      "zipBytes": 641134,
+      "htmlSha256": "e6e411cb226c0b35c6a16383f1f3a12629699153339dbe11041a59908afa0746",
+      "zipSha256": "8cf772068653919dab14f35bcf3213066c9e6e598b9354f7752765c08045bbb9",
       "hellPreview": "arrow-escape/preview-hell.png",
       "levels": [
         {
@@ -863,12 +863,12 @@
         "deferredDecoding": true
       },
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-10",
-      "revision": "startup-optimized-20261010",
-      "htmlBytes": 1443561,
-      "zipBytes": 1091688,
-      "htmlSha256": "bcd0bab4523547644048a65f237c1d93880586d2936f9a22494c619588a2bdec",
-      "zipSha256": "2ae95b2e7080b767d87f4c5e68aa2f547b7b4da514c0130e69fadedaef2ac438"
+      "updated": "2026-10-11",
+      "revision": "ux-pass-20261011",
+      "htmlBytes": 1446642,
+      "zipBytes": 1092776,
+      "htmlSha256": "424673f3d17210ba5173443216eda1d6679f03224c38b09116ff0ada27610707",
+      "zipSha256": "51d4305bb10ea1cc7cceb2cfc7f4cdbe79615bd9016764eb189c3216fb33817c"
     },
     {
       "id": "dot-link",
@@ -905,12 +905,12 @@
         "deferredDecoding": true
       },
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-10",
-      "revision": "startup-optimized-20261010",
-      "htmlBytes": 927277,
-      "zipBytes": 592267,
-      "htmlSha256": "975db43ac0a8184e923f5ebcebb00d201012f729b55a4bd28bbb64fcb0dbee0a",
-      "zipSha256": "de8daaffdbf291489dedb1a8265d2f299e46de5e714a58a6883fa19adbc3a7fb"
+      "updated": "2026-10-11",
+      "revision": "ux-pass-20261011",
+      "htmlBytes": 929054,
+      "zipBytes": 592837,
+      "htmlSha256": "dbb7b73cdbfd83d219230e09464cd3afc308e93c3a0815ace8be81f00f1596b2",
+      "zipSha256": "79c575d0c57af5309e25f6a16f0e08fddfc66ea1d383a46ec46e8db86f148d01"
     },
     {
       "id": "snake-puzzle",
@@ -951,12 +951,12 @@
         "deferredDecoding": true
       },
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-10",
-      "revision": "startup-optimized-20261010",
-      "htmlBytes": 760833,
-      "htmlSha256": "3664f2223f898dc3ea6809fb450f25a7904e95fafd202caf622129d92b9d78e7",
-      "zipBytes": 573501,
-      "zipSha256": "61dbc79f77ea020fe0074aea9f4e6922f41b737e87d83dedb6ebb25059802060"
+      "updated": "2026-10-11",
+      "revision": "ux-pass-20261011",
+      "htmlBytes": 762611,
+      "htmlSha256": "6c64616e0eab1135107ba84a370aba1f9a32baec79f229e56caf8f1753a6071d",
+      "zipBytes": 574164,
+      "zipSha256": "023a1cb8bcdd0dd43575d44717d5638aea2f64edee163813d48f3e772867001f"
     },
     {
       "id": "stack-merge",
@@ -964,7 +964,7 @@
       "type": "合成",
       "subtitle": "Stack & Cook",
       "image": "preview.webp",
-      "desc": "立体食材堆中拖动两个同级食品合成升级原料，凑齐两种不同原料后烹饪成新料理，再交给海鸥、Zuri、Oli 和 Chloe；Sera 只在提交后的半身反馈弹框出现。",
+      "desc": "两层堆叠原料，可信双原料配方；海鸥、Zuri、Oli、Chloe 依序接单，Sera 仅出现在提交提示层。",
       "features": [
         "36 个双层堆位",
         "两件合成一件升级",
@@ -978,7 +978,7 @@
         "成功与失败",
         "独立操作音效"
       ],
-      "operation": "拖动相同食品合成，凑齐当前订单后点击烹饪，再提交订单；支持点击选中、撤销与自动试玩。",
+      "operation": "拖动同类原料合并为备料，集齐两种备料后烹饪并提交四份订单；AUTO PLAY 可暂停继续。",
       "ending": "完成四单进入 Juicy Journey PLAY NOW 落版并保持；时间或步数用尽失败，可手动重试。",
       "reference": "Yumtopia · Merge & Cook · 360 × 640",
       "entry": "stack-merge/index.html",
@@ -997,12 +997,12 @@
         "deferredDecoding": true
       },
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-10",
-      "revision": "startup-optimized-20261010",
-      "htmlBytes": 1410553,
-      "htmlSha256": "40d4daf02d1566ce8cbe38d93654d3152af6cc236f3c3c3b3e89f1d389cb7069",
-      "zipBytes": 1075479,
-      "zipSha256": "7299a319f10e3909653aa184a85ca9e6b1a9eccfbd987d2ab62d23eb87580c33"
+      "updated": "2026-10-11",
+      "revision": "ux-pass-20261011",
+      "htmlBytes": 1272569,
+      "htmlSha256": "8e4c3524a87955fd257c5936b4017cc598db383ebb32ec04ab9fa3bbf30d57e0",
+      "zipBytes": 962291,
+      "zipSha256": "8ccb0220be94ad51fe2fd3a37159eb69a4df790b2e19c9e87c17ff14f7a42dd2"
     }
   ],
   "archive": {
