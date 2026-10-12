@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="color-scheme" content="light">
-<title>Juicy Journey · 试玩</title>
+<title>Juicy Journey · Playables</title>
 <style>
 :root{--header-height:64px;--page:#f5f4ec;--ink:#193e3b;--green:#164c48}
 *{box-sizing:border-box}body{margin:0;background:var(--page);color:var(--ink);font-family:"Microsoft YaHei",Arial,sans-serif}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}a,button{touch-action:manipulation}a:focus-visible,button:focus-visible{outline:3px solid #dc793d;outline-offset:3px}
@@ -26,13 +26,13 @@ main{max-width:1320px;margin:auto;padding:0 24px 24px}.toolbar{position:sticky;t
 </style>
 </head>
 <body>
-<header class="topbar"><div class="header-inner"><img class="brand" src="corn/juicy-journey-logo.webp" alt="Juicy Journey" width="200" height="106"><h1>试玩</h1><span class="count" aria-label="__COUNT__ 个试玩">__COUNT__</span></div></header>
+<header class="topbar"><div class="header-inner"><img class="brand" src="corn/juicy-journey-logo.webp" alt="Juicy Journey" width="200" height="106"><h1>Playables</h1><span class="count" aria-label="__COUNT__ playables">__COUNT__</span></div></header>
 <main>
- <div class="toolbar"><nav class="filters" aria-label="按玩法筛选，可多选，再次点击取消">__FILTERS__</nav></div>
- <div class="sr-only" id="results" aria-live="polite">全部 __COUNT__ 个试玩</div>
- <section class="grid" id="gallery" aria-label="试玩样本">__CARDS__</section>
- <p class="empty" id="empty" hidden>没有找到试玩</p>
- <nav class="gallery-controls" aria-label="切换试玩"><button id="previous" type="button" aria-label="上一个试玩" disabled>‹</button><span class="page-counter" id="page-counter" aria-live="polite">1 / __COUNT__</span><button id="next" type="button" aria-label="下一个试玩">›</button></nav>
+ <div class="toolbar"><nav class="filters" aria-label="Filter games. Select multiple categories; tap again to clear.">__FILTERS__</nav></div>
+ <div class="sr-only" id="results" aria-live="polite">All __COUNT__ playables</div>
+ <section class="grid" id="gallery" aria-label="Playable games">__CARDS__</section>
+ <p class="empty" id="empty" hidden>No games found</p>
+ <nav class="gallery-controls" aria-label="Browse games"><button id="previous" type="button" aria-label="Previous game" disabled>‹</button><span class="page-counter" id="page-counter" aria-live="polite">1 / __COUNT__</span><button id="next" type="button" aria-label="Next game">›</button></nav>
 </main>
 <script>
 const filters=Array.from(document.querySelectorAll('[data-filter]')),cards=Array.from(document.querySelectorAll('.card')),gallery=document.getElementById('gallery'),previous=document.getElementById('previous'),next=document.getElementById('next'),counter=document.getElementById('page-counter');
@@ -50,7 +50,7 @@ function findActive(){pendingFrame=0;if(!visible.length)return;const bounds=gall
 function alignCard(index,behavior){if(!visible[index]||getComputedStyle(gallery).display!=='flex')return;const r=visible[index].getBoundingClientRect(),g=gallery.getBoundingClientRect(),left=gallery.scrollLeft+r.left-g.left-(g.width-r.width)/2;if(Math.abs(gallery.scrollLeft-left)>1)gallery.scrollTo({left,behavior:behavior||(matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth')});}
 function layoutGallery(){const style=getComputedStyle(gallery);if(style.display!=='flex'){active=0;updatePager();observePreviews();return;}const height=gallery.clientHeight-parseFloat(style.paddingTop)-parseFloat(style.paddingBottom),width=Math.max(1,Math.min(gallery.clientWidth-24,height*9/16));gallery.style.setProperty('--card-width',width+'px');gallery.style.setProperty('--gallery-inset',Math.max(12,(gallery.clientWidth-width)/2)+'px');clearTimeout(snapTimer);alignCard(active,'instant');updatePager();observePreviews();}
 function go(delta){clearTimeout(snapTimer);const destination=Math.max(0,Math.min(visible.length-1,active+delta));alignCard(destination);}
-for(const filter of filters)filter.addEventListener('click',()=>{const selected=filter.dataset.filter;if(selected==='全部')selectedTypes.clear();else if(selectedTypes.has(selected))selectedTypes.delete(selected);else selectedTypes.add(selected);clearTimeout(snapTimer);if(pendingFrame)cancelAnimationFrame(pendingFrame);pendingFrame=0;gallery.scrollTo({left:0,behavior:'instant'});for(const button of filters)button.setAttribute('aria-pressed',String(button.dataset.filter==='全部'?selectedTypes.size===0:selectedTypes.has(button.dataset.filter)));for(const card of cards)card.hidden=selectedTypes.size>0&&!selectedTypes.has(card.dataset.type);visible=cards.filter(card=>!card.hidden);active=0;gallery.scrollTo({left:0,behavior:'instant'});document.getElementById('results').textContent=(selectedTypes.size?[...selectedTypes].join('、'):'全部')+'，'+visible.length+' 个试玩';document.getElementById('empty').hidden=visible.length!==0;layoutGallery();updatePager();});
+for(const filter of filters)filter.addEventListener('click',()=>{const selected=filter.dataset.filter;if(selected==='All')selectedTypes.clear();else if(selectedTypes.has(selected))selectedTypes.delete(selected);else selectedTypes.add(selected);clearTimeout(snapTimer);if(pendingFrame)cancelAnimationFrame(pendingFrame);pendingFrame=0;gallery.scrollTo({left:0,behavior:'instant'});for(const button of filters)button.setAttribute('aria-pressed',String(button.dataset.filter==='All'?selectedTypes.size===0:selectedTypes.has(button.dataset.filter)));for(const card of cards)card.hidden=selectedTypes.size>0&&!selectedTypes.has(card.dataset.type);visible=cards.filter(card=>!card.hidden);active=0;gallery.scrollTo({left:0,behavior:'instant'});document.getElementById('results').textContent=(selectedTypes.size?[...selectedTypes].join(', '):'All')+' · '+visible.length+' games';document.getElementById('empty').hidden=visible.length!==0;layoutGallery();updatePager();});
 gallery.addEventListener('scroll',()=>{if(!pendingFrame)pendingFrame=requestAnimationFrame(findActive);clearTimeout(snapTimer);if(getComputedStyle(gallery).display==='flex')snapTimer=setTimeout(()=>{findActive();alignCard(active);},150);},{passive:true});previous.addEventListener('click',()=>go(-1));next.addEventListener('click',()=>go(1));window.addEventListener('resize',()=>requestAnimationFrame(layoutGallery));if(typeof ResizeObserver!=='undefined')new ResizeObserver(layoutGallery).observe(gallery);layoutGallery();updatePager();
 </script>
 </body>

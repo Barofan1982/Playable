@@ -1,21 +1,22 @@
 const fs=require('node:fs'),path=require('node:path');
 const root=path.resolve(__dirname,'..');
 const manifest=JSON.parse(fs.readFileSync(root+"/samples.json","utf8")),samples=manifest.samples;
+const english=require('./english-catalog.cjs');
 // Classify by the result of the interaction, not the sample name.
 const categoryOverrides={'drink-merge':'合成','merge-cook':'消除','arrow-escape':'解谜'};
 for(const sample of samples)if(categoryOverrides[sample.id])sample.type=categoryOverrides[sample.id];
 const updated=manifest.updated||'2026-10-02';
 const displayDate=updated.split('-').map(Number).join(' ').replace(/^(\d+) (\d+) (\d+)$/, '$1 年 $2 月 $3 日');
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-for(const s of samples){s.entry=s.id+'/index.html';s.zip='下载包/'+s.id+'.zip';s.readme=s.id+'/README.md';s.htmlBytes=fs.statSync(path.join(root,s.entry)).size;if(fs.existsSync(path.join(root,s.zip)))s.zipBytes=fs.statSync(path.join(root,s.zip)).size;}
+for(const s of samples){s.nameEn=english.name(s);s.typeEn=english.category(s);s.locale='en';s.entry=s.id+'/index.html';s.zip='下载包/'+s.id+'.zip';s.readme=s.id+'/README.md';s.htmlBytes=fs.statSync(path.join(root,s.entry)).size;if(fs.existsSync(path.join(root,s.zip)))s.zipBytes=fs.statSync(path.join(root,s.zip)).size;}
 fs.writeFileSync(path.join(root,'samples.json'),JSON.stringify({...manifest,brand:'Juicy Journey',updated,samples,archive:{earlyZip:'历史版本/旧下载包/corn-早期包.zip'}},null,2));
-const cards=samples.map((s,i)=>`<article class="card" data-type="${esc(s.type)}">
- <a class="playable" href="${s.entry}${s.revision?'?v='+esc(s.revision):''}" target="_blank" rel="noopener" aria-label="试玩：${esc(s.name)}">
-  <div class="poster"><img ${i===0?'src':'data-src'}="${s.id}/${s.image}${s.revision?'?v='+esc(s.revision):''}" alt="${esc(s.name)}预览" ${i===0?'fetchpriority="high"':''} decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
-  <div class="card-body"><h2>${esc(s.name)}</h2><span class="category">${esc(s.type)}</span></div>
+const cards=samples.map((s,i)=>`<article class="card" data-type="${esc(s.typeEn)}">
+ <a class="playable" href="${s.entry}${s.revision?'?v='+esc(s.revision):''}" target="_blank" rel="noopener" aria-label="Play ${esc(s.nameEn)}">
+  <div class="poster"><img ${i===0?'src':'data-src'}="${s.id}/${s.image}${s.revision?'?v='+esc(s.revision):''}" alt="${esc(s.nameEn)} preview" ${i===0?'fetchpriority="high"':''} decoding="async"><span class="play-mark" aria-hidden="true">▶</span></div>
+  <div class="card-body"><h2>${esc(s.nameEn)}</h2><span class="category">${esc(s.typeEn)}</span></div>
  </a></article>`).join('\n');
-const types=[...new Set(samples.map(s=>s.type))];
-const categories=['全部',...['合成','消除'].filter(t=>types.includes(t)),...types.filter(t=>!['合成','消除'].includes(t))];
+const types=[...new Set(samples.map(s=>s.typeEn))];
+const categories=['All',...['Merge','Match'].filter(t=>types.includes(t)),...types.filter(t=>!['Merge','Match'].includes(t))];
 const filters=categories.map((t,i)=>`<button class="filter" type="button" data-filter="${esc(t)}" aria-pressed="${i===0}">${esc(t)}</button>`).join('');
 const template=fs.readFileSync(path.join(__dirname,'gallery-template.html'),'utf8');
 fs.writeFileSync(path.join(root,'index.html'),template.replaceAll('__COUNT__',String(samples.length)).replace('__FILTERS__',filters).replace('__CARDS__',cards));

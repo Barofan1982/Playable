@@ -13,6 +13,9 @@ const manifest=JSON.parse(fs.readFileSync(path.join(root,'samples.json'),'utf8')
 const files=new Set(['.gitignore','.gitattributes','index.html','samples.json','README.md','体积与音乐检查.md','七视频试玩对照.md','维护工具/build-catalog.cjs','维护工具/prepare-repository.cjs','corn/juicy-journey-logo.png']);
 files.add('washface.mp4');
 files.add('维护工具/gallery-template.html');
+files.add('维护工具/english-catalog.cjs');
+files.add('维护工具/english-ui.cjs');
+files.add('维护工具/english-ui.json');
 files.add('corn/juicy-journey-logo.webp');
 files.add('用户体验与载入优化.md');
 for(const sample of manifest.samples){

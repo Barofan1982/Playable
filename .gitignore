@@ -249,5 +249,8 @@
 !/体积与音乐检查.md
 !/用户体验与载入优化.md
 !/维护工具/build-catalog.cjs
+!/维护工具/english-catalog.cjs
+!/维护工具/english-ui.cjs
+!/维护工具/english-ui.json
 !/维护工具/gallery-template.html
 !/维护工具/prepare-repository.cjs

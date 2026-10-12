@@ -22,7 +22,7 @@ button[hidden]{display:none!important}.tools,.controls{gap:8px!important}.tools 
   if(typeof sdk.getState==='function'&&sdk.getState()==='loading'){adHidden=true;sdk.addEventListener('ready',ready);}else ready();
  }
 })();</script>
-<script>const CONFIG={"id":"mahjong-pairs","name":"层叠麻将配对","title":"Mahjong Garden","mode":"mahjong","type":"消除","seed":7603,"seconds":120,"goal":34,"autoInterval":0.7,"reference":6,"desc":"按麻将接龙规则配对 68 张牌：上方无遮挡且至少一侧空着才能选择。五次错配、无法配对或时间耗尽会失败。","features":["真实遮挡与侧边规则","68 张牌 / 34 对","两次重新洗牌","自动 PLAY"],"instruction":"Match identical FREE tiles · one side must be open","goalText":"MATCH ALL 34 PAIRS","success":"68 张麻将牌全部配对清空","failure":"五次错配、无可用配对且洗牌耗尽，或超时"};
+<script>const CONFIG={"id":"mahjong-pairs","name":"Mahjong Garden","title":"Mahjong Garden","mode":"mahjong","type":"Puzzle","seed":7603,"seconds":120,"goal":34,"autoInterval":0.7,"reference":6,"desc":"Match all 68 tiles. A free tile has nothing above it and at least one open side. Avoid five mismatches and beat the timer.","features":["Free tile and side rules","68 tiles / 34 pairs","Two reshuffles","AUTO PLAY"],"instruction":"Match identical FREE tiles · one side must be open","goalText":"MATCH ALL 34 PAIRS","success":"All 34 pairs matched!","failure":"Five mismatches, no pairs or reshuffles left, or time ran out."};
 (()=>{'use strict';// Shared construction is embedded by each build; no runtime dependency.
 function seraCashBundles(value){return value>0?Math.min(60,Math.ceil(6*Math.log2(1+value/10))):0;}
 function resetSeraWalk(p){p.walkPhase=0;p.walkBlend=0;p.walkDistance=0;p.walkPose=null;}

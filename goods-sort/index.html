@@ -22,7 +22,7 @@ button[hidden]{display:none!important}.tools,.controls{gap:8px!important}.tools 
   if(typeof sdk.getState==='function'&&sdk.getState()==='loading'){adHidden=true;sdk.addEventListener('ready',ready);}else ready();
  }
 })();</script>
-<script>const CONFIG={"id":"goods-sort","name":"货架三件归类","title":"Fresh Goods Sort","mode":"goods","type":"消除","seed":7103,"seconds":100,"moves":90,"goal":16,"autoInterval":0.65,"reference":1,"desc":"拖动货架上的商品，每格放齐三个相同商品即可清空。整理全部 16 组，在时间和步数耗尽前完成。","features":["真实拖动归类","16 组三件消除","时间与步数失败","自动 PLAY"],"instruction":"Drag goods into a shelf · 3 identical goods clear it","goalText":"SORT ALL 16 SETS","success":"16 组商品全部整理完成","failure":"时间或移动步数耗尽"};
+<script>const CONFIG={"id":"goods-sort","name":"Fresh Goods Sort","title":"Fresh Goods Sort","mode":"goods","type":"Puzzle","seed":7103,"seconds":100,"moves":90,"goal":16,"autoInterval":0.65,"reference":1,"desc":"Drag goods between shelves. Three identical goods clear a shelf. Sort all 16 sets before time or moves run out.","features":["Drag to sort","16 sets of three","Time and move limits","AUTO PLAY"],"instruction":"Drag goods into a shelf · 3 identical goods clear it","goalText":"SORT ALL 16 SETS","success":"All 16 sets are sorted!","failure":"Time or moves ran out."};
 (()=>{'use strict';// Shared construction is embedded by each build; no runtime dependency.
 function seraCashBundles(value){return value>0?Math.min(60,Math.ceil(6*Math.log2(1+value/10))):0;}
 function resetSeraWalk(p){p.walkPhase=0;p.walkBlend=0;p.walkDistance=0;p.walkPose=null;}

@@ -24,7 +24,7 @@ button[hidden]{display:none!important}.tools,.controls{gap:8px!important}.tools 
   if(typeof sdk.getState==='function'&&sdk.getState()==='loading'){adHidden=true;sdk.addEventListener('ready',ready);}else ready();
  }
 })();</script>
-<script>const CONFIG={"id":"avalanche-rescue","name":"落石通道救援","title":"Avalanche Escape","mode":"rocks","type":"消除","seed":7203,"seconds":65,"moves":40,"goal":70,"autoInterval":0.9,"reference":2,"desc":"落石持续从上方逼近。消除相邻同色图块，让 Sera 沿楼梯前进并清除出口的 70 块障碍；落石碰到人物会立即失败。","features":["真实落石逼近与碰撞","消除打开出口","动态危险倒计时","自动 PLAY"],"instruction":"ROCKS keep falling · match 2+ tiles to open the EXIT","goalText":"OPEN THE EXIT BEFORE ROCKS REACH SERA","success":"70 块出口障碍清空，Sera 逃离落石区域","failure":"落石接触人物、时间或移动步数耗尽"};
+<script>const CONFIG={"id":"avalanche-rescue","name":"Avalanche Escape","title":"Avalanche Escape","mode":"rocks","type":"Puzzle","seed":7203,"seconds":65,"moves":40,"goal":70,"autoInterval":0.9,"reference":2,"desc":"Rocks are falling. Match adjacent colors to clear all 70 exit blocks and help Sera escape. Avoid the falling rocks.","features":["Falling rocks and collisions","Match to open the exit","Live danger countdown","AUTO PLAY"],"instruction":"ROCKS keep falling · match 2+ tiles to open the EXIT","goalText":"OPEN THE EXIT BEFORE ROCKS REACH SERA","success":"All 70 exit blocks are clear. Sera is safe!","failure":"A rock hit Sera, or time or moves ran out."};
 (()=>{'use strict';// Shared construction is embedded by each build; no runtime dependency.
 function seraCashBundles(value){return value>0?Math.min(60,Math.ceil(6*Math.log2(1+value/10))):0;}
 function resetSeraWalk(p){p.walkPhase=0;p.walkBlend=0;p.walkDistance=0;p.walkPose=null;}

@@ -24,7 +24,7 @@ button[hidden]{display:none!important}.tools,.controls{gap:8px!important}.tools 
   if(typeof sdk.getState==='function'&&sdk.getState()==='loading'){adHidden=true;sdk.addEventListener('ready',ready);}else ready();
  }
 })();</script>
-<script>const CONFIG={"id":"water-tower","name":"水塔排水救援","title":"Water Tower Rescue","mode":"water","type":"消除","seed":7303,"seconds":65,"moves":32,"goal":8,"autoInterval":0.95,"reference":3,"desc":"消除各列图块来击碎水塔底部八块石板，形成排水口。水位降下后 Sera 脱困；水满或步数耗尽则失败。","features":["八块独立石板","水位与排水反馈","溺水危险","自动 PLAY"],"instruction":"Blast each column to crack its stone plate · drain the tank","goalText":"BREAK 8 PLATES · DRAIN THE WATER","success":"八块石板击碎且水塔排空，Sera 脱困","failure":"水位达到危险线、时间或步数耗尽"};
+<script>const CONFIG={"id":"water-tower","name":"Water Tower Rescue","title":"Water Tower Rescue","mode":"water","type":"Puzzle","seed":7303,"seconds":65,"moves":32,"goal":8,"autoInterval":0.95,"reference":3,"desc":"Match tiles in each column to break eight stone plates and drain the tower. Keep the water below the danger line.","features":["Eight stone plates","Rising water and drainage","Water danger","AUTO PLAY"],"instruction":"Blast each column to crack its stone plate · drain the tank","goalText":"BREAK 8 PLATES · DRAIN THE WATER","success":"All eight plates are open. Sera escaped the water!","failure":"The water reached the danger line, or time or moves ran out."};
 (()=>{'use strict';// Shared construction is embedded by each build; no runtime dependency.
 function seraCashBundles(value){return value>0?Math.min(60,Math.ceil(6*Math.log2(1+value/10))):0;}
 function resetSeraWalk(p){p.walkPhase=0;p.walkBlend=0;p.walkDistance=0;p.walkPose=null;}

@@ -24,7 +24,7 @@ button[hidden]{display:none!important}.tools,.controls{gap:8px!important}.tools 
   if(typeof sdk.getState==='function'&&sdk.getState()==='loading'){adHidden=true;sdk.addEventListener('ready',ready);}else ready();
  }
 })();</script>
-<script>const CONFIG={"id":"water-valve-rescue","name":"双水阀与熔岩救援","title":"Water Valve Escape","mode":"valves","type":"消除","seed":7503,"seconds":85,"moves":48,"goal":2,"autoInterval":0.9,"reference":5,"desc":"两间连续机关房：先用黄色图块打开清水闸灭火，再放水冷却熔岩形成出路。消除过多红色图块会打开危险闸。","features":["两间不同机关房","清水与熔岩闸门","选错闸门失败","自动 PLAY"],"instruction":"YELLOW opens clean water · 8 RED opens the lava valve","goalText":"RESCUE SERA THROUGH 2 ROOMS","success":"两间机关房完成，Sera 沿冷却的出路离开","failure":"打开危险闸、时间或步数耗尽"};
+<script>const CONFIG={"id":"water-valve-rescue","name":"Water Valve Escape","title":"Water Valve Escape","mode":"valves","type":"Puzzle","seed":7503,"seconds":85,"moves":48,"goal":2,"autoInterval":0.9,"reference":5,"desc":"Escape two rooms. Match yellow to open clean water, put out the fire and cool the lava. Too much red opens the dangerous valve.","features":["Two rescue rooms","Water and lava valves","Avoid the dangerous valve","AUTO PLAY"],"instruction":"YELLOW opens clean water · 8 RED opens the lava valve","goalText":"RESCUE SERA THROUGH 2 ROOMS","success":"Both rooms are safe. Sera crossed the cooled lava!","failure":"The dangerous valve opened, or time or moves ran out."};
 (()=>{'use strict';// Shared construction is embedded by each build; no runtime dependency.
 function seraCashBundles(value){return value>0?Math.min(60,Math.ceil(6*Math.log2(1+value/10))):0;}
 function resetSeraWalk(p){p.walkPhase=0;p.walkBlend=0;p.walkDistance=0;p.walkPose=null;}

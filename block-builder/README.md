@@ -46,3 +46,10 @@
 ## 验证入口
 
 浏览器全局 `window.__qa` 提供 `state()`、`reset(level)`、`startAuto()`、`release(name,x)`、`control(name,x)`、`step(seconds)`、`fail()`、`currentlevel()`、`correctActions()`、`pause()`、`continue()`。`window.__game` 为同一规则实例；`state().bodies` 可查看实际位置与角度。
+
+## 英文界面更新
+
+2026-10-12：玩家提示、按钮、计数、关卡、加载与成功/失败文案统一使用英文；较长提示缩短并按单词换行。已在320×568手机和844×390浏览器检查主要提示、按钮及结果边界，无中文操作提示。美术、玩法规则与无BGM设置保留，构建源同步维护英文。
+
+- HTML：113,116 字节（0.113 MB）。
+- 本地ZIP归档与当前单页一致，低于5MB。

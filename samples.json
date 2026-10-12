@@ -22,19 +22,22 @@
       "entry": "corn/index.html",
       "zip": "下载包/corn.zip",
       "readme": "corn/README.md",
-      "htmlBytes": 119184,
-      "zipBytes": 73422,
+      "htmlBytes": 119202,
+      "zipBytes": 71881,
       "audio": {
         "backgroundMusic": false,
         "independentEffects": true,
         "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "6ad08dcc13dcd5a834eae66515590f0047c9942af6880de9269e0787500b38ea",
-      "zipSha256": "70ef5efb90b12e9a50d0f107e2995817a95149b89d277f55c7db4ddfcd48baf6",
-      "updated": "2026-10-11",
-      "revision": "no-bgm-20261011",
-      "displayMode": "portrait-contained"
+      "htmlSha256": "0d7950b89fc1d227276bf35f212a21365798bd12734decb641497c24e7abd346",
+      "zipSha256": "abe9c86949bd9be5916e96fbb428ce0e6c77f921394b29a606e02816c8ca6347",
+      "updated": "2026-10-12",
+      "revision": "english-ui-20261012",
+      "displayMode": "portrait-contained",
+      "nameEn": "Corn Rings",
+      "typeEn": "Match",
+      "locale": "en"
     },
     {
       "id": "market",
@@ -60,7 +63,7 @@
       "zip": "下载包/market.zip",
       "readme": "market/README.md",
       "htmlBytes": 137253,
-      "zipBytes": 82287,
+      "zipBytes": 80699,
       "audio": {
         "backgroundMusic": false,
         "independentEffects": true,
@@ -68,10 +71,13 @@
       },
       "sizeLimitBytes": 5000000,
       "htmlSha256": "216be3fd22f520c811ec4ee9433c05cf1fb0f319e316b40ebee4a5036d6c7cb8",
-      "zipSha256": "901dfaf98d0702053dddd6ff95b1f6b55be1f6b3a9750a80687d0d3c03c3db46",
-      "updated": "2026-10-11",
-      "revision": "no-bgm-20261011",
-      "displayMode": "responsive-landscape"
+      "zipSha256": "d065907ee61088205d56d966f2691654db1197805c3515beb7ecd35c95ff499b",
+      "updated": "2026-10-12",
+      "revision": "english-ui-20261012",
+      "displayMode": "responsive-landscape",
+      "nameEn": "Juice Bar Rush",
+      "typeEn": "Tycoon",
+      "locale": "en"
     },
     {
       "id": "block",
@@ -93,19 +99,22 @@
       "entry": "block/index.html",
       "zip": "下载包/block.zip",
       "readme": "block/README.md",
-      "htmlBytes": 174978,
-      "zipBytes": 121227,
+      "htmlBytes": 174974,
+      "zipBytes": 119215,
       "audio": {
         "backgroundMusic": false,
         "independentEffects": true,
         "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "e118cee6827852c87e9058c3e22fdae7cf48add4e94cadf7067c581ad9ed64e1",
-      "zipSha256": "4b4645bec478f4f8761278f0748de6e54b3322a6fcfee65d65ab67643d3d9144",
-      "updated": "2026-10-11",
-      "revision": "no-bgm-20261011",
-      "displayMode": "portrait-contained"
+      "htmlSha256": "5f9031dc10cbd6f4d31614190e7c7c9bcf7123fac8ef90640891ac9d24794b6b",
+      "zipSha256": "f436d58ef5269d6d51d1184ae1edf92f5b9ee592c879e88edbd5c3359911243e",
+      "updated": "2026-10-12",
+      "revision": "english-ui-20261012",
+      "displayMode": "portrait-contained",
+      "nameEn": "Falling Blocks",
+      "typeEn": "Blocks",
+      "locale": "en"
     },
     {
       "id": "jigsaw",
@@ -126,19 +135,22 @@
       "entry": "jigsaw/index.html",
       "zip": "下载包/jigsaw.zip",
       "readme": "jigsaw/README.md",
-      "htmlBytes": 998446,
-      "zipBytes": 755571,
+      "htmlBytes": 998466,
+      "zipBytes": 741287,
       "audio": {
         "backgroundMusic": false,
         "independentEffects": true,
         "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "d38a558dc373e35245b36db691e6d99c214c1a6bae7449acd1647da59002fe9f",
-      "zipSha256": "3fa0998fc727e34bb94a3ef2677d2817bd534ce5365098b47389aa52d137444b",
-      "updated": "2026-10-11",
-      "revision": "no-bgm-20261011",
-      "displayMode": "portrait-contained"
+      "htmlSha256": "9966460838b81c68aca0025f34f5162f628ce6d24b1087d6f1ab3e44aabb1028",
+      "zipSha256": "b351b485af6cfd5a1d30e1858f1262ee172efc8746bad2d62ddd8c6321557817",
+      "updated": "2026-10-12",
+      "revision": "english-ui-20261012",
+      "displayMode": "portrait-contained",
+      "nameEn": "Butterfly Jigsaw",
+      "typeEn": "Jigsaw",
+      "locale": "en"
     },
     {
       "id": "rain-jigsaw",
@@ -159,19 +171,22 @@
       "entry": "rain-jigsaw/index.html",
       "zip": "下载包/rain-jigsaw.zip",
       "readme": "rain-jigsaw/README.md",
-      "htmlBytes": 723718,
-      "zipBytes": 545746,
+      "htmlBytes": 723738,
+      "zipBytes": 537170,
       "audio": {
         "backgroundMusic": false,
         "independentEffects": true,
         "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "7550dc791cb92d4bf4835754f54874150be54f3de40c907685ea96bd0997f201",
-      "zipSha256": "dc74751dc580c92dde938e7d86c06dd8075994c34978dde20bbf619ea017fd9a",
-      "updated": "2026-10-11",
-      "revision": "no-bgm-20261011",
-      "displayMode": "portrait-contained"
+      "htmlSha256": "082672d8074330f08749f2b1df7794255cddc292869baccfd493da03f2cab8b1",
+      "zipSha256": "939efdcddb0e541a5af8fdd4f0ad9fe3178377863ee8676f4e1d39856bd56860",
+      "updated": "2026-10-12",
+      "revision": "english-ui-20261012",
+      "displayMode": "portrait-contained",
+      "nameEn": "Rainy Jigsaw",
+      "typeEn": "Jigsaw",
+      "locale": "en"
     },
     {
       "id": "merge-cook",
@@ -192,19 +207,22 @@
       "entry": "merge-cook/index.html",
       "zip": "下载包/merge-cook.zip",
       "readme": "merge-cook/README.md",
-      "htmlBytes": 1256276,
-      "zipBytes": 964141,
+      "htmlBytes": 1256319,
+      "zipBytes": 946502,
       "audio": {
         "backgroundMusic": false,
         "independentEffects": true,
         "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "877c13efa06d38fe8eb478d2935171161e96efe057e022a7308cf9d634a1d856",
-      "zipSha256": "32747c623d8dd868ad61215d09a88fb505f68ec617be6d89f45c8b2523b5ebb8",
-      "revision": "no-bgm-20261011",
-      "updated": "2026-10-11",
-      "displayMode": "portrait-contained"
+      "htmlSha256": "98ef3bf5a728caa62d8f759ec3caf1eb2afac74dbc72d0be94702d14f82edc4d",
+      "zipSha256": "cf4159c64080b6dc2b80649f911cd83fa5e136cd7f15eefe7bd272e1fc3ac03a",
+      "revision": "english-ui-20261012",
+      "updated": "2026-10-12",
+      "displayMode": "portrait-contained",
+      "nameEn": "Merge & Cook",
+      "typeEn": "Match",
+      "locale": "en"
     },
     {
       "id": "drink-merge",
@@ -225,19 +243,22 @@
       "entry": "drink-merge/index.html",
       "zip": "下载包/drink-merge.zip",
       "readme": "drink-merge/README.md",
-      "htmlBytes": 715751,
-      "zipBytes": 541981,
+      "htmlBytes": 715793,
+      "zipBytes": 531983,
       "audio": {
         "backgroundMusic": false,
         "independentEffects": true,
         "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "ba55b2772f3905e1bd7f551e52a237635bcbc024dc667d61c6d09952273e8d5e",
-      "zipSha256": "57235b7bf6e450ee6c7a69cd74edd50aa6a8beafb787efa34d7c64e4ee87e477",
-      "updated": "2026-10-11",
-      "revision": "no-bgm-20261011",
-      "displayMode": "portrait-contained"
+      "htmlSha256": "b7ec1b178b00562f0a26f3dfb3f76db917715b721f1e1ab256da6356204e1c99",
+      "zipSha256": "f1aa564595d1971907104e5173dcbb01b1527354db7de55864f27f899227358c",
+      "updated": "2026-10-12",
+      "revision": "english-ui-20261012",
+      "displayMode": "portrait-contained",
+      "nameEn": "Drink Merge",
+      "typeEn": "Merge",
+      "locale": "en"
     },
     {
       "id": "sushi-belt",
@@ -259,19 +280,22 @@
       "entry": "sushi-belt/index.html",
       "zip": "下载包/sushi-belt.zip",
       "readme": "sushi-belt/README.md",
-      "htmlBytes": 2550608,
-      "zipBytes": 1962427,
+      "htmlBytes": 2550678,
+      "zipBytes": 1925608,
       "audio": {
         "backgroundMusic": false,
         "independentEffects": true,
         "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlSha256": "8249ffa0f5a044fc53243c712cb7516b1be5e446aff76bbbba5d81ec510e8370",
-      "zipSha256": "c9a90832ada012c56653812e9c6d9c536cac341b2bfbf978e56982dc17104da7",
-      "updated": "2026-10-11",
-      "revision": "no-bgm-20261011",
-      "displayMode": "responsive-landscape"
+      "htmlSha256": "b3ef692170af79153ecb4da6dba1e9f11f44e4f5bce45f92c9f4bfab317d742a",
+      "zipSha256": "f89870c6d4abfcf0cfa31949be21c45de520e9f53bcb8df5d770e94f4b0a999b",
+      "updated": "2026-10-12",
+      "revision": "english-ui-20261012",
+      "displayMode": "responsive-landscape",
+      "nameEn": "Sushi Belt",
+      "typeEn": "Tycoon",
+      "locale": "en"
     },
     {
       "id": "hidden-laundry",
@@ -293,7 +317,7 @@
       "zip": "下载包/hidden-laundry.zip",
       "readme": "hidden-laundry/README.md",
       "htmlBytes": 2025742,
-      "zipBytes": 1562443,
+      "zipBytes": 1533847,
       "audio": {
         "backgroundMusic": false,
         "independentEffects": true,
@@ -301,10 +325,13 @@
       },
       "sizeLimitBytes": 5000000,
       "htmlSha256": "fbcdfb17938dfee2e7ec6faf57d13dbc55be7a722f459e08996be0bd268d7102",
-      "zipSha256": "9af9bd804bc9532c6a22450b9539ed45b8c9450d5e45cbba3a72217f84c5ae34",
-      "updated": "2026-10-11",
-      "revision": "no-bgm-20261011",
-      "displayMode": "portrait-contained"
+      "zipSha256": "c8eb62c8fed480a86dd14394a6f0811a45c3e4704072e56e2af8a931396d84b4",
+      "updated": "2026-10-12",
+      "revision": "english-ui-20261012",
+      "displayMode": "portrait-contained",
+      "nameEn": "Hidden Laundry",
+      "typeEn": "Hidden Objects",
+      "locale": "en"
     },
     {
       "id": "cup-shooter",
@@ -332,13 +359,16 @@
         "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "htmlBytes": 96697,
-      "zipBytes": 68765,
-      "htmlSha256": "83441b029d1bd8d4445c2a402cd06879c4f07cdb01f1f1e61780592950de373c",
-      "updated": "2026-10-11",
-      "zipSha256": "48197b23a957bfa7807dc9a607ba802f5660300276497323e8d16430198cd5ad",
-      "revision": "no-bgm-20261011",
-      "displayMode": "portrait-contained"
+      "htmlBytes": 96744,
+      "zipBytes": 67601,
+      "htmlSha256": "17fe87558baa45fac65dcfeb762bf216e254de234ed190292e2d689b756fb64c",
+      "updated": "2026-10-12",
+      "zipSha256": "f6b4149608282d4d77c049afd01d137c7653b42d169102ca3736db5a33338d6c",
+      "revision": "english-ui-20261012",
+      "displayMode": "portrait-contained",
+      "nameEn": "Cup Shooter",
+      "typeEn": "Match",
+      "locale": "en"
     },
     {
       "id": "hotel-tycoon",
@@ -371,13 +401,16 @@
         "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-11",
+      "updated": "2026-10-12",
       "htmlBytes": 173900,
-      "zipBytes": 98510,
+      "zipBytes": 96920,
       "htmlSha256": "254ddd8472ec82659d97ec80a2b311f0d48618b9d8e56e70da0c99bc469ddd46",
-      "zipSha256": "a471dff24c8841ed223395472b0699fdbcd775fbe3ba6b361ad21aa3343e7657",
-      "revision": "no-bgm-20261011",
-      "displayMode": "responsive-landscape"
+      "zipSha256": "2b475355adf478817717369789c00d6254678f2caa71f0fbf4a91723f1d6ee6d",
+      "revision": "english-ui-20261012",
+      "displayMode": "responsive-landscape",
+      "nameEn": "Hotel Tycoon",
+      "typeEn": "Tycoon",
+      "locale": "en"
     },
     {
       "id": "flower-shop",
@@ -411,13 +444,16 @@
         "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-11",
+      "updated": "2026-10-12",
       "htmlBytes": 156530,
-      "zipBytes": 109791,
+      "zipBytes": 108047,
       "htmlSha256": "f76794a6e370f6249109cdb91bbe135b386786edc4587575db2c58aae123ce61",
-      "zipSha256": "608a26da95604b3e33a583b6e6bbfd53934747da6d4fb1b48be2bbc8598d53a5",
-      "revision": "no-bgm-20261011",
-      "displayMode": "responsive-landscape"
+      "zipSha256": "35adc7d9244e7eb368f96150ddb891c7ada9cea484ba366e9ce99610d8388b6f",
+      "revision": "english-ui-20261012",
+      "displayMode": "responsive-landscape",
+      "nameEn": "Flower Shop",
+      "typeEn": "Tycoon",
+      "locale": "en"
     },
     {
       "id": "seaside-cafe",
@@ -445,13 +481,16 @@
         "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-11",
-      "htmlBytes": 168685,
-      "zipBytes": 92386,
-      "htmlSha256": "1e39dbd2317a02f2ef3e054d1fa3ab26d5eb49bb5e12067976e6bf756a2b63fd",
-      "zipSha256": "330f45c3eb30d02f97c79ea3ff74d91a4a2e94be608499c353690e66b59270f0",
-      "revision": "no-bgm-20261011",
-      "displayMode": "responsive-landscape"
+      "updated": "2026-10-12",
+      "htmlBytes": 168680,
+      "zipBytes": 90774,
+      "htmlSha256": "2439cbfc32be58e03fe309379ee681beba7c930fb287ca3a406265c6def474b3",
+      "zipSha256": "480d6a47801d29bd30a0b09ebc5317ca3ffc4c310e158f208c7adefd48957222",
+      "revision": "english-ui-20261012",
+      "displayMode": "responsive-landscape",
+      "nameEn": "Seaside Cafe",
+      "typeEn": "Tycoon",
+      "locale": "en"
     },
     {
       "id": "juice-factory",
@@ -479,13 +518,16 @@
         "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-11",
-      "htmlBytes": 168637,
-      "zipBytes": 93137,
-      "htmlSha256": "47b1723d050ea5eb40a17728551cf56d0c4676fc43d2fca4ac0595d1cf950cc3",
-      "zipSha256": "4d737b3e6dbcd09aaed474f0fa483692b6bb77772d9878e9dc62736e59a56fcf",
-      "revision": "no-bgm-20261011",
-      "displayMode": "responsive-landscape"
+      "updated": "2026-10-12",
+      "htmlBytes": 168634,
+      "zipBytes": 91523,
+      "htmlSha256": "d33217ff8254cae956bb14f5755c9289d60e4c5a23f522b8bd3406e491eede0c",
+      "zipSha256": "0fa81d11261d401b1dc90e29b330cf2266f5e49a9ba28d264d72a99e0ec84279",
+      "revision": "english-ui-20261012",
+      "displayMode": "responsive-landscape",
+      "nameEn": "Orange Rush",
+      "typeEn": "Tycoon",
+      "locale": "en"
     },
     {
       "id": "burger-diner",
@@ -513,13 +555,16 @@
         "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-11",
-      "htmlBytes": 169039,
-      "zipBytes": 92938,
-      "htmlSha256": "26b4876c2b231ea2fc12c9d3d9950e46122a9a785f3fe43eb911f8f23a4e578c",
-      "zipSha256": "63940dd94e6126f73386da75ec266ebcbf633d9e801a462b9940885bf888f96a",
-      "revision": "no-bgm-20261011",
-      "displayMode": "responsive-landscape"
+      "updated": "2026-10-12",
+      "htmlBytes": 169032,
+      "zipBytes": 91329,
+      "htmlSha256": "7822d74a603513b58c0f31b2ad5e6eb087938bd91597760d9f7b02f498afb690",
+      "zipSha256": "0533a83cd53dad169b2f8e66cb24acc5e6f865b729cad2faed315ddf15bfe411",
+      "revision": "english-ui-20261012",
+      "displayMode": "responsive-landscape",
+      "nameEn": "Burger Diner",
+      "typeEn": "Tycoon",
+      "locale": "en"
     },
     {
       "id": "greenhouse-florist",
@@ -547,13 +592,16 @@
         "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-11",
+      "updated": "2026-10-12",
       "htmlBytes": 169642,
-      "zipBytes": 93833,
-      "htmlSha256": "724dd80c3f854a15adf1edfb5e052277464994d7926aa66b03951b6e8a656d83",
-      "zipSha256": "46b66dcf3ccf9370c0a8ed33687abc1df08efdb7cd4093f9504c6b82587dcf9e",
-      "revision": "no-bgm-20261011",
-      "displayMode": "responsive-landscape"
+      "zipBytes": 92224,
+      "htmlSha256": "b49f1abf916b8f8b00d3cb73aef90fd358424a75114b8046fd9c3416f827496a",
+      "zipSha256": "b7474787e836960711d54f02f49cf1eaead504b8595c31d6555558fbc55754f0",
+      "revision": "english-ui-20261012",
+      "displayMode": "responsive-landscape",
+      "nameEn": "Greenhouse Florist",
+      "typeEn": "Tycoon",
+      "locale": "en"
     },
     {
       "id": "goods-sort",
@@ -583,13 +631,16 @@
         "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-11",
-      "revision": "no-bgm-20261011",
-      "htmlBytes": 134028,
-      "zipBytes": 80672,
-      "htmlSha256": "7dd30257cb52129fb029d535764c2e271b2033991c7b598c904a9b560ad28cbb",
-      "zipSha256": "c3e4779dad2a10d27458bada6c5edca58db4a5d10855ff941a5b181902fdfe7d",
-      "displayMode": "responsive-landscape"
+      "updated": "2026-10-12",
+      "revision": "english-ui-20261012",
+      "htmlBytes": 133984,
+      "zipBytes": 78991,
+      "htmlSha256": "b174a63a5e34f437e1ee2e2f9aa5442dba2ffc01901b86480e0170d865871051",
+      "zipSha256": "4eb77cb2e811b51777527d89e1122e9ebf7be949dae032bd8a4cadb6e340ec10",
+      "displayMode": "responsive-landscape",
+      "nameEn": "Goods Sort",
+      "typeEn": "Match",
+      "locale": "en"
     },
     {
       "id": "avalanche-rescue",
@@ -619,13 +670,16 @@
         "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-11",
-      "revision": "no-bgm-20261011",
-      "htmlBytes": 135689,
-      "zipBytes": 81886,
-      "htmlSha256": "8ceb916165643a7ae08bac73fc1bad79f8bf90f3e10df638b0037e3e4c166ede",
-      "zipSha256": "ad7c334da292d47051e5c94e9de6464be912e88f90d0fc39f16b1c15175298b4",
-      "displayMode": "portrait-contained"
+      "updated": "2026-10-12",
+      "revision": "english-ui-20261012",
+      "htmlBytes": 135641,
+      "zipBytes": 80169,
+      "htmlSha256": "92cf8974fc146511a1b6a34a6281c06250282cdc7fa86c414d1d76fd587c8e42",
+      "zipSha256": "6c96677d5a74480ac08c6bde71b7433bbb698a00980588e25552c9d79eef23a6",
+      "displayMode": "portrait-contained",
+      "nameEn": "Avalanche Rescue",
+      "typeEn": "Match",
+      "locale": "en"
     },
     {
       "id": "water-tower",
@@ -655,13 +709,16 @@
         "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-11",
-      "revision": "no-bgm-20261011",
-      "htmlBytes": 130323,
-      "zipBytes": 79826,
-      "htmlSha256": "3e9164ebcd8ad25fbe555032606744aac92a95992d9cb3a798f2a608d678bea3",
-      "zipSha256": "0de2345801431638bb88e371bc074d4a193c79f590758820e0678534a1117d77",
-      "displayMode": "portrait-contained"
+      "updated": "2026-10-12",
+      "revision": "english-ui-20261012",
+      "htmlBytes": 130321,
+      "zipBytes": 78140,
+      "htmlSha256": "ba86df8bb80e0f9c93c5a93e5c7bfb1fec95d1d08a1b2fe54e84f9013a928547",
+      "zipSha256": "80b279b73865caa651fd2e036e1c99be251e32546451e0da7931a7e75b7ccf47",
+      "displayMode": "portrait-contained",
+      "nameEn": "Water Tower",
+      "typeEn": "Match",
+      "locale": "en"
     },
     {
       "id": "ball-fire-rescue",
@@ -691,13 +748,16 @@
         "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-11",
-      "revision": "no-bgm-20261011",
-      "htmlBytes": 130300,
-      "zipBytes": 79844,
-      "htmlSha256": "cdf1b010f02d6af3612ad6afde14e035222a916da18a0b63b3d3ee0fdafbfcf2",
-      "zipSha256": "51adaf2efcc4133da7cf2c72673b2fce0f2758417d9341c32465b5db4dfb1111",
-      "displayMode": "portrait-contained"
+      "updated": "2026-10-12",
+      "revision": "english-ui-20261012",
+      "htmlBytes": 130319,
+      "zipBytes": 78120,
+      "htmlSha256": "9c9d918d5f61d3f689f3797b6be9f3228f31e865bc7ba43d8cc680315e6b46b4",
+      "zipSha256": "01eace326def9119bd4a733f7c96b5cfbb5f6bc3edbf6dc5c0297c33318c1cfd",
+      "displayMode": "portrait-contained",
+      "nameEn": "Fire Rescue",
+      "typeEn": "Match",
+      "locale": "en"
     },
     {
       "id": "water-valve-rescue",
@@ -727,13 +787,16 @@
         "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-11",
-      "revision": "no-bgm-20261011",
-      "htmlBytes": 135680,
-      "zipBytes": 81752,
-      "htmlSha256": "bd464973f9487945ad85f48ca19b01021917ef06e8992f9e86171fd24056b078",
-      "zipSha256": "ff7b2757c48acb76999f9d7b5acfcd69dc74e4c373e4b02af7d2ecdce6ae0687",
-      "displayMode": "portrait-contained"
+      "updated": "2026-10-12",
+      "revision": "english-ui-20261012",
+      "htmlBytes": 135665,
+      "zipBytes": 80094,
+      "htmlSha256": "8c0e434d6f823a4f92218818f06e6819526e58c388828c24383e5c61b6ca2e96",
+      "zipSha256": "bfd027cbd8a2430a67c443c5e9637daf33a64f79866fd1c3a95eb9ec90a468a1",
+      "displayMode": "portrait-contained",
+      "nameEn": "Water Valve Rescue",
+      "typeEn": "Match",
+      "locale": "en"
     },
     {
       "id": "mahjong-pairs",
@@ -763,13 +826,16 @@
         "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-11",
-      "revision": "no-bgm-20261011",
-      "htmlBytes": 134067,
-      "zipBytes": 80708,
-      "htmlSha256": "10f196c107399c2fba28e250930e28d63cc172c426abc76ea0fc27992142c8c4",
-      "zipSha256": "3a9db8b371dc8ff3214829ed1326e9d69b1676ee4a4013eedb83e556730e93fb",
-      "displayMode": "responsive-landscape"
+      "updated": "2026-10-12",
+      "revision": "english-ui-20261012",
+      "htmlBytes": 134025,
+      "zipBytes": 79010,
+      "htmlSha256": "468ab7b35eff963d84ad931f09cd8c6ee2534eb116912f91847b115ec51ffd0d",
+      "zipSha256": "92653d0d898bbe93e81c92c87f424e4603cc0a47d74631a21c3c7f1d8e5e4dd2",
+      "displayMode": "responsive-landscape",
+      "nameEn": "Mahjong Pairs",
+      "typeEn": "Match",
+      "locale": "en"
     },
     {
       "id": "arrow-escape",
@@ -799,12 +865,12 @@
         "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-11",
-      "revision": "no-bgm-20261011",
-      "htmlBytes": 360326,
-      "zipBytes": 148054,
-      "htmlSha256": "e13c404b72770d0250f3b9491357ddb8037f87b149ecc650697d9a430b68c8cc",
-      "zipSha256": "232c46ba3558eeaff1b719fdf54653efa8c44dbb1c897d416c96c05e8a5c353e",
+      "updated": "2026-10-12",
+      "revision": "english-ui-20261012",
+      "htmlBytes": 360224,
+      "zipBytes": 145171,
+      "htmlSha256": "10054c0dc879618f8a17f72be33c33649520f4016fdd738878b67da96a5b4c3b",
+      "zipSha256": "f10044763d05c44a1981dc60aa87913f50b3f6f943187e338a1b47183c86ce34",
       "hellPreview": "arrow-escape/preview-hell.png",
       "levels": [
         {
@@ -821,7 +887,10 @@
           "zoomMax": 4
         }
       ],
-      "displayMode": "responsive-landscape"
+      "displayMode": "responsive-landscape",
+      "nameEn": "Arrow Escape",
+      "typeEn": "Puzzle",
+      "locale": "en"
     },
     {
       "id": "sticker-shop",
@@ -851,13 +920,16 @@
         "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-11",
-      "revision": "no-bgm-20261011",
-      "htmlBytes": 802526,
-      "zipBytes": 599831,
-      "htmlSha256": "619ddf95e04a1ce4e9d40f66beb009c0ae786fb70f847ef3e7135f887863de47",
-      "zipSha256": "3c4f51e8e2f9abf91706f6312f6a9960e80afdbae8db1e4f582bd663253de722",
-      "displayMode": "responsive-landscape"
+      "updated": "2026-10-12",
+      "revision": "english-ui-20261012",
+      "htmlBytes": 802534,
+      "zipBytes": 588367,
+      "htmlSha256": "aab6ba2d056b19170b5c7e8486eeab4a62a60449b52362868a32e23a5ae700a0",
+      "zipSha256": "69d14a3c447de0f5eb10ada25b7b8ade4c4b6d622e6f9c5232ab3900b9535103",
+      "displayMode": "responsive-landscape",
+      "nameEn": "Sticker Shop",
+      "typeEn": "Decor",
+      "locale": "en"
     },
     {
       "id": "dot-link",
@@ -888,13 +960,16 @@
         "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-11",
-      "revision": "no-bgm-20261011",
+      "updated": "2026-10-12",
+      "revision": "english-ui-20261012",
       "htmlBytes": 282635,
-      "zipBytes": 99062,
+      "zipBytes": 96114,
       "htmlSha256": "4a55421b52f2215a16bd9f37d0bc2fc66cd4376fab7699f99d1ede716b2949af",
-      "zipSha256": "615ccf9ba0e4704fb86d11da2c0c0af7cc62baa4b323ac282916130019092583",
-      "displayMode": "portrait-contained"
+      "zipSha256": "c78483a88e2afb4b5b47b984686f08776ec53385bd0c883a904132df12b60fc6",
+      "displayMode": "portrait-contained",
+      "nameEn": "Dot Link",
+      "typeEn": "Connect",
+      "locale": "en"
     },
     {
       "id": "snake-puzzle",
@@ -928,13 +1003,16 @@
         "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-11",
-      "revision": "no-bgm-20261011",
+      "updated": "2026-10-12",
+      "revision": "english-ui-20261012",
       "htmlBytes": 118918,
       "htmlSha256": "d3543c956db58bc632541d1fcfb23bd79c90255e379bf8c577c8b1194f084c57",
-      "zipBytes": 81484,
-      "zipSha256": "802f9478fdcb4b9cbd77e902ae041936f084accc2c77ad9b91789c1fad770667",
-      "displayMode": "responsive-landscape"
+      "zipBytes": 79778,
+      "zipSha256": "408e1f78ea95da523de3d82d647f6367242428e278cf21c7bcbef3aef76e267f",
+      "displayMode": "responsive-landscape",
+      "nameEn": "Snake Puzzle",
+      "typeEn": "Puzzle",
+      "locale": "en"
     },
     {
       "id": "stack-merge",
@@ -969,13 +1047,16 @@
         "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-11",
-      "revision": "no-bgm-20261011",
+      "updated": "2026-10-12",
+      "revision": "english-ui-20261012",
       "htmlBytes": 867904,
       "htmlSha256": "5ed8abbaa50300a7a86b680f8978cfcccfad4b1b18873f68ef7a085eb84cbfd5",
-      "zipBytes": 658618,
-      "zipSha256": "d841b8e1cd95c5fab0d222aa389cca6fb71d47ca19002c624a125b1255b225da",
-      "displayMode": "responsive-landscape"
+      "zipBytes": 645562,
+      "zipSha256": "8c6abf08af002a5797c689a6589267f709de40594d18092409d885e891cc9084",
+      "displayMode": "responsive-landscape",
+      "nameEn": "Stack Merge",
+      "typeEn": "Merge",
+      "locale": "en"
     },
     {
       "id": "bridge-race",
@@ -1009,11 +1090,14 @@
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-12",
-      "revision": "bridge-bottom-controls-20261012",
+      "revision": "english-ui-20261012",
       "displayMode": "portrait-fullscreen",
-      "zipBytes": 19691,
+      "zipBytes": 19930,
       "htmlSha256": "c09f6da384a7136dc1b0b860570cc6e2dab7b2cf29e9f32acbd501007a3be691",
-      "zipSha256": "6ac5641cb3459b5497c7f2aa453f166b42223bbac232568280edfde7bfac674d"
+      "zipSha256": "d11546de04884b9a8cf227abe978baf301dda123ea3de90ce69c757820e038b1",
+      "nameEn": "Snow Bridge Race",
+      "typeEn": "Race",
+      "locale": "en"
     },
     {
       "id": "worker-rush",
@@ -1046,11 +1130,14 @@
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-12",
-      "revision": "worker-rush-20261012",
+      "revision": "english-ui-20261012",
       "displayMode": "portrait-contained",
-      "zipBytes": 22044,
+      "zipBytes": 22290,
       "htmlSha256": "1c70a222e37ad6063f16610291874d68dcfddfa01cf1fff5605afbcd6c4e7823",
-      "zipSha256": "7eb24d0d687e341e6718da031192f802e6ba496158725f6df720fc973be07aac"
+      "zipSha256": "8d2dc3a702363bd7f0035f44b1a4eba14a7a83a04a250f7f21e8d90f6aa96287",
+      "nameEn": "Worker Rush",
+      "typeEn": "Tycoon",
+      "locale": "en"
     },
     {
       "id": "steak-grill",
@@ -1062,7 +1149,7 @@
       "image": "preview.webp",
       "zip": "下载包/steak-grill.zip",
       "readme": "steak-grill/README.md",
-      "revision": "steak-grill-20261012",
+      "revision": "english-ui-20261012",
       "operation": "点击生肉入烤位，熟透夹到盘子，按订单加酱并出餐。",
       "features": [
         "三位烧烤",
@@ -1085,9 +1172,12 @@
         "independentEffects": true,
         "pauseWhenHidden": true
       },
-      "zipBytes": 192350,
+      "zipBytes": 192636,
       "htmlSha256": "627a3090aae8f988e199f6a6a21830e83d60f38a536bedc75f2b18bb3ff1f8e0",
-      "zipSha256": "4f27d403f4c22c7c1a5c1fcc14b0b2650d1c00f8085d2a535b5af2596a1bf59a"
+      "zipSha256": "0f42ed8cc90482a72452a91a09028e7b5c530d385d09f319acf4ed3a994fca60",
+      "nameEn": "Steak Grill",
+      "typeEn": "Cooking",
+      "locale": "en"
     },
     {
       "id": "hot-pot",
@@ -1118,12 +1208,15 @@
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-12",
-      "revision": "hot-pot-20261012",
+      "revision": "english-ui-20261012",
       "displayMode": "portrait-contained",
       "htmlBytes": 381326,
-      "zipBytes": 283772,
+      "zipBytes": 284029,
       "htmlSha256": "97374b19670ca8335f9fc740817806cc53964eb385221b434355966048968c83",
-      "zipSha256": "0ff36c9474a39d0cd85409d00f1d303d904ddf53aff01bcbbc797dce8571905d"
+      "zipSha256": "2c45112abb9b40f879caafe223865cdd2372556b4775ae7bd9bb96ba304b69fa",
+      "nameEn": "Hot Pot",
+      "typeEn": "Cooking",
+      "locale": "en"
     },
     {
       "id": "food-sort",
@@ -1154,12 +1247,15 @@
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-12",
-      "revision": "food-sort-orders-20261012",
+      "revision": "english-ui-20261012",
       "displayMode": "portrait-contained",
       "htmlBytes": 351088,
-      "zipBytes": 261796,
+      "zipBytes": 262065,
       "htmlSha256": "707044447394e1236816b0b4169159a39f51b9b4e3dcac5280677caba51a51ca",
-      "zipSha256": "aca729973d7fdb8a31f9041323d95a95cea5aaa0714c9da5b17acc5dc119227e"
+      "zipSha256": "8e07e24715c333d0a615f794c34e6825aebebfeab1b3b03b5a2d41953b7e96f9",
+      "nameEn": "Food Sort",
+      "typeEn": "Puzzle",
+      "locale": "en"
     },
     {
       "id": "block-builder",
@@ -1189,12 +1285,15 @@
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-12",
-      "revision": "block-builder-20261012-l2-manual",
+      "revision": "english-ui-20261012",
       "displayMode": "portrait-contained",
-      "htmlBytes": 113130,
-      "zipBytes": 40488,
-      "htmlSha256": "6d322c2f55269d313d255b43cb4ce30fb25919c80c9ed1109df28e26ef7ffba5",
-      "zipSha256": "e473bc26f6e8fa296c0a2d53b0a209dfd9b25f9a7f48928b2ea2abe520e8ea6a"
+      "htmlBytes": 113116,
+      "zipBytes": 40392,
+      "htmlSha256": "869c1712091beb4c2ce20bf377d31b28e3328a3e4b6fda6026cd061023ff8dc0",
+      "zipSha256": "efef7d3a0ccf30b76944b87ab176bae8ba1999e80a5bac0e88097245dfbbf963",
+      "nameEn": "Color Block Builder",
+      "typeEn": "Physics",
+      "locale": "en"
     },
     {
       "id": "shape-drop",
@@ -1226,12 +1325,15 @@
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-12",
-      "revision": "shape-drop-structure-match-20261012",
+      "revision": "english-ui-20261012",
       "displayMode": "portrait-contained",
-      "htmlBytes": 110670,
-      "zipBytes": 40400,
-      "htmlSha256": "d5e311ea1c80dc2b8251451e9b56772aa2af468c9a16051bd82c2929a0533d77",
-      "zipSha256": "b8164cbd8e49e5773c3fb5d763d99529d28ca18293301bf75c498cace79bfec1"
+      "htmlBytes": 110577,
+      "zipBytes": 40223,
+      "htmlSha256": "dc8547f823d46b05bb08ff5f8f06f3cd49541d4d9bfab39eedd2c0fd942c19d1",
+      "zipSha256": "7b12c789b1b25e2f41c0d50ee6d823306f2c84fca3c1a7d2c95964ac0b06bc6a",
+      "nameEn": "Shape Drop",
+      "typeEn": "Physics",
+      "locale": "en"
     },
     {
       "id": "stone-tiles",
@@ -1262,12 +1364,15 @@
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-12",
-      "revision": "stone-tiles-video1-20261012",
+      "revision": "english-ui-20261012",
       "displayMode": "portrait-contained",
-      "htmlBytes": 94782,
-      "zipBytes": 64683,
-      "htmlSha256": "50373968637ad9843da3573bce54ed0c602714669a317fa931f19b05fada3093",
-      "zipSha256": "dd03b96ee914ee5665d4c72b484260c79464c0ce54f2d35ac5917f0a04449298"
+      "htmlBytes": 94898,
+      "zipBytes": 64658,
+      "htmlSha256": "2ca4e9d6a90218182d5557f3a53417c31aba20b1569c3106604fd1122a955dce",
+      "zipSha256": "5bce902e70cba7113d3c96d5c6da08db89ae2d6b6e721f667685e8b82b3f96af",
+      "nameEn": "Stone Tiles",
+      "typeEn": "Match",
+      "locale": "en"
     },
     {
       "id": "tile-pyramid",
@@ -1299,12 +1404,15 @@
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-12",
-      "revision": "tile-pyramid-reference-20261012",
+      "revision": "english-ui-20261012",
       "displayMode": "portrait-contained",
-      "htmlBytes": 451419,
-      "zipBytes": 335631,
-      "htmlSha256": "021bdab47483620e4e7319b8e338c299286a20ccb5e12b4e0efa7b7a5ce8b21f",
-      "zipSha256": "a29a0bb559d5d48aaf32025f96f688fa820b65bd0b11464e173f63f9bc88fcad"
+      "htmlBytes": 451353,
+      "zipBytes": 335446,
+      "htmlSha256": "52d24be95be1b4ad1d32127fd09a32bbfda470e9abc02919b03bb2d6c8008359",
+      "zipSha256": "dab249f4301f7f0e4f6585d6dd24b770edb5ce89facbdcc5de0ecf764b1d1121",
+      "nameEn": "Fruit Pyramid",
+      "typeEn": "Match",
+      "locale": "en"
     },
     {
       "id": "tile-fruit",
@@ -1334,12 +1442,15 @@
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-12",
-      "revision": "tile-fruit-reference-20261012",
+      "revision": "english-ui-20261012",
       "displayMode": "portrait-contained",
-      "htmlBytes": 699872,
-      "zipBytes": 528107,
-      "htmlSha256": "79425cdf95d11c835106db274c755353c4ada2e8f6e91f4327c8fdd7e0ab8305",
-      "zipSha256": "ae4de2587e4f7b3280e252a53e02a137bc5d2a31a34ea898c168439b89dc07f1"
+      "htmlBytes": 699820,
+      "zipBytes": 527941,
+      "htmlSha256": "69a3764b84781715cf51b489767e12cac293f0d9c5de63863956d50ea32146bd",
+      "zipSha256": "c58f544a8783773191a5ff1b2699c6c97b396d8592ca51f41b681f16a5f15f9e",
+      "nameEn": "Fruit Fill",
+      "typeEn": "Match",
+      "locale": "en"
     },
     {
       "id": "tile-garden",
@@ -1371,12 +1482,15 @@
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-12",
-      "revision": "tile-garden-reference-20261012",
+      "revision": "english-ui-20261012",
       "displayMode": "portrait-contained",
-      "htmlBytes": 201662,
-      "zipBytes": 148920,
-      "htmlSha256": "02451063fd63e269215f34b947a4b78550d65e31cf3c041596d1fd350a063e4e",
-      "zipSha256": "baddf610a8030828a6bc47952f8286f30074e61d523b2bd2521f8f13cf4910b0"
+      "htmlBytes": 201617,
+      "zipBytes": 148712,
+      "htmlSha256": "94bf788e5b9c5f7b74e1f05cdd9a172808fad189f463aeff65bd76ce04e89a24",
+      "zipSha256": "fd699368315fa5a86e144a889e875196e64ba7223118f71859407480f8d9a7e6",
+      "nameEn": "Flower Chain",
+      "typeEn": "Match",
+      "locale": "en"
     },
     {
       "id": "tile-valley",
@@ -1408,12 +1522,15 @@
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-12",
-      "revision": "tile-valley-reference-20261012",
+      "revision": "english-ui-20261012",
       "displayMode": "portrait-contained",
-      "htmlBytes": 349267,
-      "zipBytes": 258959,
-      "htmlSha256": "3287df0147aec8840c94dd2176ff01974558f9b90f5b876bc478dfed06a0b0d6",
-      "zipSha256": "d02eff1e97f69772b886a9e431102a03ea2b1103c32e450d520a791c3b0bb7ca"
+      "htmlBytes": 349201,
+      "zipBytes": 258732,
+      "htmlSha256": "ac1af653b712cf45870a8694f9b301e29319b98d74bd1668f37f8d4f42f13690",
+      "zipSha256": "9a99cb27eeb165dd21d089e5d41f27f27988c15b790df679434e223ab483003d",
+      "nameEn": "Fruit Valley",
+      "typeEn": "Match",
+      "locale": "en"
     }
   ],
   "archive": {
@@ -1436,5 +1553,6 @@
       "merge-cook"
     ],
     "updated": "2026-10-08"
-  }
+  },
+  "locale": "en"
 }

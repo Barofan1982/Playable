@@ -24,7 +24,7 @@ button[hidden]{display:none!important}.tools,.controls{gap:8px!important}.tools 
   if(typeof sdk.getState==='function'&&sdk.getState()==='loading'){adHidden=true;sdk.addEventListener('ready',ready);}else ready();
  }
 })();</script>
-<script>const CONFIG={"id":"ball-fire-rescue","name":"彩球机关灭火","title":"Cool Ball Rescue","mode":"balls","type":"消除","seed":7403,"seconds":55,"moves":26,"goal":3,"autoInterval":1.1,"reference":4,"desc":"消除绿色叶片积攒水球，充满后点击横杆释放一批水球。完成三轮降温救出 Sera；红色图块会助长火势。","features":["消除加点击横杆","三轮水球落下","红色助长火势","自动 PLAY"],"instruction":"GREEN charges water · tap the PIN at 8 · RED feeds fire","goalText":"RELEASE 3 WATER BATCHES","success":"释放三批水球并熄灭火焰","failure":"火势达到危险线、时间或步数耗尽"};
+<script>const CONFIG={"id":"ball-fire-rescue","name":"Cool Ball Rescue","title":"Cool Ball Rescue","mode":"balls","type":"Puzzle","seed":7403,"seconds":55,"moves":26,"goal":3,"autoInterval":1.1,"reference":4,"desc":"Match green tiles to charge water balls, then tap the pin to release them. Release three batches to save Sera. Red feeds the fire.","features":["Match, then tap the pin","Three water batches","Red feeds the fire","AUTO PLAY"],"instruction":"GREEN charges water · tap the PIN at 8 · RED feeds fire","goalText":"RELEASE 3 WATER BATCHES","success":"Three water batches released. The fire is out!","failure":"The fire reached the danger line, or time or moves ran out."};
 (()=>{'use strict';// Shared construction is embedded by each build; no runtime dependency.
 function seraCashBundles(value){return value>0?Math.min(60,Math.ceil(6*Math.log2(1+value/10))):0;}
 function resetSeraWalk(p){p.walkPhase=0;p.walkBlend=0;p.walkDistance=0;p.walkPose=null;}

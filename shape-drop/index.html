@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="color-scheme" content="light"><title>Shape Drop · 彩块搭形</title>
+<meta name="color-scheme" content="light"><title>Shape Drop</title>
 <style>
 *{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#e8ece8;font-family:'Trebuchet MS','Microsoft YaHei',sans-serif}body{display:flex;align-items:center;justify-content:center;touch-action:none}.game{width:min(100vw,calc((100dvh - 48px)*.5625));height:min(calc(100vw * 1.7777778 + 48px),100dvh);display:flex;flex-direction:column;position:relative;background:#f4f6f2;box-shadow:0 0 48px #52695d28}canvas{width:100%;height:calc(100% - 48px);display:block;flex:1;min-height:0;cursor:pointer}.controls{height:48px;flex:none;display:grid;grid-template-columns:1.6fr 1fr;gap:1px;background:#c6ccbd;border-top:1px solid #bfc7b7;z-index:2}button{appearance:none;border:0;background:#fffdf3;color:#333a2e;font:700 14px 'Trebuchet MS','Microsoft YaHei',sans-serif;letter-spacing:.4px;cursor:pointer;min-height:47px;touch-action:manipulation}button:hover{background:#f2f5dc}button:active{background:#e2e9c2}button:focus-visible{outline:3px solid #83ae42;outline-offset:-3px}button[disabled]{color:#858b82;cursor:default}.sr-only{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}@media(prefers-reduced-motion:reduce){.game{scroll-behavior:auto}}
 </style>
@@ -31,10 +31,10 @@ THE SOFTWARE.
 -->
 </head>
 <body>
-<main class="game" aria-label="彩块搭形试玩。点击悬空积木，按正确顺序释放到凹槽，搭出上方目标。">
-<canvas id="game" width="720" height="1280" aria-label="悬空彩色积木与十字目标图"></canvas>
-<nav class="controls" aria-label="试玩控制"><button id="auto">▶ AUTO PLAY</button><button id="retry">↻ RETRY</button></nav>
-<p id="live" class="sr-only" aria-live="polite">点击积木释放，搭成上方图案。</p>
+<main class="game" aria-label="Tap the floating blocks in the right order to build the target shape.">
+<canvas id="game" width="720" height="1280" aria-label="Floating colored blocks and the target cross"></canvas>
+<nav class="controls" aria-label="Game controls"><button id="auto">▶ AUTO PLAY</button><button id="retry">↻ RETRY</button></nav>
+<p id="live" class="sr-only" aria-live="polite">Tap blocks to build the target shape.</p>
 </main>
 <script id="juicy-journey-audio">(() => {
  'use strict';
@@ -62,16 +62,16 @@ THE SOFTWARE.
   'use strict';
   const UNIT=34, FLOOR=1018, BASE=1120;
   const pieces=[
-    {id:'white',name:'白色 L',color:'#f4f5ef',ghost:'#c3c8c4',cells:[[0,0],[1,0],[2,0],[3,0],[0,1]],spawn:[342,454],target:[342,984]},
-    {id:'blue',name:'蓝色 J',color:'#3011d9',ghost:'#bba7f3',cells:[[2,0],[2,1],[0,2],[1,2],[2,2]],spawn:[308,522],target:[308,1018]},
-    {id:'red',name:'红色方块',color:'#d50033',ghost:'#ecaabd',cells:[[0,0],[1,0],[0,1],[1,1]],spawn:[308,648],target:[308,882]},
-    {id:'cyan',name:'青色横条',color:'#0de5df',ghost:'#b6f1eb',cells:[[0,0],[1,0],[2,0]],spawn:[308,724],target:[308,814]},
-    {id:'orange',name:'橙色 Z',color:'#c95607',ghost:'#f3c29c',cells:[[0,0],[1,0],[1,1],[2,1],[3,1]],spawn:[238,760],target:[238,916]},
-    {id:'pink',name:'粉色 J',color:'#c700e9',ghost:'#edb3f4',cells:[[0,0],[0,1],[1,1],[0,2],[1,2]],spawn:[204,786],target:[204,916]},
-    {id:'yellow',name:'黄色 T',color:'#e5f000',ghost:'#eff8a6',cells:[[2,0],[0,1],[1,1],[2,1],[2,2]],spawn:[412,776],target:[412,916]},
-    {id:'purple',name:'紫色 L',color:'#7502bb',ghost:'#c89ee2',cells:[[0,0],[1,0],[2,0],[2,1]],spawn:[308,842],target:[308,848]},
-    {id:'lime',name:'浅绿色 Z',color:'#27f300',ghost:'#b8f6a2',cells:[[0,0],[1,0],[1,1],[1,2],[2,2]],spawn:[274,884],target:[274,984]},
-    {id:'green',name:'深绿色 L',color:'#19a800',ghost:'#a1d691',cells:[[0,0],[1,0],[2,0],[0,1]],spawn:[376,916],target:[376,916]}
+    {id:'white',name:'White L',color:'#f4f5ef',ghost:'#c3c8c4',cells:[[0,0],[1,0],[2,0],[3,0],[0,1]],spawn:[342,454],target:[342,984]},
+    {id:'blue',name:'Blue J',color:'#3011d9',ghost:'#bba7f3',cells:[[2,0],[2,1],[0,2],[1,2],[2,2]],spawn:[308,522],target:[308,1018]},
+    {id:'red',name:'Red square',color:'#d50033',ghost:'#ecaabd',cells:[[0,0],[1,0],[0,1],[1,1]],spawn:[308,648],target:[308,882]},
+    {id:'cyan',name:'Cyan bar',color:'#0de5df',ghost:'#b6f1eb',cells:[[0,0],[1,0],[2,0]],spawn:[308,724],target:[308,814]},
+    {id:'orange',name:'Orange Z',color:'#c95607',ghost:'#f3c29c',cells:[[0,0],[1,0],[1,1],[2,1],[3,1]],spawn:[238,760],target:[238,916]},
+    {id:'pink',name:'Pink J',color:'#c700e9',ghost:'#edb3f4',cells:[[0,0],[0,1],[1,1],[0,2],[1,2]],spawn:[204,786],target:[204,916]},
+    {id:'yellow',name:'Yellow T',color:'#e5f000',ghost:'#eff8a6',cells:[[2,0],[0,1],[1,1],[2,1],[2,2]],spawn:[412,776],target:[412,916]},
+    {id:'purple',name:'Purple L',color:'#7502bb',ghost:'#c89ee2',cells:[[0,0],[1,0],[2,0],[2,1]],spawn:[308,842],target:[308,848]},
+    {id:'lime',name:'Lime Z',color:'#27f300',ghost:'#b8f6a2',cells:[[0,0],[1,0],[1,1],[1,2],[2,2]],spawn:[274,884],target:[274,984]},
+    {id:'green',name:'Green L',color:'#19a800',ghost:'#a1d691',cells:[[0,0],[1,0],[2,0],[0,1]],spawn:[376,916],target:[376,916]}
   ];
   // Adjacent coloured parts support one another; the hanging L pieces cannot
   // balance until the blocks beneath their long arms have actually landed.
@@ -167,7 +167,7 @@ THE SOFTWARE.
     // Auto Play waits for each previous block using this generous local check.
     // The result of the puzzle itself is always evaluated as a complete shape.
     function matches(p,tolerance=.35*R.UNIT){const e=targetError(p);return p.released&&p.hasContact&&Math.abs(e.x)<=tolerance&&Math.abs(e.y)<=tolerance&&Math.abs(e.angle)<=.10;}
-    function fail(msg='形状没有对上'){if(status==='won'||status==='failed')return false;status='failed';reason=msg;return true;}
+    function fail(msg='The shape does not match'){if(status==='won'||status==='failed')return false;status='failed';reason=msg;return true;}
     function step(ms=1000/60){
       if(status==='failed'||status==='won')return state();
       const dt=Math.min(ms,1000/60);Engine.update(engine,dt);time+=dt;
@@ -184,20 +184,20 @@ THE SOFTWARE.
         // Matter removes collision pairs once both bodies sleep. Query the
         // actual component rectangles so resting contact is still current.
         if(p.settled&&!p.onSurface){const parts=b.parts.length>1?b.parts.slice(1):[b];p.onSurface=surfaces.some(surface=>M.Query.collides(surface,parts).length>0);}
-        if(b.position.x < -60 || b.position.x > R.width+60 || b.position.y>1240)fail('积木掉出凹槽');
+        if(b.position.x < -60 || b.position.x > R.width+60 || b.position.y>1240)fail('A block fell out');
         // A block resting on the fixed floor more than a whole cell below its
         // layer blocks the pieces that must go underneath it. Tiny seams and
         // blocks still rocking or receiving support are allowed to continue.
         p.blockedBaseMs=p.onSurface&&p.settled&&e.y>R.UNIT*1.05?p.blockedBaseMs+dt:0;
-        if(!allReleased&&p.blockedBaseMs>=1200)fail('底层顺序不对，积木已经落到底部');
+        if(!allReleased&&p.blockedBaseMs>=1200)fail('Wrong order at the bottom');
       }
       const judgement=evaluateShape(R,snapshot());
       if(status!=='failed'&&judgement.stable){
         stableMs+=dt;
         if(judgement.shapeMatches){winStableMs+=dt;wrongStableMs=0;if(winStableMs>=700)status='won';}
-        else{winStableMs=0;wrongStableMs+=dt;if(wrongStableMs>=1200)fail('最终形状没有对上');}
+        else{winStableMs=0;wrongStableMs+=dt;if(wrongStableMs>=1200)fail('The final shape does not match');}
       }else{stableMs=0;winStableMs=0;wrongStableMs=0;}
-      if(status!=='failed'&&status!=='won'&&judgement.complete&&time-lastReleaseTime>=12000)fail('积木无法稳定拼成目标');
+      if(status!=='failed'&&status!=='won'&&judgement.complete&&time-lastReleaseTime>=12000)fail('The blocks could not settle');
       return state();
     }
     Events.on(engine,'collisionStart',evt=>{
@@ -270,11 +270,11 @@ THE SOFTWARE.
   function sound(type,strength=1){if(document.hidden||paused||!window.__journeyAudio.canPlayEffects())return;try{audioCtx=audioCtx||new(window.AudioContext||window.webkitAudioContext)();window.__journeyAudio.registerContext(audioCtx,{independent:true});if(audioCtx.state==='suspended')audioCtx.resume();const now=audioCtx.currentTime;if(type==='impact'&&now-lastSound<.095)return;lastSound=now;const o=audioCtx.createOscillator(),gain=audioCtx.createGain();o.connect(gain);gain.connect(audioCtx.destination);o.type=type==='fail'?'triangle':'sine';const f=type==='release'?560:type==='win'?780:type==='fail'?155:190+Math.min(strength,6)*20;o.frequency.setValueAtTime(f,now);o.frequency.exponentialRampToValueAtTime(type==='win'?1100:f*.48,now+.09);gain.gain.setValueAtTime(type==='impact'?.032:.06,now);gain.gain.exponentialRampToValueAtTime(.001,now+.11);o.start(now);o.stop(now+.12);}catch(e){}}
   G.setImpact(speed=>sound('impact',speed));
   function updateControls(){const s=G.state(),ended=s.status==='failed'||s.status==='won';if(ended){auto=false;paused=false;}autoButton.disabled=ended;autoButton.textContent=auto?(paused?'▶ CONTINUE':'Ⅱ PAUSE'):'▶ AUTO PLAY';}
-  function reset(){G.reset();auto=false;paused=false;autoIndex=0;autoClock=0;lastTime=0;accum=0;lastStatus='ready';hover=null;live.textContent='点击积木释放，搭成上方图案。';updateControls();draw();return G.state();}
+  function reset(){G.reset();auto=false;paused=false;autoIndex=0;autoClock=0;lastTime=0;accum=0;lastStatus='ready';hover=null;live.textContent='Tap blocks to build the target shape.';updateControls();draw();return G.state();}
   function startAuto(){if(!auto){if(G.state().released.length)reset();auto=true;paused=false;autoIndex=0;autoClock=0;}else paused=false;updateControls();return G.state();}
-  function release(id){const p=G.pieces.get(id)||[...G.pieces.values()].find(p=>p.body.id===Number(id));if(!p)return false;const ok=G.release(p.data.id);if(ok){sound('release');live.textContent=`已释放${p.data.name}`;}return ok;}
+  function release(id){const p=G.pieces.get(id)||[...G.pieces.values()].find(p=>p.body.id===Number(id));if(!p)return false;const ok=G.release(p.data.id);if(ok){sound('release');live.textContent=`Released ${p.data.name}`;}return ok;}
   function solver(){const s=G.state();return {order:R.order.slice(),next:R.order.find(id=>!s.released.includes(id))||null,matched:s.matched,complete:s.status==='won'};}
-  function tick(ms){if(paused||document.hidden)return G.state();G.step(ms);phase+=ms;const s=G.state();if(auto&&s.status!=='won'&&s.status!=='failed'){autoClock+=ms;const previous=autoIndex?G.pieces.get(R.order[autoIndex-1]):null;if(autoIndex<R.order.length&&autoClock>500&&(!previous||(previous.settled&&G.matches(previous)))){release(R.order[autoIndex++]);autoClock=0;}}if(s.status!==lastStatus){if(s.status==='failed'){sound('fail');live.textContent='失败：'+s.reason+'。点击 RETRY 重试。';}if(s.status==='won'){sound('win');live.textContent='成功，实际积木已拼成目标。';}lastStatus=s.status;updateControls();}return G.state();}
+  function tick(ms){if(paused||document.hidden)return G.state();G.step(ms);phase+=ms;const s=G.state();if(auto&&s.status!=='won'&&s.status!=='failed'){autoClock+=ms;const previous=autoIndex?G.pieces.get(R.order[autoIndex-1]):null;if(autoIndex<R.order.length&&autoClock>500&&(!previous||(previous.settled&&G.matches(previous)))){release(R.order[autoIndex++]);autoClock=0;}}if(s.status!==lastStatus){if(s.status==='failed'){sound('fail');live.textContent='Try again: '+s.reason+'. Tap Retry.';}if(s.status==='won'){sound('win');live.textContent='Success! The blocks match the target.';}lastStatus=s.status;updateControls();}return G.state();}
   function frame(t){if(!lastTime)lastTime=t;const elapsed=Math.min(80,t-lastTime);lastTime=t;if(!document.hidden&&!paused){accum+=elapsed;while(accum>=1000/60){tick(1000/60);accum-=1000/60;}}draw();requestAnimationFrame(frame);}
   function hit(e){const b=canvas.getBoundingClientRect(),x=(e.clientX-b.left)*720/b.width,y=(e.clientY-b.top)*1280/b.height;const list=[...G.pieces.values()].reverse();return list.find(p=>!p.released&&p.data.cells.some(([cx,cy])=>x>=p.data.spawn[0]+cx*R.UNIT&&x<=p.data.spawn[0]+(cx+1)*R.UNIT&&y>=p.data.spawn[1]+cy*R.UNIT&&y<=p.data.spawn[1]+(cy+1)*R.UNIT));}
   canvas.addEventListener('pointerdown',e=>{e.preventDefault();if(paused||G.state().status==='failed'||G.state().status==='won')return;const p=hit(e);if(p){auto=false;release(p.data.id);updateControls();}});

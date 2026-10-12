@@ -22,7 +22,7 @@ button[hidden]{display:none!important}.tools,.controls{gap:8px!important}.tools 
   if(typeof sdk.getState==='function'&&sdk.getState()==='loading'){adHidden=true;sdk.addEventListener('ready',ready);}else ready();
  }
 })();</script>
-<script>const CONFIG={"id":"arrow-escape","name":"彩色箭头脱困","title":"Arrows Away","mode":"arrows","type":"消除","seed":7703,"seconds":100,"goal":28,"autoInterval":0.65,"reference":7,"revision":"hell-200-arrows-20261004","desc":"两关缠绕解谜：第一关保持 28 条不规则路线，通关后解锁 200 箭头地狱关。密集线路相互嵌套，可放大到 4 倍并拖动、双指缩放；三次碰撞或超时失败。","features":["28 → 200 箭头两关","地狱级多层阻挡","缩放与拖动盘面","自动 PLAY"],"instruction":"Trace each arrowhead · clear its route · avoid 3 collisions","goalText":"LEVEL 1/2 · 28 ARROWS","success":"先完成 28 箭头第一关，再解开 200 箭头地狱关","failure":"三次碰撞或时间耗尽"};
+<script>const CONFIG={"id":"arrow-escape","name":"Arrows Away","title":"Arrows Away","mode":"arrows","type":"Puzzle","seed":7703,"seconds":100,"goal":28,"autoInterval":0.65,"reference":7,"revision":"hell-200-arrows-20261004","desc":"Clear 28 arrows to unlock the 200-arrow Hell level. Pan and pinch to zoom up to 4x. Avoid three collisions and beat the timer.","features":["28 then 200 arrows","Dense Hell level","Pan and zoom","AUTO PLAY"],"instruction":"Trace each arrowhead · clear its route · avoid 3 collisions","goalText":"LEVEL 1/2 · 28 ARROWS","success":"Clear 28 arrows, then solve all 200 in the Hell level!","failure":"Three collisions, or time ran out."};
 (()=>{'use strict';// Shared construction is embedded by each build; no runtime dependency.
 function seraCashBundles(value){return value>0?Math.min(60,Math.ceil(6*Math.log2(1+value/10))):0;}
 function resetSeraWalk(p){p.walkPhase=0;p.walkBlend=0;p.walkDistance=0;p.walkPose=null;}

@@ -84,7 +84,7 @@ function say(text,duration=1800){recipe.textContent=text;recipeUntil=now()+durat
 function possiblePairs(){const byType=new Map();for(const item of items()){if(!byType.has(item.type))byType.set(item.type,[]);byType.get(item.type).push(item);}const result=[];for(const group of byType.values())for(let a=0;a<group.length;a++)for(let b=a+1;b<group.length;b++)result.push([group[a],group[b]]);return result.sort((a,b)=>(Math.abs(a[0].r-a[1].r)+Math.abs(a[0].c-a[1].c))-(Math.abs(b[0].r-b[1].r)+Math.abs(b[0].c-b[1].c)));}
 function finalRecipeReady(){return phase==='play'&&items().length>0&&possiblePairs().length===0;}
 function updateUI(){
- const remaining=items().length;status.textContent=phase==='complete'?'GOOD JOB! · BOARD CLEARED':remaining+' INGREDIENTS · '+score.toLocaleString('en-US')+' POINTS';fill.style.width=cleared/TOTAL*100+'%';progress.setAttribute('aria-valuenow',String(cleared));
+ const remaining=items().length;status.textContent=phase==='complete'?'GOOD JOB! · BOARD CLEARED':remaining+' INGREDIENT'+(remaining===1?'':'S')+' · '+score.toLocaleString('en-US')+' POINT'+(score===1?'':'S');fill.style.width=cleared/TOTAL*100+'%';progress.setAttribute('aria-valuenow',String(cleared));
  autoButton.disabled=!ready||autoRunning||phase==='complete'||phase==='finish';autoButton.textContent=phase==='complete'?'COMPLETE':autoRunning?'AUTO…':'AUTO PLAY';hintButton.disabled=!ready||autoRunning||phase!=='play'||Boolean(active)||Boolean(gesture);retryButton.disabled=!ready;cookButton.classList.toggle('show',finalRecipeReady()&&!autoRunning);document.getElementById('announce').textContent=cleared+' of 91 ingredients cleared.';
 }
 function reset(){

@@ -1,4 +1,4 @@
-<!doctype html><html lang="zh-CN"><head><!--
+<!doctype html><html lang="en"><head><!--
 The MIT License (MIT)
 
 Copyright (c) Liam Brummitt and contributors.
@@ -20,9 +20,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
---><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>Color Block Builder · 五关物理拼形</title><style>
+--><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>Color Block Builder · Five Puzzles</title><style>
 *{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#e5e8e5;font-family:'Trebuchet MS','Microsoft YaHei',sans-serif;touch-action:none}#shell{height:100%;height:100dvh;width:100%;display:grid;place-items:center}#stage{position:relative;width:min(100vw,56.25vh);width:min(100vw,56.25dvh);aspect-ratio:9/16;overflow:hidden;background:#f6f8f5;box-shadow:0 0 45px #b7beb33a}canvas{display:block;width:100%;height:100%;touch-action:none}#controls{position:absolute;left:4.4%;right:4.4%;bottom:1.7%;display:flex;gap:10px}button{height:48px;min-width:48px;border:0;border-radius:12px;font-size:14px;font-weight:900;cursor:pointer;letter-spacing:.6px;box-shadow:0 3px 0 #3026574a;touch-action:manipulation}#auto{flex:1;color:white;background:#292065}#retry{width:90px;background:white;color:#3b3451}button:active{transform:translateY(2px);box-shadow:0 1px 0 #3026574a}button:focus-visible{outline:3px solid #fb8d24;outline-offset:3px}@media(max-height:500px){button{height:48px;font-size:11px;border-radius:8px}#controls{gap:6px}#retry{width:64px}}
-</style></head><body><main id="shell"><section id="stage" aria-label="Color Block Builder 物理拼形试玩"><canvas id="game" width="720" height="1280" aria-label="点击半透明色块释放，拖动可调整落点"></canvas><div id="controls"><button id="auto">AUTO PLAY</button><button id="retry">RETRY</button></div></section></main><script>/*!
+</style></head><body><main id="shell"><section id="stage" aria-label="Color Block Builder physics puzzle"><canvas id="game" width="720" height="1280" aria-label="Tap a translucent block to release it. Drag to adjust its landing position."></canvas><div id="controls"><button id="auto">AUTO PLAY</button><button id="retry">RETRY</button></div></section></main><script>/*!
  * matter-js 0.20.0 by @liabru
  * http://brm.io/matter-js/
  * License MIT
@@ -103,8 +103,8 @@ THE SOFTWARE.
       notify('release',name);return true;
     }
     function control(name,x){const b=find(name);if(!b||!b.game.held||S.status!=='playing')return false;const nx=Math.max(32,Math.min(328,+x));if(S.level===2)b.game.guideOffset=nx-l2Guide(b).x;Body.setPosition(b,{x:nx,y:b.position.y});return true;}
-    function fail(reason='组合不匹配'){if(S.status!=='playing')return;S.status='failed';S.message=reason;S.auto=false;S.paused=false;notify('fail',reason);}
-    function win(){if(S.status!=='playing')return;S.status=S.level===5?'complete':'won';S.message=S.level===5?'全部完成':'拼形成功';endingClock=0;notify('win',S.level);}
+    function fail(reason='Pieces do not match'){if(S.status!=='playing')return;S.status='failed';S.message=reason;S.auto=false;S.paused=false;notify('fail',reason);}
+    function win(){if(S.status!=='playing')return;S.status=S.level===5?'complete':'won';S.message=S.level===5?'All levels complete':'Shape complete';endingClock=0;notify('win',S.level);}
     function breakStone(){
       if(S.broken)return;S.broken=true;const stone=find('stone-platform'),bomb=find('grey-bomb');
       const sy=stone.position.y;remove(stone);remove(bomb);Sleeping.set(find('cyan-ball'),false);
@@ -161,15 +161,15 @@ THE SOFTWARE.
       Engine.update(engine,seconds*1000);updateParticles(seconds);
       if(targetSolved()){stable+=seconds;if(stable>.55)win();}else stable=0;
       const targets=objects.filter(b=>b.game.target&&!b.game.held&&!b.isStatic);
-      if(targets.some(b=>b.position.y>665||b.position.x<-70||b.position.x>430)){fail('色块掉出机关');return;}
+      if(targets.some(b=>b.position.y>665||b.position.x<-70||b.position.x>430)){fail('A block fell out');return;}
       const allOut=held.filter(b=>b.game.target||b.game.drop).length===0;
       const afterLast=elapsed-S.lastRelease;
-      if(S.level===1&&S.released.length&&afterLast>8&&!targetSolved())fail('蓝球没有叠进左槽');
-      else if(S.level===2&&allOut&&afterLast>8&&!targetSolved())fail('拼块没有合成目标');
-      else if(S.level===3&&allOut&&afterLast>7&&!targetSolved())fail('青球要在橙球下面');
-      else if(S.level===4&&allOut&&afterLast>6&&!targetSolved())fail('颜色顺序与目标不同');
-      else if(S.level===5&&allOut&&afterLast>7&&!targetSolved())fail('先打碎石台，再放盖板');
-      else if(S.level===5&&S.released[0]==='purple-cap'&&!S.broken&&afterLast>2.5)fail('先打碎石台，再放盖板');
+      if(S.level===1&&S.released.length&&afterLast>8&&!targetSolved())fail('Blue missed the left slot');
+      else if(S.level===2&&allOut&&afterLast>8&&!targetSolved())fail('Pieces do not match the goal');
+      else if(S.level===3&&allOut&&afterLast>7&&!targetSolved())fail('Cyan goes below orange');
+      else if(S.level===4&&allOut&&afterLast>6&&!targetSolved())fail('Wrong color order');
+      else if(S.level===5&&allOut&&afterLast>7&&!targetSolved())fail('Break the stone before the lid');
+      else if(S.level===5&&S.released[0]==='purple-cap'&&!S.broken&&afterLast>2.5)fail('Break the stone before the lid');
     }
     function updateParticles(dt){for(const p of particles){p.x+=p.vx*dt*60;p.y+=p.vy*dt*60;p.vy+=dt*5;p.life-=dt;}particles=particles.filter(p=>p.life>0);}
     function startAuto(){setup(S.status==='complete'?1:S.level);S.status='playing';S.auto=true;S.paused=false;autoClock=0;autoNext=0;notify('auto','start');}
@@ -211,9 +211,9 @@ THE SOFTWARE.
  function belt(){const b=game.objects.find(b=>b.label==='belt');if(!b)return;const a=b.angle,dx=Math.cos(a)*142,dy=Math.sin(a)*142;const x1=b.position.x-dx,y1=b.position.y-dy,x2=b.position.x+dx,y2=b.position.y+dy;ctx.save();ctx.lineCap='round';ctx.lineWidth=39;ctx.strokeStyle='#626666';ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);ctx.stroke();ctx.lineWidth=31;ctx.strokeStyle='#f0f3ef';ctx.stroke();ctx.strokeStyle='#a5ada84d';ctx.lineWidth=1;for(let i=0;i<14;i++){const f=((i/14-t*.02)%1+1)%1;const x=x1+(x2-x1)*f,y=y1+(y2-y1)*f;ctx.beginPath();ctx.moveTo(x-Math.sin(a)*14,y+Math.cos(a)*14);ctx.lineTo(x+Math.sin(a)*14,y-Math.cos(a)*14);ctx.stroke();}gear(x1,y1,13,-t*.46);gear(x2,y2,13,-t*.46);ctx.restore();}
  function blower(x,y,color,dir){ctx.save();ctx.translate(x,y);ctx.rotate(dir===1?-.35:.35);fillRect(-23,-15,46,30,color==='blue'?'#a4e6fa':'#ffd1b4',3);ctx.fillStyle=color==='blue'?'#24afd8':'#ec7444';for(let i=0;i<4;i++){ctx.save();ctx.rotate(t*2+i*Math.PI/2);ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(3,-11);ctx.lineTo(-2,-7);ctx.closePath();ctx.fill();ctx.restore();}ctx.restore();}
  function fan(){const x=284,y=403;ctx.save();for(let i=0;i<4;i++){const sy=374+i*20;ctx.strokeStyle='#6de2f04b';ctx.lineWidth=6;ctx.beginPath();ctx.moveTo(x-20,sy);ctx.bezierCurveTo(x-70,sy-17,x-125,sy+11,91,sy-9);ctx.stroke();}ctx.translate(x,y);ball(0,0,14,'#d9b54e');ctx.strokeStyle='#ab8533';ctx.lineWidth=2;ctx.beginPath();ctx.ellipse(0,0,10,18,.25,0,Math.PI*2);ctx.stroke();ctx.rotate(t*6);ctx.fillStyle='#398564';for(let i=0;i<3;i++){ctx.rotate(2*Math.PI/3);ctx.beginPath();ctx.ellipse(0,-7,4,9,.5,0,Math.PI*2);ctx.fill();}ball(0,0,3,'#c29438');ctx.restore();}
- const hints=['点绿色球，让绿板弹起蓝球','拖至斜带凹口：亮橙 → 暗橙','先放青球，再放橙球','释放顺序：蓝 → 黄 → 红 → 绿','先推灰球破石台，再放紫色盖板'];
+ const hints=['Tap green to launch blue.','Drag into the slot: orange first.','Cyan first, then orange.','Blue, yellow, red, then green.','Break the stone, then drop purple.'];
  function overlay(){const st=game.state(),hintY=Math.min(538,640-48*640/(canvas.clientHeight||640)-40);ctx.save();ctx.textAlign='center';ctx.textBaseline='middle';if(st.status==='failed'){ctx.fillStyle='#f91c35';ctx.lineCap='round';ctx.lineWidth=21;ctx.beginPath();ctx.moveTo(128,265);ctx.lineTo(232,369);ctx.moveTo(232,265);ctx.lineTo(128,369);ctx.strokeStyle='#ed1830';ctx.shadowColor='#fff';ctx.shadowBlur=8;ctx.stroke();ctx.shadowBlur=0;ctx.font='bold 16px "Microsoft YaHei",sans-serif';ctx.fillStyle='#b51b2b';ctx.fillText(st.message,180,Math.min(504,hintY-12));}
- else if(st.status==='won'||st.status==='complete'){ctx.strokeStyle='#12bd53';ctx.lineWidth=17;ctx.lineCap='round';ctx.lineJoin='round';ctx.beginPath();ctx.moveTo(134,303);ctx.lineTo(170,336);ctx.lineTo(236,269);ctx.stroke();if(st.status==='complete'){ctx.font='900 25px "Trebuchet MS",sans-serif';ctx.fillStyle='#3b2454';ctx.fillText('COLOR BLOCK',180,hintY-31);ctx.font='bold 14px "Microsoft YaHei",sans-serif';ctx.fillText('五关完成！',180,hintY);}}
+ else if(st.status==='won'||st.status==='complete'){ctx.strokeStyle='#12bd53';ctx.lineWidth=17;ctx.lineCap='round';ctx.lineJoin='round';ctx.beginPath();ctx.moveTo(134,303);ctx.lineTo(170,336);ctx.lineTo(236,269);ctx.stroke();if(st.status==='complete'){ctx.font='900 25px "Trebuchet MS",sans-serif';ctx.fillStyle='#3b2454';ctx.fillText('COLOR BLOCK',180,hintY-31);ctx.font='bold 14px "Microsoft YaHei",sans-serif';ctx.fillText('All five levels complete!',180,hintY);}}
  else{ctx.font='12px "Trebuchet MS",sans-serif';ctx.fillStyle='#9e9b91';ctx.fillText('LEVEL '+st.level+' / 5',180,hintY+21);}
  if(st.auto&&st.status==='playing'){const held=game.objects.filter(b=>b.game.held);const action=game.actions[st.autoNext],item=action&&held.find(b=>b.label===action.name);if(item){ctx.strokeStyle='#00e815';ctx.lineWidth=3;ctx.globalAlpha=.65+.35*Math.sin(t*7);ctx.beginPath();ctx.arc(item.position.x,item.position.y,(item.game.r||22)+6,0,Math.PI*2);ctx.stroke();}}ctx.restore();}
  function draw(){ctx.setTransform(2,0,0,2,0,0);background();for(const b of game.terrain)body(b);if(game.level===2)belt();if(game.level===3){blower(121,284,'blue',1);blower(241,284,'orange',-1);}for(const b of game.objects){if(b.game.terrain||b.game.belt)continue;body(b);}if(game.level===4)fan();for(const p of game.particles)ball(p.x,p.y,p.size,'#555a5a',Math.min(1,p.life));goal();overlay();}
