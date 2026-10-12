@@ -83,11 +83,49 @@ THE SOFTWARE.
 </script>
 <script>(function(root){
   'use strict';
+  const normalAngle=a=>Math.atan2(Math.sin(a),Math.cos(a));
+  const median=values=>{const a=values.slice().sort((x,y)=>x-y),i=Math.floor(a.length/2);return a.length?(a.length%2?a[i]:(a[i-1]+a[i])/2):0;};
+  function evaluateShape(R,snapshot){
+    const rows=Array.isArray(snapshot)?snapshot:snapshot.pieces||[],byId=new Map(rows.map(p=>[p.id,p])),U=R.UNIT;
+    const limits={center:.30*U,angle:.10,cellRms:.35*U,cellMax:.45*U,neighbour:.30*U};
+    const measured=R.pieces.map(d=>{
+      const p=byId.get(d.id);if(!p||!p.released)return {id:d.id,released:false};
+      const a=normalAngle(p.angle||0),c=Math.cos(a),s=Math.sin(a);
+      const actual=d.cells.map(([x,y])=>({x:p.x+(x+.5)*U*c-(y+.5)*U*s,y:p.y+(x+.5)*U*s+(y+.5)*U*c}));
+      const target=d.cells.map(([x,y])=>({x:d.target[0]+(x+.5)*U,y:d.target[1]+(y+.5)*U}));
+      const dx=actual.reduce((v,t,i)=>v+t.x-target[i].x,0)/actual.length,dy=actual.reduce((v,t,i)=>v+t.y-target[i].y,0)/actual.length;
+      return {id:d.id,released:true,contact:!!p.contact,settled:!!p.settled,angle:a,dx,dy,actual,target};
+    });
+    const present=measured.filter(p=>p.released),alignment={x:median(present.map(p=>p.dx)),y:median(present.map(p=>p.dy))};
+    const metrics=measured.map(p=>{
+      if(!p.released)return {id:p.id,released:false,matches:false};
+      const center={x:p.dx-alignment.x,y:p.dy-alignment.y};
+      const errors=p.actual.map((t,i)=>Math.hypot(t.x-p.target[i].x-alignment.x,t.y-p.target[i].y-alignment.y));
+      const cellRms=Math.sqrt(errors.reduce((v,e)=>v+e*e,0)/errors.length),cellMax=Math.max(...errors);
+      return {id:p.id,released:true,center,angle:p.angle,cellRms,cellMax,matches:Math.abs(center.x)<=limits.center&&Math.abs(center.y)<=limits.center&&Math.abs(p.angle)<=limits.angle&&cellRms<=limits.cellRms&&cellMax<=limits.cellMax};
+    });
+    let neighbourMax=0,neighbourCount=0;const neighbours=[];
+    for(let i=0;i<measured.length;i++)for(let j=i+1;j<measured.length;j++){
+      const a=measured[i],b=measured[j];if(!a.released||!b.released)continue;
+      let pairMax=0,count=0;
+      for(let ai=0;ai<a.target.length;ai++)for(let bi=0;bi<b.target.length;bi++){
+        const dx=b.target[bi].x-a.target[ai].x,dy=b.target[bi].y-a.target[ai].y;
+        // The reference has intentional two-pixel seams between some colours.
+        if(!((Math.abs(Math.abs(dx)-U)<=.1*U&&Math.abs(dy)<=.1*U)||(Math.abs(Math.abs(dy)-U)<=.1*U&&Math.abs(dx)<=.1*U)))continue;
+        const error=Math.hypot(b.actual[bi].x-a.actual[ai].x-dx,b.actual[bi].y-a.actual[ai].y-dy);
+        pairMax=Math.max(pairMax,error);count++;
+      }
+      if(count){neighbours.push({a:a.id,b:b.id,error:pairMax,count,matches:pairMax<=limits.neighbour});neighbourMax=Math.max(neighbourMax,pairMax);neighbourCount+=count;}
+    }
+    const complete=present.length===R.pieces.length,contact=complete&&present.every(p=>p.contact),stable=contact&&present.every(p=>p.settled);
+    const shapeMatches=complete&&metrics.every(p=>p.matches)&&neighbourMax<=limits.neighbour;
+    return {complete,contact,stable,shapeMatches,readyForWin:shapeMatches&&stable,alignment,limits,pieces:metrics,neighbours,neighbourMax,neighbourCount,missing:measured.filter(p=>!p.released).map(p=>p.id)};
+  }
   function makeGame(M,R){
     const {Engine,Bodies,Body,Composite,Events}=M;
     const engine=Engine.create({enableSleeping:true,positionIterations:16,velocityIterations:12,constraintIterations:4});
     engine.gravity.y=1;engine.gravity.scale=0.001;
-    const pieces=new Map();let time=0,status='ready',reason='',contactCount=0,settleFrames=0,onImpact=()=>{};
+    const pieces=new Map();let time=0,status='ready',reason='',contactCount=0,lastReleaseTime=0,stableMs=0,winStableMs=0,wrongStableMs=0,onImpact=()=>{};
     const floorOptions={isStatic:true,friction:1.5,frictionStatic:8,restitution:0};
     const surfaces=[Bodies.rectangle(154,1229,308,422,floorOptions),Bodies.rectangle(565,1229,310,422,floorOptions),Bodies.rectangle(359,1300,102,360,floorOptions)];
     Composite.add(engine.world,surfaces);
@@ -107,17 +145,17 @@ THE SOFTWARE.
       Body.setInertia(body,body.inertia*2.5);
       Body.setStatic(body,true);body.collisionFilter.mask=0;body.label=d.id;
       Composite.add(engine.world,body);
-      return {data:d,body,cx,cy,released:false,releaseTime:0,settled:false,hasContact:false};
+      return {data:d,body,cx,cy,released:false,releaseTime:0,settled:false,hasContact:false,onSurface:false,blockedBaseMs:0};
     }
     function reset(){
       for(const p of pieces.values())Composite.remove(engine.world,p.body);
       pieces.clear();for(const d of R.pieces)pieces.set(d.id,makePiece(d));
-      engine.timing.timestamp=0;time=0;status='ready';reason='';contactCount=0;settleFrames=0;
+      engine.timing.timestamp=0;time=0;status='ready';reason='';contactCount=0;lastReleaseTime=0;stableMs=0;winStableMs=0;wrongStableMs=0;
       return state();
     }
     function release(id){
       const p=pieces.get(id);if(!p||p.released||status==='failed'||status==='won')return false;
-      Body.setStatic(p.body,false);p.body.collisionFilter.mask=0xffffffff;p.released=true;p.releaseTime=time;
+      Body.setStatic(p.body,false);p.body.collisionFilter.mask=0xffffffff;p.released=true;p.releaseTime=time;lastReleaseTime=time;stableMs=0;winStableMs=0;wrongStableMs=0;
       Body.setVelocity(p.body,{x:0,y:0});Body.setAngularVelocity(p.body,0);M.Sleeping.set(p.body,false);
       status='playing';return true;
     }
@@ -125,26 +163,41 @@ THE SOFTWARE.
       const a=p.body.angle,c=Math.cos(a),s=Math.sin(a);
       return {x:p.body.position.x-(p.cx*c-p.cy*s),y:p.body.position.y-(p.cx*s+p.cy*c),angle:a};
     }
-    function targetError(p){const t=pose(p);return {x:t.x-p.data.target[0],y:t.y-p.data.target[1],angle:t.angle};}
-    function matches(p,tolerance=5.5){const e=targetError(p);return p.released&&p.hasContact&&Math.abs(e.x)<tolerance&&Math.abs(e.y)<tolerance&&Math.abs(e.angle)<.04;}
+    function targetError(p){const t=pose(p);return {x:t.x-p.data.target[0],y:t.y-p.data.target[1],angle:normalAngle(t.angle)};}
+    // Auto Play waits for each previous block using this generous local check.
+    // The result of the puzzle itself is always evaluated as a complete shape.
+    function matches(p,tolerance=.35*R.UNIT){const e=targetError(p);return p.released&&p.hasContact&&Math.abs(e.x)<=tolerance&&Math.abs(e.y)<=tolerance&&Math.abs(e.angle)<=.10;}
     function fail(msg='形状没有对上'){if(status==='won'||status==='failed')return false;status='failed';reason=msg;return true;}
     function step(ms=1000/60){
       if(status==='failed'||status==='won')return state();
       const dt=Math.min(ms,1000/60);Engine.update(engine,dt);time+=dt;
-      let all=true;
-      for(const p of pieces.values()){
-        if(!p.released){all=false;continue;}
-        const b=p.body,e=targetError(p),age=time-p.releaseTime;
-        p.settled=p.hasContact&&Math.hypot(b.velocity.x,b.velocity.y)<.09&&Math.abs(b.angularVelocity)<.006;
-        if(b.position.x < -60 || b.position.x > R.width+60 || b.position.y>1240)fail('积木掉出凹槽');
-        // Fail only after a real contact and a period of motion/settling. A
-        // first collision is allowed to slide or rock into its final position.
-        if(p.hasContact&&age>800&&(Math.abs(e.angle)>.16||Math.abs(e.x)>14)&&pose(p).y>R.FLOOR-200)fail('碰撞后积木翻转了');
-        if(age>1500&&p.settled&&!matches(p))fail('落点没有对上目标');
-        if(age>8000&&!matches(p))fail('积木无法稳定拼成目标');
-        if(!matches(p)||!p.settled)all=false;
+      const allReleased=[...pieces.values()].every(p=>p.released);
+      for(const p of pieces.values())p.onSurface=false;
+      for(const pair of engine.pairs.list){
+        if(!pair.isActive)continue;const a=pair.bodyA.parent||pair.bodyA,b=pair.bodyB.parent||pair.bodyB;
+        for(const [body,other]of[[a,b],[b,a]]){const p=pieces.get(body.label);if(p&&surfaces.includes(other))p.onSurface=true;}
       }
-      if(status!=='failed'&&all){settleFrames++;if(settleFrames>45)status='won';}else settleFrames=0;
+      for(const p of pieces.values()){
+        if(!p.released)continue;
+        const b=p.body,e=targetError(p);
+        p.settled=p.hasContact&&Math.hypot(b.velocity.x,b.velocity.y)<.09&&Math.abs(b.angularVelocity)<.006;
+        // Matter removes collision pairs once both bodies sleep. Query the
+        // actual component rectangles so resting contact is still current.
+        if(p.settled&&!p.onSurface){const parts=b.parts.length>1?b.parts.slice(1):[b];p.onSurface=surfaces.some(surface=>M.Query.collides(surface,parts).length>0);}
+        if(b.position.x < -60 || b.position.x > R.width+60 || b.position.y>1240)fail('积木掉出凹槽');
+        // A block resting on the fixed floor more than a whole cell below its
+        // layer blocks the pieces that must go underneath it. Tiny seams and
+        // blocks still rocking or receiving support are allowed to continue.
+        p.blockedBaseMs=p.onSurface&&p.settled&&e.y>R.UNIT*1.05?p.blockedBaseMs+dt:0;
+        if(!allReleased&&p.blockedBaseMs>=1200)fail('底层顺序不对，积木已经落到底部');
+      }
+      const judgement=evaluateShape(R,snapshot());
+      if(status!=='failed'&&judgement.stable){
+        stableMs+=dt;
+        if(judgement.shapeMatches){winStableMs+=dt;wrongStableMs=0;if(winStableMs>=700)status='won';}
+        else{winStableMs=0;wrongStableMs+=dt;if(wrongStableMs>=1200)fail('最终形状没有对上');}
+      }else{stableMs=0;winStableMs=0;wrongStableMs=0;}
+      if(status!=='failed'&&status!=='won'&&judgement.complete&&time-lastReleaseTime>=12000)fail('积木无法稳定拼成目标');
       return state();
     }
     Events.on(engine,'collisionStart',evt=>{
@@ -155,10 +208,12 @@ THE SOFTWARE.
         contactCount++;if(speed>.8)onImpact(speed);
       }
     });
-    function state(){return {status,reason,time,contacts:contactCount,released:[...pieces.values()].filter(p=>p.released).map(p=>p.data.id),pieces:[...pieces.values()].map(p=>({id:p.data.id,bodyId:p.body.id,released:p.released,settled:p.settled,contact:p.hasContact,sleeping:p.body.isSleeping,...pose(p),error:targetError(p),velocity:{...p.body.velocity},angularVelocity:p.body.angularVelocity})),matched:[...pieces.values()].filter(p=>matches(p)).map(p=>p.data.id)};}
+    function snapshot(){return [...pieces.values()].map(p=>({id:p.data.id,bodyId:p.body.id,released:p.released,settled:p.settled,contact:p.hasContact,onSurface:p.onSurface,blockedBaseMs:p.blockedBaseMs,sleeping:p.body.isSleeping,...pose(p),error:targetError(p),velocity:{...p.body.velocity},angularVelocity:p.body.angularVelocity}));}
+    function state(){const rows=snapshot();return {status,reason,time,contacts:contactCount,released:rows.filter(p=>p.released).map(p=>p.id),pieces:rows,matched:[...pieces.values()].filter(p=>matches(p)).map(p=>p.data.id),judgement:{...evaluateShape(R,rows),stableMs,winStableMs,wrongStableMs,lastReleaseTime,sinceLastRelease:time-lastReleaseTime}};}
     reset();
-    return {engine,pieces,surfaces,release,step,reset,fail,state,pose,matches,setImpact(fn){onImpact=fn;}};
+    return {engine,pieces,surfaces,release,step,reset,fail,state,pose,matches,evaluateShape:rows=>evaluateShape(R,rows),setImpact(fn){onImpact=fn;}};
   }
+  makeGame.evaluateShape=evaluateShape;
   root.createShapeDropGame=makeGame;if(typeof module==='object'&&module.exports)module.exports=makeGame;
 })(typeof globalThis!=='undefined'?globalThis:this);
 </script>

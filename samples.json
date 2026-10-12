@@ -1176,7 +1176,7 @@
         "AUTO PLAY",
         "操作音效"
       ],
-      "operation": "点击半透明色块释放；拖动色块可调整水平落点。对照顶部目标完成机关。底部 AUTO PLAY 示范正确过程，可 PAUSE / CONTINUE，RETRY 从第一关重玩。",
+      "operation": "点击半透明色块释放；拖动可调整水平落点。第二关待释放砖块连续跟随慢速斜带凹口，可直接点击，落稳后再释放下一块。对照顶部目标完成机关。底部 AUTO PLAY 示范，可 PAUSE / CONTINUE，RETRY 重玩。",
       "ending": "每关成功短暂显示绿勾进入下一关；第五关完成后保持场景。错误显示大红叉，点击 RETRY 重玩。",
       "reference": "Color Block Builder · 用户参考 14caeb623a1322565137d9bdc2256b2d.mp4",
       "entry": "block-builder/index.html",
@@ -1189,12 +1189,12 @@
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-12",
-      "revision": "block-builder-20261012",
+      "revision": "block-builder-20261012-l2-manual",
       "displayMode": "portrait-contained",
-      "htmlBytes": 111501,
-      "zipBytes": 38957,
-      "htmlSha256": "73fd4b8456de63ed8e45244ea26c819ab8634002df1c5dad4f01e318d9682eb3",
-      "zipSha256": "7f2b87d6fd1f0de47f5e20e65be0a4f0cbeb1fcbc0337e1333c87d5ef6f898c4"
+      "htmlBytes": 113130,
+      "zipBytes": 40488,
+      "htmlSha256": "6d322c2f55269d313d255b43cb4ce30fb25919c80c9ed1109df28e26ef7ffba5",
+      "zipSha256": "e473bc26f6e8fa296c0a2d53b0a209dfd9b25f9a7f48928b2ea2abe520e8ea6a"
     },
     {
       "id": "shape-drop",
@@ -1202,7 +1202,7 @@
       "type": "物理",
       "subtitle": "Shape Drop",
       "image": "preview.webp",
-      "desc": "点选半透明积木，让它们真实下落、碰撞并搭成上方的彩色十字目标。蓝色底座、绿色弯块与白色间隔块先落稳，横臂与顶端随后搭起；顺序错误会翻转落歪，显示大红叉。",
+      "desc": "释放悬空彩块，以真实重力和碰撞搭出目标。落稳后比较整体颜色与结构，容许细缝、轻微偏移和整体平移；明显错层、错色或倾倒显示红叉。",
       "features": [
         "按图释放",
         "真实刚体碰撞",
@@ -1210,10 +1210,11 @@
         "重力与翻转",
         "成功与失败",
         "AUTO PLAY",
-        "操作音效"
+        "操作音效",
+        "结构容错判定"
       ],
       "operation": "点击悬空积木释放；按支撑关系搭出目标。底部 AUTO PLAY 自动逐件示范正确释放，可 PAUSE / CONTINUE；RETRY 重玩。",
-      "ending": "全部十个积木真实落稳并符合目标才成功；落点错误、碰撞翻转或掉出凹槽显示红叉，保留场景，手动重试。",
+      "ending": "十个积木全部接触、持续落稳且整体颜色结构一致成功。细小碰撞间隙不判失败，真正错误仍打叉，结果保持直到手动重试。",
       "reference": "Color Block Builder · 用户参考 66358dcf4e39bca21a237eb8b1919f3e.mp4",
       "entry": "shape-drop/index.html",
       "zip": "下载包/shape-drop.zip",
@@ -1225,12 +1226,12 @@
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-12",
-      "revision": "shape-drop-20261012",
+      "revision": "shape-drop-structure-match-20261012",
       "displayMode": "portrait-contained",
-      "htmlBytes": 105771,
-      "zipBytes": 38332,
-      "htmlSha256": "9375c1760fdc2048580432bcf4880068976dc8c3b89f6ef37acf8c73e358ae68",
-      "zipSha256": "a6fae8266b0b548bb19c1940e269aa14a767e52bd1780e2e1e07e8726d6ec796"
+      "htmlBytes": 110670,
+      "zipBytes": 40400,
+      "htmlSha256": "d5e311ea1c80dc2b8251451e9b56772aa2af468c9a16051bd82c2929a0533d77",
+      "zipSha256": "b8164cbd8e49e5773c3fb5d763d99529d28ca18293301bf75c498cace79bfec1"
     }
   ],
   "archive": {

@@ -56,15 +56,16 @@ THE SOFTWARE.
         hold(circle(181,200,38,'green-ball',COLORS.green,{drop:true},{density:.009}));
         actions=[{at:.55,name:'green-ball'}];
       }else if(level===2){
-        const a=.275;
-        wood(34,293,11,157,a); // left end stop
-        rect(215,373,292,20,'belt','#f0f2ef',{belt:true},{isStatic:true,angle:a,friction:.62,frictionStatic:.8});
+        const a=.275,down=40;
+        wood(34,293+down,11,157,a); // left end stop
+        rect(215,373+down,292,20,'belt','#f0f2ef',{belt:true,surfaceSpeed:-.10},{isStatic:true,angle:a,friction:.01,frictionStatic:.02});
         const u=25;
-        const bottom=compound(207,319,[[0,25,75,u],[25,0,u,u]],'dark-base',COLORS.dark,{target:true},{density:.0025});
+        const bottom=compound(207,319+down,[[0,25,75,u],[25,0,u,u]],'dark-base',COLORS.dark,{target:true},{density:.0025});
         Body.setAngle(bottom,a);
-        const middle=hold(compound(233,254,[[25,-12.5,u,50],[0,12.5,u,50]],'orange-z',COLORS.orange,{drop:true,target:true},{density:.0025}));Body.setAngle(middle,a);
-        const top=hold(compound(155,235,[[-25,0,u,75],[0,-25,u,u]],'dark-top',COLORS.dark,{drop:true,target:true},{density:.0025}));Body.setAngle(top,a);
-        actions=[{at:1.0,name:'orange-z',aim:'middle'},{at:3.7,name:'dark-top',aim:'top'}];
+        const middle=hold(compound(233,254+down,[[25,-12.5,u,50],[0,12.5,u,50]],'orange-z',COLORS.orange,{drop:true,target:true,guideOffset:0},{density:.0025}));Body.setAngle(middle,a);
+        const top=hold(compound(155,235+down,[[-25,0,u,75],[0,-25,u,u]],'dark-top',COLORS.dark,{drop:true,target:true,guideOffset:0},{density:.0025}));Body.setAngle(top,a);
+        actions=[{at:2.5,name:'orange-z'},{at:5.5,name:'dark-top'}];
+        followL2Held();
       }else if(level===3){
         polygon([{x:0,y:160},{x:42,y:160},{x:162,y:462},{x:0,y:462}]);
         polygon([{x:198,y:462},{x:318,y:160},{x:360,y:160},{x:360,y:462}]);
@@ -97,10 +98,11 @@ THE SOFTWARE.
       const b=find(name);if(!b||!b.game.held)return false;
       if(Number.isFinite(x))control(name,x);
       Body.setStatic(b,false);Sleeping.set(b,false);b.collisionFilter.mask=1|2;b.game.held=false;held=held.filter(h=>h!==b);if(!S.released.length)S.firstRelease=elapsed;S.lastRelease=elapsed;S.released.push(name);
+      if(S.level===2){const base=find('dark-base'),rx=b.position.x-base.position.x,ry=b.position.y-base.position.y;Body.setVelocity(b,{x:base.velocity.x-base.angularVelocity*ry,y:base.velocity.y+base.angularVelocity*rx});Body.setAngularVelocity(b,base.angularVelocity);}
       if(name==='green-pusher'){const bomb=find('grey-bomb');Body.setStatic(bomb,false);Sleeping.set(bomb,false);}
       notify('release',name);return true;
     }
-    function control(name,x){const b=find(name);if(!b||!b.game.held||S.status!=='playing')return false;const nx=Math.max(32,Math.min(328,+x));Body.setPosition(b,{x:nx,y:b.position.y});return true;}
+    function control(name,x){const b=find(name);if(!b||!b.game.held||S.status!=='playing')return false;const nx=Math.max(32,Math.min(328,+x));if(S.level===2)b.game.guideOffset=nx-l2Guide(b).x;Body.setPosition(b,{x:nx,y:b.position.y});return true;}
     function fail(reason='组合不匹配'){if(S.status!=='playing')return;S.status='failed';S.message=reason;S.auto=false;S.paused=false;notify('fail',reason);}
     function win(){if(S.status!=='playing')return;S.status=S.level===5?'complete':'won';S.message=S.level===5?'全部完成':'拼形成功';endingClock=0;notify('win',S.level);}
     function breakStone(){
@@ -125,14 +127,23 @@ THE SOFTWARE.
       if(S.level===4){const a=pos('blue-block'),c=pos('yellow-block'),d=pos('red-block'),e=pos('green-block');return S.released.length===4&&near(a.x,109,7)&&near(a.y,440,8)&&near(c.x,151,8)&&near(c.y,440,8)&&near(d.x,109,8)&&near(d.y,398,8)&&near(e.x,151,9)&&near(e.y,398,9);}
       const p=pos('orange-ball'),q=pos('cyan-ball'),cap=b('purple-cap');return S.broken&&!cap.game.held&&near(p.x,217,10)&&near(p.y,426,9)&&near(q.x,217,10)&&near(q.y,390,10)&&near(cap.position.x,217,8)&&near(cap.position.y,362,10)&&Math.abs(cap.angle)<.13;
     }
-    function aimX(action){
-      if(S.level===2){
-        const base=find('dark-base'),a=base.angle;
-        const tx=action.aim==='middle'?6.25:-25,ty=action.aim==='middle'?-43.75:-50;
-        const expectedX=base.position.x+Math.cos(a)*tx-Math.sin(a)*ty;
-        // Aim over the moving base. Gravity and belt movement decide the final contact.
-        return expectedX;
+    function l2Guide(body){const base=find('dark-base'),a=base.angle,middle=body.label==='orange-z',tx=middle?6.25:-25,ty=middle?-43.75:-50,dropHeight=middle?65:120;return{x:base.position.x+Math.cos(a)*tx-Math.sin(a)*ty,y:base.position.y+Math.sin(a)*tx+Math.cos(a)*ty-dropHeight,angle:a};}
+    function followL2Held(){for(const b of held){const guide=l2Guide(b);Body.setPosition(b,{x:guide.x+(b.game.guideOffset||0),y:guide.y});Body.setAngle(b,guide.angle);}}
+    function driveL2Belt(){
+      const belt=find('belt'),contacts=new Set(),edges=[];
+      for(const pair of engine.pairs.list){if(!pair.isActive)continue;const a=pair.bodyA.parent,b=pair.bodyB.parent;if(a===belt&&!b.isStatic)contacts.add(b);if(b===belt&&!a.isStatic)contacts.add(a);if(!a.isStatic&&!b.isStatic)edges.push([a,b]);}
+      const visited=new Set(),tangent={x:Math.cos(belt.angle),y:Math.sin(belt.angle)};
+      for(const driven of contacts){if(visited.has(driven))continue;const connected=new Set([driven]);let changed=true;while(changed){changed=false;for(const [a,b] of edges){if(connected.has(a)&&!connected.has(b)){connected.add(b);changed=true;}if(connected.has(b)&&!connected.has(a)){connected.add(a);changed=true;}}}
+        let mass=0;for(const b of connected){visited.add(b);mass+=b.mass;}
+        const speed=driven.velocity.x*tangent.x+driven.velocity.y*tangent.y;
+        // A powered belt supplies gravity compensation for the full contact load,
+        // then approaches its slow surface speed through bounded motor traction.
+        const acceleration=-.001*tangent.y-.000012+(belt.game.surfaceSpeed-speed)*.00045;
+        const traction=Math.max(-.0018,Math.min(-.00004,acceleration))*mass;
+        Sleeping.set(driven,false);Body.applyForce(driven,driven.position,{x:tangent.x*traction,y:tangent.y*traction});
       }
+    }
+    function aimX(action){
       const b=find(action.name);return b?b.position.x:180;
     }
     function aim(action){control(action.name,aimX(action));}
@@ -142,8 +153,9 @@ THE SOFTWARE.
       if(S.status==='won'){endingClock+=seconds;if(endingClock>1.25)setup(S.level+1);}
       if(S.status==='complete'||S.status==='failed'){Engine.update(engine,seconds*1000);updateParticles(seconds);return;}
       elapsed+=seconds;
-      if(S.auto){autoClock+=seconds;const action=actions[autoNext];if(action&&autoClock>=action.at&&(!action.condition||action.condition())){aim(action);release(action.name);autoNext++;}}
-      if(S.level===2){const belt=find('belt');for(const pair of engine.pairs.list){if(!pair.isActive)continue;const a=pair.bodyA.parent,b=pair.bodyB.parent,carried=a===belt?b:b===belt?a:null;if(carried&&!carried.isStatic&&!carried.game.held)Body.applyForce(carried,carried.position,{x:-carried.mass*.0004,y:-carried.mass*.00011});}}
+      if(S.level===2)followL2Held();
+      if(S.auto){autoClock+=seconds;const action=actions[autoNext];if(action&&autoClock>=action.at&&(!action.condition||action.condition())){if(S.level!==2)aim(action);release(action.name);autoNext++;}}
+      if(S.level===2)driveL2Belt();
       if(S.level===3){for(const b of objects){if(!b.isStatic&&b.position.y>250&&b.position.y<420){Body.applyForce(b,b.position,{x:(b.position.x<181?1:-1)*b.mass*.000075,y:0});}}}
       if(S.level===4){for(const b of objects){if(!b.isStatic&&b.position.y>332&&b.position.y<452){Body.applyForce(b,b.position,{x:-b.mass*.0007,y:0});}}}
       Engine.update(engine,seconds*1000);updateParticles(seconds);
@@ -196,7 +208,7 @@ THE SOFTWARE.
  ctx.restore();}
  function goal(){const c=game.COLORS;ctx.save();ctx.shadowColor='#00000024';ctx.shadowBlur=1;ctx.shadowOffsetY=3;fillRect(121,26,118,117,'#fff',6);ctx.shadowColor='transparent';fillRect(130,35,100,88,'#fff0bf',2);ctx.strokeStyle='#f6dfa650';for(let i=0;i<15;i++){ctx.beginPath();ctx.moveTo(131,39+i*5);ctx.lineTo(229,39+i*5);ctx.stroke();}if(game.level===1){ball(180,58,21,c.blue);ball(180,100,21,c.blue);}else if(game.level===2){ctx.translate(181,79);ctx.rotate(.275);fillRect(-35,-48,70,96,c.orange);fillRect(-35,-48,25,96,c.dark);fillRect(-35,-48,51,25,c.dark);fillRect(-35,23,70,25,c.dark);fillRect(10,-1,25,49,c.dark);}else if(game.level===3){ball(180,66,29,c.orange);ball(180,106,14,c.cyan);}else if(game.level===4){fillRect(137,40,42,40,c.red,2);fillRect(180,40,42,40,c.green,2);fillRect(137,82,42,40,c.blue,2);fillRect(180,82,42,40,c.yellow,2);}else{fillRect(151,38,58,84,c.purple);fillRect(166,50,28,60,'#fff0bf');ball(180,70,14,c.cyan);ball(180,99,14,c.orange);}ctx.restore();}
  function gear(x,y,r,angle){ctx.save();ctx.translate(x,y);ctx.rotate(angle);ball(0,0,r+6,'#eee0b7');ctx.fillStyle='#8c6338';for(let i=0;i<8;i++){ctx.rotate(Math.PI/4);fillRect(-2,-r,4,r, '#8c6338');}ball(0,0,r*.64,'#8c6338');ball(0,0,r*.29,'#ead8af');ctx.restore();}
- function belt(){const b=game.objects.find(b=>b.label==='belt');if(!b)return;const a=b.angle,dx=Math.cos(a)*142,dy=Math.sin(a)*142;const x1=b.position.x-dx,y1=b.position.y-dy,x2=b.position.x+dx,y2=b.position.y+dy;ctx.save();ctx.lineCap='round';ctx.lineWidth=39;ctx.strokeStyle='#626666';ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);ctx.stroke();ctx.lineWidth=31;ctx.strokeStyle='#f0f3ef';ctx.stroke();ctx.strokeStyle='#a5ada84d';ctx.lineWidth=1;for(let i=0;i<14;i++){const f=((i/14+t*.08)%1);const x=x1+(x2-x1)*f,y=y1+(y2-y1)*f;ctx.beginPath();ctx.moveTo(x-Math.sin(a)*14,y+Math.cos(a)*14);ctx.lineTo(x+Math.sin(a)*14,y-Math.cos(a)*14);ctx.stroke();}gear(x1,y1,13,-t*2);gear(x2,y2,13,-t*2);ctx.restore();}
+ function belt(){const b=game.objects.find(b=>b.label==='belt');if(!b)return;const a=b.angle,dx=Math.cos(a)*142,dy=Math.sin(a)*142;const x1=b.position.x-dx,y1=b.position.y-dy,x2=b.position.x+dx,y2=b.position.y+dy;ctx.save();ctx.lineCap='round';ctx.lineWidth=39;ctx.strokeStyle='#626666';ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);ctx.stroke();ctx.lineWidth=31;ctx.strokeStyle='#f0f3ef';ctx.stroke();ctx.strokeStyle='#a5ada84d';ctx.lineWidth=1;for(let i=0;i<14;i++){const f=((i/14-t*.02)%1+1)%1;const x=x1+(x2-x1)*f,y=y1+(y2-y1)*f;ctx.beginPath();ctx.moveTo(x-Math.sin(a)*14,y+Math.cos(a)*14);ctx.lineTo(x+Math.sin(a)*14,y-Math.cos(a)*14);ctx.stroke();}gear(x1,y1,13,-t*.46);gear(x2,y2,13,-t*.46);ctx.restore();}
  function blower(x,y,color,dir){ctx.save();ctx.translate(x,y);ctx.rotate(dir===1?-.35:.35);fillRect(-23,-15,46,30,color==='blue'?'#a4e6fa':'#ffd1b4',3);ctx.fillStyle=color==='blue'?'#24afd8':'#ec7444';for(let i=0;i<4;i++){ctx.save();ctx.rotate(t*2+i*Math.PI/2);ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(3,-11);ctx.lineTo(-2,-7);ctx.closePath();ctx.fill();ctx.restore();}ctx.restore();}
  function fan(){const x=284,y=403;ctx.save();for(let i=0;i<4;i++){const sy=374+i*20;ctx.strokeStyle='#6de2f04b';ctx.lineWidth=6;ctx.beginPath();ctx.moveTo(x-20,sy);ctx.bezierCurveTo(x-70,sy-17,x-125,sy+11,91,sy-9);ctx.stroke();}ctx.translate(x,y);ball(0,0,14,'#d9b54e');ctx.strokeStyle='#ab8533';ctx.lineWidth=2;ctx.beginPath();ctx.ellipse(0,0,10,18,.25,0,Math.PI*2);ctx.stroke();ctx.rotate(t*6);ctx.fillStyle='#398564';for(let i=0;i<3;i++){ctx.rotate(2*Math.PI/3);ctx.beginPath();ctx.ellipse(0,-7,4,9,.5,0,Math.PI*2);ctx.fill();}ball(0,0,3,'#c29438');ctx.restore();}
  const hints=['点绿色球，让绿板弹起蓝球','拖至斜带凹口：亮橙 → 暗橙','先放青球，再放橙球','释放顺序：蓝 → 黄 → 红 → 绿','先推灰球破石台，再放紫色盖板'];
