@@ -1,6 +1,6 @@
 # Juicy Journey · 可玩广告合集
 
-更新：2026 年 10 月 12 日。
+更新：2026 年 10 月 13 日。
 
 仓库：[Barofan1982/Playable](https://github.com/Barofan1982/Playable)。
 
@@ -12,7 +12,7 @@
 - 消除：匹配后道具从盘面消失，包括三消和配对消除；不生成升级道具。
 - 解谜：解开线路、脱困或寻找重力路线。箭头脱困归入此类。
 
-## 39 个试玩
+## 55 个试玩
 
 | 样本 | 类型 | 主要操作 | 说明 |
 | --- | --- | --- | --- |
@@ -55,6 +55,22 @@
 | [水果填色收集](tile-fruit/index.html) | 消除 | 点击上方当前目标对应的水果，每种收集3张；AUTO PLAY自动收集，可Pause/Continue，Retry重试。 | [说明](tile-fruit/README.md) |
 | [花园连线收集](tile-garden/index.html) | 消除 | 按住一张花牌，拖过水平、竖直或斜向相邻的同花，至少3张后松手。AUTO PLAY逐格连线，可Pause/Continue，Retry重试。 | [说明](tile-garden/README.md) |
 | [山谷水果落牌](tile-valley/index.html) | 消除 | 点击金框牌区的一列，当前水果落在该列最高牌上方。AUTO PLAY开始演示，可PAUSE暂停、CONTINUE继续，RETRY重试。 | [说明](tile-valley/README.md) |
+| [Chef Merge](chef-merge/index.html) | 合成 | Drag matching pieces together or tap the highlighted original controls. | [说明](chef-merge/README.md) |
+| [Sushi Clear](sushi-clear/index.html) | 合成 | Drag matching pieces together or tap the highlighted original controls. | [说明](sushi-clear/README.md) |
+| [Harbor Merge](harbor-merge/index.html) | 合成 | Drag matching pieces together or tap the highlighted original controls. | [说明](harbor-merge/README.md) |
+| [Harbor Rescue](harbor-rescue/index.html) | 解谜 | Drag matching pieces together or tap the highlighted original controls. | [说明](harbor-rescue/README.md) |
+| [三明治订单](recipe-merge/index.html) | 烹饪 | Tap each ingredient shown on the ticket, then the top bread. Merge matching pieces in the onion mini-game. AUTO PLAY follows the original recipe and legal merge hints. | [说明](recipe-merge/README.md) |
+| [篮筐配餐](recipe-match/index.html) | 烹饪 | Tap exposed ingredients shown on the ticket. Collect three of each, tap the cooked dish, then collect the payment. AUTO PLAY follows the original guide targets and visible pixels. | [说明](recipe-match/README.md) |
+| [塔可订单](recipe-stack/index.html) | 烹饪 | Place the tortilla first. Add the ingredients shown on the ticket, then fold and serve. AUTO PLAY uses the same ingredient controls. | [说明](recipe-stack/README.md) |
+| [日式厨房合成](recipe-kitchen/index.html) | 合成 | Drag a matching piece onto another to merge. Tap a completed target to collect it. AUTO PLAY follows the original legal merge and collection hints. | [说明](recipe-kitchen/README.md) |
+| [煎锅订单](recipe-tiles/index.html) | 烹饪 | Add the ingredients shown on the ticket. Tap the lid to cook, then tap the pan to serve. AUTO PLAY waits for the original cooking and serving callbacks. | [说明](recipe-tiles/README.md) |
+| [Coast Memory](coast-memory/index.html) | 解谜 | Drag matching pieces together or tap the highlighted original controls. | [说明](coast-memory/README.md) |
+| [Shell Merge](shell-merge/index.html) | 合成 | Drag matching pieces together or tap the highlighted original controls. | [说明](shell-merge/README.md) |
+| [Coast Merge](coast-merge/index.html) | 合成 | Drag matching pieces together or tap the highlighted original controls. | [说明](coast-merge/README.md) |
+| [熔岩抽针救援](lava-pins/index.html) | 解谜 | Pull the lower pins first, then swap adjacent drinks to clear the stones and rescue the girl. | [说明](lava-pins/README.md) |
+| [果汁下落合成](juice-drop/index.html) | 合成 | Drag a drink to aim, then release it. Matching drinks merge into the next level. | [说明](juice-drop/README.md) |
+| [房间寻物](hidden-room/index.html) | 寻物 | Find and tap the objects shown in the top row. | [说明](hidden-room/README.md) |
+| [果实落井](fruit-well/index.html) | 合成 | Drag to aim and release fruit into the well. Matching fruit merges and breaks the stones. | [说明](fruit-well/README.md) |
 
 ## 静态网站
 
@@ -62,7 +78,7 @@
 
 各样本的 index.html 内嵌运行所需的图片、操作音效和代码，单文件离线可玩；合集首页的预览图和商标是额外的网站展示文件，需要与首页一起托管。
 
-GitHub 中保存首页、39 个独立试玩、预览图、必要商标及说明。ZIP 为本地归档，继续保存在本地下载包目录。参考视频、测试浏览器缓存和原始素材由本地工作目录维护。
+GitHub 中保存首页、55 个独立试玩、预览图、必要商标及说明。ZIP 为本地归档，继续保存在本地下载包目录。参考视频、测试浏览器缓存和原始素材由本地工作目录维护。
 
 ## 附加视频
 
@@ -70,7 +86,7 @@ GitHub 中保存首页、39 个独立试玩、预览图、必要商标及说明�
 
 ## 操作音效与体积
 
-全部 39 个试玩已移除背景音乐数据、播放器和音乐开关，仅保留操作音效；用户操作后可以播放音效，后台隐藏或广告不可见时暂停声音。大图采用 WebP，列表按可见位置加载预览图。独立试玩中不设置返回列表按钮。
+全部 55 个试玩已移除背景音乐数据、播放器和音乐开关，仅保留操作音效；用户操作后可以播放音效，后台隐藏或广告不可见时暂停声音。大图采用 WebP，列表按可见位置加载预览图。独立试玩中不设置返回列表按钮。
 
 各 HTML 均低于 5,000,000 字节。[体积记录](体积与音乐检查.md)。
 
@@ -387,3 +403,131 @@ Sera 与蓝色对手双人雪球搭桥竞速。零积雪开局，每次拾取加
 - 操作：点击金框牌区的一列，当前水果落在该列最高牌上方。AUTO PLAY开始演示，可PAUSE暂停、CONTINUE继续，RETRY重试。
 - 结尾：清空全部水果牌成功；落牌令一列到顶失败。
 - [详细说明](tile-valley/README.md)
+
+### Chef Merge
+
+Original gameplay with Juicy Journey artwork.
+
+- 操作：Drag matching pieces together or tap the highlighted original controls.
+- 结尾：Original completion feedback; Retry starts a fresh round.
+- [详细说明](chef-merge/README.md)
+
+### Sushi Clear
+
+Original gameplay with Juicy Journey artwork.
+
+- 操作：Drag matching pieces together or tap the highlighted original controls.
+- 结尾：Original completion feedback; Retry starts a fresh round.
+- [详细说明](sushi-clear/README.md)
+
+### Harbor Merge
+
+Original gameplay with Juicy Journey artwork.
+
+- 操作：Drag matching pieces together or tap the highlighted original controls.
+- 结尾：Original completion feedback; Retry starts a fresh round.
+- [详细说明](harbor-merge/README.md)
+
+### Harbor Rescue
+
+Original gameplay with Juicy Journey artwork.
+
+- 操作：Drag matching pieces together or tap the highlighted original controls.
+- 结尾：Original completion feedback; Retry starts a fresh round.
+- [详细说明](harbor-rescue/README.md)
+
+### 三明治订单
+
+按小票选择火腿、酸黄瓜、番茄、洋葱、生菜与酱料，用上层面包封口。首单之后进入原4×4洋葱合成小游戏，再完成第二张订单。
+
+- 操作：Tap each ingredient shown on the ticket, then the top bread. Merge matching pieces in the onion mini-game. AUTO PLAY follows the original recipe and legal merge hints.
+- 结尾：原 openMaxNum 范围为两张订单；错误输入显示原红叉或客户负反馈，沿用原可继续接单的流程。
+- [详细说明](recipe-merge/README.md)
+
+### 篮筐配餐
+
+从60枚重叠食材中取当前订单所需的食材，每种三份，保留原逐像素遮挡、锅中烹饪、出菜和收钱动画。
+
+- 操作：Tap exposed ingredients shown on the ticket. Collect three of each, tap the cooked dish, then collect the payment. AUTO PLAY follows the original guide targets and visible pixels.
+- 结尾：原五道菜依次完成后成功；错选显示红叉及角色反馈，保留原可继续纠错的流程。
+- [详细说明](recipe-match/README.md)
+
+### 塔可订单
+
+先放玉米饼，再按小票加入肉末、蔬菜、芝士、酱汁与青柠，折饼出菜。保留原配料检查与制作动画。
+
+- 操作：Place the tortilla first. Add the ingredients shown on the ticket, then fold and serve. AUTO PLAY uses the same ingredient controls.
+- 结尾：按原 showMaskNum 范围完成两张订单后成功；错误或重复配料沿用原红叉反馈。
+- [详细说明](recipe-stack/README.md)
+
+### 日式厨房合成
+
+保留原11×7棋盘、拖动合成、升级、补充掉落和目标收集。核心料理替换为同义JJ风格图标。
+
+- 操作：Drag a matching piece onto another to merge. Tap a completed target to collect it. AUTO PLAY follows the original legal merge and collection hints.
+- 结尾：原 completeMaxNum 为三次目标收集，原结束组件触发本地成功结果。
+- [详细说明](recipe-kitchen/README.md)
+
+### 煎锅订单
+
+按订单把原料加入煎锅，盖锅烹饪，再点锅出菜。保留原配方、食材检查、Spine动作与金币反馈。
+
+- 操作：Add the ingredients shown on the ticket. Tap the lid to cook, then tap the pan to serve. AUTO PLAY waits for the original cooking and serving callbacks.
+- 结尾：沿用原 openEndViewCompleteNum 与订单数量的完成终点；错料或未齐就盖锅沿用原错误反馈。
+- [详细说明](recipe-tiles/README.md)
+
+### Coast Memory
+
+Original gameplay with Juicy Journey artwork.
+
+- 操作：Drag matching pieces together or tap the highlighted original controls.
+- 结尾：Original completion feedback; Retry starts a fresh round.
+- [详细说明](coast-memory/README.md)
+
+### Shell Merge
+
+Original gameplay with Juicy Journey artwork.
+
+- 操作：Drag matching pieces together or tap the highlighted original controls.
+- 结尾：Original completion feedback; Retry starts a fresh round.
+- [详细说明](shell-merge/README.md)
+
+### Coast Merge
+
+Original gameplay with Juicy Journey artwork.
+
+- 操作：Drag matching pieces together or tap the highlighted original controls.
+- 结尾：Original completion feedback; Retry starts a fresh round.
+- [详细说明](coast-merge/README.md)
+
+### 熔岩抽针救援
+
+Pull the pins, launch the rescue, then swap drinks to clear the stones.
+
+- 操作：Pull the lower pins first, then swap adjacent drinks to clear the stones and rescue the girl.
+- 结尾：Original win and lose conditions, with a short English result and Retry.
+- [详细说明](lava-pins/README.md)
+
+### 果汁下落合成
+
+Drop and merge Juicy Journey drinks with the original tabletop physics and order rewards.
+
+- 操作：Drag a drink to aim, then release it. Matching drinks merge into the next level.
+- 结尾：Original win and lose conditions, with a short English result and Retry.
+- [详细说明](juice-drop/README.md)
+
+### 房间寻物
+
+Find 10 objects in the illustrated room. Match the items shown at the top.
+
+- 操作：Find and tap the objects shown in the top row.
+- 结尾：Original win and lose conditions, with a short English result and Retry.
+- [详细说明](hidden-room/README.md)
+
+### 果实落井
+
+Drop fruit into the stone-filled well, merge matching fruit and open the next chamber.
+
+- 操作：Drag to aim and release fruit into the well. Matching fruit merges and breaks the stones.
+- 结尾：Original win and lose conditions, with a short English result and Retry.
+- [详细说明](fruit-well/README.md)
