@@ -1160,6 +1160,77 @@
       "zipBytes": 261796,
       "htmlSha256": "707044447394e1236816b0b4169159a39f51b9b4e3dcac5280677caba51a51ca",
       "zipSha256": "aca729973d7fdb8a31f9041323d95a95cea5aaa0714c9da5b17acc5dc119227e"
+    },
+    {
+      "id": "block-builder",
+      "name": "色块机关拼形",
+      "type": "物理",
+      "subtitle": "Color Block Builder",
+      "image": "preview.webp",
+      "desc": "按目标图释放色块，利用弹板、斜带、谷底风力、四色顺序和石台爆破完成五关物理拼形。错误显示大红叉，自动示范与手动共用真实刚体碰撞。",
+      "features": [
+        "五个机关关卡",
+        "真实刚体碰撞",
+        "双色目标拼形",
+        "大红叉失败",
+        "AUTO PLAY",
+        "操作音效"
+      ],
+      "operation": "点击半透明色块释放；拖动色块可调整水平落点。对照顶部目标完成机关。底部 AUTO PLAY 示范正确过程，可 PAUSE / CONTINUE，RETRY 从第一关重玩。",
+      "ending": "每关成功短暂显示绿勾进入下一关；第五关完成后保持场景。错误显示大红叉，点击 RETRY 重玩。",
+      "reference": "Color Block Builder · 用户参考 14caeb623a1322565137d9bdc2256b2d.mp4",
+      "entry": "block-builder/index.html",
+      "zip": "下载包/block-builder.zip",
+      "readme": "block-builder/README.md",
+      "audio": {
+        "backgroundMusic": false,
+        "independentEffects": true,
+        "pauseWhenHidden": true
+      },
+      "sizeLimitBytes": 5000000,
+      "updated": "2026-10-12",
+      "revision": "block-builder-20261012",
+      "displayMode": "portrait-contained",
+      "htmlBytes": 111501,
+      "zipBytes": 38957,
+      "htmlSha256": "73fd4b8456de63ed8e45244ea26c819ab8634002df1c5dad4f01e318d9682eb3",
+      "zipSha256": "7f2b87d6fd1f0de47f5e20e65be0a4f0cbeb1fcbc0337e1333c87d5ef6f898c4"
+    },
+    {
+      "id": "shape-drop",
+      "name": "彩块搭形",
+      "type": "物理",
+      "subtitle": "Shape Drop",
+      "image": "preview.webp",
+      "desc": "点选半透明积木，让它们真实下落、碰撞并搭成上方的彩色十字目标。蓝色底座、绿色弯块与白色间隔块先落稳，横臂与顶端随后搭起；顺序错误会翻转落歪，显示大红叉。",
+      "features": [
+        "按图释放",
+        "真实刚体碰撞",
+        "九色积木与白色间隔块",
+        "重力与翻转",
+        "成功与失败",
+        "AUTO PLAY",
+        "操作音效"
+      ],
+      "operation": "点击悬空积木释放；按支撑关系搭出目标。底部 AUTO PLAY 自动逐件示范正确释放，可 PAUSE / CONTINUE；RETRY 重玩。",
+      "ending": "全部十个积木真实落稳并符合目标才成功；落点错误、碰撞翻转或掉出凹槽显示红叉，保留场景，手动重试。",
+      "reference": "Color Block Builder · 用户参考 66358dcf4e39bca21a237eb8b1919f3e.mp4",
+      "entry": "shape-drop/index.html",
+      "zip": "下载包/shape-drop.zip",
+      "readme": "shape-drop/README.md",
+      "audio": {
+        "backgroundMusic": false,
+        "independentEffects": true,
+        "pauseWhenHidden": true
+      },
+      "sizeLimitBytes": 5000000,
+      "updated": "2026-10-12",
+      "revision": "shape-drop-20261012",
+      "displayMode": "portrait-contained",
+      "htmlBytes": 105771,
+      "zipBytes": 38332,
+      "htmlSha256": "9375c1760fdc2048580432bcf4880068976dc8c3b89f6ef37acf8c73e358ae68",
+      "zipSha256": "a6fae8266b0b548bb19c1940e269aa14a767e52bd1780e2e1e07e8726d6ec796"
     }
   ],
   "archive": {

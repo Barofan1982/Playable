@@ -10,6 +10,8 @@
 /ball-fire-rescue/*
 !/block/
 /block/*
+!/block-builder/
+/block-builder/*
 !/bridge-race/
 /bridge-race/*
 !/burger-diner/
@@ -50,6 +52,8 @@
 /rain-jigsaw/*
 !/seaside-cafe/
 /seaside-cafe/*
+!/shape-drop/
+/shape-drop/*
 !/snake-puzzle/
 /snake-puzzle/*
 !/stack-merge/
@@ -85,6 +89,10 @@
 !/ball-fire-rescue/README.md
 !/ball-fire-rescue/index.html
 !/ball-fire-rescue/preview.webp
+!/block-builder/ASSET-NOTES.md
+!/block-builder/README.md
+!/block-builder/index.html
+!/block-builder/preview.webp
 !/block/README.md
 !/block/index.html
 !/block/preview.webp
@@ -169,6 +177,10 @@
 !/seaside-cafe/README.md
 !/seaside-cafe/index.html
 !/seaside-cafe/preview.webp
+!/shape-drop/ASSET-NOTES.md
+!/shape-drop/README.md
+!/shape-drop/index.html
+!/shape-drop/preview.webp
 !/snake-puzzle/ASSET-NOTES.md
 !/snake-puzzle/README.md
 !/snake-puzzle/index.html
