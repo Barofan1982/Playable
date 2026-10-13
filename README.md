@@ -409,7 +409,7 @@ Sera 与蓝色对手双人雪球搭桥竞速。零积雪开局，每次拾取加
 Original gameplay with Juicy Journey artwork.
 
 - 操作：Drag matching pieces together or tap the highlighted original controls.
-- 结尾：Original completion feedback; Retry starts a fresh round.
+- 结尾：Success plays the Juicy Journey video once and holds its final frame. Retry starts a fresh round.
 - [详细说明](chef-merge/README.md)
 
 ### Sushi Clear
@@ -417,7 +417,7 @@ Original gameplay with Juicy Journey artwork.
 Original gameplay with Juicy Journey artwork.
 
 - 操作：Drag matching pieces together or tap the highlighted original controls.
-- 结尾：Original completion feedback; Retry starts a fresh round.
+- 结尾：Success plays the Juicy Journey video once and holds its final frame. Retry starts a fresh round.
 - [详细说明](sushi-clear/README.md)
 
 ### Harbor Merge
@@ -425,7 +425,7 @@ Original gameplay with Juicy Journey artwork.
 Original gameplay with Juicy Journey artwork.
 
 - 操作：Drag matching pieces together or tap the highlighted original controls.
-- 结尾：Original completion feedback; Retry starts a fresh round.
+- 结尾：Success plays the Juicy Journey video once and holds its final frame. Retry starts a fresh round.
 - [详细说明](harbor-merge/README.md)
 
 ### Harbor Rescue
@@ -433,7 +433,7 @@ Original gameplay with Juicy Journey artwork.
 Original gameplay with Juicy Journey artwork.
 
 - 操作：Drag matching pieces together or tap the highlighted original controls.
-- 结尾：Original completion feedback; Retry starts a fresh round.
+- 结尾：Success plays the Juicy Journey video once and holds its final frame. Retry starts a fresh round.
 - [详细说明](harbor-rescue/README.md)
 
 ### 三明治订单
@@ -441,7 +441,7 @@ Original gameplay with Juicy Journey artwork.
 按小票选择火腿、酸黄瓜、番茄、洋葱、生菜与酱料，用上层面包封口。首单之后进入原4×4洋葱合成小游戏，再完成第二张订单。
 
 - 操作：Tap each ingredient shown on the ticket, then the top bread. Merge matching pieces in the onion mini-game. AUTO PLAY follows the original recipe and legal merge hints.
-- 结尾：原 openMaxNum 范围为两张订单；错误输入显示原红叉或客户负反馈，沿用原可继续接单的流程。
+- 结尾：Success plays the Juicy Journey video once and holds its final frame. Retry starts a fresh round.
 - [详细说明](recipe-merge/README.md)
 
 ### 篮筐配餐
@@ -449,7 +449,7 @@ Original gameplay with Juicy Journey artwork.
 从60枚重叠食材中取当前订单所需的食材，每种三份，保留原逐像素遮挡、锅中烹饪、出菜和收钱动画。
 
 - 操作：Tap exposed ingredients shown on the ticket. Collect three of each, tap the cooked dish, then collect the payment. AUTO PLAY follows the original guide targets and visible pixels.
-- 结尾：原五道菜依次完成后成功；错选显示红叉及角色反馈，保留原可继续纠错的流程。
+- 结尾：Success plays the Juicy Journey video once and holds its final frame. Retry starts a fresh round.
 - [详细说明](recipe-match/README.md)
 
 ### 塔可订单
@@ -457,7 +457,7 @@ Original gameplay with Juicy Journey artwork.
 先放玉米饼，再按小票加入肉末、蔬菜、芝士、酱汁与青柠，折饼出菜。保留原配料检查与制作动画。
 
 - 操作：Place the tortilla first. Add the ingredients shown on the ticket, then fold and serve. AUTO PLAY uses the same ingredient controls.
-- 结尾：按原 showMaskNum 范围完成两张订单后成功；错误或重复配料沿用原红叉反馈。
+- 结尾：Success plays the Juicy Journey video once and holds its final frame. Retry starts a fresh round.
 - [详细说明](recipe-stack/README.md)
 
 ### 日式厨房合成
@@ -465,7 +465,7 @@ Original gameplay with Juicy Journey artwork.
 保留原11×7棋盘、拖动合成、升级、补充掉落和目标收集。核心料理替换为同义JJ风格图标。
 
 - 操作：Drag a matching piece onto another to merge. Tap a completed target to collect it. AUTO PLAY follows the original legal merge and collection hints.
-- 结尾：原 completeMaxNum 为三次目标收集，原结束组件触发本地成功结果。
+- 结尾：Success plays the Juicy Journey video once and holds its final frame. Retry starts a fresh round.
 - [详细说明](recipe-kitchen/README.md)
 
 ### 煎锅订单
@@ -473,7 +473,7 @@ Original gameplay with Juicy Journey artwork.
 按订单把原料加入煎锅，盖锅烹饪，再点锅出菜。保留原配方、食材检查、Spine动作与金币反馈。
 
 - 操作：Add the ingredients shown on the ticket. Tap the lid to cook, then tap the pan to serve. AUTO PLAY waits for the original cooking and serving callbacks.
-- 结尾：沿用原 openEndViewCompleteNum 与订单数量的完成终点；错料或未齐就盖锅沿用原错误反馈。
+- 结尾：Success plays the Juicy Journey video once and holds its final frame. Retry starts a fresh round.
 - [详细说明](recipe-tiles/README.md)
 
 ### Coast Memory
@@ -481,7 +481,7 @@ Original gameplay with Juicy Journey artwork.
 Original gameplay with Juicy Journey artwork.
 
 - 操作：Drag matching pieces together or tap the highlighted original controls.
-- 结尾：Original completion feedback; Retry starts a fresh round.
+- 结尾：Success plays the Juicy Journey video once and holds its final frame. Retry starts a fresh round.
 - [详细说明](coast-memory/README.md)
 
 ### Shell Merge
@@ -489,7 +489,7 @@ Original gameplay with Juicy Journey artwork.
 Original gameplay with Juicy Journey artwork.
 
 - 操作：Drag matching pieces together or tap the highlighted original controls.
-- 结尾：Original completion feedback; Retry starts a fresh round.
+- 结尾：Success plays the Juicy Journey video once and holds its final frame. Retry starts a fresh round.
 - [详细说明](shell-merge/README.md)
 
 ### Coast Merge
@@ -497,7 +497,7 @@ Original gameplay with Juicy Journey artwork.
 Original gameplay with Juicy Journey artwork.
 
 - 操作：Drag matching pieces together or tap the highlighted original controls.
-- 结尾：Original completion feedback; Retry starts a fresh round.
+- 结尾：Success plays the Juicy Journey video once and holds its final frame. Retry starts a fresh round.
 - [详细说明](coast-merge/README.md)
 
 ### 熔岩抽针救援
@@ -505,7 +505,7 @@ Original gameplay with Juicy Journey artwork.
 Pull the pins, launch the rescue, then swap drinks to clear the stones.
 
 - 操作：Pull the lower pins first, then swap adjacent drinks to clear the stones and rescue the girl.
-- 结尾：Original win and lose conditions, with a short English result and Retry.
+- 结尾：Success plays the Juicy Journey video once and holds its final frame. Retry starts a fresh round.
 - [详细说明](lava-pins/README.md)
 
 ### 果汁下落合成
@@ -513,7 +513,7 @@ Pull the pins, launch the rescue, then swap drinks to clear the stones.
 Drop and merge Juicy Journey drinks with the original tabletop physics and order rewards.
 
 - 操作：Drag a drink to aim, then release it. Matching drinks merge into the next level.
-- 结尾：Original win and lose conditions, with a short English result and Retry.
+- 结尾：Success plays the Juicy Journey video once and holds its final frame. Retry starts a fresh round.
 - [详细说明](juice-drop/README.md)
 
 ### 房间寻物
@@ -521,7 +521,7 @@ Drop and merge Juicy Journey drinks with the original tabletop physics and order
 Find 10 objects in the illustrated room. Match the items shown at the top.
 
 - 操作：Find and tap the objects shown in the top row.
-- 结尾：Original win and lose conditions, with a short English result and Retry.
+- 结尾：Success plays the Juicy Journey video once and holds its final frame. Retry starts a fresh round.
 - [详细说明](hidden-room/README.md)
 
 ### 果实落井
@@ -529,5 +529,5 @@ Find 10 objects in the illustrated room. Match the items shown at the top.
 Drop fruit into the stone-filled well, merge matching fruit and open the next chamber.
 
 - 操作：Drag to aim and release fruit into the well. Matching fruit merges and breaks the stones.
-- 结尾：Original win and lose conditions, with a short English result and Retry.
+- 结尾：Success plays the Juicy Journey video once and holds its final frame. Retry starts a fresh round.
 - [详细说明](fruit-well/README.md)

@@ -25,3 +25,16 @@ source/build.cjs 重打包原虚拟资源文件；原Cocos2引擎、原场景和
 source/qa-report.json 记录320×568与844×390实际浏览器检查、合法Auto流程、暂停、隐藏、Retry与错误记录。source/initial-320.png、initial-844.png和result-*.png是实际运行画面。preview.webp为真实首帧。
 
 QA入口：window.__qa.state / startAuto / pause / setAdVisible / tap / step / reset / solve。Auto通过原控制组件操作，不直接更改订单进度或棋盘数值。
+
+## Juicy Journey 品牌落版（2026-10-13）
+
+玩法顶部使用高清、紧裁切 Juicy Journey Logo，并按约27%画布宽度定位，避开订单和计数。真实完成条件不变；完成后停下原引擎，关闭原结束层，播放用户提供的5秒静音品牌视频一次，并一直保留最后一帧。底部 RETRY 重载完整独立页面。
+
+独立HTML同时内嵌视频与最后一帧，无外部媒体请求，无BGM。品牌落版位于完整9:16画布内，横屏仍居中显示。source/build.cjs 调用合集维护工具中的品牌注入构建器；实际选图仍保存在source/selected-assets。
+
+
+## 2026-10-13 统一品牌落版
+
+玩法 Logo 使用本地高清 Juicy Journey 源图，裁掉透明空白并校准可见尺寸。原女主及原结束根层在真实结果发生时关闭；成功后播放用户提供的 JJ 静音落版视频一次，停留最后一帧，手动 Retry 才重新开始。有原生失败条件的玩法显示英文 Try Again，不播放成功庆祝视频。
+
+视频、尾帧和商标全部内嵌在单文件中，没有背景音乐、音乐开关或外部运行资源。竖屏完整画面在横向浏览器中居中显示。源码构建与本地 ZIP 同步更新。

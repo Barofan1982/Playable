@@ -1546,13 +1546,13 @@
       "english": true,
       "music": false,
       "portrait": true,
-      "htmlBytes": 4462569,
+      "htmlBytes": 4824853,
       "descriptionEn": "Drag matching cooking items to merge and fill the original orders.",
       "verified": true,
       "type": "合成",
       "desc": "Original gameplay with Juicy Journey artwork.",
       "operation": "Drag matching pieces together or tap the highlighted original controls.",
-      "ending": "Original completion feedback; Retry starts a fresh round.",
+      "ending": "Success plays the Juicy Journey video once and holds its final frame. Retry starts a fresh round.",
       "audio": {
         "backgroundMusic": false,
         "independentEffects": true,
@@ -1566,10 +1566,20 @@
       "updated": "2026-10-13",
       "sourceArchive": "Playable.zip",
       "sourceIndex": 1,
-      "htmlSha256": "0e9a2d147fdcdecb532b8269679a1ffd2b7dd70d4ed42e5503f573145d2e053a",
+      "htmlSha256": "19b22bdde3885b687bf4e600a564e4f79638d95ccd4590f30ce4cb7986e0f4c4",
       "typeEn": "Merge",
-      "zipBytes": 3628244,
-      "zipSha256": "a34cd8c647fa54989a590b2a3f89388533e08adde47ae6b4d6e94aca1fb7e059"
+      "zipBytes": 3916963,
+      "zipSha256": "3d42b13fec91ed2a9be946a929b60fa8a421914b11c2b490d5e0c6698d4a89ce",
+      "previewSha256": "9c27b372a540a5b7473c12f2cb70343625c675ee39a5c0164c50990655e1a2b0",
+      "revision": "jj-brand-endcard-20261013",
+      "brandEndcard": {
+        "type": "embedded-muted-video",
+        "durationSeconds": 5,
+        "holdLastFrame": true,
+        "videoBytes": 197490,
+        "originalEndLayersSuppressed": true,
+        "gameplayLogo": "high-resolution Juicy Journey"
+      }
     },
     {
       "id": "sushi-clear",
@@ -1585,13 +1595,13 @@
       "english": true,
       "music": false,
       "portrait": true,
-      "htmlBytes": 2522911,
+      "htmlBytes": 2885028,
       "descriptionEn": "Merge matching sushi, then tap completed dishes to clear them.",
       "verified": true,
       "type": "合成",
       "desc": "Original gameplay with Juicy Journey artwork.",
       "operation": "Drag matching pieces together or tap the highlighted original controls.",
-      "ending": "Original completion feedback; Retry starts a fresh round.",
+      "ending": "Success plays the Juicy Journey video once and holds its final frame. Retry starts a fresh round.",
       "audio": {
         "backgroundMusic": false,
         "independentEffects": true,
@@ -1605,10 +1615,20 @@
       "updated": "2026-10-13",
       "sourceArchive": "Playable.zip",
       "sourceIndex": 2,
-      "htmlSha256": "11113658f2e92f7038c731ab29d3d06c1c320c60c0e6756b87363930b16b0b9a",
+      "htmlSha256": "97af4f604ee1ca978b78f3d4cc96db06232d8f4107fc1a4f2f71e398efe67147",
       "typeEn": "Merge",
-      "zipBytes": 2052205,
-      "zipSha256": "93d67100df89d803c67e940b2957797154dfe5dea30298072fd64e65fa1600e2"
+      "zipBytes": 2375724,
+      "zipSha256": "69432be2e2ed31fc9da463920f5b4edcd5c6c756a3a706d0ad964dc798ccd1a6",
+      "previewSha256": "2d38b81fa8daec9304387577f141c32c1a39d9527254938cdfef946caf92b72e",
+      "revision": "jj-brand-endcard-20261013",
+      "brandEndcard": {
+        "type": "embedded-muted-video",
+        "durationSeconds": 5,
+        "holdLastFrame": true,
+        "videoBytes": 197490,
+        "originalEndLayersSuppressed": true,
+        "gameplayLogo": "high-resolution Juicy Journey"
+      }
     },
     {
       "id": "harbor-merge",
@@ -1624,13 +1644,13 @@
       "english": true,
       "music": false,
       "portrait": true,
-      "htmlBytes": 4613973,
+      "htmlBytes": 4976027,
       "descriptionEn": "Merge repair tools and follow the original cleanup targets.",
       "verified": true,
       "type": "合成",
       "desc": "Original gameplay with Juicy Journey artwork.",
       "operation": "Drag matching pieces together or tap the highlighted original controls.",
-      "ending": "Original completion feedback; Retry starts a fresh round.",
+      "ending": "Success plays the Juicy Journey video once and holds its final frame. Retry starts a fresh round.",
       "audio": {
         "backgroundMusic": false,
         "independentEffects": true,
@@ -1644,10 +1664,20 @@
       "updated": "2026-10-13",
       "sourceArchive": "Playable.zip",
       "sourceIndex": 3,
-      "htmlSha256": "97044159a58a385f36c03585147b400955c529ad80ab0ebe267b608bf5951d17",
+      "htmlSha256": "3453f248fda733e9df3e881788b8e93b4e0cb8d72b0425e7373583d2a0d8a471",
       "typeEn": "Merge",
-      "zipBytes": 3751658,
-      "zipSha256": "b11a08506132c19a21cf0f49f75d79a3c8836378be0d523e1071ad051b107302"
+      "zipBytes": 4068158,
+      "zipSha256": "dbc33c824e70a149c1a90bc3cbcafda8428f0476910baa361414c616fb15a906",
+      "previewSha256": "a77ea7b9b3911dfae1370303ade1a02ce73aadb424943d6b61a11f2ccdb1f831",
+      "revision": "jj-brand-endcard-20261013",
+      "brandEndcard": {
+        "type": "embedded-muted-video",
+        "durationSeconds": 5,
+        "holdLastFrame": true,
+        "videoBytes": 197490,
+        "originalEndLayersSuppressed": true,
+        "gameplayLogo": "high-resolution Juicy Journey"
+      }
     },
     {
       "id": "harbor-rescue",
@@ -1664,13 +1694,13 @@
       "english": true,
       "music": false,
       "portrait": true,
-      "htmlBytes": 3559450,
+      "htmlBytes": 3921460,
       "descriptionEn": "Choose a repair and merge tools to complete the original rescue round.",
       "verified": true,
       "type": "解谜",
       "desc": "Original gameplay with Juicy Journey artwork.",
       "operation": "Drag matching pieces together or tap the highlighted original controls.",
-      "ending": "Original completion feedback; Retry starts a fresh round.",
+      "ending": "Success plays the Juicy Journey video once and holds its final frame. Retry starts a fresh round.",
       "audio": {
         "backgroundMusic": false,
         "independentEffects": true,
@@ -1684,10 +1714,20 @@
       "updated": "2026-10-13",
       "sourceArchive": "Playable.zip",
       "sourceIndex": 4,
-      "htmlSha256": "418b5a9aa6bf8a61b9a9f66d1c95dc2898cf76bdaa6a725c8cb01ddb99c121a6",
+      "htmlSha256": "cb26f47ac4dc1e0ef88bcfe804d33a162bc9183e349d793f8c738c3b4c37ea05",
       "typeEn": "Puzzle",
-      "zipBytes": 2894389,
-      "zipSha256": "895abbbfb107d7bfab61a14359ee068b5a904149c515ddde444d6759c4ed8769"
+      "zipBytes": 3205661,
+      "zipSha256": "651681809d7f505de769d6e2c31aeb54977ce75706bfd1d32a31c0ed17de1df2",
+      "previewSha256": "659f01bec06bf2aa2098d80c94a8fab8b40fde77eda0f36256644a5d0630d3b6",
+      "revision": "jj-brand-endcard-20261013",
+      "brandEndcard": {
+        "type": "embedded-muted-video",
+        "durationSeconds": 5,
+        "holdLastFrame": true,
+        "videoBytes": 197490,
+        "originalEndLayersSuppressed": true,
+        "gameplayLogo": "high-resolution Juicy Journey"
+      }
     },
     {
       "id": "recipe-merge",
@@ -1707,7 +1747,7 @@
         "短玩法音效"
       ],
       "operation": "Tap each ingredient shown on the ticket, then the top bread. Merge matching pieces in the onion mini-game. AUTO PLAY follows the original recipe and legal merge hints.",
-      "ending": "原 openMaxNum 范围为两张订单；错误输入显示原红叉或客户负反馈，沿用原可继续接单的流程。",
+      "ending": "Success plays the Juicy Journey video once and holds its final frame. Retry starts a fresh round.",
       "reference": "Playable.zip · Merge Cooking · inspection #5",
       "entry": "recipe-merge/index.html",
       "zip": "下载包/recipe-merge.zip",
@@ -1719,16 +1759,25 @@
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-13",
-      "revision": "recipe-merge-original-engine-20261013",
+      "revision": "jj-brand-endcard-20261013",
       "displayMode": "portrait-contained",
-      "htmlBytes": 4239261,
+      "htmlBytes": 4601469,
       "locale": "en",
       "sourceArchive": "Playable.zip",
       "sourceIndex": 5,
-      "htmlSha256": "bad59d91ff2ca117c2f9dd73c3036572608b1cc8b7e99b27ce27e48320869280",
+      "htmlSha256": "8a3a05b67e3835cb4118ee36b1812cf4e1ad5d55e73db9b743a4de2cf583b1af",
       "typeEn": "Cooking",
-      "zipBytes": 3182022,
-      "zipSha256": "da1bd6eef024274f6cb874a3d06ec88cbebff212037cc5fb67376254d3966950"
+      "zipBytes": 3501968,
+      "zipSha256": "28911140c09fcffc4949bf13078acb400b445b738c02664aa1396096f1999d1b",
+      "previewSha256": "85a970950cebb1e5fe0d8aca82ac2b39a20c33b01c6cce8271ea748db65dc8aa",
+      "brandEndcard": {
+        "type": "embedded-muted-video",
+        "durationSeconds": 5,
+        "holdLastFrame": true,
+        "videoBytes": 197490,
+        "originalEndLayersSuppressed": true,
+        "gameplayLogo": "high-resolution Juicy Journey"
+      }
     },
     {
       "id": "recipe-match",
@@ -1748,7 +1797,7 @@
         "短玩法音效"
       ],
       "operation": "Tap exposed ingredients shown on the ticket. Collect three of each, tap the cooked dish, then collect the payment. AUTO PLAY follows the original guide targets and visible pixels.",
-      "ending": "原五道菜依次完成后成功；错选显示红叉及角色反馈，保留原可继续纠错的流程。",
+      "ending": "Success plays the Juicy Journey video once and holds its final frame. Retry starts a fresh round.",
       "reference": "Playable.zip · Merge Cooking · inspection #6",
       "entry": "recipe-match/index.html",
       "zip": "下载包/recipe-match.zip",
@@ -1760,16 +1809,25 @@
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-13",
-      "revision": "recipe-match-original-engine-20261013",
+      "revision": "jj-brand-endcard-20261013",
       "displayMode": "portrait-contained",
-      "htmlBytes": 3798233,
+      "htmlBytes": 4130019,
       "locale": "en",
       "sourceArchive": "Playable.zip",
       "sourceIndex": 6,
-      "htmlSha256": "54379746118d7e8a89fc25bd8258eb83f0bbe0f560d725bb82850479cbd80808",
+      "htmlSha256": "ae984a4be163c637ee75433cfa6dda5aa02cbbe36345a7641b39a4d799046f9b",
       "typeEn": "Cooking",
-      "zipBytes": 2848549,
-      "zipSha256": "c825263a399c16c90923ff70e96bd3108d7399d01372f440014b2afc6d0647c1"
+      "zipBytes": 3139712,
+      "zipSha256": "610e17e6679f2af7d98f7066d38007c0c65331310853974ad5deb79f4ff86ff4",
+      "previewSha256": "afc78c3757776f24c402ba8b6ad1cf9f3c0b5f8997c1b3622049bc9389112a0c",
+      "brandEndcard": {
+        "type": "embedded-muted-video",
+        "durationSeconds": 5,
+        "holdLastFrame": true,
+        "videoBytes": 197490,
+        "originalEndLayersSuppressed": true,
+        "gameplayLogo": "high-resolution Juicy Journey"
+      }
     },
     {
       "id": "recipe-stack",
@@ -1789,7 +1847,7 @@
         "短玩法音效"
       ],
       "operation": "Place the tortilla first. Add the ingredients shown on the ticket, then fold and serve. AUTO PLAY uses the same ingredient controls.",
-      "ending": "按原 showMaskNum 范围完成两张订单后成功；错误或重复配料沿用原红叉反馈。",
+      "ending": "Success plays the Juicy Journey video once and holds its final frame. Retry starts a fresh round.",
       "reference": "Playable.zip · Merge Cooking · inspection #7",
       "entry": "recipe-stack/index.html",
       "zip": "下载包/recipe-stack.zip",
@@ -1801,16 +1859,25 @@
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-13",
-      "revision": "recipe-stack-original-engine-20261013",
+      "revision": "jj-brand-endcard-20261013",
       "displayMode": "portrait-contained",
-      "htmlBytes": 3116961,
+      "htmlBytes": 3476928,
       "locale": "en",
       "sourceArchive": "Playable.zip",
       "sourceIndex": 7,
-      "htmlSha256": "fdec8a774bb8abb9f44ed26f3214cf03efd44babea510e0e67df50426788e5e8",
+      "htmlSha256": "b2a82fbea935b02deffb59ab5c525e306b01707f213b6469eaeb3fbd5e13fdbc",
       "typeEn": "Cooking",
-      "zipBytes": 2332771,
-      "zipSha256": "ab436669cb48e5409d430653430a5ab4a60adac95eec7058c534ce9a61f99c4b"
+      "zipBytes": 2643971,
+      "zipSha256": "53e1ad7b634e5c76a3acb25343b64ad2c1c8d9c67fb95d950de5f8755dbbc143",
+      "previewSha256": "f965265f6e1105c3ac12cf28163021b386ac741af4b660f7dcd8b7646b18999c",
+      "brandEndcard": {
+        "type": "embedded-muted-video",
+        "durationSeconds": 5,
+        "holdLastFrame": true,
+        "videoBytes": 197490,
+        "originalEndLayersSuppressed": true,
+        "gameplayLogo": "high-resolution Juicy Journey"
+      }
     },
     {
       "id": "recipe-kitchen",
@@ -1830,7 +1897,7 @@
         "短玩法音效"
       ],
       "operation": "Drag a matching piece onto another to merge. Tap a completed target to collect it. AUTO PLAY follows the original legal merge and collection hints.",
-      "ending": "原 completeMaxNum 为三次目标收集，原结束组件触发本地成功结果。",
+      "ending": "Success plays the Juicy Journey video once and holds its final frame. Retry starts a fresh round.",
       "reference": "Playable.zip · Merge Cooking · inspection #8",
       "entry": "recipe-kitchen/index.html",
       "zip": "下载包/recipe-kitchen.zip",
@@ -1842,16 +1909,25 @@
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-13",
-      "revision": "recipe-kitchen-original-engine-20261013",
+      "revision": "jj-brand-endcard-20261013",
       "displayMode": "portrait-contained",
-      "htmlBytes": 2655070,
+      "htmlBytes": 2987801,
       "locale": "en",
       "sourceArchive": "Playable.zip",
       "sourceIndex": 8,
-      "htmlSha256": "c06c747278672281f04569e3f01e62520da02419dc2da05399927cc8d6a9d482",
+      "htmlSha256": "ffd6ca3af41aa61a74a9c36e9b9468238e867bee8aa874c50f40bd78a14994d8",
       "typeEn": "Merge",
-      "zipBytes": 1984045,
-      "zipSha256": "ec6b91e77204430399d2a1ae2346501434c680dd3989b24e181593b7fec4c624"
+      "zipBytes": 2277743,
+      "zipSha256": "cf5a794bb0024c5f850f0c619fb5bc20fb89c488402a61b6b212e03863665062",
+      "previewSha256": "bb98947853c86afc5caf482f3a584497de9ad0c227d29d8ce7fce8f85ce0e840",
+      "brandEndcard": {
+        "type": "embedded-muted-video",
+        "durationSeconds": 5,
+        "holdLastFrame": true,
+        "videoBytes": 197490,
+        "originalEndLayersSuppressed": true,
+        "gameplayLogo": "high-resolution Juicy Journey"
+      }
     },
     {
       "id": "recipe-tiles",
@@ -1871,7 +1947,7 @@
         "短玩法音效"
       ],
       "operation": "Add the ingredients shown on the ticket. Tap the lid to cook, then tap the pan to serve. AUTO PLAY waits for the original cooking and serving callbacks.",
-      "ending": "沿用原 openEndViewCompleteNum 与订单数量的完成终点；错料或未齐就盖锅沿用原错误反馈。",
+      "ending": "Success plays the Juicy Journey video once and holds its final frame. Retry starts a fresh round.",
       "reference": "Playable.zip · Merge Cooking · inspection #9",
       "entry": "recipe-tiles/index.html",
       "zip": "下载包/recipe-tiles.zip",
@@ -1883,16 +1959,25 @@
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-13",
-      "revision": "recipe-tiles-original-engine-20261013",
+      "revision": "jj-brand-endcard-20261013",
       "displayMode": "portrait-contained",
-      "htmlBytes": 3099029,
+      "htmlBytes": 3431351,
       "locale": "en",
       "sourceArchive": "Playable.zip",
       "sourceIndex": 9,
-      "htmlSha256": "0c1ebed78299e384693897d1bf863f550de4c227127f40905a880a858b273a9c",
+      "htmlSha256": "c7159836882771fdd4e397235a6cbfa16f8cd4702ea3b4dc9cc1d5805856b63c",
       "typeEn": "Cooking",
-      "zipBytes": 2318853,
-      "zipSha256": "ea30b6ea94769f762498e32ac3ccffb27c27dfb4dbf6f3f8b46d2495d940a5dc"
+      "zipBytes": 2612743,
+      "zipSha256": "45215a06e815d40f8b80fe4a44228c7000c2f56767300c3cd66a8e522c1f76c2",
+      "previewSha256": "0630832bd787f362893c987aabb7e4901b1e34bc2638c89f768ad274a05cce54",
+      "brandEndcard": {
+        "type": "embedded-muted-video",
+        "durationSeconds": 5,
+        "holdLastFrame": true,
+        "videoBytes": 197490,
+        "originalEndLayersSuppressed": true,
+        "gameplayLogo": "high-resolution Juicy Journey"
+      }
     },
     {
       "id": "coast-memory",
@@ -1908,13 +1993,13 @@
       "english": true,
       "music": false,
       "portrait": true,
-      "htmlBytes": 3392423,
+      "htmlBytes": 3754434,
       "descriptionEn": "Spin the bottle, turn cards, and match the original pairs.",
       "verified": true,
       "type": "解谜",
       "desc": "Original gameplay with Juicy Journey artwork.",
       "operation": "Drag matching pieces together or tap the highlighted original controls.",
-      "ending": "Original completion feedback; Retry starts a fresh round.",
+      "ending": "Success plays the Juicy Journey video once and holds its final frame. Retry starts a fresh round.",
       "audio": {
         "backgroundMusic": false,
         "independentEffects": true,
@@ -1928,10 +2013,20 @@
       "updated": "2026-10-13",
       "sourceArchive": "Playable.zip",
       "sourceIndex": 10,
-      "htmlSha256": "78415e47ccc0cad263bc766335065e6335b3a55ff5702e518f96e588ee9bf381",
+      "htmlSha256": "5c0e8b3c14104f92726e38f187632496252c7682add882cc52203663a70e5c5d",
       "typeEn": "Puzzle",
-      "zipBytes": 2758925,
-      "zipSha256": "29242bb91257e42d00756912a02152ba007b38e588932cffadbf0a47379664e4"
+      "zipBytes": 3058296,
+      "zipSha256": "aa36e4d9f8f61609e1137c08daac3f97483e269f1b1a94c994fd659ccc31b95c",
+      "previewSha256": "3a8e14ce14455992f00788f4f003994c039bf26c8e739840f7e3071fed27dff4",
+      "revision": "jj-brand-endcard-20261013",
+      "brandEndcard": {
+        "type": "embedded-muted-video",
+        "durationSeconds": 5,
+        "holdLastFrame": true,
+        "videoBytes": 197490,
+        "originalEndLayersSuppressed": true,
+        "gameplayLogo": "high-resolution Juicy Journey"
+      }
     },
     {
       "id": "shell-merge",
@@ -1947,13 +2042,13 @@
       "english": true,
       "music": false,
       "portrait": true,
-      "htmlBytes": 2108271,
+      "htmlBytes": 2470282,
       "descriptionEn": "Merge matching sea life and shells in the original board.",
       "verified": true,
       "type": "合成",
       "desc": "Original gameplay with Juicy Journey artwork.",
       "operation": "Drag matching pieces together or tap the highlighted original controls.",
-      "ending": "Original completion feedback; Retry starts a fresh round.",
+      "ending": "Success plays the Juicy Journey video once and holds its final frame. Retry starts a fresh round.",
       "audio": {
         "backgroundMusic": false,
         "independentEffects": true,
@@ -1967,10 +2062,20 @@
       "updated": "2026-10-13",
       "sourceArchive": "Playable.zip",
       "sourceIndex": 11,
-      "htmlSha256": "d420f64aeac4ca5b4cf76b43d5a4277af73cf2428a78c7861925dfafd1134203",
+      "htmlSha256": "be693eb5ff873d48f2d481f501d5637ead6645c89abba6363c3edee66cabaa6e",
       "typeEn": "Merge",
-      "zipBytes": 1715430,
-      "zipSha256": "257d307bfb72d0036fde8c117b68f966e2e6eafd79920fcdbda07e1027d78af9"
+      "zipBytes": 2019399,
+      "zipSha256": "0c1a9d19569a819283af78632d2d06da275510ff4675f81162ba7d49013011ef",
+      "previewSha256": "67df65dea342ac3bf365085198f86b0990f3bd4c2065eee2bfda217faffe570a",
+      "revision": "jj-brand-endcard-20261013",
+      "brandEndcard": {
+        "type": "embedded-muted-video",
+        "durationSeconds": 5,
+        "holdLastFrame": true,
+        "videoBytes": 197490,
+        "originalEndLayersSuppressed": true,
+        "gameplayLogo": "high-resolution Juicy Journey"
+      }
     },
     {
       "id": "coast-merge",
@@ -1986,13 +2091,13 @@
       "english": true,
       "music": false,
       "portrait": true,
-      "htmlBytes": 2756646,
+      "htmlBytes": 3118642,
       "descriptionEn": "Drag matching cooking pieces to advance the full original merge board.",
       "verified": true,
       "type": "合成",
       "desc": "Original gameplay with Juicy Journey artwork.",
       "operation": "Drag matching pieces together or tap the highlighted original controls.",
-      "ending": "Original completion feedback; Retry starts a fresh round.",
+      "ending": "Success plays the Juicy Journey video once and holds its final frame. Retry starts a fresh round.",
       "audio": {
         "backgroundMusic": false,
         "independentEffects": true,
@@ -2006,10 +2111,20 @@
       "updated": "2026-10-13",
       "sourceArchive": "Playable.zip",
       "sourceIndex": 12,
-      "htmlSha256": "9406919763772d72a17a07f85771ad9a1f4d5fac3380e6aae2978cc06d133878",
+      "htmlSha256": "b689343650cc632941bc11a8968f9e345ffd10f1437cfa4eafbe9a7233e20b7a",
       "typeEn": "Merge",
-      "zipBytes": 2242370,
-      "zipSha256": "cd790331b71635e36f9d506393b17e99eed67fe4be88c2aa72c22dcd414bde1b"
+      "zipBytes": 2541841,
+      "zipSha256": "2466019a9d0a1dbedd9b703aa2255ad3220ec38be6c06ffc3a1049df2c568e3e",
+      "previewSha256": "5e74b9384e84d1f779919724ff161adb6730b7e842bbc1dee0f29d32ffd3cc8f",
+      "revision": "jj-brand-endcard-20261013",
+      "brandEndcard": {
+        "type": "embedded-muted-video",
+        "durationSeconds": 5,
+        "holdLastFrame": true,
+        "videoBytes": 197490,
+        "originalEndLayersSuppressed": true,
+        "gameplayLogo": "high-resolution Juicy Journey"
+      }
     },
     {
       "id": "lava-pins",
@@ -2028,7 +2143,7 @@
         "Retry",
         "Gameplay effects"
       ],
-      "ending": "Original win and lose conditions, with a short English result and Retry.",
+      "ending": "Success plays the Juicy Journey video once and holds its final frame. Retry starts a fresh round.",
       "reference": "Playable.zip / Tasty Travels / entry 13",
       "entry": "lava-pins/index.html",
       "zip": "下载包/lava-pins.zip",
@@ -2040,9 +2155,9 @@
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-13",
-      "revision": "original-engine-jj-auto-20261013",
+      "revision": "jj-brand-endcard-20261013",
       "displayMode": "portrait-contained",
-      "htmlBytes": 3931867,
+      "htmlBytes": 4218370,
       "descEn": "Pull the pins, launch the rescue, then swap drinks to clear the stones.",
       "qa": {
         "nativeAutoStatus": "passed",
@@ -2057,10 +2172,19 @@
       "locale": "en",
       "sourceArchive": "Playable.zip",
       "sourceIndex": 13,
-      "htmlSha256": "304f24c66581b81d191699551d85101b034282d34c289114ca7c1a8ef53c616e",
+      "htmlSha256": "327a41b481785f8f8c0ce7d546e4b464bd6f5718586465a15ce69e1c9816f460",
       "typeEn": "Puzzle",
-      "zipBytes": 2927498,
-      "zipSha256": "b73e231e76c07088e32743be31e79df3cb83bdb6a2eb8b7ae2829f1ba50a5ed3"
+      "zipBytes": 3177474,
+      "zipSha256": "230ada871337c8c512b660b3aa4dd12debf228468607c0c018aa86c229fb3a50",
+      "previewSha256": "4c051174d74999fd1059cd3528065a6e118c7259dcfbc7ab8dbdeca65c950f99",
+      "brandEndcard": {
+        "type": "embedded-muted-video",
+        "durationSeconds": 5,
+        "holdLastFrame": true,
+        "videoBytes": 197490,
+        "originalEndLayersSuppressed": true,
+        "gameplayLogo": "high-resolution Juicy Journey"
+      }
     },
     {
       "id": "juice-drop",
@@ -2079,7 +2203,7 @@
         "Retry",
         "Gameplay effects"
       ],
-      "ending": "Original win and lose conditions, with a short English result and Retry.",
+      "ending": "Success plays the Juicy Journey video once and holds its final frame. Retry starts a fresh round.",
       "reference": "Playable.zip / Tasty Travels / entry 14",
       "entry": "juice-drop/index.html",
       "zip": "下载包/juice-drop.zip",
@@ -2091,18 +2215,27 @@
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-13",
-      "revision": "original-engine-jj-20261012",
+      "revision": "jj-brand-endcard-20261013",
       "displayMode": "portrait-contained",
-      "htmlBytes": 3321209,
+      "htmlBytes": 3645054,
       "descEn": "Drop and merge Juicy Journey drinks with the original tabletop physics and order rewards.",
       "controlHeight": 48,
       "locale": "en",
       "sourceArchive": "Playable.zip",
       "sourceIndex": 14,
-      "htmlSha256": "c1f4ef4bc19a7e0cfdd9878463a9dc42b2190e04c9135ab0c515f5ea7c645fb0",
+      "htmlSha256": "8d55251a2a7e8b8da8668644343877efb30253bdfb3b1e7563bf420a659fcb88",
       "typeEn": "Merge",
-      "zipBytes": 2465693,
-      "zipSha256": "1223c43f6435c8f3c1492e6a049c133efe3628c35b680f595d218296a6042baf"
+      "zipBytes": 2741277,
+      "zipSha256": "8b7ad15f73e709579441961a49779eb56dd69ad558ff00a90a0f8e8adfbaa34a",
+      "previewSha256": "8899217eca8cf94d850ddbdf48c80e4dcfaf62736631d8fa8291d29725c5a36e",
+      "brandEndcard": {
+        "type": "embedded-muted-video",
+        "durationSeconds": 5,
+        "holdLastFrame": true,
+        "videoBytes": 197490,
+        "originalEndLayersSuppressed": true,
+        "gameplayLogo": "high-resolution Juicy Journey"
+      }
     },
     {
       "id": "hidden-room",
@@ -2121,7 +2254,7 @@
         "Retry",
         "Gameplay effects"
       ],
-      "ending": "Original win and lose conditions, with a short English result and Retry.",
+      "ending": "Success plays the Juicy Journey video once and holds its final frame. Retry starts a fresh round.",
       "reference": "Playable.zip / Tasty Travels / entry 15",
       "entry": "hidden-room/index.html",
       "zip": "下载包/hidden-room.zip",
@@ -2133,18 +2266,27 @@
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-13",
-      "revision": "original-engine-jj-20261012",
+      "revision": "jj-brand-endcard-20261013",
       "displayMode": "portrait-contained",
-      "htmlBytes": 2993054,
+      "htmlBytes": 3315280,
       "descEn": "Find 10 objects in the illustrated room. Match the items shown at the top.",
       "controlHeight": 48,
       "locale": "en",
       "sourceArchive": "Playable.zip",
       "sourceIndex": 15,
-      "htmlSha256": "e810d55938dc4dd4b737601bcec2613a6a85f16f0f4d35e4747da6d7641c285e",
+      "htmlSha256": "82ebe67231114ab83fc05f5ba0741f5fc0fd21b048e4fad277164bfbcec1d198",
       "typeEn": "Hidden Objects",
-      "zipBytes": 2183631,
-      "zipSha256": "3dd5eded3a44c8d07edd5f7ed246dd528f72187be2c452dc06cf0d89d76d3e13"
+      "zipBytes": 2488958,
+      "zipSha256": "29e7bb5f1378dc3f0eb419d9994ef7144d6c422d1c3657385be1d468f7ae3a8a",
+      "previewSha256": "b85fba0052cd6153db9b175d355b0e45feb9b39e1011baadd4e8b814e7b4b9f9",
+      "brandEndcard": {
+        "type": "embedded-muted-video",
+        "durationSeconds": 5,
+        "holdLastFrame": true,
+        "videoBytes": 197490,
+        "originalEndLayersSuppressed": true,
+        "gameplayLogo": "high-resolution Juicy Journey"
+      }
     },
     {
       "id": "fruit-well",
@@ -2163,7 +2305,7 @@
         "Retry",
         "Gameplay effects"
       ],
-      "ending": "Original win and lose conditions, with a short English result and Retry.",
+      "ending": "Success plays the Juicy Journey video once and holds its final frame. Retry starts a fresh round.",
       "reference": "Playable.zip / Tasty Travels / entry 16",
       "entry": "fruit-well/index.html",
       "zip": "下载包/fruit-well.zip",
@@ -2175,9 +2317,9 @@
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-13",
-      "revision": "original-engine-jj-auto-20261013",
+      "revision": "jj-brand-endcard-20261013",
       "displayMode": "portrait-contained",
-      "htmlBytes": 3634997,
+      "htmlBytes": 3958122,
       "descEn": "Drop fruit into the stone-filled well, merge matching fruit and open the next chamber.",
       "qa": {
         "nativeAutoStatus": "passed",
@@ -2192,10 +2334,19 @@
       "locale": "en",
       "sourceArchive": "Playable.zip",
       "sourceIndex": 16,
-      "htmlSha256": "073c88e4c5f91bf4a9c21f8c1ed20a67ebb79fa1829fea9eb19fd8506aa4b66f",
+      "htmlSha256": "80f45cf070b86512456dabc8ce72842d5b363f8fdbe3fd40db5d45d23ec24ccc",
       "typeEn": "Merge",
-      "zipBytes": 2667960,
-      "zipSha256": "b5614f7d3e9351622711369f90215b4086771e86e91067fac331dcccf1dcd2c7"
+      "zipBytes": 2942862,
+      "zipSha256": "ff88c320e0bc3c69db4b433f4cdae48d0ed825e69fc86ce3add6119f19006971",
+      "previewSha256": "f42d5106568605f1930d48df00307af92b0590caf6b67905fb49c96109354855",
+      "brandEndcard": {
+        "type": "embedded-muted-video",
+        "durationSeconds": 5,
+        "holdLastFrame": true,
+        "videoBytes": 197490,
+        "originalEndLayersSuppressed": true,
+        "gameplayLogo": "high-resolution Juicy Journey"
+      }
     }
   ],
   "archive": {
