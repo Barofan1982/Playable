@@ -2294,19 +2294,19 @@
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-13",
-      "revision": "cooking-settlement-fix-20261013",
+      "revision": "hidden-sera-flat-20261013",
       "displayMode": "portrait-contained",
-      "htmlBytes": 3316805,
+      "htmlBytes": 3270529,
       "descEn": "Find 10 objects in the illustrated room. Match the items shown at the top.",
       "controlHeight": 48,
       "locale": "en",
       "sourceArchive": "Playable.zip",
       "sourceIndex": 15,
-      "htmlSha256": "06b01655c52015bf5e5aabac187a4bc1b97e72844e14134cbe6bf1e41b101eac",
+      "htmlSha256": "eb61d648e08644dd288e4003461a4bb8cb4b3c8dcbc29ec025d66f215dfbe1de",
       "typeEn": "Hidden Objects",
-      "zipBytes": 2490226,
-      "zipSha256": "07600c5417fbc07508344dc61e8c73e6357684715bfe271c6dadaa94fa39031d",
-      "previewSha256": "b85fba0052cd6153db9b175d355b0e45feb9b39e1011baadd4e8b814e7b4b9f9",
+      "zipBytes": 2456825,
+      "zipSha256": "5779906f7f626f7d2502baa1ba149baf929364467524c10fac3cd08e4b252e34",
+      "previewSha256": "d31d8927d12c607ca938f81f731fc4313aebd2db1a380ec0eac80579b7a9b1f1",
       "brandEndcard": {
         "type": "embedded-muted-video",
         "settlementMinMs": 2600,
@@ -2316,6 +2316,16 @@
         "videoBytes": 197490,
         "originalEndLayersSuppressed": true,
         "gameplayLogo": "high-resolution Juicy Journey"
+      },
+      "character": {
+        "name": "Sera",
+        "style": "Flat 2D comic",
+        "expressions": [
+          "idle",
+          "happy",
+          "sad"
+        ],
+        "originalCharacterRemoved": true
       }
     },
     {
