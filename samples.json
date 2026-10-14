@@ -1,6 +1,6 @@
 {
   "brand": "Juicy Journey",
-  "updated": "2026-10-13",
+  "updated": "2026-10-14",
   "samples": [
     {
       "id": "corn",
@@ -2388,6 +2388,66 @@
         "videoBytes": 197490,
         "originalEndLayersSuppressed": true,
         "gameplayLogo": "high-resolution Juicy Journey"
+      }
+    },
+    {
+      "id": "juice-sort",
+      "name": "Juice Sort",
+      "nameEn": "Juice Sort",
+      "type": "解谜",
+      "typeEn": "Puzzle",
+      "subtitle": "Sparkling Juice",
+      "desc": "将彩色分层果汁倒入同色瓶子，收集草莓汁与柠檬汁，带上浮气泡和原生玻璃倒瓶动画。",
+      "descEn": "Sort sparkling juices into matching bottles and fill the strawberry and lemon collectors.",
+      "operation": "Tap a bottle, then an empty or matching top color. Fill both collectors.",
+      "image": "preview.webp",
+      "features": [
+        "Glass bottle pouring",
+        "Juice bubbles",
+        "Auto Play",
+        "Retry",
+        "English UI",
+        "Independent sound effects"
+      ],
+      "ending": "Fill both collectors to 22/22; show the result, play the muted Juicy Journey end-card once and hold its final frame. Retry restarts manually.",
+      "reference": "Magic Sort!-2026-10-14-9276eb35c61fab81bb83ee45cfe7e810.html.html",
+      "entry": "juice-sort/index.html",
+      "zip": "下载包/juice-sort.zip",
+      "readme": "juice-sort/README.md",
+      "audio": {
+        "backgroundMusic": false,
+        "independentEffects": true,
+        "pauseWhenHidden": true
+      },
+      "sizeLimitBytes": 5000000,
+      "updated": "2026-10-14",
+      "revision": "juice-sort-bubbles-20261014",
+      "displayMode": "portrait-contained",
+      "locale": "en",
+      "htmlBytes": 2790605,
+      "htmlSha256": "6c5dda580770c1de4ded76eac7437634d51fb0d23b1f7275f645bc42dd0d0bc5",
+      "zipBytes": 1989030,
+      "zipSha256": "a7364c87600aaf9e541ee2d832b007f64690ff0c85a3f2d8039478a906518fbc",
+      "previewSha256": "639559b6fb5f1074e01a95f10d99c21da98a08a0fd6625ebc55bf916272dba59",
+      "qa": {
+        "naturalAutoStatus": "passed",
+        "naturalAutoPours": 70,
+        "objectiveTotals": [
+          22,
+          22
+        ],
+        "conservedLiquidUnits": 82,
+        "randomPartialBoards": 80,
+        "controls": "320x568 and 844x390 actual pointer input passed",
+        "forcedSuccess": false,
+        "hiddenPause": true,
+        "resultRetry": true
+      },
+      "brandEndcard": {
+        "type": "embedded-muted-video",
+        "durationSeconds": 5,
+        "holdLastFrame": true,
+        "settlementMinMs": 2600
       }
     }
   ],

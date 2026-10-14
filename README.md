@@ -1,6 +1,6 @@
 # Juicy Journey · 可玩广告合集
 
-更新：2026 年 10 月 13 日。
+更新：2026 年 10 月 14 日。
 
 仓库：[Barofan1982/Playable](https://github.com/Barofan1982/Playable)。
 
@@ -12,7 +12,7 @@
 - 消除：匹配后道具从盘面消失，包括三消和配对消除；不生成升级道具。
 - 解谜：解开线路、脱困或寻找重力路线。箭头脱困归入此类。
 
-## 55 个试玩
+## 56 个试玩
 
 | 样本 | 类型 | 主要操作 | 说明 |
 | --- | --- | --- | --- |
@@ -71,6 +71,7 @@
 | [果汁下落合成](juice-drop/index.html) | 合成 | Drag a drink to aim, then release it. Matching drinks merge into the next level. | [说明](juice-drop/README.md) |
 | [房间寻物](hidden-room/index.html) | 寻物 | Find and tap the objects shown in the top row. | [说明](hidden-room/README.md) |
 | [果实落井](fruit-well/index.html) | 合成 | Drag to aim and release fruit into the well. Matching fruit merges and breaks the stones. | [说明](fruit-well/README.md) |
+| [Juice Sort](juice-sort/index.html) | 解谜 | Tap a bottle, then an empty or matching top color. Fill both collectors. | [说明](juice-sort/README.md) |
 
 ## 静态网站
 
@@ -78,7 +79,7 @@
 
 各样本的 index.html 内嵌运行所需的图片、操作音效和代码，单文件离线可玩；合集首页的预览图和商标是额外的网站展示文件，需要与首页一起托管。
 
-GitHub 中保存首页、55 个独立试玩、预览图、必要商标及说明。ZIP 为本地归档，继续保存在本地下载包目录。参考视频、测试浏览器缓存和原始素材由本地工作目录维护。
+GitHub 中保存首页、56 个独立试玩、预览图、必要商标及说明。ZIP 为本地归档，继续保存在本地下载包目录。参考视频、测试浏览器缓存和原始素材由本地工作目录维护。
 
 ## 附加视频
 
@@ -86,7 +87,7 @@ GitHub 中保存首页、55 个独立试玩、预览图、必要商标及说明�
 
 ## 操作音效与体积
 
-全部 55 个试玩已移除背景音乐数据、播放器和音乐开关，仅保留操作音效；用户操作后可以播放音效，后台隐藏或广告不可见时暂停声音。大图采用 WebP，列表按可见位置加载预览图。独立试玩中不设置返回列表按钮。
+全部 56 个试玩已移除背景音乐数据、播放器和音乐开关，仅保留操作音效；用户操作后可以播放音效，后台隐藏或广告不可见时暂停声音。大图采用 WebP，列表按可见位置加载预览图。独立试玩中不设置返回列表按钮。
 
 各 HTML 均低于 5,000,000 字节。[体积记录](体积与音乐检查.md)。
 
@@ -531,3 +532,11 @@ Drop fruit into the stone-filled well, merge matching fruit and open the next ch
 - 操作：Drag to aim and release fruit into the well. Matching fruit merges and breaks the stones.
 - 结尾：The original delivery and settlement remain visible for at least 2.6 seconds before the end-card; unfinished visible Spine animations extend this to at most 7 seconds. Success plays the Juicy Journey video once and holds its final frame. Retry starts a fresh round.
 - [详细说明](fruit-well/README.md)
+
+### Juice Sort
+
+将彩色分层果汁倒入同色瓶子，收集草莓汁与柠檬汁，带上浮气泡和原生玻璃倒瓶动画。
+
+- 操作：Tap a bottle, then an empty or matching top color. Fill both collectors.
+- 结尾：Fill both collectors to 22/22; show the result, play the muted Juicy Journey end-card once and hold its final frame. Retry restarts manually.
+- [详细说明](juice-sort/README.md)

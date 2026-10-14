@@ -58,6 +58,8 @@
 /juice-drop/*
 !/juice-factory/
 /juice-factory/*
+!/juice-sort/
+/juice-sort/*
 !/lava-pins/
 /lava-pins/*
 !/mahjong-pairs/
@@ -231,6 +233,10 @@
 !/juice-factory/README.md
 !/juice-factory/index.html
 !/juice-factory/preview.webp
+!/juice-sort/ASSET-NOTES.md
+!/juice-sort/README.md
+!/juice-sort/index.html
+!/juice-sort/preview.webp
 !/lava-pins/ASSET-NOTES.md
 !/lava-pins/README.md
 !/lava-pins/index.html
