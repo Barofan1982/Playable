@@ -2583,6 +2583,45 @@
         "settlementMinMs": 2600,
         "holdLastFrame": true
       }
+    },
+    {
+      "id": "shelf-sort",
+      "name": "海岛货架整理",
+      "nameEn": "Shelf Sort",
+      "type": "消除",
+      "typeEn": "Match",
+      "subtitle": "Island Market",
+      "image": "preview.webp",
+      "desc": "用 Juicy Journey 本地商品整理六个货架隔间。同类三件打包出货，三关短流程；盘面、美术陈列和逻辑独立设计。",
+      "features": [
+        "3 short levels",
+        "Drag & sort",
+        "Packing animation",
+        "Auto Play",
+        "Retry",
+        "English UI"
+      ],
+      "operation": "Drag goods into empty spots. Three identical items in one compartment are packed.",
+      "ending": "Complete all three shelves for Good Job. Running out of moves shows Try Again. Results stay until manual input.",
+      "reference": "Flower Sort · same-type sorting reference; original implementation and level layouts.",
+      "entry": "shelf-sort/index.html",
+      "zip": "下载包/shelf-sort.zip",
+      "readme": "shelf-sort/README.md",
+      "htmlBytes": 118267,
+      "htmlSha256": "eed14483a3ac03bf2670a1e2d0933d6b493bfda1ef328cb7cb987b3062283994",
+      "zipBytes": 80989,
+      "zipSha256": "174e601b1a3aa7d354f90d7c517b0f5cfc47cfed602cdca7ed6d951662830143",
+      "previewSha256": "f7fadec383a8352a8528841b6090ec2bd32da70b3080020f7a8ea4744032c87e",
+      "audio": {
+        "backgroundMusic": false,
+        "independentEffects": true,
+        "pauseWhenHidden": true
+      },
+      "sizeLimitBytes": 5000000,
+      "updated": "2026-10-15",
+      "revision": "shelf-sort-20261015",
+      "displayMode": "portrait-contained",
+      "locale": "en"
     }
   ],
   "archive": {

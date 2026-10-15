@@ -86,6 +86,8 @@
 /seaside-cafe/*
 !/shape-drop/
 /shape-drop/*
+!/shelf-sort/
+/shelf-sort/*
 !/shell-merge/
 /shell-merge/*
 !/snake-puzzle/
@@ -293,6 +295,10 @@
 !/shape-drop/README.md
 !/shape-drop/index.html
 !/shape-drop/preview.webp
+!/shelf-sort/ASSET-NOTES.md
+!/shelf-sort/README.md
+!/shelf-sort/index.html
+!/shelf-sort/preview.webp
 !/shell-merge/ASSET-NOTES.md
 !/shell-merge/README.md
 !/shell-merge/index.html
