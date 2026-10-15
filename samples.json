@@ -1,6 +1,6 @@
 {
   "brand": "Juicy Journey",
-  "updated": "2026-10-14",
+  "updated": "2026-10-15",
   "samples": [
     {
       "id": "corn",
@@ -2448,6 +2448,138 @@
         "durationSeconds": 5,
         "holdLastFrame": true,
         "settlementMinMs": 2600
+      }
+    },
+    {
+      "id": "beach-treasure",
+      "name": "Beach Treasure",
+      "subtitle": "Merge & Reveal",
+      "desc": "在沙滩盘面合并同级道具，解开周边遮挡，完成大宝箱的四个揭露区域。",
+      "descEn": "Merge matching items, uncover the beach and reveal all four sections of the treasure chest.",
+      "operation": "Drag matching items together. Reveal all four chest sections.",
+      "reference": "Tasty Travels_ Merge Game-2026-09-09-b97f6d1bdafc68d23c57b98d29f9a482.html.html",
+      "objective": "Reveal all four sections of the central chest.",
+      "nameEn": "Beach Treasure",
+      "type": "合成",
+      "typeEn": "Merge",
+      "image": "preview.webp",
+      "features": [
+        "Merge upgrades",
+        "Treasure discovery",
+        "Auto Play",
+        "Retry",
+        "English UI",
+        "Independent sound effects"
+      ],
+      "ending": "Reveal all four chest sections and finish the diamond reward flight, show settlement for at least 2.6 seconds, then play the muted Juicy Journey video once and hold the final frame. Retry restarts manually.",
+      "entry": "beach-treasure/index.html",
+      "zip": "下载包/beach-treasure.zip",
+      "readme": "beach-treasure/README.md",
+      "audio": {
+        "backgroundMusic": false,
+        "independentEffects": true,
+        "pauseWhenHidden": true
+      },
+      "sizeLimitBytes": 5000000,
+      "updated": "2026-10-15",
+      "revision": "jj-treasure-20261015",
+      "displayMode": "portrait-contained",
+      "locale": "en",
+      "htmlBytes": 4659160,
+      "htmlSha256": "5e50dc45ef627c9fc42199cdd492a63d7bc3555d5b7261c8cfb3c0f718c4b7ab",
+      "zipBytes": 2663683,
+      "zipSha256": "f5a7350456e0e04bdd97a630debc4d770f4933535aaca63a8c82830d7d05b986",
+      "previewSha256": "fbb922796648cab816167e0c3048ce1261089cdaa6cf79f0b86eeba40e5fe8a8",
+      "qa": {
+        "passed": true,
+        "summary": "验证：初始68件道具；实际触摸拖拽、Auto中人工接管、隐藏暂停、11次合法合并揭露4区、300钻石到账、完整落版及Retry恢复均通过。320×568与844×390真实触摸输入无溢出、按钮44px、零页面错误或外网请求。",
+        "naturalAutoStatus": "passed",
+        "legalMerges": 11,
+        "chestRegions": 4,
+        "rewardDiamonds": 300,
+        "controls": "320x568 and 844x390 real touch drag, Auto/Pause, and Retry passed",
+        "hiddenPause": true,
+        "humanTakeover": true,
+        "forcedSuccess": false,
+        "ending": "Reveal all four chest sections and finish the diamond reward flight, show settlement for at least 2.6 seconds, then play the muted Juicy Journey video once and hold the final frame. Retry restarts manually.",
+        "brandEndcard": {
+          "type": "embedded-muted-video",
+          "durationSeconds": 5,
+          "settlementMinMs": 2600,
+          "holdLastFrame": true
+        }
+      },
+      "brandEndcard": {
+        "type": "embedded-muted-video",
+        "durationSeconds": 5,
+        "settlementMinMs": 2600,
+        "holdLastFrame": true
+      }
+    },
+    {
+      "id": "treasure-map",
+      "name": "Treasure Map",
+      "subtitle": "Merge & Discover",
+      "desc": "合并道具逐格揭开藏宝图，发现三处宝箱，并收取金币与钻石。",
+      "descEn": "Merge matching items to uncover the map, discover three treasures and collect their rewards.",
+      "operation": "Drag matching items together. Discover all three treasures.",
+      "reference": "Tasty Travels_ Merge Game-2026-09-09-02f50bd6042eae9c7d74e4c6c2e49243.html.html",
+      "objective": "Discover all three treasure chests.",
+      "nameEn": "Treasure Map",
+      "type": "合成",
+      "typeEn": "Merge",
+      "image": "preview.webp",
+      "features": [
+        "Merge upgrades",
+        "Treasure discovery",
+        "Auto Play",
+        "Retry",
+        "English UI",
+        "Independent sound effects"
+      ],
+      "ending": "Open all three treasures and finish their reward feedback, show settlement for at least 2.6 seconds, then play the muted Juicy Journey video once and hold the final frame. Retry restarts manually.",
+      "entry": "treasure-map/index.html",
+      "zip": "下载包/treasure-map.zip",
+      "readme": "treasure-map/README.md",
+      "audio": {
+        "backgroundMusic": false,
+        "independentEffects": true,
+        "pauseWhenHidden": true
+      },
+      "sizeLimitBytes": 5000000,
+      "updated": "2026-10-15",
+      "revision": "jj-treasure-20261015",
+      "displayMode": "portrait-contained",
+      "locale": "en",
+      "htmlBytes": 4543926,
+      "htmlSha256": "74cf6d63550d23604c1d93a123884b39a5080152a8cee68dcc69fa70d406b110",
+      "zipBytes": 3428608,
+      "zipSha256": "5a39bc051da348a74eb3b87f3a0a7ef0ef65b7598c81de03a6ff2b894494ca7d",
+      "previewSha256": "2e60cb7a6bf984dcdc4df25cf304d326bbb37b44e5be3453874c307b14082ada",
+      "qa": {
+        "passed": true,
+        "summary": "验证：12次原生合法合并加3次真实开箱通关；人工接管、隐藏暂停、奖励结束后结算、完整落版及Retry通过。320×568与844×390真实触摸输入、无原生解压API时的内嵌fallback启动和重试均通过；零页面错误或外网请求。",
+        "naturalAutoStatus": "passed",
+        "legalMerges": 12,
+        "openedTreasures": 3,
+        "controls": "320x568 and 844x390 real touch drag, Auto/Pause, and Retry passed",
+        "hiddenPause": true,
+        "humanTakeover": true,
+        "decompressionFallback": true,
+        "forcedSuccess": false,
+        "ending": "Open all three treasures and finish their reward feedback, show settlement for at least 2.6 seconds, then play the muted Juicy Journey video once and hold the final frame. Retry restarts manually.",
+        "brandEndcard": {
+          "type": "embedded-muted-video",
+          "durationSeconds": 5,
+          "settlementMinMs": 2600,
+          "holdLastFrame": true
+        }
+      },
+      "brandEndcard": {
+        "type": "embedded-muted-video",
+        "durationSeconds": 5,
+        "settlementMinMs": 2600,
+        "holdLastFrame": true
       }
     }
   ],

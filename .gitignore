@@ -8,6 +8,8 @@
 /avalanche-rescue/*
 !/ball-fire-rescue/
 /ball-fire-rescue/*
+!/beach-treasure/
+/beach-treasure/*
 !/block/
 /block/*
 !/block-builder/
@@ -108,6 +110,8 @@
 /tile-pyramid/*
 !/tile-valley/
 /tile-valley/*
+!/treasure-map/
+/treasure-map/*
 !/water-tower/
 /water-tower/*
 !/water-valve-rescue/
@@ -133,6 +137,10 @@
 !/ball-fire-rescue/README.md
 !/ball-fire-rescue/index.html
 !/ball-fire-rescue/preview.webp
+!/beach-treasure/ASSET-NOTES.md
+!/beach-treasure/README.md
+!/beach-treasure/index.html
+!/beach-treasure/preview.webp
 !/block-builder/ASSET-NOTES.md
 !/block-builder/README.md
 !/block-builder/index.html
@@ -334,6 +342,10 @@
 !/tile-valley/README.md
 !/tile-valley/index.html
 !/tile-valley/preview.webp
+!/treasure-map/ASSET-NOTES.md
+!/treasure-map/README.md
+!/treasure-map/index.html
+!/treasure-map/preview.webp
 !/washface.mp4
 !/water-tower/ASSET-NOTES.md
 !/water-tower/README.md
