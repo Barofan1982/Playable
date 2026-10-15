@@ -70,6 +70,8 @@
 /market/*
 !/merge-cook/
 /merge-cook/*
+!/order-merge/
+/order-merge/*
 !/rain-jigsaw/
 /rain-jigsaw/*
 !/recipe-kitchen/
@@ -263,6 +265,10 @@
 !/merge-cook/README.md
 !/merge-cook/index.html
 !/merge-cook/preview.webp
+!/order-merge/ASSET-NOTES.md
+!/order-merge/README.md
+!/order-merge/index.html
+!/order-merge/preview.webp
 !/rain-jigsaw/README.md
 !/rain-jigsaw/index.html
 !/rain-jigsaw/preview.webp

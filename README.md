@@ -12,7 +12,7 @@
 - 消除：匹配后道具从盘面消失，包括三消和配对消除；不生成升级道具。
 - 解谜：解开线路、脱困或寻找重力路线。箭头脱困归入此类。
 
-## 59 个试玩
+## 60 个试玩
 
 | 样本 | 类型 | 主要操作 | 说明 |
 | --- | --- | --- | --- |
@@ -75,6 +75,7 @@
 | [Beach Treasure](beach-treasure/index.html) | 合成 | Drag matching items together. Reveal all four chest sections. | [说明](beach-treasure/README.md) |
 | [Treasure Map](treasure-map/index.html) | 合成 | Drag matching items together. Discover all three treasures. | [说明](treasure-map/README.md) |
 | [海岛货架整理](shelf-sort/index.html) | 消除 | Drag goods into empty spots. Three identical items in one compartment are packed. | [说明](shelf-sort/README.md) |
+| [双订单合成](order-merge/index.html) | 合成 | Drag identical items to upgrade. Match both requested items, then tap a green order to serve. | [说明](order-merge/README.md) |
 
 ## 静态网站
 
@@ -82,7 +83,7 @@
 
 各样本的 index.html 内嵌运行所需的图片、操作音效和代码，单文件离线可玩；合集首页的预览图和商标是额外的网站展示文件，需要与首页一起托管。
 
-GitHub 中保存首页、59 个独立试玩、预览图、必要商标及说明。ZIP 为本地归档，继续保存在本地下载包目录。参考视频、测试浏览器缓存和原始素材由本地工作目录维护。
+GitHub 中保存首页、60 个独立试玩、预览图、必要商标及说明。ZIP 为本地归档，继续保存在本地下载包目录。参考视频、测试浏览器缓存和原始素材由本地工作目录维护。
 
 ## 附加视频
 
@@ -90,7 +91,7 @@ GitHub 中保存首页、59 个独立试玩、预览图、必要商标及说明�
 
 ## 操作音效与体积
 
-全部 59 个试玩已移除背景音乐数据、播放器和音乐开关，仅保留操作音效；用户操作后可以播放音效，后台隐藏或广告不可见时暂停声音。大图采用 WebP，列表按可见位置加载预览图。独立试玩中不设置返回列表按钮。
+全部 60 个试玩已移除背景音乐数据、播放器和音乐开关，仅保留操作音效；用户操作后可以播放音效，后台隐藏或广告不可见时暂停声音。大图采用 WebP，列表按可见位置加载预览图。独立试玩中不设置返回列表按钮。
 
 各 HTML 均低于 5,000,000 字节。[体积记录](体积与音乐检查.md)。
 
@@ -567,3 +568,11 @@ Drop fruit into the stone-filled well, merge matching fruit and open the next ch
 - 操作：Drag goods into empty spots. Three identical items in one compartment are packed.
 - 结尾：Complete all three shelves for Good Job. Running out of moves shows Try Again. Results stay until manual input.
 - [详细说明](shelf-sort/README.md)
+
+### 双订单合成
+
+根据 Juicy Journey 多订单提交视频重建。7×9 棋盘，同级合成升级；双订单各需两件成品，交付后金币飞向顶部钱包。四位本地角色依次接单。
+
+- 操作：Drag identical items to upgrade. Match both requested items, then tap a green order to serve.
+- 结尾：Complete four orders for 560 coins. All rewards settle before the full muted JJ end-card plays and holds its final frame.
+- [详细说明](order-merge/README.md)
