@@ -1,6 +1,6 @@
 {
   "brand": "Juicy Journey",
-  "updated": "2026-10-15",
+  "updated": "2026-10-16",
   "samples": [
     {
       "id": "corn",
@@ -2635,21 +2635,22 @@
       "features": [
         "Two active orders",
         "Two-item delivery",
+        "Double-tap to serve",
         "Merge upgrades",
         "Coin flight",
         "Auto Play",
         "Retry"
       ],
-      "operation": "Drag identical items to upgrade. Match both requested items, then tap a green order to serve.",
+      "operation": "Drag identical items to upgrade. Double-tap a requested finished item, or tap a green order, to serve both items.",
       "ending": "Complete four orders for 560 coins. All rewards settle before the full muted JJ end-card plays and holds its final frame.",
       "reference": "JJ-en-254-merge多订单提交-赵翰禹-S-v1-20260902.mp4",
       "entry": "order-merge/index.html",
       "zip": "下载包/order-merge.zip",
       "readme": "order-merge/README.md",
-      "htmlBytes": 748162,
-      "htmlSha256": "10014bda0ebcc8d27534e338e5cb1dc1ea3e0a65178f65e429c6ec71ec36dec4",
-      "zipBytes": 554794,
-      "zipSha256": "dab53b867ef7b0b0cb1a20f8cd98a10fa03d937efd513875698760ca49f08fcd",
+      "htmlBytes": 748709,
+      "htmlSha256": "1363b579e93e94d416b52769920c00fc09459fb22dddc9c18a11338d17481f7b",
+      "zipBytes": 555045,
+      "zipSha256": "1dc0be248272358e30af06d20c964f29cf8b94ae890b59feee9629155c313f66",
       "previewSha256": "fbe794ddca0ac25679c5e90d94b8fe506e471aa81deb02e6cd819fafbd7318a3",
       "audio": {
         "backgroundMusic": false,
@@ -2657,8 +2658,8 @@
         "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
-      "updated": "2026-10-15",
-      "revision": "order-merge-20261015",
+      "updated": "2026-10-16",
+      "revision": "order-double-tap-20261016",
       "displayMode": "portrait-contained",
       "locale": "en"
     }
