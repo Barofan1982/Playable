@@ -571,7 +571,7 @@ Drop fruit into the stone-filled well, merge matching fruit and open the next ch
 
 ### 双订单合成
 
-根据 Juicy Journey 多订单提交视频重建。7×9 棋盘，同级合成升级；双订单各需两件成品，交付后金币飞向顶部钱包。四位本地角色依次接单。
+根据 Juicy Journey 多订单提交视频重建。7×9 棋盘，同级合成升级；双订单各需两件成品，交付后金币飞向顶部钱包。四位本地角色依次接单；首单提供桃子合成、牛奶合成、双击奶油交付的三步手指引导。
 
 - 操作：Drag identical items to upgrade. Double-tap a requested finished item, or tap a green order, to serve both items. Merge energy and gems; double-tap to claim 15 or 30.
 - 结尾：Complete four orders for 560 coins. All rewards settle before the full muted JJ end-card plays and holds its final frame.

@@ -2631,9 +2631,9 @@
       "typeEn": "Merge",
       "subtitle": "Merge & Serve",
       "image": "preview.webp",
-      "desc": "根据 Juicy Journey 多订单提交视频重建。7×9 棋盘，同级合成升级；双订单各需两件成品，交付后金币飞向顶部钱包。四位本地角色依次接单。",
+      "desc": "根据 Juicy Journey 多订单提交视频重建。7×9 棋盘，同级合成升级；双订单各需两件成品，交付后金币飞向顶部钱包。四位本地角色依次接单；首单提供桃子合成、牛奶合成、双击奶油交付的三步手指引导。",
       "features": [
-        "Central merge tutorial",
+        "Three-step guided first order",
         "Two active orders",
         "Two-item delivery",
         "Double-tap to serve",
@@ -2650,11 +2650,11 @@
       "entry": "order-merge/index.html",
       "zip": "下载包/order-merge.zip",
       "readme": "order-merge/README.md",
-      "htmlBytes": 769094,
-      "htmlSha256": "041b3fbdc08536976500130fbdd055eabdf82f65477abdcd72dfd06f0a2e758e",
-      "zipBytes": 569531,
-      "zipSha256": "4bd24ad82ef7e5fa46d3ce49712fff52e6f40bc11aedf292bc51f22fbcd7c820",
-      "previewSha256": "73b08d7d10e1d3262eb02b099f5043bd57b9c6ab24b48b0423701b247f590cca",
+      "htmlBytes": 770418,
+      "htmlSha256": "a0549623a8a9543b4c302b2ce191b90f09e3246834edac0e2537568751d7b80c",
+      "zipBytes": 570127,
+      "zipSha256": "15e06114b3d15cf85b4b692a9c61ddc13159db2d43e24edd55f6ecbdeb3de7d8",
+      "previewSha256": "e1f42c9ab27d803bb09b5ac4e4bbbd5b932544777a1b23631500844df67b51b1",
       "audio": {
         "backgroundMusic": false,
         "independentEffects": true,
@@ -2662,7 +2662,7 @@
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-16",
-      "revision": "order-central-merge-guide-20261016",
+      "revision": "order-three-step-guide-20261016",
       "displayMode": "portrait-contained",
       "locale": "en"
     }
