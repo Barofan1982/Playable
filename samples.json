@@ -2636,6 +2636,7 @@
         "Two active orders",
         "Two-item delivery",
         "Double-tap to serve",
+        "No pre-seeded order items",
         "Merge upgrades",
         "Coin flight",
         "Auto Play",
@@ -2647,11 +2648,11 @@
       "entry": "order-merge/index.html",
       "zip": "下载包/order-merge.zip",
       "readme": "order-merge/README.md",
-      "htmlBytes": 748709,
-      "htmlSha256": "1363b579e93e94d416b52769920c00fc09459fb22dddc9c18a11338d17481f7b",
-      "zipBytes": 555045,
-      "zipSha256": "1dc0be248272358e30af06d20c964f29cf8b94ae890b59feee9629155c313f66",
-      "previewSha256": "fbe794ddca0ac25679c5e90d94b8fe506e471aa81deb02e6cd819fafbd7318a3",
+      "htmlBytes": 748706,
+      "htmlSha256": "20b835f6b295dc1ab3dbb2e351c8b0f5a8598790d033bfff89ee36beaf983d53",
+      "zipBytes": 555128,
+      "zipSha256": "b8b6402c7b61b03ef6cf12598b7902f890e7a0ce97cbdfde5c49bc79cbf66383",
+      "previewSha256": "cbe9ae8ce15816641e0bb0d6cd4174d1cfa4e7ca8682f50b0fd4c3eb7d312bfd",
       "audio": {
         "backgroundMusic": false,
         "independentEffects": true,
@@ -2659,7 +2660,7 @@
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-16",
-      "revision": "order-double-tap-20261016",
+      "revision": "order-from-ingredients-20261016",
       "displayMode": "portrait-contained",
       "locale": "en"
     }
