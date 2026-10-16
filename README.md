@@ -75,7 +75,7 @@
 | [Beach Treasure](beach-treasure/index.html) | 合成 | Drag matching items together. Reveal all four chest sections. | [说明](beach-treasure/README.md) |
 | [Treasure Map](treasure-map/index.html) | 合成 | Drag matching items together. Discover all three treasures. | [说明](treasure-map/README.md) |
 | [海岛货架整理](shelf-sort/index.html) | 消除 | Drag goods into empty spots. Three identical items in one compartment are packed. | [说明](shelf-sort/README.md) |
-| [双订单合成](order-merge/index.html) | 合成 | Drag identical items to upgrade. Double-tap a requested finished item, or tap a green order, to serve both items. | [说明](order-merge/README.md) |
+| [双订单合成](order-merge/index.html) | 合成 | Drag identical items to upgrade. Double-tap a requested finished item, or tap a green order, to serve both items. Merge energy and gems; double-tap to claim 15 or 30. | [说明](order-merge/README.md) |
 
 ## 静态网站
 
@@ -573,6 +573,6 @@ Drop fruit into the stone-filled well, merge matching fruit and open the next ch
 
 根据 Juicy Journey 多订单提交视频重建。7×9 棋盘，同级合成升级；双订单各需两件成品，交付后金币飞向顶部钱包。四位本地角色依次接单。
 
-- 操作：Drag identical items to upgrade. Double-tap a requested finished item, or tap a green order, to serve both items.
+- 操作：Drag identical items to upgrade. Double-tap a requested finished item, or tap a green order, to serve both items. Merge energy and gems; double-tap to claim 15 or 30.
 - 结尾：Complete four orders for 560 coins. All rewards settle before the full muted JJ end-card plays and holds its final frame.
 - [详细说明](order-merge/README.md)
