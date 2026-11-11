@@ -2677,7 +2677,9 @@
       "desc": "参考 Foodstars 原片重建的 33 秒竖版合成演绎。连续直线白手套引导，合成落点周边绿色草地揭示、金币飞行；宝箱逐块变色、抖动落灰，最后合成自动开箱爆奖励，无 CTA。使用 JJ 本地物料与英文 logo。",
       "features": [
         "33-second Auto Play",
-        "Continuous linear glove",
+        "Articulated linear glove",
+        "Local 3D coins",
+        "Layered merge effects",
         "Merge-neighbor unlocks",
         "Grass-marked locked tiles",
         "Local JJ items",
@@ -2693,11 +2695,11 @@
       "entry": "food-merge-demo/index.html",
       "zip": "下载包/food-merge-demo.zip",
       "readme": "food-merge-demo/README.md",
-      "htmlBytes": 1093701,
-      "htmlSha256": "23a59f70a712b99cba2fb5231ca6a9ba1f7a8df0b0e5b0ff2fa3c3ed59cd756e",
-      "zipBytes": 819759,
-      "zipSha256": "4c8672d66a785dd26c70268c5a5847ecf905ecc592ae9eb207022d266bc17b85",
-      "previewSha256": "9a6e6c88178a21141d62d0f82f18ef90a4ff4dcf6380cec0169be115e856cb6c",
+      "htmlBytes": 1127953,
+      "htmlSha256": "e8412a2f187336a45d4e7a2ad5d55acbc63f509e93327f70557161031bd710cd",
+      "zipBytes": 844563,
+      "zipSha256": "fc83d71517f5abf55518eaf5408f97ff0f0c1b731d6e535453a3e17d7adbc144",
+      "previewSha256": "0319cde548c78aae3caa6f97b679ccaea54a041677a3b446698f371c634d3c64",
       "audio": {
         "backgroundMusic": true,
         "explicitUserException": true,
@@ -2705,11 +2707,14 @@
         "codec": "mp3",
         "bitrate": 128000,
         "duration": 33,
+        "musicVolume": 0.35,
+        "independentEffects": true,
+        "effectsPauseWhenHidden": true,
         "pauseWhenHidden": true
       },
       "sizeLimitBytes": 5000000,
       "updated": "2026-11-11",
-      "revision": "treasure-chest-effects-20261111",
+      "revision": "treasure-coins-finger-sfx-20261111",
       "displayMode": "portrait-contained",
       "locale": "en"
     }
