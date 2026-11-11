@@ -580,7 +580,7 @@ Drop fruit into the stone-filled well, merge matching fruit and open the next ch
 
 ### 宝箱合成演绎
 
-参考 Foodstars 原片重建的 33 秒竖版合成演绎。白手套引导，解锁棋盘，金币飞行及宝箱开箱；使用 JJ 本地物料与英文 logo。
+参考 Foodstars 原片重建的 33 秒竖版合成演绎。连续直线白手套引导，合成落点周边绿色草地揭示、金币飞行及宝箱开箱；使用 JJ 本地物料与英文 logo。
 
 - 操作：Tap Auto Play to run the guided demonstration. Pause to hold the current moment; Retry restores the first frame.
 - 结尾：Treasure rewards settle before the JJ endcard. The final frame remains until Replay or Retry.
