@@ -580,8 +580,8 @@ Drop fruit into the stone-filled well, merge matching fruit and open the next ch
 
 ### 宝箱合成演绎
 
-参考 Foodstars 原片重建的 33 秒竖版合成演绎。连续直线白手套引导，合成落点周边绿色草地揭示、金币飞行及宝箱开箱；使用 JJ 本地物料与英文 logo。
+参考 Foodstars 原片重建的 33 秒竖版合成演绎。连续直线白手套引导，合成落点周边绿色草地揭示、金币飞行；宝箱逐块变色、抖动落灰，最后合成自动开箱爆奖励，无 CTA。使用 JJ 本地物料与英文 logo。
 
 - 操作：Tap Auto Play to run the guided demonstration. Pause to hold the current moment; Retry restores the first frame.
-- 结尾：Treasure rewards settle before the JJ endcard. The final frame remains until Replay or Retry.
+- 结尾：The final merge unlocks the chest. It opens and bursts 100 rewards into the wallets; the open-chest scene holds without a CTA until Replay or Retry.
 - [详细说明](food-merge-demo/README.md)
