@@ -1,6 +1,6 @@
 {
   "brand": "Juicy Journey",
-  "updated": "2026-10-16",
+  "updated": "2026-11-11",
   "samples": [
     {
       "id": "corn",
@@ -2663,6 +2663,50 @@
       "sizeLimitBytes": 5000000,
       "updated": "2026-10-16",
       "revision": "order-three-step-guide-20261016",
+      "displayMode": "portrait-contained",
+      "locale": "en"
+    },
+    {
+      "id": "food-merge-demo",
+      "name": "宝箱合成演绎",
+      "nameEn": "Treasure Merge",
+      "type": "合成",
+      "typeEn": "Merge",
+      "subtitle": "Merge & Discover",
+      "image": "preview.webp",
+      "desc": "参考 Foodstars 原片重建的 33 秒竖版合成演绎。白手套引导，解锁棋盘，金币飞行及宝箱开箱；使用 JJ 本地物料与英文 logo。",
+      "features": [
+        "33-second Auto Play",
+        "Animated glove",
+        "Board unlocks",
+        "Local JJ items",
+        "Treasure opening",
+        "User-supplied music",
+        "Retry"
+      ],
+      "operation": "Tap Auto Play to run the guided demonstration. Pause to hold the current moment; Retry restores the first frame.",
+      "ending": "Treasure rewards settle before the JJ endcard. The final frame remains until Replay or Retry.",
+      "reference": "Foodstars_原片_003_fc7421e7.mp4",
+      "entry": "food-merge-demo/index.html",
+      "zip": "下载包/food-merge-demo.zip",
+      "readme": "food-merge-demo/README.md",
+      "htmlBytes": 1252646,
+      "htmlSha256": "2d97ebc641f49771692dbb74a6846bb855f10e9a412935d66e3556c2ef732318",
+      "zipBytes": 942280,
+      "zipSha256": "1e182ebb7e8750278503c1b1ad1fd27cf7fcc3304bc474c17a45dad3c8ceff9d",
+      "previewSha256": "a01056a23db9256d6a8b6c2e8c86cd47a0b6c7aff3fa0ebb85cedd6ae6e73b32",
+      "audio": {
+        "backgroundMusic": true,
+        "explicitUserException": true,
+        "source": "Tropical Sunset.wav",
+        "codec": "mp3",
+        "bitrate": 128000,
+        "duration": 33,
+        "pauseWhenHidden": true
+      },
+      "sizeLimitBytes": 5000000,
+      "updated": "2026-11-11",
+      "revision": "treasure-demo-20261111",
       "displayMode": "portrait-contained",
       "locale": "en"
     }

@@ -34,6 +34,8 @@
 /drink-merge/*
 !/flower-shop/
 /flower-shop/*
+!/food-merge-demo/
+/food-merge-demo/*
 !/food-sort/
 /food-sort/*
 !/fruit-well/
@@ -193,6 +195,10 @@
 !/flower-shop/README.md
 !/flower-shop/index.html
 !/flower-shop/preview.webp
+!/food-merge-demo/ASSET-NOTES.md
+!/food-merge-demo/README.md
+!/food-merge-demo/index.html
+!/food-merge-demo/preview.webp
 !/food-sort/ASSET-NOTES.md
 !/food-sort/README.md
 !/food-sort/index.html
