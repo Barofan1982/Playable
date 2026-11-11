@@ -76,7 +76,7 @@
 | [Treasure Map](treasure-map/index.html) | 合成 | Drag matching items together. Discover all three treasures. | [说明](treasure-map/README.md) |
 | [海岛货架整理](shelf-sort/index.html) | 消除 | Drag goods into empty spots. Three identical items in one compartment are packed. | [说明](shelf-sort/README.md) |
 | [双订单合成](order-merge/index.html) | 合成 | Drag identical items to upgrade. Double-tap a requested finished item, or tap a green order, to serve both items. Merge energy and gems; double-tap to claim 15 or 30. | [说明](order-merge/README.md) |
-| [宝箱合成演绎](food-merge-demo/index.html) | 合成 | Tap Auto Play to run the guided demonstration. Pause to hold the current moment; Retry restores the first frame. | [说明](food-merge-demo/README.md) |
+| [宝箱合成演绎](food-merge-demo/index.html) | 合成 | Starts paused. Space or tap plays/pauses; Backspace or a long press resets to the first frame. | [说明](food-merge-demo/README.md) |
 
 ## 静态网站
 
@@ -582,6 +582,6 @@ Drop fruit into the stone-filled well, merge matching fruit and open the next ch
 
 参考 Foodstars 原片重建的 33 秒竖版合成演绎。连续直线白手套引导，合成落点周边绿色草地揭示、金币飞行；宝箱逐块变色、抖动落灰，最后合成自动开箱爆奖励，无 CTA。使用 JJ 本地物料与英文 logo。
 
-- 操作：Tap Auto Play to run the guided demonstration. Pause to hold the current moment; Retry restores the first frame.
-- 结尾：The final merge unlocks the chest. It opens and bursts 100 rewards into the wallets; the open-chest scene holds without a CTA until Replay or Retry.
+- 操作：Starts paused. Space or tap plays/pauses; Backspace or a long press resets to the first frame.
+- 结尾：The final merge unlocks the chest. It opens and bursts 100 rewards into the wallets; the open-chest scene holds without a CTA. Space or tap replays; Backspace or a long press resets.
 - [详细说明](food-merge-demo/README.md)
