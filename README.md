@@ -592,5 +592,5 @@ Drop fruit into the stone-filled well, merge matching fruit and open the next ch
 近景2.5D小镇，99个独立物件、20个语义类别，每类3–7件；三张轮换订单与7格暂存栏。逐个收走居民、动物、车辆、房屋和家具，最终只留街道和地基。
 
 - 操作：Tap visible objects by category. Current orders accept matching objects; others use seven storage slots. Auto Play demonstrates the full cleanup.
-- 结尾：Archive all 99 objects and empty the storage tray. The town stays empty with only streets and foundations. A full tray triggers Retry.
+- 结尾：Archive all 99 objects and empty the storage tray. The town stays empty with only streets and foundations. Seven stored objects are allowed. Trying to collect an eighth off-order object triggers Retry; current orders remain available with full storage.
 - [详细说明](town-clear/README.md)
