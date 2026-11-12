@@ -116,6 +116,8 @@
 /tile-pyramid/*
 !/tile-valley/
 /tile-valley/*
+!/town-clear/
+/town-clear/*
 !/treasure-map/
 /treasure-map/*
 !/water-tower/
@@ -360,6 +362,10 @@
 !/tile-valley/README.md
 !/tile-valley/index.html
 !/tile-valley/preview.webp
+!/town-clear/ASSET-NOTES.md
+!/town-clear/README.md
+!/town-clear/index.html
+!/town-clear/preview.webp
 !/treasure-map/ASSET-NOTES.md
 !/treasure-map/README.md
 !/treasure-map/index.html

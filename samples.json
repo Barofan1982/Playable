@@ -1,6 +1,6 @@
 {
   "brand": "Juicy Journey",
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "samples": [
     {
       "id": "corn",
@@ -2717,6 +2717,48 @@
       "sizeLimitBytes": 5000000,
       "updated": "2026-11-11",
       "revision": "treasure-hidden-keyboard-touch-20261111",
+      "displayMode": "portrait-contained",
+      "locale": "en"
+    },
+    {
+      "id": "town-clear",
+      "name": "整理小镇",
+      "nameEn": "Town Clear",
+      "type": "整理",
+      "typeEn": "Sorting",
+      "subtitle": "Sort 99 Town Objects",
+      "image": "preview.webp",
+      "desc": "近景2.5D小镇，99个独立物件、20个语义类别，每类3–7件；三张轮换订单与7格暂存栏。逐个收走居民、动物、车辆、房屋和家具，最终只留街道和地基。",
+      "features": [
+        "99 independent sprites",
+        "20 semantic categories",
+        "3–7 per category",
+        "Three rotating orders",
+        "Seven storage slots",
+        "Visible alpha hit testing",
+        "Auto Play",
+        "Retry",
+        "Empty-town ending"
+      ],
+      "operation": "Tap visible objects by category. Current orders accept matching objects; others use seven storage slots. Auto Play demonstrates the full cleanup.",
+      "ending": "Archive all 99 objects and empty the storage tray. The town stays empty with only streets and foundations. A full tray triggers Retry.",
+      "reference": "User-provided town sorting concept and office-clutter screenshot",
+      "entry": "town-clear/index.html",
+      "zip": "下载包/town-clear.zip",
+      "readme": "town-clear/README.md",
+      "htmlBytes": 1203792,
+      "htmlSha256": "bdec8e6c919d4acb837811f77049c40430a115a7aa27378c79ccc80457718998",
+      "zipBytes": 754820,
+      "zipSha256": "f3bf9e9d3b2619e43ace426fed276e79781ee3914dbe2b0073cfeb43a7dbbc7e",
+      "previewSha256": "ad2e81e3827d4582fc51029cee657e1ac6163a1f979b863bb5168ce48e0bb095",
+      "audio": {
+        "backgroundMusic": false,
+        "independentEffects": true,
+        "pauseWhenHidden": true
+      },
+      "sizeLimitBytes": 5000000,
+      "updated": "2026-11-12",
+      "revision": "town-clear-99-20261112",
       "displayMode": "portrait-contained",
       "locale": "en"
     }
